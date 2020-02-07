@@ -4,13 +4,11 @@ import Header from '../shared/Header';
 const BaseLayout = (props) => {
     const { className, children, isAuthenticated, user } = props;
     return (
-        <div className="layout-contianer">
-            <Header isAuthenticated={isAuthenticated} user={user}/>
-            <main className={`cover ${className}`}>
-                <div className="wrapper">
+        <div>
+            {/* <Header isAuthenticated={isAuthenticated} user={user}/> */}
+
                     {children}
-                </div>
-            </main>
+
         </div>
     )
 }

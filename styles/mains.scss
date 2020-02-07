@@ -9,7 +9,7 @@
 html, body {
     height:100%;
     width:100%;
-    font-family: 'Montserrat', 'Helvetica';
+    font-family: 'Grotesk', 'Helvetica';
   }
 
   .self-typed {
@@ -32,13 +32,13 @@ html, body {
     //padding: 150px 0 100px 0;
     color: black;
     background-color: #ecedee;
-   // min-height: 100vh;
+   //min-height: 100vh;
     .page-header {
       .page-header-title {
         font-weight: 700;
         color: black;
         display: inline-block;
-       // margin-bottom: 20px;
+       margin-bottom: 20px;
       }
     }
   }
@@ -48,21 +48,82 @@ html, body {
   }
 
   .simulacro-page {
-
-    .flex-container {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: 100%;
+    $finalHeight: 50vh;
+    $finalWidth: 2 * $finalHeight;
+    $scrollBarHeight: 1px;
+    
+    ::-webkit-scrollbar {
+      width: $scrollBarHeight;
+      height: $scrollBarHeight;
+    }
+    
+    ::-webkit-scrollbar-button {
+      width: $scrollBarHeight;
+      height: $scrollBarHeight;
+    }
+    
+    body {
+      background: #111;
+    }
+    
+    div {
+      box-sizing: border-box;
     }
 
-    .row1 {
-      background-color: red;
-      flex-basis: 50%;
+    .horizontal-scroll-wrapper {
+      background-color: white;
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: calc(#{$finalHeight} + #{$scrollBarHeight});
+      max-height: 100vw;
+      margin: 0;
+      padding-top: $scrollBarHeight;
+      overflow-y: auto;
+      overflow-x: hidden;
+      transform: rotate(-90deg) translateY(-$finalHeight);
+      transform-origin: right top;
+      & > div {
+        display: block;
+        padding: 5px;
+        background: red;
+        transform: rotate(90deg);
+        transform-origin: right top;
+      }
     }
 
-    .row2 {
-      background-color: yellow;
-      flex-basis: 50%;
+    .squares {
+      padding: $finalHeight 0 0 0;
+      & > div {
+        width: $finalHeight;
+        height: $finalHeight;
+        margin: 10px 0;
+      }
+    }
+
+    .rectangles{
+      top:100px;
+      padding:100px 0 0 0;
+    }
+    .rectangles > div{
+      width:140px;
+      height:60px;
+      margin:50px 10px;
+      padding:5px;
+      background:#cab;
+      transform:rotate(90deg) translateY(80px);
+      transform-origin: right top;
+    }
+
+    .bottom {
+      margin-top: 50vh;
+    }
+
+    .title-lang {
+      color: #3300ff;
+      text-shadow: 5px 5px 0px #000000;
+      font-size: 35vh;
+
     }
   }

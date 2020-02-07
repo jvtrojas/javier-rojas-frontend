@@ -6,9 +6,9 @@ const BasePage = (props) => {
              className  = props.className || '';
     return (
         <div className={`base-page ${className}`}>
-            <Container>
+            {/* <Container> */}
                 {children}
-            </Container>
+            {/* </Container> */}
         </div>
     )
 }
