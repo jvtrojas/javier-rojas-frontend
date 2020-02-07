@@ -14,7 +14,7 @@ class Callback extends React.Component {
         return (
             <BaseLayout>
                 <BasePage>
-                    <h1> Login Callback page</h1> 
+                    <h1> Login Callback page</h1>
                 </BasePage>
             </BaseLayout>
         )

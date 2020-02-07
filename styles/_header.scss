@@ -1,9 +1,9 @@
   // HEADER
-  .port-navbar.port-default {
+  .port-navbar.port-nav-base {
     width: 100%;
     z-index: 15;
     padding: 40px;
-  
+
     .port-navbar {
       &-brand {
         color: white;
@@ -12,27 +12,31 @@
         letter-spacing: 1px;
         font-weight: bold;
       }
-  
+
       &-item {
         margin-left: 10px;
         margin-right: 10px;
       }
-  
+
       &-link {
         color: white;
         font-weight: bold;
         letter-spacing: 0.8px;
         font-size: 18px;
         text-transform: uppercase;
-  
+
         &.active {
         color: #dba919;
         }
-  
+
         &:hover, &:focus {
           color: #dba919;
         }
       }
     }
   }
-  
+
+  .port-navbar.port-nav-base.port-nav-default {
+    padding: 30px;
+    background-color: $secondary !important;
+  }

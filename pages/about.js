@@ -6,12 +6,11 @@ class About extends React.Component {
     render() {
         return (
             <BaseLayout {...this.props.auth}>
-                <BasePage>
-                    <h1>About page</h1>
+                <BasePage title="About Page mdfkr!">
                 </BasePage>
             </BaseLayout>
         )
     }
 }
 
-export default withAuth(About);
+export default withAuth()(About);
