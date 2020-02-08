@@ -28,102 +28,80 @@ html, body {
     color: red
   }
 
-  .base-page {
-    //padding: 150px 0 100px 0;
-    color: black;
-    background-color: #ecedee;
-   //min-height: 100vh;
-    .page-header {
-      .page-header-title {
-        font-weight: 700;
-        color: black;
-        display: inline-block;
-       margin-bottom: 20px;
-      }
-    }
-  }
+  // .base-page {
+  //   //padding: 150px 0 100px 0;
+  //   color: black;
+  //   background-color: white;
+  //  //min-height: 100vh;
+  //   .page-header {
+  //     .page-header-title {
+  //       font-weight: 700;
+  //       color: black;
+  //       display: inline-block;
+  //      margin-bottom: 20px;
+  //     }
+  //   }
+  // }
 
   .clickable {
     cursor: pointer;
   }
 
   .simulacro-page {
-    $finalHeight: 50vh;
-    $finalWidth: 2 * $finalHeight;
-    $scrollBarHeight: 1px;
-    
-    ::-webkit-scrollbar {
-      width: $scrollBarHeight;
-      height: $scrollBarHeight;
+    .col-sm-4 {
+      -moz-hyphens:auto;
+      -ms-hyphens:auto;
+      -webkit-hyphens:auto;
+      hyphens:auto;
+      word-wrap:break-word;
+   }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.example {
+  -ms-overflow-style: none;
+}
+        /* The heart of the matter */
+    .testimonial-group > .row {
+      overflow-x: scroll;
+      height: 50vh;
+      width: 100%;
+
     }
-    
-    ::-webkit-scrollbar-button {
-      width: $scrollBarHeight;
-      height: $scrollBarHeight;
-    }
-    
-    body {
-      background: #111;
-    }
-    
-    div {
-      box-sizing: border-box;
+    .testimonial-group > .row > .col-sm-4 {
+      display: inline-block;
+      float: none;
     }
 
-    .horizontal-scroll-wrapper {
-      background-color: white;
-      position: absolute;
-      display: block;
-      top: 0;
-      left: 0;
-      width: calc(#{$finalHeight} + #{$scrollBarHeight});
-      max-height: 100vw;
-      margin: 0;
-      padding-top: $scrollBarHeight;
-      overflow-y: auto;
-      overflow-x: hidden;
-      transform: rotate(-90deg) translateY(-$finalHeight);
-      transform-origin: right top;
-      & > div {
-        display: block;
-        padding: 5px;
-        background: red;
-        transform: rotate(90deg);
-        transform-origin: right top;
-      }
-    }
 
-    .squares {
-      padding: $finalHeight 0 0 0;
-      & > div {
-        width: $finalHeight;
-        height: $finalHeight;
-        margin: 10px 0;
-      }
-    }
-
-    .rectangles{
-      top:100px;
-      padding:100px 0 0 0;
-    }
-    .rectangles > div{
-      width:140px;
-      height:60px;
-      margin:50px 10px;
-      padding:5px;
-      background:#cab;
-      transform:rotate(90deg) translateY(80px);
-      transform-origin: right top;
-    }
-
-    .bottom {
-      margin-top: 50vh;
-    }
+    /* Decorations */
+    .col-sm-4 {
+      color: #fff;
+      //font-size: 48px;
+    //  padding-bottom: 20px;
+     // padding-top: 18px;
+    // white-space: pre-line;
+     overflow-y: hidden;
+     text-align: justify; }
+    .col-sm-4:nth-child(3n+1) { background: rgb(255, 255, 255); }
+    .col-sm-4:nth-child(3n+2) { background: rgb(255, 255, 255); }
+    .col-sm-4:nth-child(3n+3) { background: rgb(255, 255, 255); }
 
     .title-lang {
       color: #3300ff;
       text-shadow: 5px 5px 0px #000000;
       font-size: 35vh;
+
+    }
+
+    .text-content {
+      color: #000000;
+      font-size: 1vw;
+      text-align: justify;
+      margin-top: 64px;
 
     }
   }
