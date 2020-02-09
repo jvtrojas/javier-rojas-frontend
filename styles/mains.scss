@@ -49,35 +49,37 @@ html, body {
 
   .simulacro-page {
 
+        /* Hide scrollbar for Chrome, Safari and Opera */
+    .example::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE and Edge */
+    .example {
+      -ms-overflow-style: none;
+    }
+
     .row{
       overflow-x: auto;
       white-space: nowrap;
       height: fit-content;
       line-height: normal;
+      padding-top: 35px;
     }
     .title-lang {
       color: #3300ff;
       text-shadow: 5px 5px 0px #000000;
-       font-size: 2.5em;
-      // text-align: justify;
-      // margin-top: 1vw;
-
+       font-size: 20vw;
+       white-space: normal;
     }
 
     .text-content {
       color: #000000;
-     font-size: 1.9vw;
+      font-size: 2.1vw;
       text-align: justify;
-      //margin-top: 1vw;
       word-wrap: break-word;
       overflow-x: scroll;
       white-space: normal;
-    }
-    .red {
-      background-color: red;
-    }
-    .blue {
-      background-color: blue;
     }
     .wrap {
       flex-wrap: nowrap;
@@ -86,10 +88,13 @@ html, body {
       .wrap {
         flex-wrap: wrap;
       }
-
+    }
+    @media (max-width: 768px) {
       .text-content {
         font-size: 3.9vw;
       }
+      .title-lang {
+        font-size: 25vw;
+      }
     }
-
   }
