@@ -48,63 +48,48 @@ html, body {
   }
 
   .simulacro-page {
-    .col-4 {
-      -moz-hyphens:auto;
-      -ms-hyphens:auto;
-      -webkit-hyphens:auto;
-      hyphens:auto;
-      word-wrap:break-word;
-   }
-/* Hide scrollbar for Chrome, Safari and Opera */
-.example::-webkit-scrollbar {
-  display: none;
-}
 
-/* Hide scrollbar for IE and Edge */
-.example {
-  -ms-overflow-style: none;
-}
-        /* The heart of the matter */
-    .testimonial-group > .row {
-      overflow-x: scroll;
-      //height: 50vh;
-      width: 100%;
-
+    .row{
+      overflow-x: auto;
+      white-space: nowrap;
+      height: fit-content;
+      line-height: normal;
     }
-    .testimonial-group > .row > .col-4 {
-      display: inline-block;
-      float: none;
-    }
-
-
-    /* Decorations */
-    .col-4 {
-      height: 100%;
-      color: #fff;
-      //font-size: 48px;
-    //  padding-bottom: 20px;
-     // padding-top: 18px;
-    //white-space: pre-line;
-     //overflow-y: hidden;
-     text-align: justify; }
-    .col-4:nth-child(3n+1) { background: rgb(255, 255, 255); }
-    .col-4:nth-child(3n+2) { background: rgb(255, 255, 255); }
-    .col-4:nth-child(3n+3) { background: rgb(255, 255, 255); }
-
     .title-lang {
       color: #3300ff;
       text-shadow: 5px 5px 0px #000000;
-      font-size: 15em;
-      text-align: justify;
-      margin-top: 1vw;
+       font-size: 2.5em;
+      // text-align: justify;
+      // margin-top: 1vw;
 
     }
 
     .text-content {
       color: #000000;
-      font-size: 1em;
+     font-size: 1.9vw;
       text-align: justify;
-      margin-top: 1vw;
-
+      //margin-top: 1vw;
+      word-wrap: break-word;
+      overflow-x: scroll;
+      white-space: normal;
     }
+    .red {
+      background-color: red;
+    }
+    .blue {
+      background-color: blue;
+    }
+    .wrap {
+      flex-wrap: nowrap;
+    }
+    @media (max-width: 425px) {
+      .wrap {
+        flex-wrap: wrap;
+      }
+
+      .text-content {
+        font-size: 3.9vw;
+      }
+    }
+
   }

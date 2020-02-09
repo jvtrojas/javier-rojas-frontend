@@ -14,33 +14,15 @@ class Simulacro extends React.Component {
         return (
             <BaseLayout {...this.props.auth} >
                 <BasePage className="simulacro-page">
-                <div className="container-fluid testimonial-group">
-                    <div className="row text-center flex-nowrap example">
-                        <div className="col-4 title-lang align-self-center">{EN_TEXT}</div>
-                        {/* <div className="col-4 text-content">
-                        <Tooltip word="hover me!" pop="hello !!!!"/>
-                        </div> */}
-                        <div className="col-4 text-content align-self-center">{SAMPLE_TEXT}</div>
-                        <div className="col-4 text-content align-self-center">{SAMPLE_TEXT}</div>
-                        <div className="col-4 align-self-center"></div>
-                        <div className="col-4 align-self-center"></div>
-                        <div className="col-4 align-self-center"></div>
-                        {/*
+                <div className="container-fluid">
+                <div className="row wrap example ">
+<div className="col-lg-4 col-md-4 col-sm-4 col-4 title-lang">
+    <span className="title-lang">ES</span>
+</div>
+        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT}</span> </div>
+        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT}</span> </div>
 
-                        <div className="col-4"></div>
-                        <div className="col-4"></div> */}
-                    </div>
-                    <div className="row text-center flex-nowrap example">
-                        <div className="col-4 title-lang align-self-center">ES</div>
-                        <div className="col-4 text-content align-self-center">{SAMPLE_TEXT}</div>
-                        <div className="col-4 text-content align-self-center">{SAMPLE_TEXT}</div>
-                        <div className="col-4 align-self-center">{SAMPLE_TEXT}</div>
-                        <div className="col-4 align-self-center">{SAMPLE_TEXT}</div>
-                        <div className="col-4 align-self-center"></div>
-                        <div className="col-4 align-self-center"></div>
-                        <div className="col-4 align-self-center"></div>
-                        <div className="col-4 align-self-center"></div>
-                    </div>
+</div>
                 </div>
                 </BasePage>
             </BaseLayout>
