@@ -11,36 +11,17 @@ const SAMPLE_TEXT_ES = `Nosotros y nuestros socios usamos tecnologías, como coo
 const SAMPLE_TEXT_DE = `Wir und unsere Partner verwenden Technologien wie Cookies und verarbeiten personenbezogene Daten wie IP-Adressen und Cookie-IDs, um Anzeigen und Inhalte auf Grundlage Ihrer Interessen zu personalisieren, die Leistung von Anzeigen und Inhalten zu messen und Erkenntnisse über das Publikum zu gewinnen, das sie gesehen hat Anzeigen und Inhalte. Klicken Sie unten, um der Verwendung dieser Technologie und der Verarbeitung Ihrer persönlichen Daten für diese Zwecke zuzustimmen. Sie können Ihre Meinung und Ihre Einwilligungsentscheidungen jederzeit ändern, indem Sie auf diese Website zurückkehren.`
 const EN_TEXT = "EN";
 import Tooltip from '../components/tooltip/tooltip';
-class Simulacro extends React.Component {
+class DlLanding extends React.Component {
     render() {
         return (
             <BaseLayout {...this.props.auth} >
-                <BasePage className="simulacro-page">
+                                {/* <div className="background-image">
+                <img src="/static/images/background.png" />
+                </div> */}
+                <BasePage className="dlLanding-page">
                 <div className="container-fluid">
                     <div className="row wrap example">
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang">
-                            <span className="title-lang">ES</span>
-                            </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_ES}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_ES}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content"><Tooltip word="hover me !" pop="hello" /></span> </div>
-
-                    </div>
-                    <div className="row wrap example">
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang"><span className="title-lang">EN</span></div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-                            <span className="text-content">
-                                <div className="variable">
-                                    <span className="work">DEEP</span>LISTENING
-                                </div>
-                            </span>
-                        </div>
-                    </div>
-                    <div className="row wrap example">
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang"><span className="title-lang">DE</span></div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
+                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang"><span className="title-lang animationClass">DEEP LISTENING</span></div>
                     </div>
                 </div>
                 </BasePage>
@@ -49,4 +30,4 @@ class Simulacro extends React.Component {
     }
 }
 
-export default Simulacro;
+export default DlLanding;

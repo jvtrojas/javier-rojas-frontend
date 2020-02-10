@@ -6,10 +6,17 @@
 //COMPONENTS
 @import './header';
 
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('https://ggayane.github.io/css-experiments/Inconsolata-VF.ttf');
+  font-weight: 275 900;
+  font-stretch: 50% 200%;
+}
 html, body {
     height:100%;
     width:100%;
     font-family: 'Grotesk', 'Helvetica';
+    scroll-behavior: smooth;
   }
 
   .self-typed {
@@ -49,6 +56,67 @@ html, body {
 
   .simulacro-page {
 
+    .logo {
+      width: 100px;
+      line-height: 50px;
+      border: 5px solid white;
+      span {
+        font-weight: bold;
+        animation: scrollMarquee 3.5s 0.25s linear infinite;
+      }
+    }
+    .variable {
+      background-color:  #3300ff;;
+      color: white;
+      font-size: 3em;
+      font-family: 'Inconsolata';
+      display: flex;
+      font-variation-settings: "wght"275, "wdth"50;
+      text-align: center;
+      animation: swapthings 3s infinite both cubic-bezier(0.17, 0.04, 0.04, 0.99);
+    }
+
+    .work {
+      animation: swapthings2 3s infinite both cubic-bezier(0.17, 0.04, 0.04, 0.99);
+    }
+
+
+    @keyframes swapthings {
+      0% {
+        font-variation-settings: "wght"275, "wdth"50;
+      }
+
+      50% {
+        font-variation-settings: "wght"900, "wdth"200;
+      }
+
+      100% {
+        font-variation-settings: "wght"275, "wdth"50;
+      }
+    }
+
+    @keyframes swapthings2 {
+      0% {
+        font-variation-settings: "wght"900, "wdth"200;
+      }
+
+      50% {
+        font-variation-settings: "wght"275, "wdth"50;
+      }
+
+      100% {
+        font-variation-settings: "wght"900, "wdth"200;
+      }
+    }
+
+    @keyframes scrollMarquee {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-180%);
+      }
+    }
         /* Hide scrollbar for Chrome, Safari and Opera */
     .example::-webkit-scrollbar {
       display: none;
@@ -97,4 +165,48 @@ html, body {
         font-size: 25vw;
       }
     }
+  }
+
+
+  .dlLanding-page {
+            /* Hide scrollbar for Chrome, Safari and Opera */
+            .example::-webkit-scrollbar {
+              display: none;
+            }
+            /* Hide scrollbar for IE and Edge */
+            .example {
+              -ms-overflow-style: none;
+            }
+            .row{
+              overflow-x: auto;
+              white-space: nowrap;
+              height: fit-content;
+              line-height: normal;
+              padding-top: 35px;
+            }
+            .title-lang {
+              color: #3300ff;
+              text-shadow: 5px 5px 0px #000000;
+               font-size: 40vw;
+               //white-space: normal;
+               //transition: color 12s, font-size 12s;
+            }
+
+            // .title-lang:hover {
+            //   color: #d46029;
+            //   text-shadow: 5px 5px 0px #000000;
+            //    font-size: 40vw;
+            //    //white-space: normal;
+            // }
+
+            // @keyframes flicker {
+            //   0% {
+            //     opacity: 0;
+            //   } 100% {
+            //     opacity: 1;
+            //   }
+            // }
+            // #animationClass {
+            //   animation: flicker 2s ease alternate infinite;
+            // }
   }
