@@ -13,11 +13,46 @@
   font-stretch: 50% 200%;
 }
 html, body {
-    height:100%;
-    width:100%;
-    font-family: 'Grotesk', 'Helvetica';
+	width:100vw;
+	min-width:1280px hidden ;
+	min-height:720px hidden;
+	// height: ;
+	 font-family: 'Grotesk' ;
+  letter-spacing: 0;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	overflow: scroll;
+	position:static;
+}
+
+.simulacro2-page {
+  #z-index {
+    z-index: -1;
+  }
+
+  #1er {
+    position: static;
+  }
+
+  .entirerow {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
   }
+
+  .column {
+ //   flex: ;
+    flex-shrink: 0;
+    padding: 0.5vw;
+  }
+
+  img {
+    height: 35vw;
+  }
+}
 
   .self-typed {
     font-size: 31px;
@@ -55,7 +90,9 @@ html, body {
   }
 
   .simulacro-page {
-
+    img {
+      height: 35vw;
+    }
     .logo {
       width: 100px;
       line-height: 50px;
@@ -152,17 +189,27 @@ html, body {
     .wrap {
       flex-wrap: nowrap;
     }
+    @media (max-width: 768px){
+      .text-content {
+        font-size: 2.9vw;
+      }
+      .title-lang {
+        font-size: 25vw;
+      }
+
+      img {
+        height: 50vw;
+      }
+    }
     @media (max-width: 425px) {
       .wrap {
         flex-wrap: wrap;
       }
-    }
-    @media (max-width: 768px) {
       .text-content {
         font-size: 3.9vw;
       }
-      .title-lang {
-        font-size: 25vw;
+      img {
+        height: 70vw;
       }
     }
   }
@@ -190,6 +237,19 @@ html, body {
                font-size: 40vw;
                //white-space: normal;
                //transition: color 12s, font-size 12s;
+               //overflow: hidden;
+               //animation: floatText 5s infinite alternate ease-in-out;
+            }
+
+          //   p{
+          //     position: absolute;
+          //     white-space: nowrap;
+          //     animation: floatText 5s infinite alternate ease-in-out;
+          // }
+
+            .background {
+              background: url('/static/images/background-img.png');
+              background-repeat: no-repeat
             }
 
             // .title-lang:hover {

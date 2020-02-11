@@ -19,9 +19,13 @@ class DlLanding extends React.Component {
                 <img src="/static/images/background.png" />
                 </div> */}
                 <BasePage className="dlLanding-page">
-                <div className="container-fluid">
+                <div className="container-fluid background">
                     <div className="row wrap example">
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang"><span className="title-lang animationClass">DEEP LISTENING</span></div>
+                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 maxwidth">
+                            <span className="title-lang">
+                                <p>AURAL SPECIFIC</p>
+                            </span>
+                            </div>
                     </div>
                 </div>
                 </BasePage>
