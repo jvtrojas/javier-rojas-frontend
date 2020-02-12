@@ -1,6 +1,7 @@
 import React from 'react';
 import BaseLayout from '../components/layouts/BaseLayout';
 import BasePage from '../components/BasePage';
+import Link from 'next/link';
 import withAuth from '../components/hoc/withAuth';
 const SAMPLE_TEXT = `We and our partners use technologies, such as cookies, and process personal data, such as IP addresses and cookie identifiers,
 to personalise ads and content based on your interests, measure the performance of ads and content,
@@ -13,69 +14,42 @@ const EN_TEXT = "EN";
 import Tooltip from '../components/tooltip/tooltip';
 class Simulacro extends React.Component {
     render() {
+        const BsNavLink = (props) => {
+            const { route, word1, word2 } = props;
+            return (
+                <Link href={route}>
+                    <a className="nav-link port-navbar-link"><span className="work">{word1}</span>{word2}</a>
+                </Link>
+            )
+        }
+
         return (
             <BaseLayout {...this.props.auth} >
+                                {/* <div className="background-image">
+                <img src="/static/images/background.png" />
+                </div> */}
                 <BasePage className="simulacro-page">
-                <div className="container-fluid">
-                    <div className="row wrap example">
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang">
-                            <span className="title-lang">ES</span>
+                <div className="container-fluid background">
+                <div className="row wrap example">
+                        <div className="col-lg-12 col-md-4 col-sm-4 col-3">
+                        <span className="text-content">
+                            <div className="variable">
+                                <BsNavLink route="/auralspecifics" word1="AURAL" word2="SPECIFIC">
+                                </BsNavLink>
+                                <BsNavLink route="/brickgotic" word1="BRICK" word2="GOTIC">
+                                </BsNavLink>
+                                <BsNavLink route="/simulacro" word1="BRUTALIZER">
+                                </BsNavLink>
                             </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_ES}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_ES}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content"><Tooltip word="hover me !" pop="hello" /></span> </div>
-
-                    </div>
-                    <div className="row wrap example">
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang"><span className="title-lang">EN</span></div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-                            <span className="text-content">
-                                <div className="variable">
-                                    <span className="work">AURAL</span>SPECIFIC
-                                </div>
                             </span>
-                        </div>
+                            </div>
                     </div>
                     <div className="row wrap example">
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang"><span className="title-lang">DE</span></div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-                            <img src="https://www.dropbox.com/s/pnga0b3ng3c92m3/Photo%2002.12.17%2C%2011%2052%2011.jpg?raw=1" alt="project 1 image"/>
-                        </div>
-                    </div>
-                    <div className="row wrap example">
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang"><span className="title-lang">DE</span></div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-                            <img src="https://www.dropbox.com/s/pnga0b3ng3c92m3/Photo%2002.12.17%2C%2011%2052%2011.jpg?raw=1" alt="project 1 image"/>
-                        </div>
-                    </div>
-                    <div className="row wrap example">
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang"><span className="title-lang">DE</span></div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-                            <img src="https://www.dropbox.com/s/pnga0b3ng3c92m3/Photo%2002.12.17%2C%2011%2052%2011.jpg?raw=1" alt="project 1 image"/>
-                        </div>
-                    </div>
-                    <div className="row wrap example">
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang"><span className="title-lang">DE</span></div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-                            <img src="https://www.dropbox.com/s/pnga0b3ng3c92m3/Photo%2002.12.17%2C%2011%2052%2011.jpg?raw=1" alt="project 1 image"/>
-                        </div>
-                    </div>
-                    <div className="row wrap example">
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang"><span className="title-lang">DE</span></div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-                            <img src="https://www.dropbox.com/s/pnga0b3ng3c92m3/Photo%2002.12.17%2C%2011%2052%2011.jpg?raw=1" alt="project 1 image"/>
-                        </div>
+                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 maxwidth">
+                            <span className="title-lang">
+                                <p>SIMULACRO</p>
+                            </span>
+                            </div>
                     </div>
                 </div>
                 </BasePage>
@@ -83,4 +57,5 @@ class Simulacro extends React.Component {
         )
     }
 }
+
 export default Simulacro;

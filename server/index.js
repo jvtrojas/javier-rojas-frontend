@@ -71,7 +71,7 @@ app.prepare()
         }
     });
 
-    server.use(handle).listen(3000, (err) => {
+    server.use(handle).listen(3000, '0.0.0.0', (err) => {
         if (err) throw err;
         console.log('> Ready on http://localhost:3000');
     });

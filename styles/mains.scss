@@ -89,7 +89,27 @@ html, body {
     cursor: pointer;
   }
 
-  .simulacro-page {
+  .auralspecifics-page {
+
+    .index {
+      z-index: -10;
+      position: absolute;
+    }
+
+    .iframe-container{
+      position: relative;
+      width: 100%;
+      padding-bottom: 60%;
+      height: 0;
+    }
+    .iframe-container iframe{
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
     img {
       height: 35vw;
     }
@@ -103,7 +123,7 @@ html, body {
       }
     }
     .variable {
-      background-color:  #3300ff;;
+      background-color:  #0010ff;;
       color: white;
       font-size: 3em;
       font-family: 'Inconsolata';
@@ -172,7 +192,7 @@ html, body {
       padding-top: 35px;
     }
     .title-lang {
-      color: #3300ff;
+      color: #0010ff;
       text-shadow: 5px 5px 0px #000000;
        font-size: 20vw;
        white-space: normal;
@@ -215,7 +235,26 @@ html, body {
   }
 
 
-  .dlLanding-page {
+  .simulacro-page {
+
+    a {
+      color: white;
+    }
+
+    .variable {
+      background-color:  #0010ff;;
+      color: white;
+      font-size: 3em;
+      font-family: 'Inconsolata';
+      display: flex;
+      font-variation-settings: "wght"275, "wdth"50;
+      text-align: center;
+      animation: swapthings 3s infinite both cubic-bezier(0.17, 0.04, 0.04, 0.99);
+    }
+
+    .work {
+      animation: swapthings2 3s infinite both cubic-bezier(0.17, 0.04, 0.04, 0.99);
+    }
             /* Hide scrollbar for Chrome, Safari and Opera */
             .example::-webkit-scrollbar {
               display: none;
@@ -229,10 +268,10 @@ html, body {
               white-space: nowrap;
               height: fit-content;
               line-height: normal;
-              padding-top: 35px;
+             // padding-top: 35px;
             }
             .title-lang {
-              color: #3300ff;
+              color: #0010ff;
               text-shadow: 5px 5px 0px #000000;
                font-size: 40vw;
                //white-space: normal;
@@ -269,4 +308,24 @@ html, body {
             // #animationClass {
             //   animation: flicker 2s ease alternate infinite;
             // }
+  }
+
+  .brickgotic-page {
+
+                /* Hide scrollbar for Chrome, Safari and Opera */
+                .example::-webkit-scrollbar {
+                  display: none;
+                }
+                /* Hide scrollbar for IE and Edge */
+                .example {
+                  -ms-overflow-style: none;
+                }
+                .row{
+                  overflow-x: auto;
+                  white-space: nowrap;
+                  height: fit-content;
+                  line-height: normal;
+                  padding-top: 35px;
+                  flex-wrap: nowrap;
+                }
   }
