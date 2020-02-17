@@ -6,7 +6,7 @@ exports.checkJWT =  jwt({
     secret: jwksRsa.expressJwtSecret ({
         cache: true,
         rateLimit: true,
-        jwksRequestPerMinute: 50,
+        jwksRequestPerMinute: 50 ,
         jwksUri: 'https://dev-ai8qekif.auth0.com/.well-known/jwks.json'
       }),
     audience: 'hb9rp3aKKq696n28kDAZn9J4eoLcbZYB',
