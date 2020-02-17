@@ -15,12 +15,10 @@ class Portfolio extends React.Component {
         } catch(err) {
             console.log(err);
         }
-        debugger
         return {portfolio};
     }
 
     render() {
-        debugger
         const {portfolio} = this.props;
         return (
             <BaseLayout {...this.props.auth}>

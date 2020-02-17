@@ -21,15 +21,6 @@ class BrickGotic extends React.Component {
 		            <p> When using prayer equipment, you will be typically fighting against monsters using one combat style, so prayer boosting gear like proselyte or Initiate is recommended to give yourself a higher prayer bonus, reducing the amount of prayer you drain per second.</p>
                     <div className="container-fluid">
                     <div className="row wrap example">
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-                        <iframe width="100%" height="400" src="https://www.mixcloud.com/widget/iframe/?feed=%2FBRICK_GOTIC%2Fdeep-listening-81-sandroestudio-villa-crespo-caba%2F" frameBorder="0" ></iframe>
-                        </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-                        <iframe width="100%" height="400" src="https://www.mixcloud.com/widget/iframe/?feed=%2FBRICK_GOTIC%2Fdeep-listening-82-unquillo-c%C3%B3rdoba%2F" frameBorder="0" ></iframe>
-                            </div>
-                            <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-                            <iframe width="100%" height="400" src="https://www.mixcloud.com/widget/iframe/?feed=%2FBRICK_GOTIC%2Fdeep-listening-8-1-lasalablanca-4hs-full-set%2F" frameBorder="0" ></iframe>
-                            </div>
                             <div className="col-lg-6 col-md-8 col-sm-12 col-12">
                             <iframe width="100%" height="400" src="https://www.mixcloud.com/widget/iframe/?feed=%2FBRICK_GOTIC%2Fteatro-de-lo-imaginario%2F" frameBorder="0" ></iframe>
                             </div>

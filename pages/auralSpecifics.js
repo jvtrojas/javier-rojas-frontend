@@ -13,15 +13,41 @@ const EN_TEXT = "EN";
 import Tooltip from '../components/tooltip/tooltip';
 class AuralSpecifics extends React.Component {
     render() {
+        // Random tree
+    // const N = 300;
+    // const gData = {
+    //   nodes: [...Array(N).keys()].map(i => ({ id: i })),
+    //   links: [...Array(N).keys()]
+    //     .filter(id => id)
+    //     .map(id => ({
+    //       source: id,
+    //       target: Math.round(Math.random() * (id-1))
+    //     }))
+    // };
+
+    // const Graph = ForceGraph3D()
+    //   (document.getElementById('3d-graph'))
+    //     .graphData(gData);
+
         return (
             <BaseLayout {...this.props.auth} >
                 <BasePage className="auralspecifics-page">
                 <div className="container-fluid">
+                <div className="row wrap example">
+                        <div className="col-lg-6 col-md-4 col-sm-4 col-3 maxwidth">
+                            <span className="title-lang subtitle">
+                                <p>AURAL SPECIFICS</p>
+                            </span>
+                            </div>
+                             {/* <div className="col-lg-6 col-md-4 col-sm-4 col-3 index">
+                        <img className="gif" src="static/images/fondogifff.gif" alt="project 1 image"/>
+                            </div> */}
+                    </div>
                     <div className="row wrap example">
                         <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang">
                             <span className="title-lang">ES</span>
                             </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_ES}</span> </div>
+                        <div className="col-lg-6 col-md-8 col-sm-12 col-12 "> <span className="text-content">{SAMPLE_TEXT_ES}</span> </div>
                         <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_ES}</span> </div>
                         <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content"><Tooltip word="hover me !" pop="hello" /></span> </div>
                         <div className="col-lg-6 col-md-8 col-sm-12 col-12">
@@ -33,14 +59,14 @@ class AuralSpecifics extends React.Component {
                     <div className="row wrap example">
                         <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang"><span className="title-lang">EN</span></div>
                         <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
+                        {/* <div className="col-lg-6 col-md-8 col-sm-12 col-12">
                             <span className="text-content">
                                 <div className="variable">
                                     <span className="work">AURAL</span>SPECIFIC
                                 </div>
                             </span>
-                        </div>
-                            <div className="col-lg-6 col-md-8 col-sm-12 col-12">
+                        </div> */}
+                            <div className="col-lg-6 col-md-8 col-sm-12 col-12 ">
                                 <div className="iframe-container">
                                     <iframe width="100%" height="400" src="https://www.mixcloud.com/widget/iframe/?feed=%2FBRICK_GOTIC%2Fdeep-listening-82-unquillo-c%C3%B3rdoba%2F" frameBorder="0" ></iframe>
                                 </div>
@@ -48,7 +74,7 @@ class AuralSpecifics extends React.Component {
                     </div>
                     <div className="row wrap example">
                     <div className="col-lg-4 col-md-4 col-sm-4 col-3 index">
-                        <img src="static/images/fondogifff.gif" alt="project 1 image"/>
+                        <img className="gif" src="static/images/fondogifff.gif" alt="project 1 image"/>
                             </div>
                         <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang">
                         <img src="static/images/VISTASCOLOR-01-2.png" alt="project 1 image"/>
@@ -72,7 +98,7 @@ class AuralSpecifics extends React.Component {
                             <iframe width="100%" height="400" src="https://www.mixcloud.com/widget/iframe/?feed=%2FBRICK_GOTIC%2Ffantasia-final-ii%2F" frameBorder="0" ></iframe>
                             </div>
                             <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-                            <iframe width="100%" height="400" src="https://www.mixcloud.com/widget/iframe/?feed=%2FBRICK_GOTIC%2Fnot-only-a-still-body%2F" frameborder="0" ></iframe>
+                            <iframe width="100%" height="400" src="https://www.mixcloud.com/widget/iframe/?feed=%2FBRICK_GOTIC%2Fnot-only-a-still-body%2F" frameBorder="0" ></iframe>
                             </div>
                     </div>
                     <div className="row wrap example">
