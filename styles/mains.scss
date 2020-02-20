@@ -91,7 +91,73 @@ html, body {
 
   .auralspecifics-page {
 
-    .nopadding { /* Elements whose class attribute contains the substring "col-" */
+    .front-text {
+      position: absolute;
+      font-size: 20vw;
+      color: blue;
+      line-height: inherit;
+      //white-space: nowrap;
+      animation: floatText 10s infinite alternate ease-in-out;
+    }
+    .back-text {
+      //font-family: 'Zapfino';
+      position: relative;
+      color: white;
+      font-size: 20vw;
+      font-weight: 900;
+      z-index: -1;
+      //white-space: nowrap;
+      animation: floatText 10s infinite alternate ease-in-out;
+      animation-delay: -200ms;
+    }
+
+    .svg-background {
+      animation: dash 10s infinite linear;
+    }
+    $randomNumber: random(5);
+    .position-person {
+      position: absolute;
+      animation: moving 10s infinite alternate ease-in-out;
+
+    }
+
+    @keyframes moving {
+      0% { x:0 ,y=0; }
+      50% { x:$randomNumber ,y=20; }
+      51% { x:$randomNumber ,y=25; }
+      100% { x:$randomNumber ,y=50; }
+    }
+
+    @keyframes blackWhite {
+      0% { color: white; }
+      50% { color: white; }
+      51% { color: black; }
+      100% { color: black; }
+    }
+
+    @keyframes blackWhiteLines {
+      0% { stroke: white; }
+      50% { stroke: white; }
+      51% { stroke: black; }
+      100% { stroke: black; }
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 1000;
+      }
+    }
+
+    @keyframes floatText{
+      0%, 100% {
+        left: -150vw;
+      }
+      50% {
+        left: 50vw;
+      }
+    }
+
+    .nopadding {
      padding-left: 0;
      padding-right: 0;
     }
@@ -203,6 +269,16 @@ html, body {
       padding-right: 0;
       text-align: justify;
     }
+
+    .no-padding-top {
+      padding-top: 0;
+    }
+
+
+
+    .title-head {
+      line-height: 250px;
+    }
     .title-lang {
       color: #0010ff;
       text-shadow: 5px 5px 0px #000000;
@@ -213,6 +289,10 @@ html, body {
     .subtitle {
       font-size: 30vw;
       letter-spacing: 2vw;
+    }
+
+    .no-horizontal-scroll {
+      overflow-x: hidden;
     }
 
     .text-content {
