@@ -656,6 +656,30 @@ class AuralSpecifics extends React.Component {
                             <img src="https://www.dropbox.com/s/pnga0b3ng3c92m3/Photo%2002.12.17%2C%2011%2052%2011.jpg?raw=1" alt="project 1 image"/>
                         </div>
                     </div>
+					<div className="row wrap example">
+                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang"><span className="title-lang">DE</span></div>
+                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
+                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
+                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
+                            <img src="https://www.dropbox.com/s/pnga0b3ng3c92m3/Photo%2002.12.17%2C%2011%2052%2011.jpg?raw=1" alt="project 1 image"/>
+                        </div>
+                    </div>
+					<div className="row wrap example">
+                    <div className="col-lg-4 col-md-4 col-sm-4 col-3 index">
+                        <img className="gif" src="static/images/fondogifff.gif" alt="project 1 image"/>
+                            </div>
+                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang">
+                        <img src="static/images/VISTASCOLOR-01-2.png" alt="project 1 image"/>
+                            </div>
+                    </div>
+					<div className="row wrap example">
+                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang"><span className="title-lang">DE</span></div>
+                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
+                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
+                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
+                            <img src="https://www.dropbox.com/s/pnga0b3ng3c92m3/Photo%2002.12.17%2C%2011%2052%2011.jpg?raw=1" alt="project 1 image"/>
+                        </div>
+                    </div>
                 </div>
                 </BasePage>
             </BaseLayout>
