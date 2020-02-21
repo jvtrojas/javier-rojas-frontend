@@ -55,11 +55,7 @@ class AuralSpecifics extends React.Component {
                         <div className="col-lg-6 col-md-8 col-sm-12 col-12 col-style"> <span className="text-content">{SAMPLE_TEXT_ES}</span> </div>
                         <div className="col-lg-6 col-md-8 col-sm-12 col-12 col-style"> <span className="text-content">{SAMPLE_TEXT_ES}</span> </div>
                         <div className="col-lg-6 col-md-8 col-sm-12 col-12 col-style"> <span className="text-content"><Tooltip word="hover me !" pop="hello" /></span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-                            <div className="iframe-container">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/m5dpOmklgXs" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                            </div>
-                        </div>
+                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"></div>
                     </div>
                     <div className="row wrap example">
 					<div className="col-lg-6 col-md-8 col-sm-12 col-12">
@@ -84,6 +80,7 @@ class AuralSpecifics extends React.Component {
                         <img src="static/images/VISTASCOLOR-01-2.png" alt="project 1 image"/>
                             </div> */}
                     </div>
+                    {/* GRAN VIDRIO */}
                     <div className="row wrap example">
                         <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang">
 						<EventTicket/>
@@ -97,20 +94,25 @@ class AuralSpecifics extends React.Component {
 						<div className="col-lg-6 col-md-8 col-sm-12 col-12 flex-col">
 						<img src="static/images/gran-vidrio/pic3.jpg" alt="project 1 image"/>
                         </div>
-						<div className="col-lg-6 col-md-8 col-sm-12 col-12 flex-col">
+						<div className="col-lg-6 col-md-8 col-sm-12 col-12">
 						<iframe width="100%" height="400" src="https://www.mixcloud.com/widget/iframe/?feed=%2Fjavitorojas%2Fdnt-desfile-screenshoot-19072019-el-gran-vidrio-c%C3%B3rdoba-argentina%2F" frameborder="0" ></iframe>
                             </div>
                     </div>
+                    {/* CASA BLANCA */}
                     <div className="row wrap example">
                         <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang">
 						<EventTicket/>
 						</div>
                         <div className="col-lg-6 col-md-8 col-sm-12 col-12">
+                        <div className="iframe-container">
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/m5dpOmklgXs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         </div>
                         <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-                        <iframe width="100%" height="400" src="https://www.mixcloud.com/widget/iframe/?feed=%2FBRICK_GOTIC%2Fdeep-listening-82-unquillo-c%C3%B3rdoba%2F" frameBorder="0" ></iframe>
-                            </div>
+                            <iframe width="100%" height="400" src="https://www.mixcloud.com/widget/iframe/?feed=%2FBRICK_GOTIC%2Fdeep-listening-8-1-lasalablanca-4hs-full-set%2F" frameborder="0" ></iframe>
+                        </div>
                     </div>
+                    {/* UNQUILLO */}
                     <div className="row wrap example">
                         <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang">
 						<EventTicket/>
@@ -130,10 +132,16 @@ class AuralSpecifics extends React.Component {
                         <div className="col-lg-8 col-md-8 col-sm-12 col-12  flex-col">
 						<img src="static/images/unquillo/pic5.jpg" alt="project 1 image"/>
                         </div>
-						<div className="col-lg-6 col-md-8 col-sm-12 col-12  flex-col">
-						<iframe width="100%" height="400" src="https://www.mixcloud.com/widget/iframe/?feed=%2Fjavitorojas%2Fdnt-desfile-screenshoot-19072019-el-gran-vidrio-c%C3%B3rdoba-argentina%2F" frameborder="0" ></iframe>
+                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
+                            <div className="iframe-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/2L4d7ZG6ze8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
+                        </div>
+                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
+                        <iframe width="100%" height="400" src="https://www.mixcloud.com/widget/iframe/?feed=%2FBRICK_GOTIC%2Fdeep-listening-82-unquillo-c%C3%B3rdoba%2F" frameborder="0" ></iframe>
+                        </div>
                     </div>
+                    {/* BSAS */}
                     <div className="row wrap example">
                         <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang">
 						<EventTicket/>
@@ -150,86 +158,13 @@ class AuralSpecifics extends React.Component {
 						<div className="col-lg-6 col-md-8 col-sm-12 col-12 flex-col">
 						<img src="static/images/bsas/pic4.jpg" alt="project 1 image"/>
                         </div>
-						<div className="col-lg-6 col-md-8 col-sm-12 col-12 flex-col">
-						<iframe width="100%" height="400" src="https://www.mixcloud.com/widget/iframe/?feed=%2Fjavitorojas%2Fdnt-desfile-screenshoot-19072019-el-gran-vidrio-c%C3%B3rdoba-argentina%2F" frameborder="0" ></iframe>
+						<div className="col-lg-6 col-md-8 col-sm-12 col-12">
+                            <div className="iframe-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Akc4sWYB75A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
-                    </div>
-					<div className="row wrap example">
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang">
-						<EventTicket/>
-						</div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
                         </div>
                         <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-                        <iframe width="100%" height="400" src="https://www.mixcloud.com/widget/iframe/?feed=%2FBRICK_GOTIC%2Fdeep-listening-82-unquillo-c%C3%B3rdoba%2F" frameBorder="0" ></iframe>
-                            </div>
-                    </div>
-					<div className="row wrap example">
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang">
-						<EventTicket/>
-						</div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-                        </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-                        <iframe width="100%" height="400" src="https://www.mixcloud.com/widget/iframe/?feed=%2FBRICK_GOTIC%2Fdeep-listening-82-unquillo-c%C3%B3rdoba%2F" frameBorder="0" ></iframe>
-                            </div>
-                    </div>
-					<div className="row wrap example">
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang">
-						<EventTicket/>
-						</div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-                        </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-                        <iframe width="100%" height="400" src="https://www.mixcloud.com/widget/iframe/?feed=%2FBRICK_GOTIC%2Fdeep-listening-82-unquillo-c%C3%B3rdoba%2F" frameBorder="0" ></iframe>
-                            </div>
-                    </div>
-                    {/* <div className="row wrap example">
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang"><span className="title-lang">DE</span></div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-                            <img src="https://www.dropbox.com/s/pnga0b3ng3c92m3/Photo%2002.12.17%2C%2011%2052%2011.jpg?raw=1" alt="project 1 image"/>
-                        </div>
-                    </div> */}
-                    {/* <div className="row wrap example">
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang"><span className="title-lang">DE</span></div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-                            <img src="https://www.dropbox.com/s/pnga0b3ng3c92m3/Photo%2002.12.17%2C%2011%2052%2011.jpg?raw=1" alt="project 1 image"/>
-                        </div>
-                    </div> */}
-                    {/* <div className="row wrap example">
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang"><span className="title-lang">DE</span></div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-                            <img src="https://www.dropbox.com/s/pnga0b3ng3c92m3/Photo%2002.12.17%2C%2011%2052%2011.jpg?raw=1" alt="project 1 image"/>
-                        </div>
-                    </div> */}
-					{/* <div className="row wrap example">
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang"><span className="title-lang">DE</span></div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-                            <img src="https://www.dropbox.com/s/pnga0b3ng3c92m3/Photo%2002.12.17%2C%2011%2052%2011.jpg?raw=1" alt="project 1 image"/>
-                        </div>
-                    </div> */}
-					<div className="row wrap example">
-                    {/* <div className="col-lg-4 col-md-4 col-sm-4 col-3 index">
-                        <img className="gif" src="static/images/fondogifff.gif" alt="project 1 image"/>
-                            </div> */}
-                        {/* <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang">
-                        <img src="static/images/VISTASCOLOR-01-2.png" alt="project 1 image"/>
-                            </div> */}
-                    </div>
-					<div className="row wrap example">
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-3 title-lang"><span className="title-lang">DE</span></div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12"> <span className="text-content">{SAMPLE_TEXT_DE}</span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-                            <img src="https://www.dropbox.com/s/pnga0b3ng3c92m3/Photo%2002.12.17%2C%2011%2052%2011.jpg?raw=1" alt="project 1 image"/>
+                            <iframe width="100%" height="400" src="https://www.mixcloud.com/widget/iframe/?feed=%2FBRICK_GOTIC%2Fdeep-listening-81-sandroestudio-villa-crespo-caba%2F" frameborder="0" ></iframe>
                         </div>
                     </div>
                 </div>
