@@ -94,7 +94,7 @@ html, body {
     .front-text {
       position: absolute;
       font-size: 20vw;
-      color: blue;
+      color: black;
       line-height: inherit;
       //white-space: nowrap;
       animation: floatText 10s infinite alternate ease-in-out;
@@ -111,14 +111,41 @@ html, body {
       animation-delay: -200ms;
     }
 
-    .svg-background {
-      animation: dash 10s infinite linear;
+    .svg-background-lines {
+      //animation: dash 20s infinite linear;
+    }
+    .svg-background-grid {
+      position: fixed;
+      overflow: hidden;
+      transform: scale(3,3);
     }
     $randomNumber: random(5);
+
     .position-person {
       position: absolute;
       animation: moving 10s infinite alternate ease-in-out;
 
+    }
+
+    .subtitle-responsive {
+      width: inherit;
+    }
+
+    .flex-col {
+      flex: auto;
+    }
+
+    .col-style {
+      background-color: white;
+      box-shadow: 10px 13px 28px -9px rgba(199,199,199,1);
+        margin-right: 40px;
+        margin-bottom: 30px;
+    }
+
+    .shadow {
+      margin-right: 40px;
+      margin-bottom: 30px;
+      box-shadow: 10px 13px 28px -9px rgba(199,199,199,1);
     }
 
     @keyframes moving {
@@ -280,8 +307,7 @@ html, body {
       line-height: 250px;
     }
     .title-lang {
-      color: #0010ff;
-      text-shadow: 5px 5px 0px #000000;
+      color: black;
        font-size: 20vw;
        white-space: normal;
     }

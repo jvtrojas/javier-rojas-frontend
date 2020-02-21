@@ -1,4 +1,5 @@
 const express = require('express');
+const compression = require('compression');
 const next = require('next');
 const mongoose = require('mongoose');
 const routes = require('../routes');
@@ -30,7 +31,7 @@ mongoose.connect(config.DB_URI, { useUnifiedTopology: true, useNewUrlParser: tru
 app.prepare()
 .then(() => {
     const server = express();
-
+    server.use(compression());
     server.use(bodyParser.json());
 
     server.post('/api/v1/books', (req, res) => {
