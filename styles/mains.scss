@@ -350,6 +350,30 @@ html, body {
     .wrap {
       flex-wrap: nowrap;
     }
+
+    .ticket-box {
+      background-color: white;
+    }
+    .ticket-info {
+      margin-bottom: 0;
+    }
+
+    .info-title  {
+      h1 {font-size: 20vw;}
+      text-align: center;
+    }
+    .basic-rider-pic {
+      height: fit-content;
+      align-self: center;
+    }
+
+    p {
+      padding-top: 15px;
+    }
+    .lang-title {
+      h1 {font-size: 30vw;}
+      text-align: center;
+    }
     @media (max-width: 768px){
       .text-content {
         font-size: 2.9vw;
@@ -370,8 +394,22 @@ html, body {
         padding-top: 46px;
         padding-bottom: 0;
       }
+      .lang-title {
+        h1 {font-size: 40vw;}
+        text-align: center;
+      }
     }
     @media (max-width: 425px) {
+      .title-head {
+        line-height: 105px;
+      }
+      .lang-font {
+        font-size: 200px;
+      }
+      .back-text {
+        font-size: 30vw;
+      }
+
       .wrap {
         flex-wrap: wrap;
       }
@@ -384,23 +422,15 @@ html, body {
       .row {
         overflow-x: hidden;
       }
-    }
 
-    .ticket-box {
-      background-color: white;
-    }
-    .ticket-info {
-      margin-bottom: 0;
-    }
-
-    .basic-rider {
-      h1 {font-size: 20vw;}
+          .info-title {
+      h1 {font-size: 33vw;}
     }
     .basic-rider-pic {
-      height: fit-content;
-      align-self: center;
+     overflow-x: scroll;
     }
-
+    
+    }
   }
 
 

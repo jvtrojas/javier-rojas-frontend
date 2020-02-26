@@ -47,9 +47,14 @@ class AuralSpecifics extends React.Component {
                             </div> */}
                     </div>
                     <div className="row wrap example no-padding-top">
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-							<LanguageComponent text="EN"/>
+                    <div className="col-lg-7 col-md-8 col-sm-4 col-12">
+                            <div className="lang-title">
+                                <h1>EN</h1>
+                            </div>
                         </div>
+                        {/* <div className="col-lg-6 col-md-8 col-sm-12 col-12">
+							<LanguageComponent text="EN"/>
+                        </div> */}
                         <div className="col-lg-6 col-md-8 col-sm-12 col-12 col-style">
                             <span className="text-content">
                                 <p>
@@ -83,8 +88,10 @@ class AuralSpecifics extends React.Component {
                         {/* <div className="col-lg-6 col-md-8 col-sm-12 col-12 col-style"> <span className="text-content"><Tooltip word="hover me !" pop="hello" /></span> </div> */}
                     </div>
                     <div className="row wrap example">
-					    <div className="col-lg-6 col-md-8 col-sm-12 col-12">
-							<LanguageComponent text="ES"/>
+                    <div className="col-lg-7 col-md-8 col-sm-4 col-12">
+                            <div className="lang-title">
+                                <h1>ES</h1>
+                            </div>
                         </div>
                         <div className="col-lg-6 col-md-8 col-sm-12 col-12 col-style"> <span className="text-content">
                             <p>
@@ -209,8 +216,8 @@ class AuralSpecifics extends React.Component {
                         </div>
                     </div>
                     <div className="row wrap example">
-                        <div className="col-lg-8 col-md-4 col-sm-4 col-12">
-                            <div className="basic-rider">
+                        <div className="col-lg-8 col-md-8 col-sm-4 col-12">
+                            <div className="info-title">
                                 <h1>BASIC</h1>
                                 <h1>RIDER</h1>
                             </div>
@@ -228,7 +235,7 @@ class AuralSpecifics extends React.Component {
                                 </p>
                             </span>
                         </div>
-                        <div className="col-lg-9 col-md-4 col-sm-4 col-12 col-style basic-rider-pic">
+                        <div className="col-lg-9 col-md-4 col-sm-4 col-12 basic-rider-pic">
                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
      width="1041.574px" height="451.479px" viewBox="0 0 1041.574 451.479" enable-background="new 0 0 1041.574 451.479"
      >
@@ -850,10 +857,10 @@ class AuralSpecifics extends React.Component {
                             </div>
                     </div>
                     <div className="row wrap example">
-                        <div className="col-lg-6 col-md-4 col-sm-4 col-12">
-                            <div className="basic-rider">
+                        <div className="col-lg-7 col-md-8 col-sm-4 col-12">
+                            <div className="info-title">
                                 <h1>FIND</h1>
-                                <h1>US!</h1>
+                                <h1>US at:</h1>
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-8 col-sm-12 col-12 col-style">
