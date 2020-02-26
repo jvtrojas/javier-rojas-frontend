@@ -93,7 +93,7 @@ html, body {
 
     .front-text {
       position: absolute;
-      font-size: 20vw;
+      font-size: 40vw;
       color: black;
       line-height: inherit;
       //white-space: nowrap;
@@ -140,6 +140,19 @@ html, body {
       box-shadow: 10px 13px 28px -9px rgba(199,199,199,1);
         margin-right: 40px;
         margin-bottom: 30px;
+    }
+
+    .img-style {
+      box-shadow: 10px 13px 28px -9px rgba(199,199,199,1);
+        margin-right: 40px;
+        margin-bottom: 30px;
+    }
+
+    .video-style {
+      box-shadow: 10px 13px 28px -9px rgba(199,199,199,1);
+      margin-right: 40px;
+      margin-bottom: 30px;
+      height: 35vw;
     }
 
     .shadow {
@@ -202,7 +215,7 @@ html, body {
       position: relative;
       width: 100%;
       padding-bottom: 60%;
-      height: 0;
+      //height: 0;
     }
     .iframe-container iframe{
       position: absolute;
@@ -237,6 +250,10 @@ html, body {
 
     .work {
       animation: swapthings2 3s infinite both cubic-bezier(0.17, 0.04, 0.04, 0.99);
+    }
+
+    .mixcloud-style {
+      height: 35vw;
     }
 
 
@@ -297,8 +314,9 @@ html, body {
       text-align: justify;
     }
 
-    .no-padding-top {
-      padding-top: 0;
+    .padding {
+      padding-top: 100px;
+      padding-bottom: 38px;
     }
 
 
@@ -317,8 +335,8 @@ html, body {
       letter-spacing: 2vw;
     }
 
-    .no-horizontal-scroll {
-      overflow-x: hidden;
+    .no-scroll {
+      overflow: hidden;
     }
 
     .text-content {
@@ -341,7 +359,16 @@ html, body {
       }
 
       img {
-        height: 50vw;
+        height: 35vw;
+      }
+
+      .front-text {
+        font-size: 56vw;
+      }
+
+      .padding {
+        padding-top: 46px;
+        padding-bottom: 0;
       }
     }
     @media (max-width: 425px) {
@@ -354,7 +381,26 @@ html, body {
       img {
         height: 70vw;
       }
+      .row {
+        overflow-x: hidden;
+      }
     }
+
+    .ticket-box {
+      background-color: white;
+    }
+    .ticket-info {
+      margin-bottom: 0;
+    }
+
+    .basic-rider {
+      h1 {font-size: 20vw;}
+    }
+    .basic-rider-pic {
+      height: fit-content;
+      align-self: center;
+    }
+
   }
 
 

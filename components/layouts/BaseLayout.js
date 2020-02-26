@@ -5,7 +5,7 @@ const BaseLayout = (props) => {
     const { className, children, isAuthenticated, user } = props;
     return (
         <div>
-             <Header isAuthenticated={isAuthenticated} user={user}/>
+             {/* <Header isAuthenticated={isAuthenticated} user={user}/> */}
 
                     {children}
 
