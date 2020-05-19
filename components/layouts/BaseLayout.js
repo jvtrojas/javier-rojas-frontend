@@ -1,15 +1,18 @@
 import React from 'react';
-import Header from '../shared/Header';
+import Head from 'next/head';
 
 const BaseLayout = (props) => {
     const { className, children, isAuthenticated, user } = props;
     return (
-        <div>
-             {/* <Header isAuthenticated={isAuthenticated} user={user}/> */}
-
-                    {children}
-
-        </div>
+        <React.Fragment>
+            <Head>
+                <title>AuralArk</title>
+                <link rel="icon" type="image/ico" href="/static/favicon.ico"/>
+            </Head>
+            <div>
+                {children}
+            </div>
+        </React.Fragment>
     )
 }
 

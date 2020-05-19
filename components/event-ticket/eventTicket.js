@@ -13,7 +13,6 @@ const EventTicket = (props) => {
             <p className="ticket-info">X4 12” SPEAKERS </p>
             <p className="ticket-info">1 SUBSOUND</p>
         </span>
-
       </div>
     // <svg className="shadow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
     //     viewBox="0 0 375 419" enable-background="new 0 0 375 419" >
