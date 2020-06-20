@@ -91,6 +91,38 @@ html, body {
 
   .auralspecifics-page {
 
+      -webkit-animation: bgcolorchange 20s infinite; /* Chrome, Safari, Opera */ 
+      animation: 20s infinite bgcolorchange;
+    
+    @keyframes bgcolorchange {
+      0% {
+        background-color: #C8C8C8;
+      }
+      20% {
+        background-color: #003CFF;
+      }
+      40% {
+        background-color: #00FFC2;
+      }
+      60% {
+        background-color: #00FF3D;
+      }
+      80% {
+        background-color: #84FF00;
+      }
+      100% {
+        background-color: #7B00FF;
+      }
+    }
+    /* Chrome, Safari, Opera */
+     @-webkit-keyframes bgcolorchange {
+          0%   {background: #C8C8C8;}
+          20%  {background: #003CFF;}
+          40%  {background: #00FFC2;}
+          60% {background: #00FF3D;}
+          80% {background: #84FF00;}
+          100% {background: #7B00FF;}
+     }
     .front-text {
       position: absolute;
       font-size: 40vw;

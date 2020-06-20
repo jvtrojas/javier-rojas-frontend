@@ -34,7 +34,7 @@ class Index extends React.Component {
             <BaseLayout {...this.props.auth} >
                 <BasePage className="auralspecifics-page">
                 <div className="container-fluid">
-				<BackgroundGrid/>
+				{/* <BackgroundGrid/> */}
                 <div className="row wrap example no-scroll padding">
                         <div className="col-lg-6 col-md-4 col-sm-4 col-3 maxwidth">
                             <div className="title-head">
@@ -58,19 +58,19 @@ class Index extends React.Component {
                         <div className="col-lg-6 col-md-8 col-sm-12 col-12 col-style">
                             <span className="text-content">
                                 <p>
-                                <u>AuralArk</u> is an ongoing project focused on how space is perceived in sonic performances. We are in the search of futuristic spaces to experiment media events, a new hyperreal space created for the evolution of audiovisual and intermedia shows.
+                                <u>AuralArk</u> is an ongoing project focused on how space is perceived in sonic performances. We are in search of futuristic spaces for experimental media events, a new hyperreal space created for the evolution of audiovisual and intermedia shows.
                                 </p>
                                 <p>
-                                By researching the aural architecture attributes of a venue, and relating to the will of the show, amount of people, and running hours we design specific architectural settings supported by high-end technology.
+                                By researching the characteristics of the aural architecture of a venue, and relating to the objetives of the show, amount of people, and running hours we design specific architectural settings supported by high-end technology.
                                 </p>
                                 <p>
-                                We offer a complete system to transform a conventional venue into a new media reality created by technology.
+                                We offer a complete system to transform a conventional venue into a new media reality created by technology, adapted to the physical and social properties of the space.
                                 </p>
                             </span>
                         </div>
                         <div className="col-lg-6 col-md-8 col-sm-12 col-12 col-style"> <span className="text-content">
                                 <p>
-                                Immersive 3D multichannel sound system, architectural mapping, sensors, and creative coding are some of the technological tools we use in the quest of total art experience.
+                                Immersive 3D multichannel sound system, architectural mapping, sensors, and creative coding are some of the technological tools we use in the quest for total art experience.
                                 </p>
                                 <p>
                                 Our system is suitable for infinite purposes. Immersive cinema, sonic meditations, deep listening sessions, artistic performances, gabber marathons or immersive rave club. We are interested in a holistic merge of space and multimedia experience challenging the spacial attributes of each place.
@@ -249,23 +249,23 @@ class Index extends React.Component {
                         </div>
                         <div className="col-lg-6 col-md-8 col-sm-12 col-12 col-style">
                             <span className="text-content">
-                                <ul>
-                                    <li>2 turntables technics 1200 + cables + stylus</li>
-                                    <li>2 pioneer cdj2000 nexus + cables + link cable</li>
-                                    <li>8 Channel Mixer with direct output</li>
-                                    <li>8 canon-plug cables</li>
-                                    <li>8 plug cables for connecting speakers to audio interface</li>
-                                    <li>Audio Motu Ultralite mk4 (optional)</li>
-                                    <li>8 speakers (optimum) + cables to audio interface</li>
-                                </ul>
+                                
+                                    <p>2 turntables technics 1200 + cables + stylus</p>
+                                    <p>2 pioneer cdj2000 nexus + cables + link cable</p>
+                                    <p>8 Channel Mixer with direct output</p>
+                                    <p>8 canon-plug cables</p>
+                                    <p>8 plug cables for connecting speakers to audio interface</p>
+                                    <p>Audio Motu Ultralite mk4 (optional)</p>
+                                    <p>8 speakers (optimum) + cables to audio interface</p>
+                                
                             </span>
                         </div>
                         <div className="col-lg-9 col-md-4 col-sm-4 col-12 basic-rider-pic">
-                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-     width="1041.574px" height="451.479px" viewBox="0 0 1041.574 451.479" enableBackground="new 0 0 1041.574 451.479"
-     >
-<g>
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="1041.574px" height="451.479px" viewBox="0 0 1041.574 451.479" enableBackground="new 0 0 1041.574 451.479"
+        >
     <g>
+        <g>
         <g>
             <g>
                 <rect x="913.446" y="325.386" fill="#FFFFFF" stroke="#000000" strokeMiterlimit="10" width="89.722" height="64.502"/>
@@ -880,6 +880,24 @@ class Index extends React.Component {
 <text transform="matrix(1 0 0 1 418.1777 218.4009)" fill="#FFFFFF" fontFamily="'PxGrotesk-Screen'" fontSize="17.4149">SPACIAL MIXER</text>
 </svg>
                             </div>
+                    </div>
+                    <div className="row wrap example">
+                        <div className="col-lg-7 col-md-8 col-sm-4 col-12">
+                            <div className="info-title">
+                                <h1>FIND</h1>
+                                <h1>US at:</h1>
+                            </div>
+                        </div>
+                        <div className="col-lg-6 col-md-8 col-sm-12 col-12 col-style">
+                            <span className="text-content">
+                                <p>
+                                    Instagram: <a href="https://www.instagram.com/simulacro._/">@SIMULACRO</a>
+                                </p>
+                                <p>
+                                    Email: <a href="mailto:hey.simulacro@gmail.com">hey.simulacro@gmail.com</a>
+                                </p>
+                            </span>
+                        </div>
                     </div>
                 </div>
                 </BasePage>
