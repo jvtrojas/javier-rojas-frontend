@@ -1,5 +1,6 @@
 @import './shared/fonts';
 @import './shared/colors';
+@import url(https://allfont.es/allfont.css?fonts=bpdotscondensedsquare);
 //PAGES
 
 //COMPONENTS
@@ -10,7 +11,13 @@
   font-weight: 275 900;
   font-stretch: 50% 200%;
 }
+
+html {
+  overscroll-behavior: none;
+}
+
 html, body {
+  background-color: #FFFFFF;
 	width:100vw;
 	min-width:1280px hidden ;
 	min-height:720px hidden;
@@ -74,44 +81,43 @@ html, body {
 
   .auralspecifics-page {
 
-      -webkit-animation: bgcolorchange 20s infinite; /* Chrome, Safari, Opera */ 
-      animation: 20s infinite bgcolorchange;
+    // BACKGROUND_COLOR_SHIFTER
+    //   -webkit-animation: bgcolorchange 20s infinite; /* Chrome, Safari, Opera */ 
+    //   animation: 20s infinite bgcolorchange;
     
-    @keyframes bgcolorchange {
-      0% {
-        background-color: #C8C8C8;
-      }
-      20% {
-        background-color: #003CFF;
-      }
-      40% {
-        background-color: #00FFC2;
-      }
-      60% {
-        background-color: #00FF3D;
-      }
-      80% {
-        background-color: #84FF00;
-      }
-      100% {
-        background-color: #7B00FF;
-      }
-    }
-    /* Chrome, Safari, Opera */
-     @-webkit-keyframes bgcolorchange {
-          0%   {background: #C8C8C8;}
-          20%  {background: #003CFF;}
-          40%  {background: #00FFC2;}
-          60% {background: #00FF3D;}
-          80% {background: #84FF00;}
-          100% {background: #7B00FF;}
-     }
+    // @keyframes bgcolorchange {
+    //   0% {
+    //     background-color: #C8C8C8;
+    //   }
+    //   20% {
+    //     background-color: #003CFF;
+    //   }
+    //   40% {
+    //     background-color: #00FFC2;
+    //   }
+    //   60% {
+    //     background-color: #00FF3D;
+    //   }
+    //   80% {
+    //     background-color: #84FF00;
+    //   }
+    //   100% {
+    //     background-color: #7B00FF;
+    //   }
+    // }
+    // /* Chrome, Safari, Opera */
+    //  @-webkit-keyframes bgcolorchange {
+    //       0%   {background: #C8C8C8;}
+    //       20%  {background: #003CFF;}
+    //       40%  {background: #00FFC2;}
+    //       60% {background: #00FF3D;}
+    //       80% {background: #84FF00;}
+    //       100% {background: #7B00FF;}
+   
     .front-text {
       position: absolute;
       font-size: 40vw;
       color: black;
-      line-height: inherit;
-      //white-space: nowrap;
       animation: floatText 10s infinite alternate ease-in-out;
     }
     .back-text {
@@ -320,8 +326,7 @@ html, body {
       overflow-x: auto;
       white-space: nowrap;
       height: fit-content;
-      line-height: normal;
-      padding-top: 35px;
+      padding-top: 1.2rem;
       padding-left: 0;
       padding-right: 0;
       text-align: justify;
@@ -354,7 +359,7 @@ html, body {
 
     .text-content {
       color: #000000;
-      font-size: 2.1vw;
+      font-size: 1.5rem;
       text-align: justify;
       word-wrap: break-word;
       overflow-x: scroll;
@@ -385,7 +390,7 @@ html, body {
     }
 
     .info-title  {
-      h1 {font-size: 20vw;}
+      h1 {font-size: 10rem;}
       text-align: center;
     }
     .basic-rider-pic {
@@ -402,7 +407,7 @@ html, body {
     }
     @media (max-width: 768px){
       .text-content {
-        font-size: 2.9vw;
+        font-size: 1.4rem;
       }
       .title-lang {
         font-size: 25vw;
@@ -556,4 +561,56 @@ html, body {
                   padding-top: 35px;
                   flex-wrap: nowrap;
                 }
+  }
+
+  .header-anchor {
+    font-family: 'BPdotsCondensedSquare', arial;
+    font-size: 12rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.98;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 1rem;
+  }
+
+  .header-anchor a {
+    text-decoration: none;
+    color:white;
+  }
+
+  .black-background {
+    background: black;
+    color: white;
+    height: 11rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+  }
+
+  .header-container {
+    line-height: 1 !important;
+    margin-left: 4px;
+  }
+
+  .border-block {
+    border: 1px dashed grey;
+    cursor: pointer;
+    margin: 0 0.5rem;
+    border: 1px dotted black;
+    min-height: 15rem;
+    min-width: 24rem;
+  }
+
+  .aural-logo-header a {
+    color: black;
+    text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
+  }
+
+  .row-no_top_padding {
+    padding-top: 0 !important;
+  }
+
+  .find-us-white-square {
+    border: 1px solid #f3f3f3bd;
+    padding: 2rem;
   }

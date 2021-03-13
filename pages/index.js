@@ -14,85 +14,145 @@ const EN_TEXT = "EN";
 
 class Index extends React.Component {
     render() {
-
         return (
             <BaseLayout {...this.props.auth} >
                 <BasePage className="auralspecifics-page">
                 <div className="container-fluid">
-                    {/* HEADER */}
-                    <div className="row wrap example no-padding-top">
-                        <div className="col-lg-7 col-md-8 col-sm-4 col-12">
-                            HOLA
-                        </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12 col-style">
-                            HOLA
-                        </div>
-                    </div>
-                    {/* ES */}
-                    <div className="row wrap example">
-                        <div className="col-lg-7 col-md-8 col-sm-4 col-12">
-                            <div className="lang-title">
-                                <h1>ES</h1>
+                {/* HEADER */}
+                    <div className="row header-container wrap example">
+                        <div>
+                            <div className="header-anchor black-background">
+                                <a href="#">HOME!!</a>                       
                             </div>
                         </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12 col-style"> <span className="text-content">
-                            <p>
-                               <u>AuralArk</u> es un projecto centrado en cómo se percibe el espacio en las actuaciones sonoras. Estamos en busca de espacios futuristas para experimentar eventos mediáticos, un nuevo espacio hiperreal creado para la evolución de espectáculos audiovisuales e intermedia.
-                            </p>
-                            <p>
-                            Al investigar los atributos de arquitectura auditiva de un lugar, y en relación con la voluntad del espectáculo, la cantidad de personas y las horas de funcionamiento, diseñamos entornos arquitectónicos específicos respaldados por tecnología de alta gama.
-                            </p>
-                            </span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12 col-style">
-                        <span className="text-content">
-                            <p>
-                            Ofrecemos un sistema completo para transformar un lugar convencional en una nueva realidad de medios creada por la tecnología. El sistema de sonido multicanal 3D inmersivo, el mapeo arquitectónico, los sensores y la codificación creativa son algunas de las herramientas tecnológicas que utilizamos en la búsqueda de la experiencia artística total.
-                            </p>
-                            <p>
-                            Nuestro sistema es adecuado para fines infinitos. Cine inmersivo, meditaciones sonoras, sesiones de escucha profunda, actuaciones artísticas, maratones de gabber o club de delirio inmersivo.
-                            </p>
-                            </span> </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12 col-style">
-                        <span className="text-content">
-                        <p>
-                            Estamos interesados ​​en una fusión holística de espacio y experiencia multimedia desafiando los atributos espaciales de cada lugar.
-                            </p>
-                            <p>
-                            Nuestro sistema es adecuado para fines infinitos. Cine inmersivo, meditaciones sonoras, sesiones de escucha profunda, actuaciones artísticas, maratones de gabber o club de delirio inmersivo. Estamos interesados ​​en una fusión holística de espacio y experiencia multimedia desafiando los atributos espaciales de cada lugar.
-                            </p>
-                            <p>
-                            Este proyecto es creado por la colaboración del arquitecto/artista audiovisual Javier Rojas y el ingeniero electrónico/artista sonoro Maximiliano Fried.
-                            </p>
-                        </span> </div>
-                    </div>
-                    {/* GRAN VIDRIO */}
-                    <div className="row wrap example">
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-12 col-style">
-                        <div className="ticket-box">
-                            <span className="text-content white-space">
-                                <p className="ticket-info">@EL GRAN VIDRIO - ART GALLERY</p>
-                                <p className="ticket-info">Córdoba, Argentina</p>
-                                <p className="ticket-info">DNT - FASHION SHOW</p>
-                                <p className="ticket-info">200 people</p>
-                                <p className="ticket-info">X4 speakers </p>
-                                <p className="ticket-info">1 subsound</p>
-                            </span>
+                        <div>
+                            <div className="header-anchor aural-logo-header">
+                                <a href="#">AURAL_ARCHITECTURE!!</a>          
+                            </div>
                         </div>
-						</div>
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-12">
-						<img className="img-style" src="static/images/gran-vidrio/pic1.jpg" alt="project 1 image"/>
+                        <div>
+                            <div className="header-anchor black-background">
+                                <a href="#">VISUAL!!</a>                       
+                            </div>
                         </div>
-						<div className="col-lg-6 col-md-6 col-sm-12 col-12">
-						<img className="img-style" src="static/images/gran-vidrio/pic2.jpg" alt="project 1 image"/>
+                        <div>
+                            <div className="header-anchor aural-logo-header">
+                                <a href="#">AURAL_ARCHITECTURE!!</a>          
+                            </div>
                         </div>
-						<div className="col-lg-6 col-md-6 col-sm-12 col-12">
-						<img className="img-style" src="static/images/gran-vidrio/pic3.jpg" alt="project 1 image"/>
-                        </div>
-						<div className="col-lg-6 col-md-8 col-sm-12 col-12">
-						<iframe className="mixcloud-style" width="100%" height="400" src="https://www.mixcloud.com/widget/iframe/?feed=%2Fjavitorojas%2Fdnt-desfile-screenshoot-19072019-el-gran-vidrio-c%C3%B3rdoba-argentina%2F" frameBorder="0" ></iframe>
+                            <div>
+                            <div className="header-anchor black-background">
+                                <a href="#">ABOUT!!</a>                       
+                            </div>
+                            </div>
+                        <div className="header-anchor aural-logo-header">
+                                <a href="#">AURAL_ARCHITECTURE!!</a>          
                             </div>
                     </div>
-                    {/* FIND US AT */}
+                    
+                {/* Row 1 */}
+                    <div className="row row-no_top_padding wrap example">
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+                        
+                        </div>
+                        <div className="border-block">
+                        
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                    </div>
+
+                {/* Row 2 */}
+                    <div className="row wrap example">
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+                        
+                        </div>
+                        <div className="border-block">
+                        
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                    </div>
+
+                {/* Row 3 */}
+                    <div className="row wrap example">
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+                        
+                        </div>
+                        <div className="border-block">
+                        
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                    </div>
+
+                {/* FIND US AT */}
                     <div className="row wrap example">
                         <div className="col-lg-7 col-md-8 col-sm-4 col-12">
                             <div className="info-title">
@@ -100,7 +160,7 @@ class Index extends React.Component {
                                 <h1>US at:</h1>
                             </div>
                         </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12 col-style">
+                        <div className="col-lg-6 col-md-8 col-sm-12 col-12 col-style find-us-white-square">
                             <span className="text-content">
                                 <p>
                                     Instagram: <a href="https://www.instagram.com/simulacro._/">@SIMULACRO</a>
