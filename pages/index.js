@@ -14,7 +14,6 @@ const EN_TEXT = "EN";
 
 class Index extends React.Component {
     render() {
-
         return (
             <BaseLayout {...this.props.auth} >
                 <BasePage className="auralspecifics-page">
@@ -27,7 +26,7 @@ class Index extends React.Component {
                             </div>
                         </div>
                         <div>
-                            <div className="header-anchor">
+                            <div className="header-anchor aural-logo-header">
                                 <a href="#">AURAL_ARCHITECTURE!!</a>          
                             </div>
                         </div>
@@ -37,7 +36,7 @@ class Index extends React.Component {
                             </div>
                         </div>
                         <div>
-                            <div className="header-anchor">
+                            <div className="header-anchor aural-logo-header">
                                 <a href="#">AURAL_ARCHITECTURE!!</a>          
                             </div>
                         </div>
@@ -46,12 +45,12 @@ class Index extends React.Component {
                                 <a href="#">ABOUT!!</a>                       
                             </div>
                             </div>
-                        <div className="header-anchor">
+                        <div className="header-anchor aural-logo-header">
                                 <a href="#">AURAL_ARCHITECTURE!!</a>          
                             </div>
                     </div>
                     
-                {/* ES */}
+                {/* Row 1 */}
                     <div className="row wrap example">
                         <div className="col-lg-7 col-md-8 col-sm-4 col-12">
                             <div className="lang-title">
@@ -88,7 +87,8 @@ class Index extends React.Component {
                             </p>
                         </span> </div>
                     </div>
-                {/* GRAN VIDRIO */}
+
+                {/* Row 2 */}
                     <div className="row wrap example">
                         <div className="col-lg-4 col-md-4 col-sm-4 col-12 col-style">
                         <div className="ticket-box">
@@ -115,7 +115,8 @@ class Index extends React.Component {
 						<iframe className="mixcloud-style" width="100%" height="400" src="https://www.mixcloud.com/widget/iframe/?feed=%2Fjavitorojas%2Fdnt-desfile-screenshoot-19072019-el-gran-vidrio-c%C3%B3rdoba-argentina%2F" frameBorder="0" ></iframe>
                             </div>
                     </div>
-                    {/* FIND US AT */}
+
+                {/* FIND US AT */}
                     <div className="row wrap example">
                         <div className="col-lg-7 col-md-8 col-sm-4 col-12">
                             <div className="info-title">

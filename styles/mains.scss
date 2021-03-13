@@ -11,7 +11,13 @@
   font-weight: 275 900;
   font-stretch: 50% 200%;
 }
+
+html {
+  overscroll-behavior: none;
+}
+
 html, body {
+  background-color: #FFFFFF;
 	width:100vw;
 	min-width:1280px hidden ;
 	min-height:720px hidden;
@@ -75,38 +81,39 @@ html, body {
 
   .auralspecifics-page {
 
-      -webkit-animation: bgcolorchange 20s infinite; /* Chrome, Safari, Opera */ 
-      animation: 20s infinite bgcolorchange;
+    // BACKGROUND_COLOR_SHIFTER
+    //   -webkit-animation: bgcolorchange 20s infinite; /* Chrome, Safari, Opera */ 
+    //   animation: 20s infinite bgcolorchange;
     
-    @keyframes bgcolorchange {
-      0% {
-        background-color: #C8C8C8;
-      }
-      20% {
-        background-color: #003CFF;
-      }
-      40% {
-        background-color: #00FFC2;
-      }
-      60% {
-        background-color: #00FF3D;
-      }
-      80% {
-        background-color: #84FF00;
-      }
-      100% {
-        background-color: #7B00FF;
-      }
-    }
-    /* Chrome, Safari, Opera */
-     @-webkit-keyframes bgcolorchange {
-          0%   {background: #C8C8C8;}
-          20%  {background: #003CFF;}
-          40%  {background: #00FFC2;}
-          60% {background: #00FF3D;}
-          80% {background: #84FF00;}
-          100% {background: #7B00FF;}
-     }
+    // @keyframes bgcolorchange {
+    //   0% {
+    //     background-color: #C8C8C8;
+    //   }
+    //   20% {
+    //     background-color: #003CFF;
+    //   }
+    //   40% {
+    //     background-color: #00FFC2;
+    //   }
+    //   60% {
+    //     background-color: #00FF3D;
+    //   }
+    //   80% {
+    //     background-color: #84FF00;
+    //   }
+    //   100% {
+    //     background-color: #7B00FF;
+    //   }
+    // }
+    // /* Chrome, Safari, Opera */
+    //  @-webkit-keyframes bgcolorchange {
+    //       0%   {background: #C8C8C8;}
+    //       20%  {background: #003CFF;}
+    //       40%  {background: #00FFC2;}
+    //       60% {background: #00FF3D;}
+    //       80% {background: #84FF00;}
+    //       100% {background: #7B00FF;}
+   
     .front-text {
       position: absolute;
       font-size: 40vw;
@@ -319,7 +326,7 @@ html, body {
       overflow-x: auto;
       white-space: nowrap;
       height: fit-content;
-      padding-top: 35px;
+      padding-top: 1.2rem;
       padding-left: 0;
       padding-right: 0;
       text-align: justify;
@@ -561,7 +568,7 @@ html, body {
     font-size: 12rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1;
+    line-height: 0.98;
     letter-spacing: 0em;
     text-align: left;
     padding-top: 1rem;
@@ -575,8 +582,9 @@ html, body {
   .black-background {
     background: black;
     color: white;
-    height: 11.5rem;
+    height: 11rem;
     padding-left: 0.3rem;
+    padding-right: 0.3rem;
   }
 
   .header-container {
@@ -587,4 +595,8 @@ html, body {
   .border-block {
     border: 5px solid black;
     min-height: 30rem;
+  }
+
+  .aural-logo-header a {
+    color: black;
   }
