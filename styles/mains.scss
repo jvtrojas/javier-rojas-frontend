@@ -558,7 +558,7 @@ html, body {
 
   .header-anchor {
     font-family: 'BPdotsCondensedSquare', arial;
-    font-size: 288px;
+    font-size: 12rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1;
@@ -575,11 +575,16 @@ html, body {
   .black-background {
     background: black;
     color: white;
-    height: 15.9rem;
+    height: 11.5rem;
     padding-left: 0.3rem;
   }
 
   .header-container {
     line-height: 1 !important;
     margin-left: 4px;
+  }
+
+  .border-block {
+    border: 5px solid black;
+    min-height: 30rem;
   }

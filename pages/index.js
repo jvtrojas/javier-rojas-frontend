@@ -19,7 +19,7 @@ class Index extends React.Component {
             <BaseLayout {...this.props.auth} >
                 <BasePage className="auralspecifics-page">
                 <div className="container-fluid">
-                    {/* HEADER */}
+                {/* HEADER */}
                     <div className="row header-container wrap example">
                         <div>
                             <div className="header-anchor black-background">
@@ -51,7 +51,7 @@ class Index extends React.Component {
                             </div>
                     </div>
                     
-                    {/* ES */}
+                {/* ES */}
                     <div className="row wrap example">
                         <div className="col-lg-7 col-md-8 col-sm-4 col-12">
                             <div className="lang-title">
@@ -88,7 +88,7 @@ class Index extends React.Component {
                             </p>
                         </span> </div>
                     </div>
-                    {/* GRAN VIDRIO */}
+                {/* GRAN VIDRIO */}
                     <div className="row wrap example">
                         <div className="col-lg-4 col-md-4 col-sm-4 col-12 col-style">
                         <div className="ticket-box">
