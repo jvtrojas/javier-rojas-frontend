@@ -593,11 +593,19 @@ html, body {
   }
 
   .border-block {
-    border: 5px solid black;
-    min-height: 30rem;
+    border: 1px dashed grey;
+    cursor: pointer;
+    margin: 0 0.5rem;
+    border: 1px dotted black;
+    min-height: 15rem;
+    min-width: 24rem;
   }
 
   .aural-logo-header a {
     color: black;
     text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
+  }
+
+  .row-no_top_padding {
+    padding-top: 0 !important;
   }
