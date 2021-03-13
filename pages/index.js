@@ -64,6 +64,24 @@ class Index extends React.Component {
                         <div className="border-block">
 
                         </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
                     </div>
 
                 {/* Row 2 */}
@@ -76,6 +94,24 @@ class Index extends React.Component {
                         </div>
                         <div className="border-block">
                         
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
                         </div>
                         <div className="border-block">
 
@@ -96,6 +132,24 @@ class Index extends React.Component {
                         <div className="border-block">
 
                         </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
                     </div>
 
                 {/* FIND US AT */}
@@ -106,7 +160,7 @@ class Index extends React.Component {
                                 <h1>US at:</h1>
                             </div>
                         </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12 col-style">
+                        <div className="col-lg-6 col-md-8 col-sm-12 col-12 col-style find-us-white-square">
                             <span className="text-content">
                                 <p>
                                     Instagram: <a href="https://www.instagram.com/simulacro._/">@SIMULACRO</a>
