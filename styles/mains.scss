@@ -359,7 +359,7 @@ html, body {
 
     .text-content {
       color: #000000;
-      font-size: 2.1vw;
+      font-size: 1.5rem;
       text-align: justify;
       word-wrap: break-word;
       overflow-x: scroll;
@@ -390,7 +390,7 @@ html, body {
     }
 
     .info-title  {
-      h1 {font-size: 20vw;}
+      h1 {font-size: 10rem;}
       text-align: center;
     }
     .basic-rider-pic {
@@ -407,7 +407,7 @@ html, body {
     }
     @media (max-width: 768px){
       .text-content {
-        font-size: 2.9vw;
+        font-size: 1.4rem;
       }
       .title-lang {
         font-size: 25vw;
