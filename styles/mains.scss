@@ -1,10 +1,8 @@
 @import './shared/fonts';
 @import './shared/colors';
 //PAGES
-@import './index';
-@import "./portfolios";
+
 //COMPONENTS
-@import './header';
 
 @font-face {
   font-family: 'Inconsolata';
@@ -69,21 +67,6 @@ html, body {
     font-weight: bold;
     color: red
   }
-
-  // .base-page {
-  //   //padding: 150px 0 100px 0;
-  //   color: black;
-  //   background-color: white;
-  //  //min-height: 100vh;
-  //   .page-header {
-  //     .page-header-title {
-  //       font-weight: 700;
-  //       color: black;
-  //       display: inline-block;
-  //      margin-bottom: 20px;
-  //     }
-  //   }
-  // }
 
   .clickable {
     cursor: pointer;
