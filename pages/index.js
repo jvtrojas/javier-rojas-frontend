@@ -20,14 +20,37 @@ class Index extends React.Component {
                 <BasePage className="auralspecifics-page">
                 <div className="container-fluid">
                     {/* HEADER */}
-                    <div className="row wrap example no-padding-top">
-                        <div className="col-lg-7 col-md-8 col-sm-4 col-12">
-                            HOLA
+                    <div className="row header-container wrap example">
+                        <div>
+                            <div className="header-anchor black-background">
+                                <a href="#">HOME!!</a>                       
+                            </div>
                         </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12 col-style">
-                            HOLA
+                        <div>
+                            <div className="header-anchor">
+                                <a href="#">AURAL_ARCHITECTURE!!</a>          
+                            </div>
                         </div>
+                        <div>
+                            <div className="header-anchor black-background">
+                                <a href="#">VISUAL!!</a>                       
+                            </div>
+                        </div>
+                        <div>
+                            <div className="header-anchor">
+                                <a href="#">AURAL_ARCHITECTURE!!</a>          
+                            </div>
+                        </div>
+                            <div>
+                            <div className="header-anchor black-background">
+                                <a href="#">ABOUT!!</a>                       
+                            </div>
+                            </div>
+                        <div className="header-anchor">
+                                <a href="#">AURAL_ARCHITECTURE!!</a>          
+                            </div>
                     </div>
+                    
                     {/* ES */}
                     <div className="row wrap example">
                         <div className="col-lg-7 col-md-8 col-sm-4 col-12">

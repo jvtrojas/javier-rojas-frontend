@@ -1,5 +1,6 @@
 @import './shared/fonts';
 @import './shared/colors';
+@import url(https://allfont.es/allfont.css?fonts=bpdotscondensedsquare);
 //PAGES
 
 //COMPONENTS
@@ -110,8 +111,6 @@ html, body {
       position: absolute;
       font-size: 40vw;
       color: black;
-      line-height: inherit;
-      //white-space: nowrap;
       animation: floatText 10s infinite alternate ease-in-out;
     }
     .back-text {
@@ -320,7 +319,6 @@ html, body {
       overflow-x: auto;
       white-space: nowrap;
       height: fit-content;
-      line-height: normal;
       padding-top: 35px;
       padding-left: 0;
       padding-right: 0;
@@ -556,4 +554,32 @@ html, body {
                   padding-top: 35px;
                   flex-wrap: nowrap;
                 }
+  }
+
+  .header-anchor {
+    font-family: 'BPdotsCondensedSquare', arial;
+    font-size: 288px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 1rem;
+  }
+
+  .header-anchor a {
+    text-decoration: none;
+    color:white;
+  }
+
+  .black-background {
+    background: black;
+    color: white;
+    height: 15.9rem;
+    padding-left: 0.3rem;
+  }
+
+  .header-container {
+    line-height: 1 !important;
+    margin-left: 4px;
   }
