@@ -27,12 +27,12 @@ class Index extends React.Component {
                         </div>
                         <div>
                             <div className="header-anchor aural-logo-header">
-                                <a href="#">AURAL_ARCHITECTURE!!</a>          
+                                <a href="#">ABOUT!!</a>          
                             </div>
                         </div>
                         <div>
-                            <div className="header-anchor black-background">
-                                <a href="#">VISUAL!!</a>                       
+                            <div className="header-anchor aural-logo-header">
+                                <a href="#">PROJECTS!!</a>                       
                             </div>
                         </div>
                         <div>
@@ -41,26 +41,22 @@ class Index extends React.Component {
                             </div>
                         </div>
                             <div>
-                            <div className="header-anchor black-background">
-                                <a href="#">ABOUT!!</a>                       
+                            <div className="header-anchor aural-logo-header">
+                                <a href="#">PHOTOGRAPHY!!</a>                       
                             </div>
+                            
                             </div>
                         <div className="header-anchor aural-logo-header">
-                                <a href="#">AURAL_ARCHITECTURE!!</a>          
+                                <a href="#">MUSIC!!</a>          
                             </div>
                     </div>
                     
-                {/* Row 1 */}
+                {/* Row 1 EMPTY */}
                     <div className="row row-no_top_padding wrap example">
-                        <div className="border-block">
-
+                        <div className="firstborder-block">
+                       
                         </div>
-                        <div className="border-block">
-                        
-                        </div>
-                        <div className="border-block">
-                        
-                        </div>
+                        <img className="imgx1" src="static/images/GRAFIC DESIGN/123325.jpg" alt="ATERNATIVO"/>
                         <div className="border-block">
 
                         </div>
@@ -85,6 +81,40 @@ class Index extends React.Component {
                     </div>
 
                 {/* Row 2 */}
+                <div className="row wrap example">
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+                        
+                        </div>
+                        <div className="border-block">
+                        
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                        <div className="border-block">
+
+                        </div>
+                    </div>
+
+                    {/* Row 3 */}
                     <div className="row wrap example">
                         <div className="border-block">
 
@@ -118,7 +148,7 @@ class Index extends React.Component {
                         </div>
                     </div>
 
-                {/* Row 3 */}
+                {/* Row 4 */}
                     <div className="row wrap example">
                         <div className="border-block">
 
@@ -149,27 +179,7 @@ class Index extends React.Component {
                         </div>
                         <div className="border-block">
 
-                        </div>
-                    </div>
-
-                {/* FIND US AT */}
-                    <div className="row wrap example">
-                        <div className="col-lg-7 col-md-8 col-sm-4 col-12">
-                            <div className="info-title">
-                                <h1>FIND</h1>
-                                <h1>US at:</h1>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-md-8 col-sm-12 col-12 col-style find-us-white-square">
-                            <span className="text-content">
-                                <p>
-                                    Instagram: <a href="https://www.instagram.com/simulacro._/">@SIMULACRO</a>
-                                </p>
-                                <p>
-                                    Email: <a href="mailto:hey.simulacro@gmail.com">hey.simulacro@gmail.com</a>
-                                </p>
-                            </span>
-                        </div>
+                        </div>  
                     </div>
                 </div>
                 </BasePage>
