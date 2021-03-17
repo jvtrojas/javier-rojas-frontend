@@ -2,7 +2,7 @@ import React from 'react';
 
 function About() {
     return (
-        <div className="container-fluid">
+        <div className="container-fluid about-page">
             {/* Row 1 EMPTY */}
             <div className="row row-no_top_padding wrap hide-scrollbar">
                 About

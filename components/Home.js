@@ -2,7 +2,7 @@ import React from 'react';
 
 function Home() {
     return (
-        <div className="container-fluid">
+        <div className="container-fluid home-page">
             {/* Row 1 EMPTY */}
             <div className="row row-no_top_padding wrap hide-scrollbar">
                 Home

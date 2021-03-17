@@ -29,38 +29,36 @@ html {
 }
 
 /* GLOBAL */
-.global {
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  .hide-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 
-  /* Hide scrollbar for IE and Edge */
-  .hide-scrollbar {
-    -ms-overflow-style: none;
-  }
+/* Hide scrollbar for IE and Edge */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+}
 
-  .row {
-    overflow-x: auto;
-    white-space: nowrap;
-    height: fit-content;
-    padding-top: 1.62vh;
-    padding-left: 0;
-    padding-right: 0;
-    text-align: justify;
-  }
+.row {
+  overflow-x: auto;
+  white-space: nowrap;
+  height: fit-content;
+  padding-top: 1.62vh;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: justify;
+}
 
+.wrap {
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 425px) {
   .wrap {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
-
-  @media (max-width: 425px) {
-    .wrap {
-      flex-wrap: wrap;
-    }
-    .row {
-      overflow-x: hidden;
-    }
+  .row {
+    overflow-x: hidden;
   }
 }
 

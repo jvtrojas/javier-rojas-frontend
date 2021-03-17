@@ -1,6 +1,5 @@
 import React from 'react';
 import BaseLayout from '../components/layouts/BaseLayout';
-import BasePage from '../components/BasePage';
 import NavHeader from '../components/NavHeader'
 import Home from '../components/Home'
 import About from '../components/About'
@@ -16,8 +15,8 @@ class Index extends React.Component {
         return (
             <BaseLayout className="global" {...this.props.auth} >
                 <NavHeader />
-                <Home className="home-page" />
-                <About className="about-page" />
+                <Home />
+                <About />
             </BaseLayout>
         )
     }
