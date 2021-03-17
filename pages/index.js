@@ -1,10 +1,8 @@
 import React from 'react';
 import BaseLayout from '../components/layouts/BaseLayout';
-import BasePage from '../components/BasePage';
-import LanguageComponent from '../components/subtitles/language';
-import EventTicket from '../components/event-ticket/eventTicket';
-import withAuth from '../components/hoc/withAuth';
-import Tooltip from '../components/tooltip/tooltip';
+import NavHeader from '../components/NavHeader'
+import Home from '../components/Home'
+import About from '../components/About'
 
 const SAMPLE_TEXT = `AuralArk is the division of the creative platform simulacro focused on how space is perceived in sonic performances. We are in the search of futuristic spaces to experiment media events, a new hyperreal space created for the evolution of audiovisual and intermedia shows. By researching the aural architecture attributes of a venue, and relating to the will of the show, amount of people, and running hours we design specific architectural settings supported by high-end technology. `;
 const SAMPLE_TEXT_ES = `Nosotros y nuestros socios usamos tecnologías, como cookies, y procesamos datos personales, como direcciones IP e identificadores de cookies, para personalizar anuncios y contenido en función de sus intereses, medir el rendimiento de los anuncios y el contenido, y obtener información sobre el público que vio anuncios y contenido. Haga clic a continuación para consentir el uso de esta tecnología y el procesamiento de sus datos personales para estos fines. Puede cambiar de opinión y cambiar sus opciones de consentimiento en cualquier momento volviendo a este sitio.`
@@ -15,173 +13,10 @@ const EN_TEXT = "EN";
 class Index extends React.Component {
     render() {
         return (
-            <BaseLayout {...this.props.auth} >
-                <BasePage className="home-page">
-                    <div className="container-fluid">
-                    {/* HEADER */}
-                    <div className="row header-container wrap hide-scrollbar">
-                        <div>
-                            <div className="header-anchor black-background">
-                                <a href="#">HOME!!</a>                       
-                            </div>
-                        </div>
-                        <div>
-                            <div className="header-anchor aural-logo-header">
-                                <a href="#">ABOUT!!</a>          
-                            </div>
-                        </div>
-                        <div>
-                            <div className="header-anchor aural-logo-header">
-                                <a href="#">PROJECTS!!</a>                       
-                            </div>
-                        </div>
-                        <div>
-                            <div className="header-anchor aural-logo-header">
-                                <a href="#">AURAL_ARCHITECTURE!!</a>          
-                            </div>
-                        </div>
-                            <div>
-                            <div className="header-anchor aural-logo-header">
-                                <a href="#">PHOTOGRAPHY!!</a>                       
-                            </div>
-                            
-                            </div>
-                        <div className="header-anchor aural-logo-header">
-                                <a href="#">MUSIC!!</a>          
-                            </div>
-                    </div>
-                    
-                    {/* Row 1 EMPTY */}
-                    <div className="row row-no_top_padding wrap hide-scrollbar">
-                        <div className="firstborder-block">
-                       
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                    </div>
-
-                    {/* Row 2 */}
-                    <div className="row wrap hide-scrollbar">
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-                        
-                        </div>
-                        <div className="border-block">
-                        
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                    </div>
-
-                    {/* Row 3 */}
-                    <div className="row wrap hide-scrollbar">
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-                        
-                        </div>
-                        <div className="border-block">
-                        
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                    </div>
-
-                    {/* Row 4 */}
-                    <div className="row wrap hide-scrollbar">
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-                        
-                        </div>
-                        <div className="border-block">
-                        
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>
-                        <div className="border-block">
-
-                        </div>  
-                    </div>
-                </div>
-                </BasePage>
+            <BaseLayout className="global" {...this.props.auth} >
+                <NavHeader />
+                <Home />
+                <About />
             </BaseLayout>
         )
     }

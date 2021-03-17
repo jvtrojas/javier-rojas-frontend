@@ -28,6 +28,7 @@ html {
   overscroll-behavior: none;
 }
 
+/* GLOBAL */
 /* Hide scrollbar for Chrome, Safari and Opera */
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
@@ -36,6 +37,29 @@ html {
 /* Hide scrollbar for IE and Edge */
 .hide-scrollbar {
   -ms-overflow-style: none;
+}
+
+.row {
+  overflow-x: auto;
+  white-space: nowrap;
+  height: fit-content;
+  padding-top: 1.62vh;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: justify;
+}
+
+.wrap {
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 425px) {
+  .wrap {
+    flex-wrap: wrap;
+  }
+  .row {
+    overflow-x: hidden;
+  }
 }
 
 /* HEADER */
@@ -89,20 +113,6 @@ html {
 
 /* HOME PAGE */
 .home-page {
-  .row {
-    overflow-x: auto;
-    white-space: nowrap;
-    height: fit-content;
-    padding-top: 1.62vh;
-    padding-left: 0;
-    padding-right: 0;
-    text-align: justify;
-  }
-
-  .wrap {
-    flex-wrap: nowrap;
-  }
-
   .border-block {
     border: 1px dashed grey;
     cursor: pointer;
@@ -120,13 +130,8 @@ html {
     min-height: 32vh;
     min-width: 33.33vh;
   }
+}
 
-  @media (max-width: 425px) {
-    .wrap {
-      flex-wrap: wrap;
-    }
-    .row {
-      overflow-x: hidden;
-    }
-  }
+/* ABOUT PAGE */
+.about-page {
 }
