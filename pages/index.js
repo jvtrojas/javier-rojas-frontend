@@ -16,10 +16,10 @@ class Index extends React.Component {
     render() {
         return (
             <BaseLayout {...this.props.auth} >
-                <BasePage className="auralspecifics-page">
-                <div className="container-fluid">
-                {/* HEADER */}
-                    <div className="row header-container wrap example">
+                <BasePage className="home-page">
+                    <div className="container-fluid">
+                    {/* HEADER */}
+                    <div className="row header-container wrap hide-scrollbar">
                         <div>
                             <div className="header-anchor black-background">
                                 <a href="#">HOME!!</a>                       
@@ -51,12 +51,11 @@ class Index extends React.Component {
                             </div>
                     </div>
                     
-                {/* Row 1 EMPTY */}
-                    <div className="row row-no_top_padding wrap example">
+                    {/* Row 1 EMPTY */}
+                    <div className="row row-no_top_padding wrap hide-scrollbar">
                         <div className="firstborder-block">
                        
                         </div>
-                        <img className="imgx1" src="static/images/GRAFIC DESIGN/123325.jpg" alt="ATERNATIVO"/>
                         <div className="border-block">
 
                         </div>
@@ -80,8 +79,8 @@ class Index extends React.Component {
                         </div>
                     </div>
 
-                {/* Row 2 */}
-                <div className="row wrap example">
+                    {/* Row 2 */}
+                    <div className="row wrap hide-scrollbar">
                         <div className="border-block">
 
                         </div>
@@ -115,7 +114,7 @@ class Index extends React.Component {
                     </div>
 
                     {/* Row 3 */}
-                    <div className="row wrap example">
+                    <div className="row wrap hide-scrollbar">
                         <div className="border-block">
 
                         </div>
@@ -148,8 +147,8 @@ class Index extends React.Component {
                         </div>
                     </div>
 
-                {/* Row 4 */}
-                    <div className="row wrap example">
+                    {/* Row 4 */}
+                    <div className="row wrap hide-scrollbar">
                         <div className="border-block">
 
                         </div>
