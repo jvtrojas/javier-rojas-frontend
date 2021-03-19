@@ -10,6 +10,7 @@ const SAMPLE_TEXT_DE = `Wir und unsere Partner verwenden Technologien wie Cookie
 const EN_TEXT = "EN";
 
 
+
 class Index extends React.Component {
     render() {
         return (
