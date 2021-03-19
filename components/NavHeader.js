@@ -22,20 +22,38 @@ function NavHeader() {
         setClassToggle('color-0');
         }
 
+
+    let [ isSelected, setIsSelected ] = useState('');
+    let selectedClass = 'selected-class';
+
+    let handleSelectedNavLink = id => {
+        setIsSelected(id);
+    }
+    
+
     return (
         <div className="container-fluid">
             {/* HEADER */}
             <div className="row header-container wrap hide-scrollbar">
                 <div>
                     <div className="header-anchor">
-                        <a className="black-background" href="#">HOME!!</a>                       
+                        <a 
+                        href="#"
+                        className={`${isHovered=='home' ? classToggle : ''} ${isSelected=='home' ? selectedClass : ''}`}
+                        onClick={() => handleSelectedNavLink('home')}
+                        onMouseEnter={() => handleMouseOver('home')} 
+                        onMouseLeave={handleMouseOut}
+                        >
+                            HOME!!
+                        </a>                       
                     </div>
                 </div>
                 <div>
                     <div className="header-anchor">
                         <a 
                         href="#"
-                        className={isHovered=='about' ? classToggle : ''}
+                        className={`${isHovered=='about' ? classToggle : ''} ${isSelected=='about' ? selectedClass : ''}`}
+                        onClick={() => handleSelectedNavLink('about')}
                         onMouseEnter={() => handleMouseOver('about')} 
                         onMouseLeave={handleMouseOut}
                         >
@@ -47,7 +65,8 @@ function NavHeader() {
                     <div className="header-anchor">
                         <a 
                         href="#"
-                        className={isHovered=='projects' ? classToggle : ''}
+                        className={`${isHovered=='projects' ? classToggle : ''} ${isSelected=='projects' ? selectedClass : ''}`}
+                        onClick={() => handleSelectedNavLink('projects')}
                         onMouseEnter={() => handleMouseOver('projects')} 
                         onMouseLeave={handleMouseOut}
                         >
@@ -59,7 +78,8 @@ function NavHeader() {
                     <div className="header-anchor">
                         <a 
                         href="#"
-                        className={isHovered=='aural_architecture' ? classToggle : ''}
+                        className={`${isHovered=='aural_architecture' ? classToggle : ''} ${isSelected=='aural_architecture' ? selectedClass : ''}`}
+                        onClick={() => handleSelectedNavLink('aural_architecture')}
                         onMouseEnter={() => handleMouseOver('aural_architecture')} 
                         onMouseLeave={handleMouseOut}
                         >
@@ -71,7 +91,9 @@ function NavHeader() {
                     <div className="header-anchor">
                         <a 
                         href="#"
-                        className={isHovered=='photography' ? classToggle : ''}
+                        className={`${isHovered=='photography' ? classToggle : ''} ${isSelected=='photography' ? selectedClass : ''}`}
+                        onClick={() => handleSelectedNavLink('photography')}
+                        onMouseEnter={() => handleMouseOver('photography')} 
                         onMouseEnter={() => handleMouseOver('photography')} 
                         onMouseLeave={handleMouseOut}
                         >
@@ -83,7 +105,8 @@ function NavHeader() {
                     <div className="header-anchor">
                         <a 
                         href="#"
-                        className={isHovered=='music' ? classToggle : ''}
+                        className={`${isHovered=='music' ? classToggle : ''} ${isSelected=='music' ? selectedClass : ''}`}
+                        onClick={() => handleSelectedNavLink('music')}
                         onMouseEnter={() => handleMouseOver('music')} 
                         onMouseLeave={handleMouseOut}
                         >
