@@ -1,41 +1,26 @@
 @import "./shared/fonts";
-
 @import "./shared/colors";
-
 @import url(https://allfont.es/allfont.css?fonts=bpdotscondensedsquare);
 
 @font-face {
   font-family: "Inconsolata";
-
   src: url("https://ggayane.github.io/css-experiments/Inconsolata-VF.ttf");
-
   font-weight: 275 900;
-
   font-stretch: 50% 200%;
 }
 
 html,
 body {
   background-color: #ffffff;
-
   width: 100vw;
-
   min-width: 1280px hidden;
-
   min-height: 720px hidden;
-
   letter-spacing: 0;
-
   font-style: normal;
-
   text-rendering: optimizeLegibility;
-
   -webkit-font-smoothing: antialiased;
-
   -moz-osx-font-smoothing: grayscale;
-
   overflow: scroll;
-
   position: static;
 }
 
@@ -44,32 +29,23 @@ html {
 }
 
 /* GLOBAL */
-
 /* Hide scrollbar for Chrome, Safari and Opera */
-
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE and Edge */
-
 .hide-scrollbar {
   -ms-overflow-style: none;
 }
 
 .row {
   overflow-x: auto;
-
   white-space: nowrap;
-
   height: fit-content;
-
   padding-top: 1.62vh;
-
   padding-left: 0;
-
   padding-right: 0;
-
   text-align: justify;
 }
 
@@ -91,68 +67,47 @@ html {
 
 .header-container {
   height: 32vh;
-
   margin-left: 4px;
-
   position: static;
-
   .header-anchor {
     font-family: "BPdotsCondensedSquare", arial;
-
     font-size: 30vh;
-
     font-style: normal;
-
     font-weight: 400;
-
     line-height: 30vh;
-
     letter-spacing: 0em;
-
     text-align: left;
-
     text-align: center;
-
     z-index: 99999vh;
   }
 
   .header-anchor a {
     text-decoration: none;
-
     color: white;
   }
 
   .black-background {
     background: black;
-
     color: white;
-
     height: 25vh;
-
     padding: 1vh;
-
     margin: 0%;
   }
 
   .aural-logo-header a {
     color: black;
-
     text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
-
     height: fit-content;
   }
 
   .row-no_top_padding {
     padding-top: 0 !important;
-
     height: 39.62vh;
-
     margin: 0;
   }
 
   .find-us-white-square {
     border: 1px solid #f3f3f3bd;
-
     padding: 2rem;
   }
 }
@@ -162,29 +117,19 @@ html {
 .home-page {
   .border-block {
     border: 1px dashed grey;
-
     cursor: pointer;
-
     margin: 0;
-
     border: 1px dotted black;
-
     min-height: 15rem;
-
     min-width: 24rem;
   }
 
   .firstborder-block {
     border: 32px dashed grey;
-
     cursor: pointer;
-
     margin: 0;
-
     border: 1px dotted black;
-
     min-height: 32vh;
-
     min-width: 33.33vh;
   }
 }
@@ -194,15 +139,10 @@ html {
 .about-page {
   .border-block {
     border: 1px dashed grey;
-
     cursor: pointer;
-
     margin: 0;
-
     border: 1px dotted black;
-
     min-height: 15rem;
-
     min-width: 24rem;
   }
 }
