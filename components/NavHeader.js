@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 function NavHeader() {
 
+    //Hover ID para cada link
     let [ isHovered, setIsHovered ] = useState('');
 
     //Clase por default
@@ -38,7 +39,8 @@ function NavHeader() {
                         onMouseEnter={() => handleMouseOver('about')} 
                         onMouseLeave={handleMouseOut}
                         >
-                        ABOUT!!</a>          
+                            ABOUT!!
+                        </a>          
                     </div>
                 </div>
                 <div>
@@ -49,7 +51,8 @@ function NavHeader() {
                         onMouseEnter={() => handleMouseOver('projects')} 
                         onMouseLeave={handleMouseOut}
                         >
-                        PROJECTS!!</a>                       
+                            PROJECTS!!
+                        </a>                       
                     </div>
                 </div>
                 <div>
@@ -60,7 +63,8 @@ function NavHeader() {
                         onMouseEnter={() => handleMouseOver('aural_architecture')} 
                         onMouseLeave={handleMouseOut}
                         >
-                        AURAL_ARCHITECTURE!!</a>          
+                            AURAL_ARCHITECTURE!!
+                        </a>          
                     </div>
                 </div>
                     <div>
@@ -71,7 +75,8 @@ function NavHeader() {
                         onMouseEnter={() => handleMouseOver('photography')} 
                         onMouseLeave={handleMouseOut}
                         >
-                        PHOTOGRAPHY!!</a>                       
+                            PHOTOGRAPHY!!
+                        </a>                       
                     </div>
                     
                     </div>
@@ -82,7 +87,8 @@ function NavHeader() {
                         onMouseEnter={() => handleMouseOver('music')} 
                         onMouseLeave={handleMouseOut}
                         >
-                        MUSIC!!</a>          
+                            MUSIC!!
+                        </a>          
                     </div>
             </div>
         </div>
