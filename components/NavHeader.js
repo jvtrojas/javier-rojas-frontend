@@ -27,7 +27,7 @@ function NavHeader() {
             <div className="row header-container wrap hide-scrollbar">
                 <div>
                     <div className="header-anchor">
-                        <a class="black-background" href="#">HOME!!</a>                       
+                        <a className="black-background" href="#">HOME!!</a>                       
                     </div>
                 </div>
                 <div>
