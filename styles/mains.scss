@@ -19,8 +19,8 @@ html {
 html, body {
   background-color: #FFFFFF;
 	width:100vw;
-	min-width:1280px hidden ;
-	min-height:720px hidden;
+	min-width:100vw;
+	min-height:100vh;
 	// height: ;
 	 font-family: 'barlow' ;
   letter-spacing: 0;
@@ -28,9 +28,10 @@ html, body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-	overflow: scroll;
+	//overflow: scroll;
   position:static;
 }
+
 
 .simulacro2-page {
   #z-index {
@@ -54,10 +55,7 @@ html, body {
     padding: 0.5vw;
   }
 
-  .imgx1 {
-    height: 22vh;
-   
-  }
+
 }
 
   .self-typed {
@@ -114,7 +112,20 @@ html, body {
     //       60% {background: #00FF3D;}
     //       80% {background: #84FF00;}
     //       100% {background: #7B00FF;}
-  
+    
+    padding-left: 0px;
+    
+    .square {
+      height: 11vh;
+      width: 11vh;
+      background-color: rgb(0, 0, 0);
+      z-index: 99999vh;
+      position: fixed;
+      bottom: 5.5vh;
+      right: 5.5vh;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+
+    }
 
     .subtitle-responsive {
       width: inherit;
@@ -173,8 +184,19 @@ html, body {
       height: 100%;
     }
 
-    img {
-      height: 35vw;
+    
+
+    .imgx1 {
+      height: 66.33vh;
+      padding: .3vh;
+    }
+  
+    .imgx2 {
+      height: 99.11vh;
+    }
+  
+    .imgx05 {
+      height: 6vh;
     }
     .logo {
       width: 100px;
@@ -209,12 +231,14 @@ html, body {
       overflow-x: auto;
       white-space: nowrap;
       height: fit-content;
-      padding-top: 1.62vh;
+      padding-top: 3vh;
       padding-left: 0;
       padding-right: 0;
       text-align: justify;
     }
 
+
+    
     .padding {
       padding-top: 100px;
       padding-bottom: 38px;
@@ -337,7 +361,7 @@ html, body {
         overflow-x: hidden;
       }
 
-          .info-title {
+      .info-title {
       h1 {font-size: 33vw;}
     }
     .basic-rider-pic {
@@ -447,7 +471,17 @@ html, body {
     text-align: center;
     //margin: 1.11vh;
     z-index: 99999vh;
+    color: blue
 
+  }
+
+  .header-anchor:hover  {
+    background: rgb(255, 0, 128);
+    color: rgb(0, 81, 255) !important;
+    height: 25vh;
+    padding: 1vh;
+    margin: 0%;
+    
   }
 
   .header-anchor a {
@@ -461,12 +495,23 @@ html, body {
     height: 25vh;
     padding: 1vh;
     margin: 0%;
+    font-family: 'BPdotsCondensedSquare', arial;
+    font-size: 30vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30vh;
+    letter-spacing: 0em;
+    text-align: left;
+    text-align: center;
+    //margin: 1.11vh;
+    z-index: 99999vh;
   }
 
   .header-container {
-    height: 32vh;
-    margin-left: 4px;
+    height: 28vh !important; 
+    //margin-left: 4px;
     position: static;
+   
   
   }
 
