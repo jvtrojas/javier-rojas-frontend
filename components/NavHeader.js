@@ -2,17 +2,23 @@ import React, { useState } from 'react';
 
 function NavHeader() {
 
-    let [ classDefault, setClassDefault ] = useState('color-0');
+    let [ isHovered, setIsHovered ] = useState('');
+
+    //Clase por default
+    let [ classToggle, setClassToggle ] = useState('color-0');
+    
+    //Array con clases
     let headerAnchorClassArray = ['color-1', 'color-2'];
     
 
-    function handleMouseOver() {
+    let handleMouseOver = id => {
+        setIsHovered(id)
         let number = Math.floor(Math.random() * headerAnchorClassArray.length)
-        setClassDefault(headerAnchorClassArray[number]);
+        setClassToggle(headerAnchorClassArray[number]);
     }
 
     function handleMouseOut() {
-        setClassDefault('color-0');
+        setClassToggle('color-0');
         }
 
     return (
@@ -28,8 +34,8 @@ function NavHeader() {
                     <div className="header-anchor">
                         <a 
                         href="#"
-                        className={classDefault}
-                        onMouseEnter={handleMouseOver} 
+                        className={isHovered=='about' ? classToggle : ''}
+                        onMouseEnter={() => handleMouseOver('about')} 
                         onMouseLeave={handleMouseOut}
                         >
                         ABOUT!!</a>          
@@ -39,8 +45,8 @@ function NavHeader() {
                     <div className="header-anchor">
                         <a 
                         href="#"
-                        className={classDefault}
-                        onMouseEnter={handleMouseOver} 
+                        className={isHovered=='projects' ? classToggle : ''}
+                        onMouseEnter={() => handleMouseOver('projects')} 
                         onMouseLeave={handleMouseOut}
                         >
                         PROJECTS!!</a>                       
@@ -50,8 +56,8 @@ function NavHeader() {
                     <div className="header-anchor">
                         <a 
                         href="#"
-                        className={classDefault}
-                        onMouseEnter={handleMouseOver} 
+                        className={isHovered=='aural_architecture' ? classToggle : ''}
+                        onMouseEnter={() => handleMouseOver('aural_architecture')} 
                         onMouseLeave={handleMouseOut}
                         >
                         AURAL_ARCHITECTURE!!</a>          
@@ -61,8 +67,8 @@ function NavHeader() {
                     <div className="header-anchor">
                         <a 
                         href="#"
-                        className={classDefault}
-                        onMouseEnter={handleMouseOver} 
+                        className={isHovered=='photography' ? classToggle : ''}
+                        onMouseEnter={() => handleMouseOver('photography')} 
                         onMouseLeave={handleMouseOut}
                         >
                         PHOTOGRAPHY!!</a>                       
@@ -72,8 +78,8 @@ function NavHeader() {
                     <div className="header-anchor">
                         <a 
                         href="#"
-                        className={classDefault}
-                        onMouseEnter={handleMouseOver} 
+                        className={isHovered=='music' ? classToggle : ''}
+                        onMouseEnter={() => handleMouseOver('music')} 
                         onMouseLeave={handleMouseOut}
                         >
                         MUSIC!!</a>          
