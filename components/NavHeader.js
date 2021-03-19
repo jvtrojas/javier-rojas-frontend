@@ -2,78 +2,81 @@ import React, { useState } from 'react';
 
 function NavHeader() {
 
-    let colorsArray = ['#41FEFF','#C302FE','#1034ef','#44FFC4','#FFF500','#F90F01','#FFF500','#1034ef','#41FEFF'];
-    let [ randomNumber, setRandomNumber ] = useState(0);
+    let [ classDefault, setClassDefault ] = useState('color-0');
+    let headerAnchorClassArray = ['color-1', 'color-2'];
     
-    const handleRandomNumber = mouseEnter => {
-        let headerLink = mouseEnter.target;
-        let number = Math.floor(Math.random() * 9)
-        setRandomNumber(number);
-        console.log(randomNumber)
-        headerLink.style.backgroundColor = colorsArray[randomNumber]
-        headerLink.style.color = colorsArray[randomNumber+1]
+
+    function handleMouseOver() {
+        let number = Math.floor(Math.random() * headerAnchorClassArray.length)
+        setClassDefault(headerAnchorClassArray[number]);
+    }
+
+    function handleMouseOut() {
+        setClassDefault('color-0');
         }
-
-    // const handleHoverColorChange = mouseEnter => {
-    //     let headerLink = mouseEnter.target;
-    //     headerLink.style.backgroundColor = colorsArray[randomNumber()]
-    //     headerLink.style.color = colorsArray[randomNumber()]
-    // }
-
-    const handleDefaultColor = mouseLeave => {
-        let headerLink = mouseLeave.target;
-        headerLink.style.backgroundColor = 'white';
-        headerLink.style.color = 'black';
-        }
-
 
     return (
         <div className="container-fluid">
             {/* HEADER */}
             <div className="row header-container wrap hide-scrollbar">
                 <div>
-                    <div className="header-anchor black-background">
-                        <a href="#">HOME!!</a>                       
+                    <div className="header-anchor">
+                        <a class="black-background" href="#">HOME!!</a>                       
                     </div>
                 </div>
                 <div>
-                    <div className="header-anchor aural-logo-header">
+                    <div className="header-anchor">
                         <a 
                         href="#"
-                        onMouseEnter={mouseEnter => handleRandomNumber(mouseEnter)} 
-                        onMouseLeave={mouseLeave => handleDefaultColor(mouseLeave)}
+                        className={classDefault}
+                        onMouseEnter={handleMouseOver} 
+                        onMouseLeave={handleMouseOut}
                         >
                         ABOUT!!</a>          
                     </div>
                 </div>
                 <div>
-                    <div className="header-anchor aural-logo-header">
+                    <div className="header-anchor">
                         <a 
                         href="#"
-                        onMouseEnter={mouseEnter => handleRandomNumber(mouseEnter)} 
-                        onMouseLeave={mouseLeave => handleDefaultColor(mouseLeave)}
+                        className={classDefault}
+                        onMouseEnter={handleMouseOver} 
+                        onMouseLeave={handleMouseOut}
                         >
                         PROJECTS!!</a>                       
                     </div>
                 </div>
                 <div>
-                    <div className="header-anchor aural-logo-header">
+                    <div className="header-anchor">
                         <a 
                         href="#"
-                        onMouseEnter={mouseEnter => handleRandomNumber(mouseEnter)} 
-                        onMouseLeave={mouseLeave => handleDefaultColor(mouseLeave)}
+                        className={classDefault}
+                        onMouseEnter={handleMouseOver} 
+                        onMouseLeave={handleMouseOut}
                         >
                         AURAL_ARCHITECTURE!!</a>          
                     </div>
                 </div>
                     <div>
-                    <div className="header-anchor aural-logo-header">
-                        <a href="#">PHOTOGRAPHY!!</a>                       
+                    <div className="header-anchor">
+                        <a 
+                        href="#"
+                        className={classDefault}
+                        onMouseEnter={handleMouseOver} 
+                        onMouseLeave={handleMouseOut}
+                        >
+                        PHOTOGRAPHY!!</a>                       
                     </div>
                     
                     </div>
-                <div className="header-anchor aural-logo-header">
-                        <a href="#">MUSIC!!</a>          
+                    <div className="header-anchor">
+                        <a 
+                        href="#"
+                        className={classDefault}
+                        onMouseEnter={handleMouseOver} 
+                        onMouseLeave={handleMouseOut}
+                        >
+                        MUSIC!!</a>          
                     </div>
             </div>
         </div>

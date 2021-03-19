@@ -63,6 +63,21 @@ html {
   }
 }
 
+.color-0 {
+  color: black i !important;
+  background-color: transparent;
+}
+
+.color-1 {
+  color: red i !important;
+  background-color: yellow;
+}
+
+.color-2 {
+  color: blue !important;
+  background-color: green;
+}
+
 /* HEADER */
 
 .header-container {
@@ -73,6 +88,7 @@ html {
     font-family: "BPdotsCondensedSquare", arial;
     font-size: 30vh;
     font-style: normal;
+    display: flex;
     font-weight: 400;
     line-height: 30vh;
     letter-spacing: 0em;
@@ -81,23 +97,17 @@ html {
     z-index: 99999vh;
   }
 
-  .header-anchor a {
-    text-decoration: none;
-    color: white;
-  }
-
   .black-background {
     background: black;
-    color: white;
-    height: 25vh;
-    padding: 1vh;
+    color: white !important;
     margin: 0%;
   }
 
-  .aural-logo-header a {
+  .header-anchor a {
     color: black;
     text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
-    height: fit-content;
+    text-decoration: none;
+    height: 24vh;
   }
 
   .row-no_top_padding {
