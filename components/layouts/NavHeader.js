@@ -38,83 +38,91 @@ const NavHeader = ({children}) => {
             <div className="row header-container wrap hide-scrollbar">
                 <div>
                     <div className="header-anchor">
-                        <Link href="/index">
-                        <a
-                        className={`${isHovered=='home' ? classToggle : ''} ${isSelected=='home' ? selectedClass : ''}`}
-                        onClick={() => handleSelectedNavLink('home')}
-                        onMouseEnter={() => handleMouseOver('home')} 
-                        onMouseLeave={handleMouseOut}
-                        >
-                            HOME!!
-                        </a>    
+                        <Link href="/">
+                            <a
+                            className={`${isHovered=='home' ? classToggle : ''} ${isSelected=='home' ? selectedClass : ''}`}
+                            onClick={() => handleSelectedNavLink('home')}
+                            onMouseEnter={() => handleMouseOver('home')} 
+                            onMouseLeave={handleMouseOut}
+                            >
+                                HOME!!
+                            </a>    
                         </Link>                   
                     </div>
                 </div>
                 <div>
                     <div className="header-anchor">
                         <Link href="/about">
-                        <a
-                        className={`${isHovered=='about' ? classToggle : ''} ${isSelected=='about' ? selectedClass : ''}`}
-                        onClick={() => handleSelectedNavLink('about')}
-                        onMouseEnter={() => handleMouseOver('about')} 
-                        onMouseLeave={handleMouseOut}
-                        >
-                            ABOUT!!
-                        </a>    
+                            <a
+                            className={`${isHovered=='about' ? classToggle : ''} ${isSelected=='about' ? selectedClass : ''}`}
+                            onClick={() => handleSelectedNavLink('about')}
+                            onMouseEnter={() => handleMouseOver('about')} 
+                            onMouseLeave={handleMouseOut}
+                            >
+                                ABOUT!!
+                            </a>    
                         </Link>    
                     </div>
                 </div>
                 <div>
                     <div className="header-anchor">
-                        <a 
-                        href="#"
-                        className={`${isHovered=='projects' ? classToggle : ''} ${isSelected=='projects' ? selectedClass : ''}`}
-                        onClick={() => handleSelectedNavLink('projects')}
-                        onMouseEnter={() => handleMouseOver('projects')} 
-                        onMouseLeave={handleMouseOut}
-                        >
-                            PROJECTS!!
-                        </a>                       
+                        <Link href="/projects">
+                            <a 
+                            href="#"
+                            className={`${isHovered=='projects' ? classToggle : ''} ${isSelected=='projects' ? selectedClass : ''}`}
+                            onClick={() => handleSelectedNavLink('projects')}
+                            onMouseEnter={() => handleMouseOver('projects')} 
+                            onMouseLeave={handleMouseOut}
+                            >
+                                PROJECTS!!
+                            </a>    
+                        </Link>                   
                     </div>
                 </div>
                 <div>
                     <div className="header-anchor">
-                        <a 
-                        href="#"
-                        className={`${isHovered=='aural_architecture' ? classToggle : ''} ${isSelected=='aural_architecture' ? selectedClass : ''}`}
-                        onClick={() => handleSelectedNavLink('aural_architecture')}
-                        onMouseEnter={() => handleMouseOver('aural_architecture')} 
-                        onMouseLeave={handleMouseOut}
-                        >
-                            AURAL_ARCHITECTURE!!
-                        </a>          
+                        <Link href="/aural-architecture">
+                            <a 
+                            href="#"
+                            className={`${isHovered=='aural_architecture' ? classToggle : ''} ${isSelected=='aural_architecture' ? selectedClass : ''}`}
+                            onClick={() => handleSelectedNavLink('aural_architecture')}
+                            onMouseEnter={() => handleMouseOver('aural_architecture')} 
+                            onMouseLeave={handleMouseOut}
+                            >
+                                AURAL_ARCHITECTURE!!
+                            </a>          
+                        </Link>
                     </div>
                 </div>
                     <div>
                     <div className="header-anchor">
-                        <a 
-                        href="#"
-                        className={`${isHovered=='photography' ? classToggle : ''} ${isSelected=='photography' ? selectedClass : ''}`}
-                        onClick={() => handleSelectedNavLink('photography')}
-                        onMouseEnter={() => handleMouseOver('photography')} 
-                        onMouseEnter={() => handleMouseOver('photography')} 
-                        onMouseLeave={handleMouseOut}
-                        >
-                            PHOTOGRAPHY!!
-                        </a>                       
+                        <Link href="/photography">
+                            <a 
+                            href="#"
+                            className={`${isHovered=='photography' ? classToggle : ''} ${isSelected=='photography' ? selectedClass : ''}`}
+                            onClick={() => handleSelectedNavLink('photography')}
+                            onMouseEnter={() => handleMouseOver('photography')} 
+                            onMouseEnter={() => handleMouseOver('photography')} 
+                            onMouseLeave={handleMouseOut}
+                            >
+                                PHOTOGRAPHY!!
+                            </a>       
+                        </Link>                
                     </div>
                     
                     </div>
                     <div className="header-anchor">
-                        <a 
-                        href="#"
-                        className={`${isHovered=='music' ? classToggle : ''} ${isSelected=='music' ? selectedClass : ''}`}
-                        onClick={() => handleSelectedNavLink('music')}
-                        onMouseEnter={() => handleMouseOver('music')} 
-                        onMouseLeave={handleMouseOut}
-                        >
-                            MUSIC!!
-                        </a>          
+                        <Link href="/music">
+                            <a 
+                            href="#"
+                            className={`${isHovered=='music' ? classToggle : ''} ${isSelected=='music' ? selectedClass : ''}`}
+                            onClick={() => handleSelectedNavLink('music')}
+                            onMouseEnter={() => handleMouseOver('music')} 
+                            onMouseLeave={handleMouseOut}
+                            >
+                                MUSIC!!
+                            </a>       
+                        </Link>   
                     </div>
             </div>
 

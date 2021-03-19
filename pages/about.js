@@ -1,4 +1,4 @@
-import NavHeader from '../components/NavHeader';
+import NavHeader from '../components/layouts/NavHeader';
 import React from 'react';
 
 class About extends React.Component {
