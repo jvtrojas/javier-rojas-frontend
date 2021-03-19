@@ -1,10 +1,10 @@
-import NavHeader from '../components/layouts/NavHeader';
 import React from 'react';
+import NavHeaderLayout from '../components/layouts/NavHeaderLayout';
 
 class About extends React.Component {
     render(){
     return (
-        <NavHeader>
+        <NavHeaderLayout>
         <div className="container-fluid about-page">
             
             {/* Row 1 EMPTY */}
@@ -139,7 +139,7 @@ class About extends React.Component {
             </div>
             
         </div>
-        </NavHeader>
+        </NavHeaderLayout>
         
     )
 }

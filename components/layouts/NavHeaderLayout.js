@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 
-const NavHeader = ({children}) => {
+const NavHeaderLayout = ({children}) => {
 
     //Hover ID para cada link
     let [ isHovered, setIsHovered ] = useState('');
@@ -132,4 +132,4 @@ const NavHeader = ({children}) => {
     )
 }
 
-export default NavHeader;
+export default NavHeaderLayout;

@@ -1,6 +1,6 @@
 import React from 'react';
-import NavHeader from '../components/layouts/NavHeader';
 import BaseLayout from '../components/layouts/BaseLayout';
+import NavHeaderLayout from '../components/layouts/NavHeaderLayout';
 
 const SAMPLE_TEXT = `AuralArk is the division of the creative platform simulacro focused on how space is perceived in sonic performances. We are in the search of futuristic spaces to experiment media events, a new hyperreal space created for the evolution of audiovisual and intermedia shows. By researching the aural architecture attributes of a venue, and relating to the will of the show, amount of people, and running hours we design specific architectural settings supported by high-end technology. `;
 const SAMPLE_TEXT_ES = `Nosotros y nuestros socios usamos tecnologías, como cookies, y procesamos datos personales, como direcciones IP e identificadores de cookies, para personalizar anuncios y contenido en función de sus intereses, medir el rendimiento de los anuncios y el contenido, y obtener información sobre el público que vio anuncios y contenido. Haga clic a continuación para consentir el uso de esta tecnología y el procesamiento de sus datos personales para estos fines. Puede cambiar de opinión y cambiar sus opciones de consentimiento en cualquier momento volviendo a este sitio.`
@@ -13,7 +13,7 @@ class Index extends React.Component {
     render() {
         return (
             <BaseLayout className="global" {...this.props.auth} >
-                <NavHeader>
+                <NavHeaderLayout>
                 <div className="container-fluid home-page">
             {/* Row 1 */}
             <div className="row row-no_top_padding wrap hide-scrollbar">
@@ -225,7 +225,7 @@ class Index extends React.Component {
                 <img className="imgx1" src="static/images/9:16/IMG_3541.jpeg" alt="ATERNATIVO"/>
             </div>
         </div>
-                </NavHeader>  
+                </NavHeaderLayout>  
             </BaseLayout>
         )
     }
