@@ -1,8 +1,12 @@
+import NavHeader from '../components/NavHeader';
 import React from 'react';
 
-function About() {
+class About extends React.Component {
+    render(){
     return (
+        <NavHeader>
         <div className="container-fluid about-page">
+            
             {/* Row 1 EMPTY */}
             <div className="row row-no_top_padding wrap hide-scrollbar">
                 About
@@ -133,8 +137,12 @@ function About() {
 
                 </div>  
             </div>
+            
         </div>
+        </NavHeader>
+        
     )
+}
 }
 
 export default About;
