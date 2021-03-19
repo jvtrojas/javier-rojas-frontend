@@ -1,8 +1,12 @@
 import React from 'react';
+import NavHeaderLayout from '../components/layouts/NavHeaderLayout';
 
-function About() {
+class About extends React.Component {
+    render(){
     return (
+        <NavHeaderLayout>
         <div className="container-fluid about-page">
+            
             {/* Row 1 EMPTY */}
             <div className="row row-no_top_padding wrap hide-scrollbar">
                 About
@@ -133,8 +137,12 @@ function About() {
 
                 </div>  
             </div>
+            
         </div>
+        </NavHeaderLayout>
+        
     )
+}
 }
 
 export default About;
