@@ -4,7 +4,6 @@ import NavHeaderLayout from '../components/layouts/NavHeaderLayout';
 class About extends React.Component {
     render(){
     return (
-        <NavHeaderLayout>
         <div className="container-fluid about-page">
             
             {/* Row 1 EMPTY */}
@@ -139,8 +138,6 @@ class About extends React.Component {
             </div>
             
         </div>
-        </NavHeaderLayout>
-        
     )
 }
 }

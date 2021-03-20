@@ -1,11 +1,17 @@
 import App from 'next/app';
 import auth0 from '../services/auth0';
+import NavHeaderLayout from '../components/layouts/NavHeaderLayout';
 //Styling
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/mains.scss';
 
 function MyApp({ Component, pageProps, auth }) {
-    return <Component {...pageProps} auth={auth} />
+    return (
+      <>
+        <NavHeaderLayout />
+        <Component {...pageProps} auth={auth} />
+      </>
+      )
   }
 
   MyApp.getInitialProps = async (appContext) => {
