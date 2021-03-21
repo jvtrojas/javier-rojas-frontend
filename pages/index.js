@@ -15,7 +15,7 @@ class Index extends React.Component {
             <BaseLayout className="global" {...this.props.auth} >
                 <div className="container-fluid home-page">
                     {/* Row 1 */}
-                    <div className="row row-no_top_padding wrap hide-scrollbar">
+                    <div className="row row-no_top_padding wrap hide-scrollbar shuffled-children">
                         <img className="imgx1" src="static/images/9:16/4A9C9416-477D-4496-96B4-088EDC1D74AB.jpg" alt="1"/>
                         <img className="imgx1" src="static/images/9:16/4DAC09A9-4052-4B42-80C8-036A8CFE7235.jpeg" alt="2"/>
                         <img className="imgx1" src="static/images/9:16/7F9372A4-4074-42E4-96EA-AC9303BF4747.jpg" alt="3"/>
