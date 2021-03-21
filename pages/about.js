@@ -1,125 +1,117 @@
 import React from 'react';
+import Data from '../public/data.json'
 
 class About extends React.Component {
     render(){
-
-    // function shuffleOrder() {
-    // for (var i=0;i<4;i++){
-    //     var randomNumber = Math.floor(Math.random() * 4);
-    //     elements[i].style.order = randomNumber;
-    //     }
-    // }
-
-// shuffleOrder()
-
-    return (
-        <div className="container-fluid about-page">
-            
-            {/* Row 1 EMPTY */}
-            <div className="row row-no_top_padding wrap hide-scrollbar">
-                About
-                <div className="border-block">
-                    1
-                </div>
-                <div className="border-block">
-                    2
-                </div>
-                <div className="border-block">
-                    3               
-                </div>
-                <div className="border-block">
-                    4 
-                </div>
-            </div>
-
-            {/* Row 2 */}
-            <div className="row wrap hide-scrollbar">
-                <div className="border-block">
-                a
-                </div>
-                <div className="border-block">
-                b
-                </div>
-                <div className="border-block">
-                c
-                </div>
-                <div className="border-block">
-                d
-                </div>
-                <div className="border-block">
-                e
-                </div>
-            </div>
-
-            {/* Row 3 */}
-            <div className="row wrap hide-scrollbar">
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
+        return (
+            <div className="container-fluid about-page">
                 
+                {/* Row 1 EMPTY */}
+                <div className="row row-no_top_padding wrap hide-scrollbar">
+                    About
+                    <div className="border-block">
+                        1
+                        { console.log(Data.about[0].id) }
+                    </div>
+                    <div className="border-block">
+                        2
+                    </div>
+                    <div className="border-block">
+                        3               
+                    </div>
+                    <div className="border-block">
+                        4 
+                    </div>
                 </div>
-                <div className="border-block">
+
+                {/* Row 2 */}
+                <div className="row wrap hide-scrollbar">
+                    <div className="border-block">
+                    a
+                    </div>
+                    <div className="border-block">
+                    b
+                    </div>
+                    <div className="border-block">
+                    c
+                    </div>
+                    <div className="border-block">
+                    d
+                    </div>
+                    <div className="border-block">
+                    e
+                    </div>
+                </div>
+
+                {/* Row 3 */}
+                <div className="row wrap hide-scrollbar">
+                    <div className="border-block">
+
+                    </div>
+                    <div className="border-block">
+                    
+                    </div>
+                    <div className="border-block">
+                    
+                    </div>
+                    <div className="border-block">
+
+                    </div>
+                    <div className="border-block">
+
+                    </div>
+                    <div className="border-block">
+
+                    </div>
+                    <div className="border-block">
+
+                    </div>
+                    <div className="border-block">
+
+                    </div>
+                    <div className="border-block">
+
+                    </div>
+                    <div className="border-block">
+
+                    </div>
+                </div>
+
+                {/* Row 4 */}
+                <div className="row wrap hide-scrollbar">
+                    <div className="border-block">
+
+                    </div>
+                    <div className="border-block">
+                    
+                    </div>
+                    <div className="border-block">
+                    
+                    </div>
+                    <div className="border-block">
+
+                    </div>
+                    <div className="border-block">
+
+                    </div>
+                    <div className="border-block">
+
+                    </div>
+                    <div className="border-block">
+
+                    </div>
+                    <div className="border-block">
+
+                    </div>
+                    <div className="border-block">
+
+                    </div>
+                    <div className="border-block">
+
+                    </div>  
+                </div>
                 
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
             </div>
-
-            {/* Row 4 */}
-            <div className="row wrap hide-scrollbar">
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-                
-                </div>
-                <div className="border-block">
-                
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>  
-            </div>
-            
-        </div>
     )
 }
 }
