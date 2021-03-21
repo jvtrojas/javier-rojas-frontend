@@ -43,7 +43,7 @@ html {
   overflow-x: auto;
   white-space: nowrap;
   height: fit-content;
-  padding-top: 1.62vh;
+  padding-top: 0.7rem;
   padding-left: 0;
   padding-right: 0;
   text-align: justify;
@@ -88,33 +88,32 @@ html {
 /* HEADER */
 
 .header-container {
-  height: 32vh;
-  margin-left: 4px;
+  min-height: 32vh;
+  margin-left: 0;
+  margin-right: 0.3rem;
   position: static;
   .header-anchor {
     font-family: "BPdotsCondensedSquare", arial;
-    font-size: 30vh;
+    font-size: 11rem;
     font-style: normal;
     display: flex;
     font-weight: 400;
-    line-height: 30vh;
+    line-height: 12rem;
     letter-spacing: 0em;
     text-align: left;
     text-align: center;
     z-index: 99999vh;
   }
 
-  .black-background {
-    background: black;
-    color: white !important;
-    margin: 0%;
-  }
-
   .header-anchor a {
     color: black;
     text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
     text-decoration: none;
-    height: 24vh;
+    padding-top: 0.5rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    height: 11rem;
+    user-select: none;
   }
 
   .row-no_top_padding {
@@ -127,6 +126,17 @@ html {
     border: 1px solid #f3f3f3bd;
     padding: 2rem;
   }
+}
+
+/* BLACK SQUARE */
+
+.black-square {
+  background-color: black;
+  height: 7rem;
+  width: 7rem;
+  position: absolute;
+  right: 4rem;
+  bottom: 7rem;
 }
 
 /* HOME PAGE */

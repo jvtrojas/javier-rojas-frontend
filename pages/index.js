@@ -16,16 +16,16 @@ class Index extends React.Component {
                 <div className="container-fluid home-page">
                     {/* Row 1 */}
                     <div className="row row-no_top_padding wrap hide-scrollbar">
-                        <img className="imgx1" src="static/images/9:16/4A9C9416-477D-4496-96B4-088EDC1D74AB.jpg" alt="ATERNATIVO"/>
-                        <img className="imgx1" src="static/images/9:16/4DAC09A9-4052-4B42-80C8-036A8CFE7235.jpeg" alt="ATERNATIVO"/>
-                        <img className="imgx1" src="static/images/9:16/7F9372A4-4074-42E4-96EA-AC9303BF4747.jpg" alt="ATERNATIVO"/>
-                        <img className="imgx1" src="static/images/9:16/9B0A5225-CCA4-4A8C-9B88-57775AF16928.jpg" alt="ATERNATIVO"/>
-                        <img className="imgx1" src="static/images/9:16/IMG_0149.jpeg" alt="ATERNATIVO"/>
-                        <img className="imgx1" src="static/images/9:16/IMG_4224.jpeg" alt="ATERNATIVO"/>
-                        <img className="imgx1" src="static/images/9:16/IMG_3966.jpeg" alt="ATERNATIVO"/>
-                        <img className="imgx1" src="static/images/9:16/IMG_3910.jpeg" alt="ATERNATIVO"/>
-                        <img className="imgx1" src="static/images/9:16/IMG_3523.jpeg" alt="ATERNATIVO"/>
-                        <img className="imgx1" src="static/images/9:16/IMG_3454.jpeg" alt="ATERNATIVO"/>
+                        <img className="imgx1" src="static/images/9:16/4A9C9416-477D-4496-96B4-088EDC1D74AB.jpg" alt="1"/>
+                        <img className="imgx1" src="static/images/9:16/4DAC09A9-4052-4B42-80C8-036A8CFE7235.jpeg" alt="2"/>
+                        <img className="imgx1" src="static/images/9:16/7F9372A4-4074-42E4-96EA-AC9303BF4747.jpg" alt="3"/>
+                        <img className="imgx1" src="static/images/9:16/9B0A5225-CCA4-4A8C-9B88-57775AF16928.jpg" alt="4"/>
+                        <img className="imgx1" src="static/images/9:16/IMG_0149.jpeg" alt="5"/>
+                        <img className="imgx1" src="static/images/9:16/IMG_4224.jpeg" alt="6"/>
+                        <img className="imgx1" src="static/images/9:16/IMG_3966.jpeg" alt="7"/>
+                        <img className="imgx1" src="static/images/9:16/IMG_3910.jpeg" alt="8"/>
+                        <img className="imgx1" src="static/images/9:16/IMG_3523.jpeg" alt="9"/>
+                        <img className="imgx1" src="static/images/9:16/IMG_3454.jpeg" alt="10"/>
                         <img className="imgx1" src="static/images/9:16/IMG_3209.jpeg" alt="ATERNATIVO"/>
                         <img className="imgx1" src="static/images/9:16/IMG_3634.jpeg" alt="ATERNATIVO"/>
                         <img className="imgx1" src="static/images/9:16/F16300CD-2731-417D-B71D-2D5ED38B731F.jpeg" alt="ATERNATIVO"/>
