@@ -81,8 +81,8 @@ html {
 }
 
 .selected-class {
-  background: black;
   color: white !important;
+  background-color: black;
 }
 
 /* HEADER */
@@ -137,6 +137,10 @@ html {
   position: absolute;
   right: 4rem;
   bottom: 7rem;
+}
+
+.shuffled-children {
+  display: flexbox;
 }
 
 /* HOME PAGE */
