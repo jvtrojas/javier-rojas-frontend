@@ -1,17 +1,17 @@
 import React from 'react';
-import Data from '../public/data.json'
+import Data from '../public/js/dataJS'
 
 class About extends React.Component {
+
     render(){
+        
         return (
             <div className="container-fluid about-page">
                 
                 {/* Row 1 EMPTY */}
                 <div className="row row-no_top_padding wrap hide-scrollbar">
-                    About
                     <div className="border-block">
                         1
-                        { console.log(Data.about[0].id) }
                     </div>
                     <div className="border-block">
                         2
