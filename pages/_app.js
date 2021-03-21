@@ -1,11 +1,20 @@
 import App from 'next/app';
 import auth0 from '../services/auth0';
+import NavHeaderLayout from '../components/layouts/NavHeaderLayout';
+import BlackSquareShuffler from '../components/layouts/BlackSquareShuffler';
+
 //Styling
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/mains.scss';
 
 function MyApp({ Component, pageProps, auth }) {
-    return <Component {...pageProps} auth={auth} />
+    return (
+      <>
+        <NavHeaderLayout />
+        <BlackSquareShuffler />
+        <Component {...pageProps} auth={auth} />
+      </>
+      )
   }
 
   MyApp.getInitialProps = async (appContext) => {
