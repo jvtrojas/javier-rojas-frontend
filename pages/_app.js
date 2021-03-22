@@ -23,5 +23,6 @@ function MyApp({ Component, pageProps, auth }) {
      const auth = {user, isAuthenticated: !!user};
      return {...appProps, auth};
    }
+   
 
   export default MyApp;

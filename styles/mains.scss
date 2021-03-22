@@ -20,8 +20,14 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: scroll;
+  //overflow: scroll;
   position: static;
+  padding: 0;
+  cursor: crosshair;
+}
+
+.container-fluid {
+  padding: 0px;
 }
 
 html {
@@ -43,24 +49,18 @@ html {
   overflow-x: auto;
   white-space: nowrap;
   height: 33.33vh;
-  padding-top: 0.7rem;
+  padding-top: 1rem;
   padding-left: 0;
   padding-right: 0;
   text-align: justify;
 }
 
-.wrap {
-  flex-wrap: nowrap;
+.imgrow {
+  height: fit-content;
 }
 
-@media (max-width: 425px) {
-  .wrap {
-    flex-wrap: wrap;
-  }
-
-  .row {
-    overflow-x: hidden;
-  }
+.wrap {
+  flex-wrap: nowrap;
 }
 
 /* HEADER BACKGROUND COLORS HOVER CLASSES*/
@@ -71,34 +71,59 @@ html {
 }
 
 .color-1 {
-  color: red !important;
-  background-color: yellow;
+  color: rgb(0, 255, 255) !important;
+  background-color: rgb(0, 0, 255);
 }
 
 .color-2 {
-  color: blue !important;
-  background-color: green;
+  color: rgb(208, 87, 245) !important;
+  background-color: rgb(0, 255, 255);
+}
+
+.color-3 {
+  color: rgb(0, 0, 255) !important;
+  background-color: rgb(208, 87, 245);
+}
+.color-4 {
+  color: rgb(208, 87, 245) !important;
+  background-color: rgb(0, 255, 167);
+}
+.color-5 {
+  color: rgb(16, 52, 239) !important;
+  background-color: rgb(255, 245, 0);
+}
+.color-6 {
+  color: rgb(0, 255, 167) !important;
+  background-color: rgb(255, 245, 0);
+}
+
+.color-7 {
+  color: rgb(255, 0, 0) !important;
+  background-color: rgb(16, 52, 239);
 }
 
 .selected-class {
   color: white !important;
   background-color: black;
+  padding: 0rem;
 }
 
 /* HEADER */
 
 .header-container {
-  min-height: 32vh;
+  min-height: 15rem;
   margin-left: 0;
-  margin-right: 0.3rem;
+  margin-right: 0rem;
   position: static;
+  padding: 0;
+
   .header-anchor {
     font-family: "BPdotsCondensedSquare", arial;
-    font-size: 11rem;
+    font-size: 15rem;
     font-style: normal;
     display: flex;
     font-weight: 400;
-    line-height: 12rem;
+    line-height: 15rem;
     letter-spacing: 0em;
     text-align: left;
     text-align: center;
@@ -106,13 +131,14 @@ html {
   }
 
   .header-anchor a {
+    text-decoration: none;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    cursor: crosshair;
     color: black;
     text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
-    text-decoration: none;
-    padding-top: 0.5rem;
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
-    height: 11rem;
+    height: fit-content;
     user-select: none;
   }
 
@@ -132,11 +158,22 @@ html {
 
 .black-square {
   background-color: black;
-  height: 7rem;
-  width: 7rem;
+  height: 11vh;
+  width: 11vh;
   position: absolute;
-  right: 4rem;
-  bottom: 7rem;
+  right: 3.33rem;
+  bottom: 3.33rem;
+  position: fixed;
+}
+
+.square-placeholder {
+  background-color: black;
+  height: fit-content;
+  width: 11vh;
+  position: absolute;
+  right: 5.5rem;
+  bottom: 5.5;
+  position: unset;
 }
 
 .shuffled-children {
@@ -160,7 +197,7 @@ html {
     cursor: pointer;
     margin: 0;
     border: 1px dotted black;
-    min-height: 32vh;
+    height: fit-content;
     min-width: 33.33vh;
   }
 }
@@ -177,4 +214,60 @@ html {
     min-height: 15rem;
     min-width: 24rem;
   }
+
+  .row-title {
+    overflow-x: auto;
+    white-space: nowrap;
+    height: fit-content;
+    padding-top: 3.33rem;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: justify;
+    text-align: center;
+    width: fit-content;
+  }
+
+  .section-anchor {
+    font-family: "BPdotsCondensedSquare", arial;
+    font-size: 7.7rem;
+    font-style: normal;
+    display: flex;
+    font-weight: 400;
+    line-height: 8rem;
+    letter-spacing: 0em;
+    text-align: left;
+    text-align: center;
+    z-index: 99999vh;
+  }
+}
+
+.black-block {
+  cursor: pointer;
+  margin: 0;
+  border: 0;
+  height: 5.5rem;
+  width: 5.5rem !important;
+  right: 5.5rem;
+  box-sizing: unset;
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+
+.title_projects {
+  font-family: "BPdotsCondensedSquare", arial;
+  font-size: 4.4rem;
+  font-style: normal;
+  display: flex;
+  font-weight: 10.1rem;
+  line-height: 12.12rem;
+  letter-spacing: 0em;
+  text-align: justify;
+  vertical-align: middle;
+}
+
+.row-about {
+  overflow-x: auto;
+  white-space: nowrap;
+  height: fit-content !important;
+  padding-top: 1.11rem;
 }
