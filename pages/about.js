@@ -13,7 +13,35 @@ class About extends React.Component {
 // shuffleOrder()
 
     return (
-        <div className="container-fluid about-page">
+        <div className="no-padding">
+                    
+        
+                    {/* Row lang EN */}
+                    
+                    <div className="row-about wrap hide-scrollbar webkit-scrollbar">
+                        
+                             <div className="selected-class black-block title_projects">
+                             EN
+
+                            
+                            </div>
+                         <div><img className="imgrow" src="static/images/9_16/4A9C9416-477D-4496-96B4-088EDC1D74AB.jpg" alt="ATERNATIVO"/>
+                        
+                        
+                            </div>
+
+
+                        
+
+                        
+                         
+                    
+                    
+             </div>
+                        
+                    
+
+              <div className="container-fluid about-page">
             
             {/* Row 1 EMPTY */}
             <div className="row row-no_top_padding wrap hide-scrollbar">
@@ -60,66 +88,9 @@ class About extends React.Component {
                 
                 </div>
                 <div className="border-block">
-                
                 </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-            </div>
-
-            {/* Row 4 */}
-            <div className="row wrap hide-scrollbar">
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-                
-                </div>
-                <div className="border-block">
-                
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>  
-            </div>
             
-        </div>
+           
     )
 }
 }

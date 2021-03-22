@@ -13,7 +13,7 @@ const NavHeaderLayout = ({children}) => {
     let [ classToggle, setClassToggle ] = useState('color-0');
 
     //Array con clases
-    let headerAnchorClassArray = ['color-1', 'color-2'];
+    let headerAnchorClassArray = ['color-1', 'color-2', 'color-3', 'color-4','color-5','color-6','color-7'];
 
     //Black-background selection
     let selectedClass = 'selected-class';
