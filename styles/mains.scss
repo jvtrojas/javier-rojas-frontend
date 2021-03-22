@@ -63,12 +63,6 @@ html {
   flex-wrap: nowrap;
 }
 
-@media (max-width: 425px) {
-  .wrap {
-    flex-wrap: wrap;
-  }
-}
-
 /* HEADER BACKGROUND COLORS HOVER CLASSES*/
 
 .color-0 {
@@ -137,12 +131,13 @@ html {
   }
 
   .header-anchor a {
-    color: black;
-    text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
     text-decoration: none;
     padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    cursor: crosshair;
+    color: black;
+    text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
     height: fit-content;
     user-select: none;
   }
@@ -210,7 +205,6 @@ html {
 /* ABOUT PAGE */
 
 .about-page {
-
   .border-block {
     border: 1px dashed grey;
     display: flex;
@@ -219,6 +213,7 @@ html {
     border: 1px dotted black;
     min-height: 15rem;
     min-width: 24rem;
+  }
 
   .row-title {
     overflow-x: auto;
@@ -243,7 +238,6 @@ html {
     text-align: left;
     text-align: center;
     z-index: 99999vh;
-
   }
 }
 
