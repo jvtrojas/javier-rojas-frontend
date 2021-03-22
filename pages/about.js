@@ -2,16 +2,6 @@ import React from 'react';
 
 class About extends React.Component {
     render(){
-
-    // function shuffleOrder() {
-    // for (var i=0;i<4;i++){
-    //     var randomNumber = Math.floor(Math.random() * 4);
-    //     elements[i].style.order = randomNumber;
-    //     }
-    // }
-
-// shuffleOrder()
-
     return (
         <div className="no-padding">
             {/* Row lang EN */}
