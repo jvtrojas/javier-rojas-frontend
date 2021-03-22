@@ -1,5 +1,6 @@
 @import "./shared/fonts";
 @import "./shared/colors";
+@import "./responsive.scss";
 @import url(https://allfont.es/allfont.css?fonts=bpdotscondensedsquare);
 
 @font-face {
@@ -13,19 +14,24 @@ html,
 body {
   background-color: #ffffff;
   width: 100vw;
-  min-width: 1280px hidden;
-  min-height: 720px hidden;
   letter-spacing: 0;
+  line-height: 1.2;
   font-style: normal;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: none;
   overscroll-behavior-y: none;
   overscroll-behavior-x: none;
   //overflow: scroll;
   position: static;
   padding: 0;
   cursor: crosshair;
+}
+
+// Hide scrollbar on Body
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .container-fluid {
@@ -50,7 +56,6 @@ html {
 .row {
   overflow-x: auto;
   white-space: nowrap;
-  height: 33.33vh;
   padding-top: 1rem;
   padding-left: 0;
   padding-right: 0;
@@ -115,35 +120,23 @@ html {
 /* HEADER */
 
 .header-container {
-  height: 15rem;
   margin-left: 0;
   margin-right: 0rem;
   position: static;
   padding: 0;
 
-  .header-anchor {
-    font-family: "BPdotsCondensedSquare", arial;
-    font-size: 15rem;
-    font-style: normal;
-    display: flex;
-    font-weight: 400;
-    line-height: 10rem;
-    letter-spacing: 0em;
-    text-align: left;
-    text-align: center;
-    z-index: 99999vh;
-  }
-
   .header-anchor a {
+    font-family: "BPdotsCondensedSquare", arial;
+    color: black;
+    font-size: 33vh;
+    height: 33vh;
+    text-align: center;
+    line-height: 1.2;
     text-decoration: none;
-    padding-top: 3.5rem;
-    padding-bottom: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    cursor: crosshair;
-    color: black;
+    display: flex;
     text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
-    height: 100%;
     overflow: hidden;
     user-select: none;
   }

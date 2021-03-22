@@ -13,8 +13,8 @@ class Index extends React.Component {
         return (
             <BaseLayout className="global" {...this.props.auth} >
                 
-                   {/* Row 2 */}
-                 <div className="row wrap hide-scrollbar">
+                {/* Row 2 */}
+                <div className="row wrap hide-scrollbar">
                     <img className="imgrow" src="static/images/9_16/4A9C9416-477D-4496-96B4-088EDC1D74AB.jpg" alt="ATERNATIVO"/>
                     <img className="imgrow" src="static/images/9_16/4DAC09A9-4052-4B42-80C8-036A8CFE7235.jpeg" alt="ATERNATIVO"/>
                     <img className="imgrow" src="static/images/9_16/7F9372A4-4074-42E4-96EA-AC9303BF4747.jpg" alt="ATERNATIVO"/>
@@ -47,10 +47,6 @@ class Index extends React.Component {
                     <img className="imgrow" src="static/images/9_16/F568EB25-AF39-458C-99EF-859A54B5E089.jpg" alt="ATERNATIVO"/>
                     <img className="imgrow" src="static/images/9_16/IMG_3541.jpeg" alt="ATERNATIVO"/>
                     </div>
-
-
-                 
-                    
             </BaseLayout>
         )
     }
