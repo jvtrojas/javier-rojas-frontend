@@ -1,53 +1,46 @@
-const Projects = () => (
-    <div className="container-fluid about-page">
-        {/* Row 1 EMPTY */}
-        <div className="row row-no_top_padding wrap hide-scrollbar">
-            Projects
-            <div className="border-block">
-                1
+import Data from '../public/js/data-home.json';
+
+const data = Data.map(each => {return each})
+const row1 = [];
+const row2 = [];
+
+data.forEach(object => object.row==1 ? row1.push(object) : "")
+data.forEach(object => object.row==2 ? row2.push(object) : "")
+
+function Projects() {
+    return(
+        <div className="container-fluid">
+            {/* Row 1 */}
+            <div className="row row-no_top_padding wrap hide-scrollbar">
+                { 
+                    row1.map(
+                        image => {
+                            return(
+                                    <div className="border-block">
+                                        <img src={ image.src } alt={ image.title } />
+                                    </div>
+                            )
+                        }
+                    )
+                }
             </div>
-            <div className="border-block">
-                2
-            </div>
-            <div className="border-block">
-                3               
-            </div>
-            <div className="border-block">
-                4 
+
+            {/* Row 2 */}
+            <div className="row row-no_top_padding wrap hide-scrollbar">
+                { 
+                    row2.map(
+                        image => {
+                            return(
+                                    <div className="border-block">
+                                        <img src={ image.src } alt={ image.title } />
+                                    </div>
+                            )
+                        }
+                    )
+                }
             </div>
         </div>
-
-        {/* Row 2 */}
-        <div className="row wrap hide-scrollbar">
-            <div className="border-block">
-            a
-            </div>
-            <div className="border-block">
-            b
-            </div>
-            <div className="border-block">
-            c
-            </div>
-            <div className="border-block">
-            d
-            </div>
-            <div className="border-block">
-            e
-            </div>
-        </div>
-
-        {/* Row 3 */}
-        <div className="row wrap hide-scrollbar">
-            <div className="border-block">
-
-            </div>
-            <div className="border-block">
-            
-            </div>
-            <div className="border-block">
-            </div>
-        </div>
-    </div>
-)
+    )    
+}
 
 export default Projects

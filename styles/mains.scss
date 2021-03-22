@@ -181,15 +181,6 @@ html {
 /* HOME PAGE */
 
 .home-page {
-  .border-block {
-    border: 1px dashed grey;
-    cursor: pointer;
-    margin: 0;
-    border: 1px dotted black;
-    min-height: 15rem;
-    min-width: 24rem;
-  }
-
   .firstborder-block {
     border: 32px dashed grey;
     cursor: pointer;
@@ -203,14 +194,11 @@ html {
 /* ABOUT PAGE */
 
 .about-page {
-  .border-block {
-    border: 1px dashed grey;
+  .border-block img {
     display: flex;
     cursor: pointer;
     margin: 0;
-    border: 1px dotted black;
-    min-height: 15rem;
-    min-width: 24rem;
+    width: 10rem;
   }
 
   .row-title {
@@ -268,4 +256,10 @@ html {
   white-space: nowrap;
   height: fit-content !important;
   padding-top: 1.11rem;
+}
+
+.border-block img {
+  cursor: pointer;
+  margin: 0;
+  width: 10rem;
 }
