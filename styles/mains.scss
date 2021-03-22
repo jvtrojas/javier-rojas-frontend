@@ -24,14 +24,11 @@ body {
   position: static;
   padding: 0;
   cursor: crosshair;
-  
 }
 
 .container-fluid {
   padding: 0px;
-
 }
-
 
 html {
   overscroll-behavior: none;
@@ -59,9 +56,7 @@ html {
 }
 
 .imgrow {
-
   height: fit-content;
-
 }
 
 .wrap {
@@ -72,8 +67,6 @@ html {
   .wrap {
     flex-wrap: wrap;
   }
-
-  
 }
 
 /* HEADER BACKGROUND COLORS HOVER CLASSES*/
@@ -119,18 +112,17 @@ html {
   color: white !important;
   background-color: black;
   padding: 0rem;
-  
 }
 
 /* HEADER */
 
 .header-container {
-  min-height: fit-content;
+  min-height: 15rem;
   margin-left: 0;
   margin-right: 0rem;
   position: static;
   padding: 0;
-  
+
   .header-anchor {
     font-family: "BPdotsCondensedSquare", arial;
     font-size: 15rem;
@@ -153,7 +145,6 @@ html {
     padding-right: 2rem;
     height: fit-content;
     user-select: none;
-   
   }
 
   .row-no_top_padding {
@@ -177,7 +168,7 @@ html {
   position: absolute;
   right: 3.33rem;
   bottom: 3.33rem;
-  position:fixed ;
+  position: fixed;
 }
 
 .square-placeholder {
@@ -189,8 +180,6 @@ html {
   bottom: 5.5;
   position: unset;
 }
-
-
 
 .shuffled-children {
   display: flexbox;
@@ -221,7 +210,6 @@ html {
 /* ABOUT PAGE */
 
 .about-page {
-  
   .row-title {
     overflow-x: auto;
     white-space: nowrap;
@@ -249,7 +237,6 @@ html {
 }
 
 .black-block {
-  
   cursor: pointer;
   margin: 0;
   border: 0;
@@ -262,16 +249,15 @@ html {
 }
 
 .title_projects {
-
   font-family: "BPdotsCondensedSquare", arial;
-    font-size: 4.4rem;
-    font-style: normal;
-    display: flex;
-    font-weight: 10.1rem;
-    line-height: 12.12rem;
-    letter-spacing: 0em;
-    text-align: justify;
-    vertical-align: middle;
+  font-size: 4.4rem;
+  font-style: normal;
+  display: flex;
+  font-weight: 10.1rem;
+  line-height: 12.12rem;
+  letter-spacing: 0em;
+  text-align: justify;
+  vertical-align: middle;
 }
 
 .row-about {
@@ -279,6 +265,4 @@ html {
   white-space: nowrap;
   height: fit-content !important;
   padding-top: 1.11rem;
-
- 
 }
