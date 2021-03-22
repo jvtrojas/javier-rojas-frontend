@@ -115,7 +115,7 @@ html {
 /* HEADER */
 
 .header-container {
-  min-height: 15rem;
+  height: 15rem;
   margin-left: 0;
   margin-right: 0rem;
   position: static;
@@ -127,7 +127,7 @@ html {
     font-style: normal;
     display: flex;
     font-weight: 400;
-    line-height: 15rem;
+    line-height: 10rem;
     letter-spacing: 0em;
     text-align: left;
     text-align: center;
@@ -136,13 +136,15 @@ html {
 
   .header-anchor a {
     text-decoration: none;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-top: 3.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     cursor: crosshair;
     color: black;
     text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
-    height: fit-content;
+    height: 100%;
+    overflow: hidden;
     user-select: none;
   }
 
@@ -164,9 +166,8 @@ html {
   background-color: black;
   height: 11vh;
   width: 11vh;
-  position: absolute;
-  right: 3.33rem;
-  bottom: 3.33rem;
+  right: 5.33vw;
+  bottom: 9.33vh;
   position: fixed;
 }
 
