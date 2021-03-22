@@ -4,140 +4,42 @@ import NavHeaderLayout from '../components/layouts/NavHeaderLayout';
 class About extends React.Component {
     render(){
     return (
-        <div className="container-fluid about-page">
-            
-            {/* Row 1 EMPTY */}
-            <div className="row row-no_top_padding wrap hide-scrollbar">
-                About
-                <div className="firstborder-block">
+        <div className="no-padding">
+                    
+        
+                    {/* Row lang EN */}
+                    
+                    <div className="row-about wrap hide-scrollbar webkit-scrollbar">
+                        
+                             <div className="selected-class black-block title_projects">
+                             EN
 
-                </div>
-                <div className="border-block">
+                            
+                            </div>
+                         <div><img className="imgrow" src="static/images/9_16/4A9C9416-477D-4496-96B4-088EDC1D74AB.jpg" alt="ATERNATIVO"/>
+                        
+                        
+                            </div>
 
-                </div>
-                <div className="border-block">
 
-                </div>
-                <div className="border-block">
+                        
 
-                </div>
-                <div className="border-block">
+                        
+                         
+                    
+                    
+                    </div>
+                        
+                    
 
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-            </div>
-
-            {/* Row 2 */}
-            <div className="row wrap hide-scrollbar">
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
+                     
                 
-                </div>
-                <div className="border-block">
-                
-                </div>
-                <div className="border-block">
 
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-            </div>
-
-            {/* Row 3 */}
-            <div className="row wrap hide-scrollbar">
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-                
-                </div>
-                <div className="border-block">
-                
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-            </div>
-
-            {/* Row 4 */}
-            <div className="row wrap hide-scrollbar">
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-                
-                </div>
-                <div className="border-block">
-                
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>
-                <div className="border-block">
-
-                </div>  
-            </div>
-            
+                   
+               
         </div>
+            
+           
     )
 }
 }
