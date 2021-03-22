@@ -210,6 +210,16 @@ html {
 /* ABOUT PAGE */
 
 .about-page {
+
+  .border-block {
+    border: 1px dashed grey;
+    display: flex;
+    cursor: pointer;
+    margin: 0;
+    border: 1px dotted black;
+    min-height: 15rem;
+    min-width: 24rem;
+
   .row-title {
     overflow-x: auto;
     white-space: nowrap;
@@ -233,6 +243,7 @@ html {
     text-align: left;
     text-align: center;
     z-index: 99999vh;
+
   }
 }
 
