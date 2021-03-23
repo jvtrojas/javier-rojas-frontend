@@ -278,6 +278,7 @@ html {
 
 .row-pics-container {
   height: 33vh;
+  transition: 0.5s;
 }
 
 .row-pics {
@@ -287,4 +288,8 @@ html {
 
 .youtube-link {
   margin: 0 0.3rem;
+}
+
+.big-row {
+  height: 100vh;
 }
