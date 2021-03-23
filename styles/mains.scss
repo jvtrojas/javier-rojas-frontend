@@ -82,39 +82,47 @@ html {
 .color-1 {
   color: rgb(0, 255, 255) !important;
   background-color: rgb(0, 0, 255);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .color-2 {
   color: rgb(208, 87, 245) !important;
   background-color: rgb(0, 255, 255);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .color-3 {
   color: rgb(0, 0, 255) !important;
   background-color: rgb(208, 87, 245);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 .color-4 {
   color: rgb(208, 87, 245) !important;
   background-color: rgb(0, 255, 167);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 .color-5 {
   color: rgb(16, 52, 239) !important;
   background-color: rgb(255, 245, 0);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 .color-6 {
   color: rgb(0, 255, 167) !important;
   background-color: rgb(255, 245, 0);
+  box-shadow: 10px 10px 20px 0px #000000 25%;
 }
 
 .color-7 {
   color: rgb(255, 0, 0) !important;
   background-color: rgb(16, 52, 239);
+  box-shadow: 10px 10px 20px 0px #000000 25%;
 }
 
 .selected-class {
   color: white !important;
   background-color: black;
   padding: 0rem;
+  box-shadow: 10px 10px 20px 0px #000000 25%;
 }
 
 /* HEADER */
@@ -132,6 +140,7 @@ html {
     height: 33vh;
     text-align: center;
     line-height: 1.2;
+    margin-bottom: 1.3rem;
     text-decoration: none;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -258,8 +267,14 @@ html {
   padding-top: 1.11rem;
 }
 
-.border-block img {
+.row-slide-wrapper {
+}
+
+.row-pics-container {
+  height: 33vh;
+}
+
+.row-pics {
   cursor: pointer;
-  margin: 0;
-  width: 10rem;
+  height: 100%;
 }
