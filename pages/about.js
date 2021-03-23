@@ -3,10 +3,10 @@ import React from 'react';
 class About extends React.Component {
     render(){
     return (
-        <div className="no-padding">
+        <div className="about-page no-padding">
             {/* Row lang EN */}
             <div className="row-about wrap hide-scrollbar webkit-scrollbar">
-                <div className="selected-class black-block title_projects">
+                <div className="selected-class language-black-block title_projects">
                 EN
                 </div>
                 <div>
