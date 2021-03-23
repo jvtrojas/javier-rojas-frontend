@@ -36,7 +36,7 @@ const NavHeaderLayout = ({children}) => {
     }
 
     return (
-        <div className="container-fluid">
+        <div className="container-fluid header">
             {/* HEADER */}
             <div className="row header-container wrap hide-scrollbar">
                 <div>
