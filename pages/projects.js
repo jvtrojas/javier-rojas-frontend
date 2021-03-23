@@ -32,7 +32,7 @@ function Projects() {
                                 )
                             } else {
                                     return(
-                                            <div className="row-pics-container" style={shuffleOrder()} >
+                                            <div className="row-pics-container youtube-link" style={shuffleOrder()} >
                                                 <iframe width="auto" height="100%" 
                                                     src={`https://www.youtube.com/embed/${image.src}`} title="YouTube video player" 
                                                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
