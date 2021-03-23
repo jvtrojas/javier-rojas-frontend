@@ -1,4 +1,5 @@
 import Data from '../public/js/data-home.json';
+import BlackSquareShuffler from '../components/layouts/BlackSquareShuffler';
 
 const data = Data.map(each => {return each})
 const row1 = [];
@@ -9,7 +10,13 @@ data.forEach(object => object.row==1 ? row1.push(object) : "")
 data.forEach(object => object.row==2 ? row2.push(object) : "")
 data.forEach(object => object.row==3 ? row3.push(object) : "")
 
+const shuffleOrder = () => {
+    let randomNumber = Math.floor(Math.random() * 12)
+    return( { order: `${randomNumber}` } )
+}
+
 function Projects() {
+
     return(
         <div className="container-fluid">
             {/* Row 1 */}
@@ -18,7 +25,7 @@ function Projects() {
                     row1.map(
                         image => {
                             return(
-                                    <div className="row-pics-container">
+                                    <div className="row-pics-container" style={shuffleOrder()} >
                                         <img className="row-pics" src={ image.src } alt={ image.title } />
                                     </div>
                             )
@@ -33,7 +40,7 @@ function Projects() {
                     row2.map(
                         image => {
                             return(
-                                    <div className="row-pics-container">
+                                    <div className="row-pics-container" style={shuffleOrder()} >
                                         <img className="row-pics" src={ image.src } alt={ image.title } />
                                     </div>
                             )
@@ -48,7 +55,7 @@ function Projects() {
                     row3.map(
                         image => {
                             return(
-                                    <div className="row-pics-container">
+                                    <div className="row-pics-container" style={shuffleOrder()} >
                                         <img className="row-pics" src={ image.src } alt={ image.title } />
                                     </div>
                             )

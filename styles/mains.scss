@@ -109,43 +109,46 @@ html {
 .color-6 {
   color: rgb(0, 255, 167) !important;
   background-color: rgb(255, 245, 0);
-  box-shadow: 10px 10px 20px 0px #000000 25%;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .color-7 {
   color: rgb(255, 0, 0) !important;
   background-color: rgb(16, 52, 239);
-  box-shadow: 10px 10px 20px 0px #000000 25%;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .selected-class {
   color: white !important;
   background-color: black;
   padding: 0rem;
-  box-shadow: 10px 10px 20px 0px #000000 25%;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* HEADER */
 
 .header-container {
   margin-left: 0;
-  margin-right: 0rem;
+  margin-right: 0;
   position: static;
   padding: 0;
+  //fix for a hidden overflow of inner anchor box shadow
+  margin-bottom: -1.5rem;
 
   .header-anchor a {
     font-family: "BPdotsCondensedSquare", arial;
     color: black;
-    font-size: 33vh;
-    height: 33vh;
+    font-size: 32vh;
+    height: 32vh;
     text-align: center;
     line-height: 1.2;
-    margin-bottom: 1.3rem;
     text-decoration: none;
     padding-left: 1rem;
     padding-right: 1rem;
     display: flex;
     text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
+    //fix for a hidden overflow of inner anchor box shadow
+    margin-bottom: 1.8rem;
     overflow: hidden;
     user-select: none;
   }
@@ -165,6 +168,7 @@ html {
 /* BLACK SQUARE */
 
 .black-square {
+  cursor: pointer;
   background-color: black;
   height: 11vh;
   width: 11vh;
@@ -268,6 +272,7 @@ html {
 }
 
 .row-slide-wrapper {
+  justify-content: space-between;
 }
 
 .row-pics-container {
