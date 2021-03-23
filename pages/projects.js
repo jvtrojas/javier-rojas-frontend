@@ -51,7 +51,7 @@ function Projects() {
             {/* Row 2 */}
             <div className="wrap row row-no_top_padding row-slide-wrapper hide-scrollbar">
             { 
-                    row1.map(
+                    row2.map(
                         function(image) {
                             if(image.src.length!==11){
                                 return(
@@ -77,7 +77,7 @@ function Projects() {
             {/* Row 3 */}
             <div className="wrap row row-no_top_padding row-slide-wrapper hide-scrollbar">
             { 
-                    row1.map(
+                    row3.map(
                         function(image) {
                             if(image.src.length!==11){
                                 return(
