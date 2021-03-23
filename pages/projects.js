@@ -23,12 +23,23 @@ function Projects() {
             <div className="wrap row row-no_top_padding row-slide-wrapper hide-scrollbar">
                 { 
                     row1.map(
-                        image => {
-                            return(
-                                    <div className="row-pics-container" style={shuffleOrder()} >
-                                        <img className="row-pics" src={ image.src } alt={ image.title } />
-                                    </div>
-                            )
+                        function(image) {
+                            if(image.src.length!==11){
+                                return(
+                                        <div className="row-pics-container" style={shuffleOrder()} >
+                                            <img className="row-pics" src={ image.src } alt={ image.title } />
+                                        </div>
+                                )
+                            } else {
+                                    return(
+                                            <div className="row-pics-container" style={shuffleOrder()} >
+                                                <iframe width="auto" height="100%" 
+                                                    src={`https://www.youtube.com/embed/${image.src}`} title="YouTube video player" 
+                                                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                                                />
+                                            </div>
+                                    )
+                            }
                         }
                     )
                 }
