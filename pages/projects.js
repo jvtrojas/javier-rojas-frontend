@@ -41,16 +41,16 @@ function Projects() {
                         function(image) {
                             if(image.src.length!==11){
                                 return(
-                                        <div className={`row-pics-container ${ isRow1 ? 'big-row' : "" }`} style={shuffleOrder()} >
-                                            <img className="row-pics" src={ image.src } alt={ image.title } />
+                                        <div key={image.id} className={`row-pics-container ${ isRow1 ? 'big-row' : "" }`} style={shuffleOrder()} >
+                                            <img key={image.id} className="row-pics" src={ image.src } alt={ image.title } />
                                         </div>
                                 )
                             } else {
                                     return(
-                                            <div className={`row-pics-container youtube-link ${ isRow1 ? 'big-row' : "" }`} style={shuffleOrder()} >
-                                                <iframe width="auto" height="100%" 
+                                            <div key={image.id} className={`row-pics-container youtube-link ${ isRow1 ? 'big-row' : "" }`} style={shuffleOrder()} >
+                                                <iframe key={image.id} width="auto" height="100%" 
                                                     src={`https://www.youtube.com/embed/${image.src}`} title="YouTube video player" 
-                                                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                                                    frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen
                                                 />
                                             </div>
                                     )
@@ -67,13 +67,13 @@ function Projects() {
                         function(image) {
                             if(image.src.length!==11){
                                 return(
-                                        <div className={`row-pics-container ${ isRow2 ? 'big-row' : "" }`} style={shuffleOrder()} >
+                                        <div key={image.id} className={`row-pics-container ${ isRow2 ? 'big-row' : "" }`} style={shuffleOrder()} >
                                             <img className="row-pics" src={ image.src } alt={ image.title } />
                                         </div>
                                 )
                             } else {
                                     return(
-                                            <div className={`row-pics-container youtube-link ${ isRow2 ? 'big-row' : "" }`} style={shuffleOrder()} >
+                                            <div key={image.id} className={`row-pics-container youtube-link ${ isRow2 ? 'big-row' : "" }`} style={shuffleOrder()} >
                                                 <iframe width="auto" height="100%" 
                                                     src={`https://www.youtube.com/embed/${image.src}`} title="YouTube video player" 
                                                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
@@ -93,13 +93,13 @@ function Projects() {
                         function(image) {
                             if(image.src.length!==11){
                                 return(
-                                        <div className={`row-pics-container ${ isRow3 ? 'big-row' : "" }`} style={shuffleOrder()} >
+                                        <div key={image.id} className={`row-pics-container ${ isRow3 ? 'big-row' : "" }`} style={shuffleOrder()} >
                                             <img className="row-pics" src={ image.src } alt={ image.title } />
                                         </div>
                                 )
                             } else {
                                     return(
-                                            <div className={`row-pics-container youtube-link ${ isRow3 ? 'big-row' : "" }`} style={shuffleOrder()} >
+                                            <div key={image.id} className={`row-pics-container youtube-link ${ isRow3 ? 'big-row' : "" }`} style={shuffleOrder()} >
                                                 <iframe width="auto" height="100%" 
                                                     src={`https://www.youtube.com/embed/${image.src}`} title="YouTube video player" 
                                                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
