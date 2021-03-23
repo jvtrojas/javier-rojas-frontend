@@ -1,9 +1,13 @@
 import React from 'react';
 
+function isWorking(){
+    return alert('im working')
+}
+
 const BlackSquareShuffler = ({children}) => {
     return (
         <>
-            <div className="black-square"></div>
+            <div onClick={isWorking} className="black-square"></div>
             {children}
         </>
     )
