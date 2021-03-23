@@ -129,9 +129,11 @@ html {
 
 .header-container {
   margin-left: 0;
-  margin-right: 0rem;
+  margin-right: 0;
   position: static;
   padding: 0;
+  //fix for a hidden overflow of inner anchor box shadow
+  margin-bottom: -1.5rem;
 
   .header-anchor a {
     font-family: "BPdotsCondensedSquare", arial;
@@ -140,12 +142,13 @@ html {
     height: 33vh;
     text-align: center;
     line-height: 1.2;
-    margin-bottom: 1.3rem;
     text-decoration: none;
     padding-left: 1rem;
     padding-right: 1rem;
     display: flex;
     text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
+    //fix for a hidden overflow of inner anchor box shadow
+    margin-bottom: 1.8rem;
     overflow: hidden;
     user-select: none;
   }

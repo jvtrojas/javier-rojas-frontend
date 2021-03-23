@@ -34,7 +34,7 @@ function Projects() {
                         image => {
                             return(
                                     <div className="row-pics-container">
-                                        <img className="row-pics" src={ image.src } alt={ image.title } />
+                                        <img className="row-pics" style={{order:'1'}} src={ image.src } alt={ image.title } />
                                     </div>
                             )
                         }
