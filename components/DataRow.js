@@ -18,19 +18,19 @@ function DataRow({data, shuffleOrder, rowNumber}) {
             <div onClick={handleClickRow4} className="wrap row row-no_top_padding row-slide-wrapper hide-scrollbar">
                 { 
                     rowArray.map(
-                        function(image) {
-                            if(image.src.length!==11){
+                        function(dataJSON) {
+                            if(dataJSON.src.length!==11){
                                 return(
-                                        <div className={`row-pics-container ${ isSelected ? 'big-row' : "" }`} style={shuffleOrder()} >
-                                            <img className="row-pics" src={ image.src } alt={ image.title } />
+                                        <div key={dataJSON.id} className={`row-pics-container ${ isSelected ? 'big-row' : "" }`} >
+                                            <img className="row-pics" src={ dataJSON.src } alt={ dataJSON.title } />
                                         </div>
                                 )
                             } else {
                                     return(
-                                            <div className={`row-pics-container youtube-link ${ isSelected ? 'big-row' : "" }`} style={shuffleOrder()} >
+                                            <div key={dataJSON.id} className={`row-pics-container youtube-link ${ isSelected ? 'big-row' : "" }`} >
                                                 <iframe width="auto" height="100%" 
-                                                    src={`https://www.youtube.com/embed/${image.src}`} title="YouTube video player" 
-                                                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                                                    src={`https://www.youtube.com/embed/${dataJSON.src}`} title="YouTube video player" 
+                                                    frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen
                                                 />
                                             </div>
                                     )

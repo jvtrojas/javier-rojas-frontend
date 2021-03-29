@@ -7,12 +7,19 @@ import BlackSquareShuffler from '../components/layouts/BlackSquareShuffler';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/mains.scss';
 
+
+
 function MyApp({ Component, pageProps, auth }) {
+
+    function handleOnClickBlackSquareShuffler() {
+      alert('black square works')
+    }
+
     return (
       <>
         <NavHeaderLayout />
-        <BlackSquareShuffler />
-        <Component {...pageProps} auth={auth} />
+        <BlackSquareShuffler handleOnClickBlackSquareShuffler={handleOnClickBlackSquareShuffler} />
+        <Component {...pageProps} auth={auth} handleOnClickBlackSquareShuffler={handleOnClickBlackSquareShuffler} />
       </>
       )
   }

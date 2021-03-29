@@ -1,10 +1,16 @@
 import React from 'react';
 
+// function MyApp({ Component, pageProps, auth }) {
 
-const BlackSquareShuffler = ({children}) => {
+//     const handleOnClickBlackSquareShuffler = () => {
+//       let randomNumber = Math.floor(Math.random() * 12)
+//       return( { order: `${randomNumber}` } )
+//   }
+
+const BlackSquareShuffler = ({children, handleOnClickBlackSquareShuffler}) => {
     return (
         <>
-            <div className="black-square"></div>
+            <div onClick={handleOnClickBlackSquareShuffler} className="black-square"></div>
             {children}
         </>
     )
