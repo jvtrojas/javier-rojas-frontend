@@ -239,38 +239,40 @@ html {
     text-align: center;
     z-index: 99999vh;
   }
+
+  .language-black-block {
+    cursor: pointer;
+    margin: 0;
+    border: 0;
+    height: 5.5rem;
+    width: 5.5rem !important;
+    right: 5.5rem;
+    box-sizing: unset;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .title_projects {
+    font-family: "BPdotsCondensedSquare", arial;
+    font-size: 4.4rem;
+    font-style: normal;
+    display: flex;
+    font-weight: 10.1rem;
+    line-height: 12.12rem;
+    letter-spacing: 0em;
+    text-align: justify;
+    vertical-align: middle;
+  }
+
+  .row-about {
+    overflow-x: auto;
+    white-space: nowrap;
+    height: fit-content !important;
+    padding-top: 1.11rem;
+  }
 }
 
-.black-block {
-  cursor: pointer;
-  margin: 0;
-  border: 0;
-  height: 5.5rem;
-  width: 5.5rem !important;
-  right: 5.5rem;
-  box-sizing: unset;
-  padding-left: 0rem;
-  padding-right: 0rem;
-}
-
-.title_projects {
-  font-family: "BPdotsCondensedSquare", arial;
-  font-size: 4.4rem;
-  font-style: normal;
-  display: flex;
-  font-weight: 10.1rem;
-  line-height: 12.12rem;
-  letter-spacing: 0em;
-  text-align: justify;
-  vertical-align: middle;
-}
-
-.row-about {
-  overflow-x: auto;
-  white-space: nowrap;
-  height: fit-content !important;
-  padding-top: 1.11rem;
-}
+// Global rows classes
 
 .row-slide-wrapper {
   justify-content: space-between;
@@ -292,4 +294,14 @@ html {
 
 .big-row {
   height: 100vh;
+}
+
+.big-row-container {
+  padding: 0;
+  position: absolute;
+  background: white;
+}
+
+.display-none-after-big-row {
+  display: none;
 }
