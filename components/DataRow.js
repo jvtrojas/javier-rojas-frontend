@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 
-function DataRow({data, rowNumber}) {
+function DataRow({data, shuffleOrder, rowNumber}) {
 
     const rowArray = [];
 
@@ -14,10 +14,10 @@ function DataRow({data, rowNumber}) {
     }
 
     // shuffle order function
-    const shuffleOrder = () => {
-    let randomNumber = Math.floor(Math.random() * 12)
-    return( { order: `${randomNumber}` } )
-    }
+    // const shuffleOrder = () => {
+    // let randomNumber = Math.floor(Math.random() * 12)
+    // return( { order: `${randomNumber}` } )
+    // }
 
     // if(blackSquareTrigger){
     //     shuffleOrder()
