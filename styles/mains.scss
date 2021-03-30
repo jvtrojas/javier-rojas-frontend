@@ -280,7 +280,17 @@ html {
 
 .row-pics-container {
   height: 33vh;
-  transition: 0.5s;
+  transition: 0.1s;
+}
+
+.row-txt {
+  h3 {
+    font-size: 3vh;
+  }
+  p {
+    font-size: 2vh;
+    white-space: break-spaces;
+  }
 }
 
 .row-pics {
