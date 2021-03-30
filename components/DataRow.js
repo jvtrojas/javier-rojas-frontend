@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 
-function DataRow({data, shuffleOrder, rowNumber}) {
+function DataRow({data, blackSquareTrigger, rowNumber}) {
 
     const rowArray = [];
 
@@ -13,6 +13,19 @@ function DataRow({data, shuffleOrder, rowNumber}) {
         setIsSelected(prevState => !prevState);
     }
 
+    // shuffle order function
+    const shuffleOrder = () => {
+    let randomNumber = Math.floor(Math.random() * 12)
+    return( { order: `${randomNumber}` } )
+    }
+
+    if(blackSquareTrigger){
+        shuffleOrder()
+    } else {
+        shuffleOrder()
+    }
+
+
     return(
         <>
             <div onClick={handleClickRow4} className="wrap row row-no_top_padding row-slide-wrapper hide-scrollbar">
@@ -21,19 +34,27 @@ function DataRow({data, shuffleOrder, rowNumber}) {
                         function(dataJSON) {
                             if(dataJSON.src.length!==11){
                                 return(
-                                        <div key={dataJSON.id} className={`row-pics-container ${ isSelected ? 'big-row' : "" }`} >
-                                            <img className="row-pics" src={ dataJSON.src } alt={ dataJSON.title } />
-                                        </div>
+                                    <div 
+                                        className={`row-pics-container ${ isSelected ? 'big-row' : "" }`} 
+                                        style={shuffleOrder()} 
+                                        key={dataJSON.id} 
+                                    >
+                                        <img className="row-pics" src={ dataJSON.src } alt={ dataJSON.title } />
+                                    </div>
                                 )
                             } else {
-                                    return(
-                                            <div key={dataJSON.id} className={`row-pics-container youtube-link ${ isSelected ? 'big-row' : "" }`} >
-                                                <iframe width="auto" height="100%" 
-                                                    src={`https://www.youtube.com/embed/${dataJSON.src}`} title="YouTube video player" 
-                                                    frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen
-                                                />
-                                            </div>
-                                    )
+                                return(
+                                    <div 
+                                        className={`row-pics-container youtube-link ${ isSelected ? 'big-row' : "" }`}
+                                        // style={shuffleOrder()}  
+                                        key={dataJSON.id} 
+                                    >
+                                        <iframe width="auto" height="100%" 
+                                            src={`https://www.youtube.com/embed/${dataJSON.src}`} title="YouTube video player" 
+                                            frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen
+                                        />
+                                    </div>
+                                )
                             }
                         }
                     )
