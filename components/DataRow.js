@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 
-function DataRow({data, blackSquareTrigger, rowNumber}) {
+function DataRow({data, shuffleOrder, rowNumber}) {
 
     const rowArray = [];
 
@@ -14,45 +14,56 @@ function DataRow({data, blackSquareTrigger, rowNumber}) {
     }
 
     // shuffle order function
-    const shuffleOrder = () => {
-    let randomNumber = Math.floor(Math.random() * 12)
-    return( { order: `${randomNumber}` } )
-    }
+    // const shuffleOrder = () => {
+    // let randomNumber = Math.floor(Math.random() * 12)
+    // return( { order: `${randomNumber}` } )
+    // }
 
-    if(blackSquareTrigger){
-        shuffleOrder()
-    } else {
-        shuffleOrder()
-    }
+    // if(blackSquareTrigger){
+    //     shuffleOrder()
+    // } else {
+    //     shuffleOrder()
+    // }
 
 
     return(
         <>
-            <div onClick={handleClickRow4} className="wrap row row-no_top_padding row-slide-wrapper hide-scrollbar">
+            <div onClick={handleClickRow4} className="row-test wrap row row-no_top_padding row-slide-wrapper hide-scrollbar">
                 { 
                     rowArray.map(
                         function(dataJSON) {
-                            if(dataJSON.src.length!==11){
+                            if(dataJSON.datatype==""||dataJSON.datatype=="img"){
                                 return(
                                     <div 
                                         className={`row-pics-container ${ isSelected ? 'big-row' : "" }`} 
-                                        style={shuffleOrder()} 
+                                        style={shuffleOrder() ? null : shuffleOrder()} 
                                         key={dataJSON.id} 
                                     >
                                         <img className="row-pics" src={ dataJSON.src } alt={ dataJSON.title } />
                                     </div>
                                 )
-                            } else {
+                            } else if(dataJSON.datatype=="yt") {
                                 return(
                                     <div 
                                         className={`row-pics-container youtube-link ${ isSelected ? 'big-row' : "" }`}
-                                        // style={shuffleOrder()}  
+                                        style={shuffleOrder()}  
                                         key={dataJSON.id} 
                                     >
                                         <iframe width="auto" height="100%" 
                                             src={`https://www.youtube.com/embed/${dataJSON.src}`} title="YouTube video player" 
                                             frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen
                                         />
+                                    </div>
+                                )
+                            } else if(dataJSON.datatype=="txt") {
+                                return(
+                                    <div 
+                                        className={`row-pics-container row-txt ${ isSelected ? 'big-row' : "" }`}
+                                        style={shuffleOrder()}  
+                                        key={dataJSON.id} 
+                                    >
+                                        <h3>{dataJSON.title}</h3>
+                                        <p>{dataJSON.content}</p>
                                     </div>
                                 )
                             }

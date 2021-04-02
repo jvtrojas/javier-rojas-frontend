@@ -1,183 +1,244 @@
 [
     {
         "id": 1,
+        "datatype": "",
         "title": "",
+        "content": "",
         "src": "/images/home/img1.png",
         "row": "1",
         "order": ""
     },
     {
         "id": 2,
+        "datatype": "",
         "title": "",
+        "content": "",
         "src": "/images/home/img2.png",
         "row": "1",
         "order": ""
     },
     {
         "id": 3,
+        "datatype": "",
         "title": "",
+        "content": "",
         "src": "/images/home/img3.png",
         "row": "1",
         "order": ""
     },
     {
         "id": 4,
+        "datatype": "",
         "title": "Jorge",
+        "content": "",
         "src": "/images/home/img4.jpeg",
         "row": "1",
         "order": ""
     },
     {
         "id": 5,
+        "datatype": "",
         "title": "",
+        "content": "",
         "src": "/images/home/img5.png",
         "row": "1",
         "order": ""
     },
     {
         "id": 6,
+        "datatype": "",
         "title": "",
+        "content": "",
         "src": "/images/home/img6.png",
         "row": "1",
         "order": ""
     },
     {
         "id": 7,
+        "datatype": "",
         "title": "",
+        "content": "",
         "src": "/images/home/img_7.jpg",
         "row": "2",
         "order": ""
     },
     {
         "id": 8,
+        "datatype": "",
         "title": "",
+        "content": "",
         "src": "/images/home/img_8.png",
         "row": "2",
         "order": ""
     },
     {
         "id": 9,
+        "datatype": "",
         "title": "",
+        "content": "",
         "src": "/images/home/img_9.png",
         "row": "2",
         "order": ""
     },
     {
         "id": 10,
-        "title": "Jorge",
+        "datatype": "",
+        "title": "",
+        "content": "",
         "src": "/images/home/img_10.jpeg",
         "row": "2",
         "order": ""
     },
     {
         "id": 11,
+        "datatype": "",
         "title": "",
+        "content": "",
         "src": "/images/home/img_11.jpeg",
         "row": "2",
         "order": ""
     },
     {
         "id": 12,
+        "datatype": "",
         "title": "",
+        "content": "",
         "src": "/images/home/img_12.png",
         "row": "2",
         "order": ""
     },
     {
         "id": 13,
+        "datatype": "",
         "title": "",
+        "content": "",
         "src": "/images/home/img7.png",
         "row": "1",
         "order": ""
     },
     {
         "id": 14,
+        "datatype": "",
         "title": "",
+        "content": "",
         "src": "/images/home/img8.png",
         "row": "1",
         "order": ""
     },
     {
         "id": 15,
+        "datatype": "",
         "title": "",
+        "content": "",
         "src": "/images/home/img9.png",
         "row": "1",
         "order": ""
     },
     {
         "id": 16,
+        "datatype": "",
         "title": "",
+        "content": "",
         "src": "/images/home/img_13.png",
         "row": "2",
         "order": ""
     },
     {
         "id": 17,
+        "datatype": "",
         "title": "",
+        "content": "",
         "src": "/images/home/img_14.png",
         "row": "2",
         "order": ""
     },
     {
         "id": 18,
+        "datatype": "",
         "title": "",
+        "content": "",
         "src": "/images/home/img-15.png",
         "row": "3",
         "order": ""
     },
     {
         "id": 19,
+        "datatype": "",
         "title": "",
+        "content": "",
         "src": "/images/home/img-16.gif",
         "row": "3",
         "order": ""
     },
     {
         "id": 20,
+        "datatype": "",
         "title": "",
+        "content": "",
         "src": "/images/home/img-17.png",
         "row": "3",
         "order": ""
     },
     {
         "id": 21,
+        "datatype": "",
         "title": "",
+        "content": "",
         "src": "/images/home/img-18.gif",
         "row": "3",
         "order": ""
     },
     {
         "id": 22,
+        "datatype": "",
         "title": "",
+        "content": "",
         "src": "/images/home/img-19.jpg",
         "row": "3",
         "order": ""
     },
     {
         "id": 23,
+        "datatype": "",
         "title": "",
+        "content": "",
         "src": "/images/home/img-20.jpg",
         "row": "3",
         "order": ""
     },
     {
         "id": 24,
+        "datatype": "",
         "title": "",
+        "content": "",
         "src": "/images/home/img-21.png",
         "row": "3",
         "order": ""
     },
     {
         "id": 25,
+        "datatype": "",
         "title": "",
+        "content": "",
         "src": "/images/home/img-22.png",
         "row": "3",
         "order": ""
     },
     {
         "id": 26,
+        "datatype": "yt",
         "title": "",
+        "content": "",
         "src": "m5dpOmklgXs",
+        "row": "1",
+        "order": ""
+    },
+    {
+        "id": 27,
+        "datatype": "txt",
+        "title": "Lorem ipsum",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "src": "",
         "row": "1",
         "order": ""
     }

@@ -55,8 +55,6 @@ html {
 
 .row {
   overflow-x: auto;
-  white-space: nowrap;
-  padding-top: 1rem;
   padding-left: 0;
   padding-right: 0;
   margin-left: 0;
@@ -138,8 +136,8 @@ html {
   .header-anchor a {
     font-family: "BPdotsCondensedSquare", arial;
     color: black;
-    font-size: 32vh;
-    height: 32vh;
+    font-size: 36vh;
+    height: 36vh;
     text-align: center;
     line-height: 1.2;
     text-decoration: none;
@@ -154,7 +152,7 @@ html {
   }
 
   .row-no_top_padding {
-    padding-top: 0 !important;
+    margin-top: 0 !important;
     height: 39.62vh;
     margin: 0;
   }
@@ -241,15 +239,16 @@ html {
   }
 
   .language-black-block {
+    font-family: "BPdotsCondensedSquare", arial;
+    font-size: 13vh;
     cursor: pointer;
-    margin: 0;
-    border: 0;
-    height: 5.5rem;
-    width: 5.5rem !important;
-    right: 5.5rem;
-    box-sizing: unset;
-    padding-left: 0rem;
-    padding-right: 0rem;
+    float: left;
+    color: white;
+    background-color: black;
+    line-height: 17vh;
+    height: 14vh;
+    padding: 0 0.3rem !important;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
   }
 
   .title_projects {
@@ -270,17 +269,41 @@ html {
     height: fit-content !important;
     padding-top: 1.11rem;
   }
+
+  .first-container {
+    width: 33vw;
+  }
 }
 
 // Global rows classes
 
+.row-test {
+  border: 1px dotted black;
+  min-height: 36vh;
+}
+
+.test-element {
+  height: 36vh;
+}
+
 .row-slide-wrapper {
   justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .row-pics-container {
-  height: 33vh;
-  transition: 0.5s;
+  height: 36vh;
+  transition: 0.1s;
+}
+
+.row-txt {
+  h3 {
+    font-size: 3vh;
+  }
+  p {
+    font-size: 2vh;
+    white-space: break-spaces;
+  }
 }
 
 .row-pics {

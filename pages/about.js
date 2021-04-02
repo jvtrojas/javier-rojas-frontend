@@ -1,21 +1,23 @@
-import React from 'react';
+import '../styles/mains.scss';
 
-class About extends React.Component {
-    render(){
+function About() {
     return (
-        <div className="about-page no-padding">
-            {/* Row lang EN */}
-            <div className="row-about wrap hide-scrollbar webkit-scrollbar">
-                <div className="selected-class language-black-block title_projects">
-                EN
-                </div>
-                <div>
-                    <img className="imgrow" src="static/images/9_16/4A9C9416-477D-4496-96B4-088EDC1D74AB.jpg" alt="ATERNATIVO"/>
-                </div>
+        <div className="about-page">
+            <div className="row-test wrap row row-no_top_padding row-slide-wrapper hide-scrollbar">
+                    <div className="about-us-en-container first-container test-element">
+                        <p className="language-black-block">EN</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+            </div>
+            <div class="">
+
+            </div>
+            <div className="row-test wrap row row-no_top_padding row-slide-wrapper hide-scrollbar">
+
             </div>
         </div>
     )
 }
-}
+
 
 export default About;
