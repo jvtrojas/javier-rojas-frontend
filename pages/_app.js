@@ -23,6 +23,7 @@ function MyApp({ Component, pageProps, auth }) {
     
 
     const shuffleOrder = () => {
+      console.log('click')
     let randomNumber = Math.floor(Math.random() * 12)
     return( { order: `${randomNumber}` } )
     }
@@ -30,7 +31,7 @@ function MyApp({ Component, pageProps, auth }) {
     return (
       <>
         <NavHeaderLayout />
-        <BlackSquareShuffler handleOnClickBlackSquareShuffler={handleOnClickBlackSquareShuffler} />
+        <BlackSquareShuffler handleOnClickBlackSquareShuffler={shuffleOrder} />
         <Component {...pageProps} shuffleOrder={shuffleOrder} auth={auth} />
       </>
       )

@@ -28,7 +28,7 @@ function DataRow({data, shuffleOrder, rowNumber}) {
 
     return(
         <>
-            <div onClick={handleClickRow4} className="wrap row row-no_top_padding row-slide-wrapper hide-scrollbar">
+            <div onClick={handleClickRow4} className="row-test wrap row row-no_top_padding row-slide-wrapper hide-scrollbar">
                 { 
                     rowArray.map(
                         function(dataJSON) {
@@ -36,7 +36,7 @@ function DataRow({data, shuffleOrder, rowNumber}) {
                                 return(
                                     <div 
                                         className={`row-pics-container ${ isSelected ? 'big-row' : "" }`} 
-                                        style={shuffleOrder()} 
+                                        style={shuffleOrder() ? null : shuffleOrder()} 
                                         key={dataJSON.id} 
                                     >
                                         <img className="row-pics" src={ dataJSON.src } alt={ dataJSON.title } />
