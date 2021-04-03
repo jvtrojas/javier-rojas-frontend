@@ -97,7 +97,7 @@ const NavHeaderLayout = ({children}) => {
                         </Link>
                     </div>
                 </div>
-                    <div>
+                <div>
                     <div className="header-anchor">
                         <Link href="/photography">
                             <a 
@@ -112,8 +112,23 @@ const NavHeaderLayout = ({children}) => {
                             </a>       
                         </Link>                
                     </div>
-                    
+                </div>
+                <div>
+                    <div className="header-anchor">
+                        <Link href="/visuals">
+                            <a 
+                            href="#"
+                            className={`${isHovered=='visuals' ? classToggle : ''} ${isSelected=='visuals' || router.pathname=='/visuals' ? selectedClass : ''}`}
+                            onClick={() => handleSelectedNavLink('visuals')}
+                            onMouseEnter={() => handleMouseOver('visuals')} 
+                            onMouseLeave={handleMouseOut}
+                            >
+                                VISUALS!!
+                            </a>       
+                        </Link>   
                     </div>
+                </div>
+                <div>
                     <div className="header-anchor">
                         <Link href="/music">
                             <a 
@@ -127,9 +142,26 @@ const NavHeaderLayout = ({children}) => {
                             </a>       
                         </Link>   
                     </div>
+                </div>
+                <div>
+                    <div className="header-anchor">
+                        <Link href="/miscellaneous">
+                            <a 
+                            href="#"
+                            className={`${isHovered=='miscellaneous' ? classToggle : ''} ${isSelected=='miscellaneous' || router.pathname=='/miscellaneous' ? selectedClass : ''}`}
+                            onClick={() => handleSelectedNavLink('miscellaneous')}
+                            onMouseEnter={() => handleMouseOver('miscellaneous')} 
+                            onMouseLeave={handleMouseOut}
+                            >
+                                MISCELLANEOUS!!
+                            </a>       
+                        </Link>   
+                    </div>
+                </div>
             </div>
 
             {children}
+
         </div>
 
     )

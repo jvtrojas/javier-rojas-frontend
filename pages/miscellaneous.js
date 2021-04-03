@@ -1,11 +1,10 @@
-import React from 'react';
 import BaseLayout from '../components/layouts/BaseLayout';
 import DataRow from '../components/DataRow';
-import Data from '../public/js/data-projects.json';
+import Data from '../public/js/data-miscellaneous.json';
 
 const data = Data.map(each => {return each})
 
-function Projects({shuffleOrder}) {
+function Miscellaneous({shuffleOrder}) {
     return(
         <BaseLayout className="global" >
             <div className="container-fluid">
@@ -17,4 +16,4 @@ function Projects({shuffleOrder}) {
     )    
 }
 
-export default Projects
+export default Miscellaneous
