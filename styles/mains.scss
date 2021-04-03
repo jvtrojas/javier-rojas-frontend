@@ -303,7 +303,11 @@ html {
   p {
     font-size: 2vh;
     white-space: break-spaces;
+    min-width: 10rem;
   }
+}
+.row-pics-container.row-txt.big-row p {
+  min-width: 20rem;
 }
 
 .row-pics {

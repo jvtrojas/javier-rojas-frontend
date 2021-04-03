@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 function DataRow({data, shuffleOrder, rowNumber}) {
 
+
     const rowArray = [];
 
     data.forEach(object => object.row==rowNumber? rowArray.push(object) : "")
@@ -25,10 +26,10 @@ function DataRow({data, shuffleOrder, rowNumber}) {
     //     shuffleOrder()
     // }
 
-
+    console.log(rowArray)
     return(
         <>
-            <div onClick={handleClickRow4} className="row-test wrap row row-no_top_padding row-slide-wrapper hide-scrollbar">
+            <div onClick={handleClickRow4} className={` ${ rowArray.length === 0 ? "row-test" : ""} wrap row row-no_top_padding row-slide-wrapper hide-scrollbar`}>
                 { 
                     rowArray.map(
                         function(dataJSON) {
