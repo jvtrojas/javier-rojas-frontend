@@ -2,6 +2,7 @@
 @import "./shared/colors";
 @import "./responsive.scss";
 @import url(https://allfont.es/allfont.css?fonts=bpdotscondensedsquare);
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&display=swap");
 
 @font-face {
   font-family: "Inconsolata";
@@ -206,72 +207,83 @@ html {
 /* ABOUT PAGE */
 
 .about-page {
-  .border-block img {
-    display: flex;
-    cursor: pointer;
-    margin: 0;
-    width: 10rem;
+  .row-slide-wrapper {
+    justify-content: inherit;
+  }
+  .first-container {
+    width: 33vw;
+    min-width: 20rem;
+    height: auto;
+    margin-right: 2rem;
   }
 
-  .row-title {
-    overflow-x: auto;
-    white-space: nowrap;
-    height: fit-content;
-    padding-top: 3.33rem;
-    padding-left: 0;
-    padding-right: 0;
-    text-align: justify;
-    text-align: center;
-    width: fit-content;
+  .first-container-txt-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
-  .section-anchor {
-    font-family: "BPdotsCondensedSquare", arial;
-    font-size: 7.7rem;
-    font-style: normal;
-    display: flex;
-    font-weight: 400;
-    line-height: 8rem;
+  .first-container p {
+    text-align: right;
+    font-weight: 500;
+    margin-top: 4vh;
+  }
+
+  .second-container {
+    width: 66vw;
+    min-width: 50rem;
+    height: auto;
+    column-count: 2;
+    column-gap: 2rem;
+    column-fill: auto;
+  }
+
+  h2 {
+    font-family: BPdotsCondensedSquare;
+    font-size: calc(0.3rem + 5vh);
+    line-height: 5.5vh;
     letter-spacing: 0em;
-    text-align: left;
-    text-align: center;
-    z-index: 99999vh;
+    padding-top: 0.2rem;
+    text-align: right;
+    overflow-wrap: break-word;
+  }
+
+  h3 {
+    font-size: 2.5vh;
+    font-weight: bold;
+  }
+
+  .h3-col-span-2 {
+    break-before: column;
+  }
+
+  p {
+    font-family: "Barlow", sans-serif;
+    font-size: 2vh;
+    line-height: 1.1;
   }
 
   .language-black-block {
     font-family: "BPdotsCondensedSquare", arial;
     font-size: 13vh;
+    margin-right: 1rem;
+    margin-bottom: 0;
     cursor: pointer;
     float: left;
     color: white;
     background-color: black;
     line-height: 17vh;
     height: 14vh;
-    padding: 0 0.3rem !important;
+    padding: 0 1vh !important;
     box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
   }
 
-  .title_projects {
-    font-family: "BPdotsCondensedSquare", arial;
-    font-size: 4.4rem;
-    font-style: normal;
-    display: flex;
-    font-weight: 10.1rem;
-    line-height: 12.12rem;
-    letter-spacing: 0em;
-    text-align: justify;
-    vertical-align: middle;
+  .first-row {
+    padding-top: 1rem;
   }
 
-  .row-about {
-    overflow-x: auto;
-    white-space: nowrap;
-    height: fit-content !important;
-    padding-top: 1.11rem;
-  }
-
-  .first-container {
-    width: 33vw;
+  .row {
+    padding-bottom: 1.5rem;
   }
 }
 
