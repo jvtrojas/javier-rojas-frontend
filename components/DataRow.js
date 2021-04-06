@@ -14,19 +14,22 @@ function DataRow({data, shuffleOrder, rowNumber, displayFirstContainer, firstCon
         setIsSelected(prevState => !prevState);
     }
 
-    // shuffle order function
-    // const shuffleOrder = () => {
-    // let randomNumber = Math.floor(Math.random() * 12)
-    // return( { order: `${randomNumber}` } )
-    // }
+    {/* ROW SHUFFLE FUNCTION */}
+    function shuffleRow(array) {
+        var currentIndex = array.length, temporaryValue, randomIndex;
+        while (0 !== currentIndex) {
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+            temporaryValue = array[currentIndex];
+            array[currentIndex] = array[randomIndex];
+            array[randomIndex] = temporaryValue;
+        }
+        return array;
+    }
 
-    // if(blackSquareTrigger){
-    //     shuffleOrder()
-    // } else {
-    //     shuffleOrder()
-    // }
+    {/* PARA ACTIVAR SHUFFLE DESCOMENTAR ESTA FUNCION */}
+    // shuffleRow(rowArray)
 
-    console.log(rowArray)
     return(
         <>
             <div onClick={handleClickRow4} className={` ${ rowArray.length === 0 ? "row-test" : ""} wrap row row-no_top_padding row-slide-wrapper hide-scrollbar`}>
