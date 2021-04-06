@@ -9,7 +9,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/mains.scss';
 
 
-
 function MyApp({ Component, pageProps, auth }) {
 
   // let [ blackSquareTrigger, setBlackSquareTrigger] = useState(false);
