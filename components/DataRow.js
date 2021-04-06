@@ -14,18 +14,7 @@ function DataRow({data, shuffleOrder, rowNumber, displayFirstContainer, firstCon
         setIsSelected(prevState => !prevState);
     }
 
-    // shuffle order function
-    // const shuffleOrder = () => {
-    // let randomNumber = Math.floor(Math.random() * 12)
-    // return( { order: `${randomNumber}` } )
-    // }
-
-    // if(blackSquareTrigger){
-    //     shuffleOrder()
-    // } else {
-    //     shuffleOrder()
-    // }
-
+    {/* ROW SHUFFLE FUNCTION */}
     function shuffleRow(array) {
         var currentIndex = array.length, temporaryValue, randomIndex;
         while (0 !== currentIndex) {
@@ -38,7 +27,8 @@ function DataRow({data, shuffleOrder, rowNumber, displayFirstContainer, firstCon
         return array;
     }
 
-    shuffleRow(rowArray)
+    {/* PARA ACTIVAR SHUFFLE DESCOMENTAR ESTA FUNCION */}
+    // shuffleRow(rowArray)
 
     return(
         <>
