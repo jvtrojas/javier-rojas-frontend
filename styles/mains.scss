@@ -135,7 +135,7 @@ html {
   margin-bottom: -1.5rem;
 
   .header-anchor a {
-    font-family: "BPdotsCondensedSquare", arial;
+    font-family: "BPdotsCondensedSquare", ui-monospace, monospace;
     color: black;
     font-size: 36vh;
     height: 36vh;
@@ -252,7 +252,7 @@ html {
   }
 
   h2 {
-    font-family: BPdotsCondensedSquare;
+    font-family: "BPdotsCondensedSquare", monospace;
     font-size: calc(0.3rem + 5vh);
     line-height: 5.5vh;
     letter-spacing: 0em;
@@ -277,7 +277,7 @@ html {
   }
 
   .language-black-block {
-    font-family: "BPdotsCondensedSquare", arial;
+    font-family: "BPdotsCondensedSquare", monospace;
     font-size: 13vh;
     margin-right: 1rem;
     margin-bottom: 0;
