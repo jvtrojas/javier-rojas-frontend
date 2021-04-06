@@ -25,7 +25,7 @@ function Projects({shuffleOrder}) {
     return(
             <div className="projects-page">
                 <DataRow data={data} shuffleOrder={shuffleOrder} displayFirstContainer={true} firstContainerContent={projectsFirstContainerTxt[0]} rowNumber="1" />
-                <DataRow data={data} shuffleOrder={shuffleOrder} displayFirstContainer={true} firstContainerContent={projectsFirstContainerTxt[1]} rowNumber="1" />
+                <DataRow data={data} shuffleOrder={shuffleOrder} displayFirstContainer={true} firstContainerContent={projectsFirstContainerTxt[1]} rowNumber="2" />
             </div>
     )    
 }
