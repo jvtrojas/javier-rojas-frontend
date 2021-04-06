@@ -312,6 +312,7 @@ html {
   height: 36vh;
   transition: 0.1s;
   margin-right: 0.3vw;
+  display: inline-flex;
 }
 
 .row-txt {
@@ -331,6 +332,26 @@ html {
 .row-pics {
   cursor: pointer;
   height: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0.3rem;
+  text-align: right;
+  line-height: 1.3;
+  border-left: 1px solid;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: rgba(0, 0, 0, 0.418);
+  h3 {
+    font-size: 2vh;
+    font-weight: 700;
+  }
+  p {
+    font-size: 2vh;
+  }
 }
 
 .youtube-link {

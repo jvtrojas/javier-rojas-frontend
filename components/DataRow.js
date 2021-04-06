@@ -55,6 +55,16 @@ function DataRow({data, shuffleOrder, rowNumber, displayFirstContainer, firstCon
                                         style={shuffleOrder() ? null : shuffleOrder()} 
                                         key={dataJSON.id} 
                                     >
+                                        { 
+                                            dataJSON.info
+                                            ?
+                                            <div className="info">
+                                                <h3>{ dataJSON.title }</h3>
+                                                <p>{ dataJSON.info }</p>
+                                            </div>
+                                            :
+                                            ""
+                                        }
                                         <img className="row-pics" src={ dataJSON.src } alt={ dataJSON.title } />
                                     </div>
                                 )
@@ -71,18 +81,7 @@ function DataRow({data, shuffleOrder, rowNumber, displayFirstContainer, firstCon
                                         />
                                     </div>
                                 )
-                            } else if(dataJSON.datatype=="txt") {
-                                return(
-                                    <div 
-                                        className={`row-pics-container row-txt ${ isSelected ? 'big-row' : "" }`}
-                                        style={shuffleOrder()}  
-                                        key={dataJSON.id} 
-                                    >
-                                        <h3>{dataJSON.title}</h3>
-                                        <p>{dataJSON.content}</p>
-                                    </div>
-                                )
-                            }
+                            } 
                         }
                     )
                 }
