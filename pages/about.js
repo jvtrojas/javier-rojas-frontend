@@ -5,13 +5,13 @@ function About() {
         <div className="about-page">
             <div className="wrap row first-row row-no_top_padding row-slide-wrapper hide-scrollbar">
                 <div className="about-us-en-container first-container test-element">
-                    <div className="language-black-block">EN</div>
+                    <div className="language-black-block">
+                        EN
+                    </div>
                     <div className="first-container-txt-section">
-                            <h2>JAVIER ROJAS<br></br>TRANSDISCIPLINARY ARTIST<br></br> AURAL ARCHITECT</h2>
-                            <p>Transdisciplinary artist and Aural architect, working with multimedia technologies and design. Crosshatching diverse software and construction technologies, using 3D sound, CG graphics, creative coding, multichannel soundsystems, industrial design, architecture metalworks, photography, graphic and experience design.</p>
-                            <p>2019 - MA - Sound artist x Universitat de Barcelona (SPA)
-                                <br></br>
-                               2014 - BA - Architect x Universidad Blas Pascal (ARG) </p>
+                        <h2>JAVIER ROJAS<br></br>TRANSDISCIPLINARY ARTIST<br></br> AURAL ARCHITECT</h2>
+                        <p>Transdisciplinary artist and Aural architect, working with multimedia technologies and design. Crosshatching diverse software and construction technologies, using 3D sound, CG graphics, creative coding, multichannel soundsystems, industrial design, architecture metalworks, photography, graphic and experience design.</p>
+                        <p>2019 - MA - Sound artist x Universitat de Barcelona (SPA)<br></br>2014 - BA - Architect x Universidad Blas Pascal (ARG) </p>
                     </div>
                 </div>
                 <div className="about-us-en-container second-container test-element">
@@ -45,7 +45,7 @@ function About() {
 
                     <h3 className="h3-col-span-2">Technological Advisory</h3>
 
-                    <p><strong>2020 - TODAY:</strong>Comissions for Barbara Held - Creative coding for concerts with artists such as: Phill Niblock, Daniel Neumann, Shiva Feshareki. Barcelona (ES) and New York (USA)</p>
+                    <p><strong>2020 - TODAY: </strong>Comissions for Barbara Held - Creative coding for concerts with artists such as: Phill Niblock, Daniel Neumann, Shiva Feshareki. Barcelona (ES) and New York (USA)</p>
 
                     <p><strong>SEPT 2020: </strong>Susi Hinz at Callie’s Berlin for Berlin Art Week - Multichannel sound system installation and 3D spacialization. Berlin (DE)</p>
 
@@ -59,15 +59,15 @@ function About() {
             </div>
             <div className="wrap row row-no_top_padding row-slide-wrapper hide-scrollbar">
                 <div className="about-us-es-container first-container test-element">
-                    <div className="language-black-block">ES</div>
-                        <div className="first-container-txt-section">
-                            <h2>JAVIER ROJAS<br></br> ARTISTA TRANSDISCIPLINAR<br></br> ARQUITECTO AUDITIVO</h2>
-                            <p>Artista transdisciplinar y arquitecto auditivo, trabajando con tecnologías, multimedia y diseño. Fusionando diversas tecnologías de software y construcción, utilizando sonido tridimensional, gráficos CG, programación creativa, sistemas de sonido multicanal, diseño industrial, arquitectura metálica, fotografía y diseño gráfico.</p>
-                            <p>2019 - MA - Artista sonoro x Universitat de Barcelona (SPA) 
-                                <br></br>
-                                2014 - BA - Arquitecto x Universidad Blas Pascal (ARG) </p>
-                        </div>
+                    <div className="language-black-block">
+                        ES
                     </div>
+                    <div className="first-container-txt-section">
+                        <h2>JAVIER ROJAS<br></br> ARTISTA TRANSDISCIPLINAR<br></br> ARQUITECTO AUDITIVO</h2>
+                        <p>Artista transdisciplinar y arquitecto auditivo, trabajando con tecnologías, multimedia y diseño. Fusionando diversas tecnologías de software y construcción, utilizando sonido tridimensional, gráficos CG, programación creativa, sistemas de sonido multicanal, diseño industrial, arquitectura metálica, fotografía y diseño gráfico.</p>
+                        <p>2019 - MA - Artista sonoro x Universitat de Barcelona (SPA) <br></br>2014 - BA - Arquitecto x Universidad Blas Pascal (ARG) </p>
+                    </div>
+                </div>
                 <div className="about-us-en-container second-container test-element">
                     <h3>Experiencia profesional</h3>
                     <p><strong>2019 - Actualidad:</strong> Cofundador y colaborador de Simulacro. Plataforma transdisciplinar con sede en Berlín (DE) y Córdoba (ARG), mezclando disciplinas creativas para proyectos artísticos.</p>
@@ -97,7 +97,7 @@ function About() {
 
                     <h3 className="h3-col-span-2">Asesoramiento tecnológico</h3>
 
-                    <p><strong>2020 - HOY:</strong>Comisiones para Barbara Held - Codificación creativa para conciertos con artistas como: Phill Niblock, Daniel Neumann, Shiva Feshareki. Barcelona (ES) y Nueva York (USA)</p>
+                    <p><strong>2020 - HOY: </strong>Comisiones para Barbara Held - Codificación creativa para conciertos con artistas como: Phill Niblock, Daniel Neumann, Shiva Feshareki. Barcelona (ES) y Nueva York (USA)</p>
 
                     <p><strong>Septiembre 2020: </strong>Susi Hinz en Callie's Berlín para la Semana del Arte de Berlín - Instalación de sistema de sonido multicanal y espacialización 3D. Berlín (DE)</p>
 

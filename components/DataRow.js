@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 
-function DataRow({data, shuffleOrder, rowNumber}) {
+function DataRow({data, shuffleOrder, rowNumber, displayFirstContainer, firstContainerContent}) {
 
 
     const rowArray = [];
@@ -30,7 +30,22 @@ function DataRow({data, shuffleOrder, rowNumber}) {
     return(
         <>
             <div onClick={handleClickRow4} className={` ${ rowArray.length === 0 ? "row-test" : ""} wrap row row-no_top_padding row-slide-wrapper hide-scrollbar`}>
-                { 
+                {/* Optional first row of text */}
+                {   
+                    displayFirstContainer == true 
+                    ?
+                    <div className="data-row-txt">
+                        <div className="about-us-en-container first-container test-element">
+                            <div className="first-container-txt-section">
+                                {<div dangerouslySetInnerHTML={{ __html: firstContainerContent }} />}
+                            </div>
+                        </div>
+                    </div>
+                    :
+                    ""
+                }
+                {/* Row of images and media*/}
+                {
                     rowArray.map(
                         function(dataJSON) {
                             if(dataJSON.datatype==""||dataJSON.datatype=="img"){

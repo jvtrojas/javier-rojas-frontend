@@ -205,11 +205,23 @@ html {
 }
 
 /* ABOUT PAGE */
+/* PROJECTS PAGE */
 
-.about-page {
+.about-page,
+.projects-page,
+.data-row-txt {
   .row-slide-wrapper {
     justify-content: inherit;
   }
+
+  .row {
+    padding-bottom: 1.7rem;
+  }
+
+  .first-row {
+    padding-top: 1rem;
+  }
+
   .first-container {
     width: 33vw;
     min-width: 20rem;
@@ -236,6 +248,7 @@ html {
     column-count: 2;
     column-gap: 2rem;
     column-fill: auto;
+    padding-right: 1.2rem;
   }
 
   h2 {
@@ -276,14 +289,6 @@ html {
     height: 14vh;
     padding: 0 1vh !important;
     box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
-  }
-
-  .first-row {
-    padding-top: 1rem;
-  }
-
-  .row {
-    padding-bottom: 1.5rem;
   }
 }
 
