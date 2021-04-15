@@ -2,7 +2,7 @@ import App from 'next/app';
 import auth0 from '../services/auth0';
 import NavHeaderLayout from '../components/layouts/NavHeaderLayout';
 import BlackSquareShuffler from '../components/layouts/BlackSquareShuffler';
-// import { useState } from 'react';
+import { useState } from 'react';
 
 //Styling
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -11,7 +11,7 @@ import '../styles/mains.scss';
 
 function MyApp({ Component, pageProps, auth }) {
 
-  // let [ blackSquareTrigger, setBlackSquareTrigger] = useState(false);
+  let [ blackSquareActive, setBlackSquareActive] = useState(false);
 
     function handleOnClickBlackSquareShuffler() {
       // setBlackSquareTrigger(prevState => !prevState);
@@ -21,17 +21,17 @@ function MyApp({ Component, pageProps, auth }) {
       
     
 
-    const shuffleOrder = () => {
-      console.log('click')
-    let randomNumber = Math.floor(Math.random() * 12)
-    return( { order: `${randomNumber}` } )
+    const handleBlackSquareClick= () => {
+      setBlackSquareActive(true)
+      // this.blackSquareTrigger.shuffleRow();
     }
 
     return (
       <>
         <NavHeaderLayout />
-        <BlackSquareShuffler handleOnClickBlackSquareShuffler={shuffleOrder} />
-        <Component {...pageProps} shuffleOrder={shuffleOrder} auth={auth} />
+        { blackSquareActive.toString() }
+        <BlackSquareShuffler handleBlackSquareShuffler={handleBlackSquareClick} />
+        <Component {...pageProps} blackSquareActive={blackSquareActive} auth={auth} />
       </>
       )
   }
