@@ -1,8 +1,7 @@
 import { useState } from 'react';
 
 
-function DataRow({data, blackSquareActive, rowNumber, displayFirstContainer, firstContainerContent}) {
-
+function DataRow({data, blackSquareTrigger, rowNumber, displayFirstContainer, firstContainerContent}) {
 
     const rowArray = [];
 
@@ -17,8 +16,6 @@ function DataRow({data, blackSquareActive, rowNumber, displayFirstContainer, fir
         console.log(isSelected)
     }
 
- 
-
     {/* ROW SHUFFLE FUNCTION */}
     function shuffleRow(array) {
         var currentIndex = array.length, temporaryValue, randomIndex;
@@ -31,9 +28,9 @@ function DataRow({data, blackSquareActive, rowNumber, displayFirstContainer, fir
         }
         return array;
     }
-alert(blackSquareActive)
+
     {/* PARA ACTIVAR SHUFFLE DESCOMENTAR ESTA FUNCION */}
-    blackSquareActive == false ? shuffleRow(rowArray) : null;
+    blackSquareTrigger !== 0 ? shuffleRow(rowArray) : null;
 
     return(
         <>

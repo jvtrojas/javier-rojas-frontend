@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 
-const NavHeaderLayout = ({children}) => {
+const NavHeaderLayout = ({children, setBlackSquareTrigger}) => {
 
     const router = useRouter();
 
@@ -23,6 +23,7 @@ const NavHeaderLayout = ({children}) => {
 
     let handleSelectedNavLink = id => {
         setIsSelected(id);
+        setBlackSquareTrigger(0)
     }       
 
     let handleMouseOver = id => {

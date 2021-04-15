@@ -11,27 +11,17 @@ import '../styles/mains.scss';
 
 function MyApp({ Component, pageProps, auth }) {
 
-  let [ blackSquareActive, setBlackSquareActive] = useState(false);
-
-    function handleOnClickBlackSquareShuffler() {
-      // setBlackSquareTrigger(prevState => !prevState);
-        // let randomNumber = Math.floor(Math.random() * 12)
-        // return( { order: `${randomNumber}` } )
-        }
-      
-    
+  let [ blackSquareTrigger, setBlackSquareTrigger] = useState(0);
 
     const handleBlackSquareClick= () => {
-      setBlackSquareActive(true)
-      // this.blackSquareTrigger.shuffleRow();
+      setBlackSquareTrigger(prevState => prevState + 1)
     }
 
     return (
       <>
-        <NavHeaderLayout />
-        { blackSquareActive.toString() }
+        <NavHeaderLayout setBlackSquareTrigger={setBlackSquareTrigger} />
         <BlackSquareShuffler handleBlackSquareShuffler={handleBlackSquareClick} />
-        <Component {...pageProps} blackSquareActive={blackSquareActive} auth={auth} />
+        <Component {...pageProps} blackSquareTrigger={blackSquareTrigger} auth={auth} />
       </>
       )
   }
