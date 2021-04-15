@@ -13,15 +13,30 @@ function MyApp({ Component, pageProps, auth }) {
 
   let [ blackSquareTrigger, setBlackSquareTrigger] = useState(0);
 
-    const handleBlackSquareClick= () => {
-      setBlackSquareTrigger(prevState => prevState + 1)
-    }
+  const handleBlackSquareClick= () => {
+    setBlackSquareTrigger(prevState => prevState + 1)
+  }
+
+  //Hover ID para cada link
+  let [ anchorIsHovered, setAnchorIsHovered ] = useState('');
+
+  //Array con clases
+  let headerAnchorClassArray = ['color-1', 'color-2', 'color-3', 'color-4','color-5','color-6','color-7'];
+
+  //Clase por default
+  let [ classToggle, setClassToggle ] = useState('color-0');
+
+  let handleMouseOverAnchor = id => {
+    setAnchorIsHovered(id)
+    let number = Math.floor(Math.random() * headerAnchorClassArray.length)
+    setClassToggle(headerAnchorClassArray[number]);
+  }
 
     return (
       <>
-        <NavHeaderLayout setBlackSquareTrigger={setBlackSquareTrigger} />
+        <NavHeaderLayout handleMouseOverAnchor={handleMouseOverAnchor} isHovered={anchorIsHovered} classToggle={classToggle} setClassToggle={setClassToggle} setBlackSquareTrigger={setBlackSquareTrigger} />
         <BlackSquareShuffler handleBlackSquareShuffler={handleBlackSquareClick} />
-        <Component {...pageProps} blackSquareTrigger={blackSquareTrigger} auth={auth} />
+        <Component {...pageProps} anchorIsHovered={anchorIsHovered} classToggle={classToggle} blackSquareTrigger={blackSquareTrigger} auth={auth} />
       </>
       )
   }
