@@ -2,21 +2,12 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 
-const NavHeaderLayout = ({children, setBlackSquareTrigger}) => {
+const NavHeaderLayout = ({children, setBlackSquareTrigger, handleMouseOverAnchor, isHovered, classToggle, setClassToggle}) => {
 
     const router = useRouter();
 
-    //Hover ID para cada link
-    let [ isHovered, setIsHovered ] = useState('');
-
     //Black background when link selected
     let [ isSelected, setIsSelected ] = useState('');
-
-    //Clase por default
-    let [ classToggle, setClassToggle ] = useState('color-0');
-
-    //Array con clases
-    let headerAnchorClassArray = ['color-1', 'color-2', 'color-3', 'color-4','color-5','color-6','color-7'];
 
     //Black-background selection
     let selectedClass = 'selected-class';
@@ -25,12 +16,6 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger}) => {
         setIsSelected(id);
         setBlackSquareTrigger(0)
     }       
-
-    let handleMouseOver = id => {
-        setIsHovered(id)
-        let number = Math.floor(Math.random() * headerAnchorClassArray.length)
-        setClassToggle(headerAnchorClassArray[number]);
-    }
 
     function handleMouseOut() {
         setClassToggle('color-0');
@@ -46,7 +31,7 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger}) => {
                             <a
                             className={`${isHovered=='home' ? classToggle : ''} ${isSelected=='home' || router.pathname=='/' ? selectedClass : ''}`}
                             onClick={() => handleSelectedNavLink('home')}
-                            onMouseEnter={() => handleMouseOver('home')} 
+                            onMouseEnter={() => handleMouseOverAnchor('home')} 
                             onMouseLeave={handleMouseOut}
                             >
                                 HOME!!
@@ -60,7 +45,7 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger}) => {
                             <a
                             className={`${isHovered=='about' ? classToggle : ''} ${isSelected=='about' || router.pathname=='/about' ? selectedClass : ''}`}
                             onClick={() => handleSelectedNavLink('about')}
-                            onMouseEnter={() => handleMouseOver('about')} 
+                            onMouseEnter={() => handleMouseOverAnchor('about')} 
                             onMouseLeave={handleMouseOut}
                             >
                                 ABOUT!!
@@ -75,7 +60,7 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger}) => {
                             href="#"
                             className={`${isHovered=='projects' ? classToggle : ''} ${isSelected=='projects' || router.pathname=='/projects' ? selectedClass : ''}`}
                             onClick={() => handleSelectedNavLink('projects')}
-                            onMouseEnter={() => handleMouseOver('projects')} 
+                            onMouseEnter={() => handleMouseOverAnchor('projects')} 
                             onMouseLeave={handleMouseOut}
                             >
                                 PROJECTS!!
@@ -90,7 +75,7 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger}) => {
                             href="#"
                             className={`${isHovered=='aural_architecture' ? classToggle : ''} ${isSelected=='aural_architecture' || router.pathname=='/autal-architecture' ? selectedClass : ''}`}
                             onClick={() => handleSelectedNavLink('aural_architecture')}
-                            onMouseEnter={() => handleMouseOver('aural_architecture')} 
+                            onMouseEnter={() => handleMouseOverAnchor('aural_architecture')} 
                             onMouseLeave={handleMouseOut}
                             >
                                 AURAL_ARCHITECTURE!!
@@ -105,8 +90,8 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger}) => {
                             href="#"
                             className={`${isHovered=='photography' ? classToggle : ''} ${isSelected=='photography' || router.pathname=='/photography' ? selectedClass : ''}`}
                             onClick={() => handleSelectedNavLink('photography')}
-                            onMouseEnter={() => handleMouseOver('photography')} 
-                            onMouseEnter={() => handleMouseOver('photography')} 
+                            onMouseEnter={() => handleMouseOverAnchor('photography')} 
+                            onMouseEnter={() => handleMouseOverAnchor('photography')} 
                             onMouseLeave={handleMouseOut}
                             >
                                 PHOTOGRAPHY!!
@@ -121,7 +106,7 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger}) => {
                             href="#"
                             className={`${isHovered=='visuals' ? classToggle : ''} ${isSelected=='visuals' || router.pathname=='/visuals' ? selectedClass : ''}`}
                             onClick={() => handleSelectedNavLink('visuals')}
-                            onMouseEnter={() => handleMouseOver('visuals')} 
+                            onMouseEnter={() => handleMouseOverAnchor('visuals')} 
                             onMouseLeave={handleMouseOut}
                             >
                                 VISUALS!!
@@ -136,7 +121,7 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger}) => {
                             href="#"
                             className={`${isHovered=='music' ? classToggle : ''} ${isSelected=='music' || router.pathname=='/music' ? selectedClass : ''}`}
                             onClick={() => handleSelectedNavLink('music')}
-                            onMouseEnter={() => handleMouseOver('music')} 
+                            onMouseEnter={() => handleMouseOverAnchor('music')} 
                             onMouseLeave={handleMouseOut}
                             >
                                 MUSIC!!
@@ -151,7 +136,7 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger}) => {
                             href="#"
                             className={`${isHovered=='miscellaneous' ? classToggle : ''} ${isSelected=='miscellaneous' || router.pathname=='/miscellaneous' ? selectedClass : ''}`}
                             onClick={() => handleSelectedNavLink('miscellaneous')}
-                            onMouseEnter={() => handleMouseOver('miscellaneous')} 
+                            onMouseEnter={() => handleMouseOverAnchor('miscellaneous')} 
                             onMouseLeave={handleMouseOut}
                             >
                                 MISCELLANEOUS!!

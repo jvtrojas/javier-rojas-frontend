@@ -71,11 +71,24 @@ html {
   flex-wrap: nowrap;
 }
 
+/* BLACK SQUARE */
+
+.black-square {
+  cursor: pointer;
+  background-color: black;
+  height: 11vh;
+  width: 11vh;
+  right: 5.33vw;
+  bottom: 9.33vh;
+  position: fixed;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
 /* HEADER BACKGROUND COLORS HOVER CLASSES*/
 
 .color-0 {
   color: black;
-  background-color: transparent;
+  // background-color: inherit;
 }
 
 .color-1 {
@@ -124,6 +137,11 @@ html {
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
+.link-default {
+  background-color: transparent;
+  box-shadow: none;
+}
+
 /* HEADER */
 
 .header-container {
@@ -162,19 +180,6 @@ html {
     border: 1px solid #f3f3f3bd;
     padding: 2rem;
   }
-}
-
-/* BLACK SQUARE */
-
-.black-square {
-  cursor: pointer;
-  background-color: black;
-  height: 11vh;
-  width: 11vh;
-  right: 5.33vw;
-  bottom: 9.33vh;
-  position: fixed;
-  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .square-placeholder {
