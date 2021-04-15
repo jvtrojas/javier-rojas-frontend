@@ -1,8 +1,7 @@
 import { useState } from 'react';
 
 
-function DataRow({data, shuffleOrder, rowNumber, displayFirstContainer, firstContainerContent}) {
-
+function DataRow({data, blackSquareTrigger, rowNumber, displayFirstContainer, firstContainerContent}) {
 
     const rowArray = [];
 
@@ -17,8 +16,6 @@ function DataRow({data, shuffleOrder, rowNumber, displayFirstContainer, firstCon
         console.log(isSelected)
     }
 
- 
-
     {/* ROW SHUFFLE FUNCTION */}
     function shuffleRow(array) {
         var currentIndex = array.length, temporaryValue, randomIndex;
@@ -32,17 +29,8 @@ function DataRow({data, shuffleOrder, rowNumber, displayFirstContainer, firstCon
         return array;
     }
 
-    {
-        /*
-        when click in row
-        image
-
-
-        */
-    }
-
     {/* PARA ACTIVAR SHUFFLE DESCOMENTAR ESTA FUNCION */}
-    // shuffleRow(rowArray)
+    blackSquareTrigger !== 0 ? shuffleRow(rowArray) : null;
 
     return(
         <>
@@ -69,7 +57,6 @@ function DataRow({data, shuffleOrder, rowNumber, displayFirstContainer, firstCon
                                 return(
                                     <div 
                                         className={`row-pics-container ${ isSelected == 1 ? 'big-row' : isSelected == 2 ? 'small-row' : isSelected == 0 ? 'default-row' : null }`} 
-                                        style={shuffleOrder() ? null : shuffleOrder()} 
                                         key={dataJSON.id} 
                                     >
                                         { 
@@ -89,7 +76,6 @@ function DataRow({data, shuffleOrder, rowNumber, displayFirstContainer, firstCon
                                 return(
                                     <div 
                                         className={`row-pics-container youtube-link ${ isSelected == 1 ? 'big-row' : isSelected == 2 ? 'small-row' : isSelected == 0 ? 'default-row' : null }`}
-                                        style={shuffleOrder()}  
                                         key={dataJSON.id} 
                                     >
                                         <iframe width="auto" height="100%" 

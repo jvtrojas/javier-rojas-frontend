@@ -10,15 +10,14 @@ const EN_TEXT = "EN";
 
 const data = Data.map(each => {return each})
 
-function Index({shuffleOrder}) {
+function Index({blackSquareTrigger}) {
 
-    
     return (
         <BaseLayout className="global" >
             <div className="container-fluid">
-                <DataRow data={data} shuffleOrder={shuffleOrder} rowNumber="1" />
-                <DataRow data={data} shuffleOrder={shuffleOrder} rowNumber="2" />
-                <DataRow data={data} shuffleOrder={shuffleOrder} rowNumber="3" />
+                <DataRow data={data} blackSquareTrigger={blackSquareTrigger} rowNumber="1" />
+                <DataRow data={data} blackSquareTrigger={blackSquareTrigger} rowNumber="2" />
+                <DataRow data={data} blackSquareTrigger={blackSquareTrigger} rowNumber="3" />
             </div>
         </BaseLayout>
     )
