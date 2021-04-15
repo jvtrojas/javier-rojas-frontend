@@ -28,6 +28,7 @@ function MyApp({ Component, pageProps, auth }) {
 
   let handleMouseOverAnchor = id => {
     setAnchorIsHovered(id)
+    setBlackSquareTrigger(0)
     let number = Math.floor(Math.random() * headerAnchorClassArray.length)
     setClassToggle(headerAnchorClassArray[number]);
   }
@@ -35,7 +36,8 @@ function MyApp({ Component, pageProps, auth }) {
     return (
       <>
         <NavHeaderLayout handleMouseOverAnchor={handleMouseOverAnchor} isHovered={anchorIsHovered} classToggle={classToggle} setClassToggle={setClassToggle} setBlackSquareTrigger={setBlackSquareTrigger} />
-        <BlackSquareShuffler handleBlackSquareShuffler={handleBlackSquareClick} />
+        { blackSquareTrigger.toString()}
+        <BlackSquareShuffler handleBlackSquareShuffler={handleBlackSquareClick} anchorIsHovered={anchorIsHovered} classToggle={classToggle} />
         <Component {...pageProps} anchorIsHovered={anchorIsHovered} classToggle={classToggle} blackSquareTrigger={blackSquareTrigger} auth={auth} />
       </>
       )
