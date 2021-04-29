@@ -1,6 +1,5 @@
 @import "./shared/fonts";
 @import "./shared/colors";
-@import "./responsive.scss";
 @import url(https://allfont.es/allfont.css?fonts=bpdotscondensedsquare);
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&display=swap");
 
@@ -363,11 +362,11 @@ html {
 }
 
 .big-row {
-  height: 100vh;
+  height: 100vh !important;
 }
 
 .small-row {
-  height: 13vh;
+  height: 13vh !important;
 }
 
 .default-row {
@@ -383,3 +382,5 @@ html {
 .display-none-after-big-row {
   display: none;
 }
+
+@import "./responsive.scss";
