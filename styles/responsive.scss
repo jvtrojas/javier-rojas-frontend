@@ -12,3 +12,17 @@
     bottom: 9.33vh;
   }
 }
+@media (max-width: 1280px) {
+  .header-container {
+    .header-anchor a {
+      font-size: 30vh !important;
+      height: 31vh !important;
+    }
+  }
+  .default-row {
+    height: 31vh !important;
+  }
+  .row-pics-container {
+    height: 31vh !important;
+  }
+}
