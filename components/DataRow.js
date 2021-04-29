@@ -13,7 +13,6 @@ function DataRow({data, blackSquareTrigger, rowNumber, displayFirstContainer, fi
         isSelected++
         isSelected == 3 ? isSelected = 0 : ""
         setIsSelected(isSelected)
-        console.log(isSelected)
     }
 
     {/* ROW SHUFFLE FUNCTION */}
