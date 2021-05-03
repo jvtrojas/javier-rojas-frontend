@@ -1,17 +1,18 @@
 import { useState } from 'react';
 
 
-function DataRow({data, shuffleOrder, rowNumber, displayFirstContainer, firstContainerContent}) {
-
+function DataRow({data, blackSquareTrigger, rowNumber, displayFirstContainer, firstContainerContent}) {
 
     const rowArray = [];
 
     data.forEach(object => object.row==rowNumber? rowArray.push(object) : "")
 
-    let [ isSelected, setIsSelected ] = useState(false);
+    let [ isSelected, setIsSelected ] = useState(0);
 
-    const handleClickRow4 = () => {
-        setIsSelected(prevState => !prevState);
+    const handleClickRow = () => {
+        isSelected++
+        isSelected == 3 ? isSelected = 0 : ""
+        setIsSelected(isSelected)
     }
 
     {/* ROW SHUFFLE FUNCTION */}
@@ -28,11 +29,11 @@ function DataRow({data, shuffleOrder, rowNumber, displayFirstContainer, firstCon
     }
 
     {/* PARA ACTIVAR SHUFFLE DESCOMENTAR ESTA FUNCION */}
-    // shuffleRow(rowArray)
+    blackSquareTrigger !== 0 ? shuffleRow(rowArray) : null;
 
     return(
         <>
-            <div onClick={handleClickRow4} className={` ${ rowArray.length === 0 ? "row-test" : ""} wrap row row-no_top_padding row-slide-wrapper hide-scrollbar`}>
+            <div onClick={handleClickRow} className={` ${ rowArray.length === 0 ? "row-test" : ""} wrap row row-no_top_padding row-slide-wrapper hide-scrollbar`}>
                 {/* Optional first row of text */}
                 {   
                     displayFirstContainer == true 
@@ -54,8 +55,7 @@ function DataRow({data, shuffleOrder, rowNumber, displayFirstContainer, firstCon
                             if(dataJSON.datatype==""||dataJSON.datatype=="img"){
                                 return(
                                     <div 
-                                        className={`row-pics-container ${ isSelected ? 'big-row' : "" }`} 
-                                        style={shuffleOrder() ? null : shuffleOrder()} 
+                                        className={`row-pics-container ${ isSelected == 1 ? 'big-row' : isSelected == 2 ? 'small-row' : isSelected == 0 ? 'default-row' : null }`} 
                                         key={dataJSON.id} 
                                     >
                                         { 
@@ -74,8 +74,7 @@ function DataRow({data, shuffleOrder, rowNumber, displayFirstContainer, firstCon
                             } else if(dataJSON.datatype=="yt") {
                                 return(
                                     <div 
-                                        className={`row-pics-container youtube-link ${ isSelected ? 'big-row' : "" }`}
-                                        style={shuffleOrder()}  
+                                        className={`row-pics-container youtube-link ${ isSelected == 1 ? 'big-row' : isSelected == 2 ? 'small-row' : isSelected == 0 ? 'default-row' : null }`}
                                         key={dataJSON.id} 
                                     >
                                         <iframe width="auto" height="100%" 

@@ -1,8 +1,41 @@
+@media (max-width: 1280px) {
+  .header-container {
+    .header-anchor a {
+      font-size: 30vh;
+      height: 31vh;
+    }
+  }
+  .default-row {
+    height: 31vh;
+  }
+  .row-pics-container {
+    height: 31vh;
+  }
+}
 @media (max-width: 480px) {
   .header-container {
     .header-anchor a {
       font-size: 16vh !important;
       height: 16vh !important;
     }
+  }
+  .black-square {
+    height: 11vh;
+    width: 11vh;
+    right: 5.33vw;
+    bottom: 9.33vh;
+  }
+  .big-row {
+    height: 36vh !important;
+  }
+
+  .small-row {
+    height: 36vh !important;
+  }
+  .default-row {
+    height: 36vh;
+  }
+  .row-pics-container {
+    height: 36vh;
   }
 }

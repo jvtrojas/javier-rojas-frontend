@@ -1,9 +1,9 @@
 import React from 'react';
 
-const BlackSquareShuffler = ({children, handleOnClickBlackSquareShuffler}) => {
+const BlackSquareShuffler = ({children, handleBlackSquareShuffler, anchorIsHovered, classToggle}) => {
     return (
         <>
-            <div onClick={handleOnClickBlackSquareShuffler} className="black-square"></div>
+            <div onClick={handleBlackSquareShuffler} className={`${anchorIsHovered ? classToggle : null} black-square`}></div>
             {children}
         </>
     )

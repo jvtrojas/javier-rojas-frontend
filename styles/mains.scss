@@ -1,6 +1,5 @@
 @import "./shared/fonts";
 @import "./shared/colors";
-@import "./responsive.scss";
 @import url(https://allfont.es/allfont.css?fonts=bpdotscondensedsquare);
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&display=swap");
 
@@ -71,11 +70,24 @@ html {
   flex-wrap: nowrap;
 }
 
+/* BLACK SQUARE */
+
+.black-square {
+  cursor: pointer;
+  background-color: black;
+  height: 11vh;
+  width: 11vh;
+  right: 5.33vw;
+  bottom: 9.33vh;
+  position: fixed;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
 /* HEADER BACKGROUND COLORS HOVER CLASSES*/
 
 .color-0 {
   color: black;
-  background-color: transparent;
+  // background-color: inherit;
 }
 
 .color-1 {
@@ -124,6 +136,11 @@ html {
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
+.link-default {
+  background-color: transparent;
+  box-shadow: none;
+}
+
 /* HEADER */
 
 .header-container {
@@ -162,19 +179,6 @@ html {
     border: 1px solid #f3f3f3bd;
     padding: 2rem;
   }
-}
-
-/* BLACK SQUARE */
-
-.black-square {
-  cursor: pointer;
-  background-color: black;
-  height: 11vh;
-  width: 11vh;
-  right: 5.33vw;
-  bottom: 9.33vh;
-  position: fixed;
-  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .square-placeholder {
@@ -304,7 +308,6 @@ html {
 }
 
 .row-slide-wrapper {
-  justify-content: space-between;
   margin-top: 1rem;
 }
 
@@ -313,6 +316,19 @@ html {
   transition: 0.1s;
   margin-right: 0.3vw;
   display: inline-flex;
+}
+
+.big-row {
+  height: 100vh !important;
+  width: auto !important;
+}
+
+.small-row {
+  height: 13vh !important;
+}
+
+.default-row {
+  height: 36vh;
 }
 
 .row-txt {
@@ -332,6 +348,7 @@ html {
 .row-pics {
   cursor: pointer;
   height: 100%;
+  width: auto;
 }
 
 .info {
@@ -362,10 +379,6 @@ html {
    ;
 }
 
-.big-row {
-  height: 100vh;
-}
-
 .big-row-container {
   padding: 0;
   position: absolute;
@@ -375,3 +388,5 @@ html {
 .display-none-after-big-row {
   display: none;
 }
+
+@import "./responsive.scss";

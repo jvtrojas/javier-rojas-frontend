@@ -5,7 +5,7 @@ import Data from '../public/js/data-projects.json';
 
 const data = Data.map(each => {return each})
 
-function Projects({shuffleOrder}) {
+function Projects({blackSquareTrigger}) {
 
     let projectsFirstContainerTxt = [
         `
@@ -24,8 +24,8 @@ function Projects({shuffleOrder}) {
 
     return(
             <div className="projects-page">
-                <DataRow data={data} shuffleOrder={shuffleOrder} displayFirstContainer={true} firstContainerContent={projectsFirstContainerTxt[0]} rowNumber="1" />
-                <DataRow data={data} shuffleOrder={shuffleOrder} displayFirstContainer={true} firstContainerContent={projectsFirstContainerTxt[1]} rowNumber="2" />
+                <DataRow data={data} blackSquareTrigger={blackSquareTrigger} displayFirstContainer={true} firstContainerContent={projectsFirstContainerTxt[0]} rowNumber="1" />
+                <DataRow data={data} blackSquareTrigger={blackSquareTrigger} displayFirstContainer={true} firstContainerContent={projectsFirstContainerTxt[1]} rowNumber="2" />
             </div>
     )    
 }

@@ -2,7 +2,7 @@ import App from 'next/app';
 import auth0 from '../services/auth0';
 import NavHeaderLayout from '../components/layouts/NavHeaderLayout';
 import BlackSquareShuffler from '../components/layouts/BlackSquareShuffler';
-// import { useState } from 'react';
+import { useState } from 'react';
 
 //Styling
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -11,27 +11,34 @@ import '../styles/mains.scss';
 
 function MyApp({ Component, pageProps, auth }) {
 
-  // let [ blackSquareTrigger, setBlackSquareTrigger] = useState(false);
+  let [ blackSquareTrigger, setBlackSquareTrigger] = useState(0);
 
-    function handleOnClickBlackSquareShuffler() {
-      // setBlackSquareTrigger(prevState => !prevState);
-        // let randomNumber = Math.floor(Math.random() * 12)
-        // return( { order: `${randomNumber}` } )
-        }
-      
-    
+  const handleBlackSquareClick= () => {
+    setBlackSquareTrigger(prevState => prevState + 1)
+  }
 
-    const shuffleOrder = () => {
-      console.log('click')
-    let randomNumber = Math.floor(Math.random() * 12)
-    return( { order: `${randomNumber}` } )
-    }
+  //Hover ID para cada link
+  let [ anchorIsHovered, setAnchorIsHovered ] = useState('');
+
+  //Array con clases
+  let headerAnchorClassArray = ['color-1', 'color-2', 'color-3', 'color-4','color-5','color-6','color-7'];
+
+  //Clase por default
+  let [ classToggle, setClassToggle ] = useState('color-0');
+
+  let handleMouseOverAnchor = id => {
+    setAnchorIsHovered(id)
+    setBlackSquareTrigger(0)
+    let number = Math.floor(Math.random() * headerAnchorClassArray.length)
+    setClassToggle(headerAnchorClassArray[number]);
+  }
 
     return (
       <>
-        <NavHeaderLayout />
-        <BlackSquareShuffler handleOnClickBlackSquareShuffler={shuffleOrder} />
-        <Component {...pageProps} shuffleOrder={shuffleOrder} auth={auth} />
+        <NavHeaderLayout handleMouseOverAnchor={handleMouseOverAnchor} isHovered={anchorIsHovered} classToggle={classToggle} setClassToggle={setClassToggle} setBlackSquareTrigger={setBlackSquareTrigger} />
+        {/* { blackSquareTrigger.toString()} */}
+        <BlackSquareShuffler handleBlackSquareShuffler={handleBlackSquareClick} anchorIsHovered={anchorIsHovered} classToggle={classToggle} />
+        <Component {...pageProps} anchorIsHovered={anchorIsHovered} classToggle={classToggle} blackSquareTrigger={blackSquareTrigger} auth={auth} />
       </>
       )
   }
