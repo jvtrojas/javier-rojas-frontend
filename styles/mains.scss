@@ -318,6 +318,19 @@ html {
   display: inline-flex;
 }
 
+.big-row {
+  height: 100vh !important;
+  width: auto !important;
+}
+
+.small-row {
+  height: 13vh !important;
+}
+
+.default-row {
+  height: 36vh;
+}
+
 .row-txt {
   h3 {
     font-size: 3vh;
@@ -335,6 +348,7 @@ html {
 .row-pics {
   cursor: pointer;
   height: 100%;
+  width: auto;
 }
 
 .info {
@@ -359,18 +373,6 @@ html {
 
 .youtube-link {
   margin: 0 0.3rem;
-}
-
-.big-row {
-  height: 100vh !important;
-}
-
-.small-row {
-  height: 13vh !important;
-}
-
-.default-row {
-  height: 36vh;
 }
 
 .big-row-container {
