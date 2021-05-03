@@ -1,3 +1,17 @@
+@media (max-width: 1280px) {
+  .header-container {
+    .header-anchor a {
+      font-size: 30vh;
+      height: 31vh;
+    }
+  }
+  .default-row {
+    height: 31vh;
+  }
+  .row-pics-container {
+    height: 31vh;
+  }
+}
 @media (max-width: 480px) {
   .header-container {
     .header-anchor a {
@@ -11,18 +25,17 @@
     right: 5.33vw;
     bottom: 9.33vh;
   }
-}
-@media (max-width: 1280px) {
-  .header-container {
-    .header-anchor a {
-      font-size: 30vh;
-      height: 31vh;
-    }
+  .big-row {
+    height: 36vh !important;
+  }
+
+  .small-row {
+    height: 36vh !important;
   }
   .default-row {
-    height: 31vh;
+    height: 36vh;
   }
   .row-pics-container {
-    height: 31vh;
+    height: 36vh;
   }
 }
