@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import BandcampPlayer from 'react-bandcamp'
 
 function DataRow({data, blackSquareTrigger, rowNumber, displayFirstContainer, firstContainerContent}) {
 
@@ -69,9 +69,10 @@ function DataRow({data, blackSquareTrigger, rowNumber, displayFirstContainer, fi
                                             ""
                                         }
                                         <img className="row-pics" src={ dataJSON.src } alt={ dataJSON.title } />
+                                        
                                     </div>
                                 )
-                            } else if(dataJSON.datatype=="yt") {
+                            } else if(dataJSON.datatype=="youtube") {
                                 return(
                                     <div 
                                         className={`row-pics-container youtube-link ${ isSelected == 1 ? 'big-row' : isSelected == 2 ? 'small-row' : isSelected == 0 ? 'default-row' : null }`}
@@ -83,7 +84,19 @@ function DataRow({data, blackSquareTrigger, rowNumber, displayFirstContainer, fi
                                         />
                                     </div>
                                 )
-                            } 
+                            } else if(dataJSON.datatype=="bandcamp") {
+                                return(
+                                    <div 
+                                        className={"bandcamp-container"} 
+                                        key={dataJSON.id} 
+                                    >
+                                        <img className="row-pics" src={ dataJSON.img } alt={ dataJSON.title } />
+                                        <BandcampPlayer tracklist="true" size="small" album={ dataJSON.src } />
+                                        
+                                    </div>
+                                    
+                                )
+                            }
                         }
                     )
                 }
