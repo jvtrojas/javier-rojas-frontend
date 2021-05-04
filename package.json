@@ -39,6 +39,7 @@
     "node-sass": "^4.14.1",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "react": "^16.6.0",
+    "react-bandcamp": "^1.1.5",
     "react-datepicker": "^1.8.0",
     "react-dom": "^16.6.0",
     "react-emotion": "^9.2.12",

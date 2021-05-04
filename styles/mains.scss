@@ -296,6 +296,36 @@ html {
   }
 }
 
+// Music section styles
+.bandcamp-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  div {
+    padding-left: 0.8vh;
+    padding-right: 0.8vh;
+  }
+  .bandcamp-pic {
+    height: 50vh;
+  }
+  .album-title h3 {
+    font-size: 1.8vh;
+    font-family: Barlow;
+    font-weight: 700;
+  }
+  .playlist p,
+  .extra-info p {
+    font-size: 1.8vh;
+    font-family: Barlow;
+  }
+  .player {
+    height: 2.63rem;
+  }
+  .player iframe {
+    height: 2.6rem !important;
+  }
+}
+
 // Global rows classes
 
 .row-test {
@@ -316,19 +346,6 @@ html {
   transition: 0.1s;
   margin-right: 0.3vw;
   display: inline-flex;
-}
-
-.big-row {
-  height: 100vh !important;
-  width: auto !important;
-}
-
-.small-row {
-  height: 13vh !important;
-}
-
-.default-row {
-  height: 36vh;
 }
 
 .row-txt {
@@ -354,20 +371,18 @@ html {
 .info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  font-family: Barlow;
+  text-align: left;
   padding: 0 0.3rem;
-  text-align: right;
+  min-width: 27vh;
   line-height: 1.3;
-  border-left: 1px solid;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
   border-color: rgba(0, 0, 0, 0.418);
   h3 {
-    font-size: 2vh;
+    font-size: 1.2vh;
     font-weight: 700;
   }
   p {
-    font-size: 2vh;
+    font-size: 1.2vh;
   }
 }
 
@@ -379,6 +394,41 @@ html {
   padding: 0;
   position: absolute;
   background: white;
+}
+
+.big-row {
+  height: 100vh !important;
+  width: auto !important;
+
+  .info {
+    min-width: 54vh;
+    h3 {
+      font-size: 2.5vh;
+      font-weight: 700;
+    }
+    p {
+      font-size: 2.5vh;
+    }
+  }
+}
+
+.small-row {
+  height: 13vh !important;
+
+  .info {
+    min-width: 1vh;
+    h3 {
+      font-size: 0.6vh;
+      font-weight: 700;
+    }
+    p {
+      font-size: 0.6vh;
+    }
+  }
+}
+
+.default-row {
+  height: 36vh;
 }
 
 .display-none-after-big-row {
