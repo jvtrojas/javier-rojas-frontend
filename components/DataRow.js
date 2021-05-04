@@ -41,7 +41,7 @@ function DataRow({data, blackSquareTrigger, rowNumber, displayFirstContainer, fi
                     <div className="data-row-txt">
                         <div className="about-us-en-container first-container test-element">
                             <div className="first-container-txt-section">
-                                {<div dangerouslySetInnerHTML={{ __html: firstContainerContent }} />}
+                                {<div className={`${ isSelected == 1 ? 'big-row-fc-txt' : isSelected == 2 ? 'small-row-fc-txt' : isSelected == 0 ? 'default-fc-row-txt' : null }`} dangerouslySetInnerHTML={{ __html: firstContainerContent }} />}
                             </div>
                         </div>
                     </div>

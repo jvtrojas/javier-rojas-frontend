@@ -255,6 +255,27 @@ html {
     padding-right: 1.2rem;
   }
 
+  .big-row-fc-txt {
+    h2 {
+      font-size: 10vh;
+      margin-top: 3vh;
+    }
+    p {
+      font-size: 2.5vh;
+    }
+  }
+
+  .small-row-fc-txt {
+    h2 {
+      font-size: 0.5vh;
+      line-height: 0;
+    }
+    p {
+      font-size: 0.5vh;
+      line-height: 0;
+    }
+  }
+
   h2 {
     font-family: "BPdotsCondensedSquare", monospace;
     font-size: calc(0.3rem + 5vh);
