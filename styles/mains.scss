@@ -417,7 +417,7 @@ html {
   height: 13vh !important;
 
   .info {
-    min-width: 1vh;
+    min-width: 5rem;
     h3 {
       font-size: 0.6vh;
       font-weight: 700;
@@ -434,6 +434,15 @@ html {
 
 .display-none-after-big-row {
   display: none;
+}
+
+.padding-default-row {
+}
+
+.padding-big-row {
+}
+
+.padding-small-row {
 }
 
 @import "./responsive.scss";
