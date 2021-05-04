@@ -8,9 +8,9 @@ function Music() {
                 <div className="container-fluid">
                     <div className="wrap row row-no_top_padding row-slide-wrapper hide-scrollbar">
 
-                        <div>
+                        <a href="https://deliablanco.bandcamp.com/album/6-2-12" target="_blank">
                             <img className="row-pics bandcamp-pic" src="https://f4.bcbits.com/img/a3239859545_2.jpg" alt="" />
-                        </div>
+                        </a>
                         <div className="bandcamp-container">
                             <div className="album-info">
                                 <div className="album-title">
@@ -45,9 +45,9 @@ function Music() {
                             </div>  
                         </div>
 
-                        <div>
+                        <a href="https://guerrillatunes.bandcamp.com/album/en-el-reverso-de-lo-real" target="_blank">
                             <img className="row-pics bandcamp-pic" src="https://f4.bcbits.com/img/a1946067698_16.jpg" alt="" />
-                        </div>
+                        </a>
                         <div className="bandcamp-container">
                             <div className="album-info">
                                 <div className="album-title">
