@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import BandcampPlayer from 'react-bandcamp'
 
-function DataRow({data, blackSquareTrigger, rowNumber, displayFirstContainer, firstContainerContent}) {
+function DataRow({data, blackSquareTrigger, rowNumber, anchorIsHovered, classToggle, displayFirstContainer, firstContainerContent}) {
 
     const rowArray = [];
 
@@ -61,9 +61,10 @@ function DataRow({data, blackSquareTrigger, rowNumber, displayFirstContainer, fi
                                         { 
                                             dataJSON.info
                                             ?
-                                            <div className="info">
+                                            <div className="row-element-info-text">
                                                 <h3>{ dataJSON.title }</h3>
                                                 <p>{ dataJSON.info }</p>
+                                                <a className={`${anchorIsHovered ? classToggle : null}`} href={ dataJSON.link }> {dataJSON.link} </a>
                                             </div>
                                             :
                                             ""
