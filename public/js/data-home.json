@@ -12,8 +12,8 @@
         "id": 2,
         "datatype": "",
         "src": "/images/home/img2.png",
-        "title": "",
-        "info": "",
+        "title": "Technological Advisory",
+        "info": "Transdisciplinary artist and Aural architect, working with multimedia technologies and design. Crosshatching diverse software and construction technologies, using 3D sound, CG graphics, creative coding, multichannel soundsystems, industrial design, architecture metalworks, photography, graphic and experience design",
         "row": "1",
         "order": ""
     },
@@ -226,8 +226,17 @@
     },
     {
         "id": 26,
-        "datatype": "yt",
+        "datatype": "youtube",
         "src": "m5dpOmklgXs",
+        "title": "",
+        "info": "",
+        "row": "1",
+        "order": ""
+    },
+    {
+        "id": 26,
+        "datatype": "vimeo",
+        "src": "533616920",
         "title": "",
         "info": "",
         "row": "1",
