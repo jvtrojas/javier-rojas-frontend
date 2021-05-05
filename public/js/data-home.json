@@ -5,6 +5,7 @@
         "src": "/images/home/img1.png",
         "title": "",
         "info": "",
+        "link": "",
         "row": "1",
         "order": ""
     },
@@ -14,6 +15,7 @@
         "src": "/images/home/img2.png",
         "title": "Technological Advisory",
         "info": "Transdisciplinary artist and Aural architect, working with multimedia technologies and design. Crosshatching diverse software and construction technologies, using 3D sound, CG graphics, creative coding, multichannel soundsystems, industrial design, architecture metalworks, photography, graphic and experience design",
+        "link": "www.youtube.com",
         "row": "1",
         "order": ""
     },
@@ -22,6 +24,7 @@
         "datatype": "",
         "src": "/images/home/img3.png",
         "title": "",
+        "link": "",
         "info": "",
         "row": "1",
         "order": ""
@@ -31,6 +34,7 @@
         "datatype": "",
         "src": "/images/home/img4.jpeg",
         "title": "",
+        "link": "",
         "info": "",
         "row": "1",
         "order": ""
@@ -40,6 +44,7 @@
         "datatype": "",
         "src": "/images/home/img5.png",
         "title": "",
+        "link": "",
         "info": "",
         "row": "1",
         "order": ""
@@ -49,6 +54,7 @@
         "datatype": "",
         "src": "/images/home/img6.png",
         "title": "",
+        "link": "",
         "info": "",
         "row": "1",
         "order": ""
@@ -58,6 +64,7 @@
         "datatype": "",
         "src": "/images/home/img_7.jpg",
         "title": "",
+        "link": "",
         "info": "",
         "row": "2",
         "order": ""
@@ -67,6 +74,7 @@
         "datatype": "",
         "src": "/images/home/img_8.png",
         "title": "",
+        "link": "",
         "info": "",
         "row": "2",
         "order": ""
@@ -76,6 +84,7 @@
         "datatype": "",
         "src": "/images/home/img_9.png",
         "title": "",
+        "link": "",
         "info": "",
         "row": "2",
         "order": ""
@@ -85,6 +94,7 @@
         "datatype": "",
         "src": "/images/home/img_10.jpeg",
         "title": "",
+        "link": "",
         "info": "",
         "row": "2",
         "order": ""
@@ -94,6 +104,7 @@
         "datatype": "",
         "src": "/images/home/img_11.jpeg",
         "title": "",
+        "link": "",
         "info": "",
         "row": "2",
         "order": ""
@@ -103,6 +114,7 @@
         "datatype": "",
         "src": "/images/home/img_12.png",
         "title": "",
+        "link": "",
         "info": "",
         "row": "2",
         "order": ""
@@ -112,6 +124,7 @@
         "datatype": "",
         "src": "/images/home/img7.png",
         "title": "",
+        "link": "",
         "info": "",
         "row": "1",
         "order": ""
@@ -121,6 +134,7 @@
         "datatype": "",
         "src": "/images/home/img8.png",
         "title": "",
+        "link": "",
         "info": "",
         "row": "1",
         "order": ""
@@ -130,6 +144,7 @@
         "datatype": "",
         "src": "/images/home/img9.png",
         "title": "",
+        "link": "",
         "info": "",
         "row": "1",
         "order": ""
@@ -139,6 +154,7 @@
         "datatype": "",
         "src": "/images/home/img_13.png",
         "title": "",
+        "link": "",
         "info": "",
         "row": "2",
         "order": ""
@@ -148,6 +164,7 @@
         "datatype": "",
         "src": "/images/home/img_14.png",
         "title": "",
+        "link": "",
         "info": "",
         "row": "2",
         "order": ""
@@ -157,6 +174,7 @@
         "datatype": "",
         "src": "/images/home/img-15.png",
         "title": "",
+        "link": "",
         "info": "",
         "row": "3",
         "order": ""
@@ -166,6 +184,7 @@
         "datatype": "",
         "src": "/images/home/img-16.gif",
         "title": "",
+        "link": "",
         "info": "",
         "row": "3",
         "order": ""
@@ -175,6 +194,7 @@
         "datatype": "",
         "src": "/images/home/img-17.png",
         "title": "",
+        "link": "",
         "info": "",
         "row": "3",
         "order": ""
@@ -184,6 +204,7 @@
         "datatype": "",
         "src": "/images/home/img-18.gif",
         "title": "",
+        "link": "",
         "info": "",
         "row": "3",
         "order": ""
@@ -193,6 +214,7 @@
         "datatype": "",
         "src": "/images/home/img-19.jpg",
         "title": "",
+        "link": "",
         "info": "",
         "row": "3",
         "order": ""
@@ -202,6 +224,7 @@
         "datatype": "",
         "src": "/images/home/img-20.jpg",
         "title": "",
+        "link": "",
         "info": "",
         "row": "3",
         "order": ""
@@ -211,6 +234,7 @@
         "datatype": "",
         "src": "/images/home/img-21.png",
         "title": "",
+        "link": "",
         "info": "",
         "row": "3",
         "order": ""
@@ -220,6 +244,7 @@
         "datatype": "",
         "src": "/images/home/img-22.png",
         "title": "",
+        "link": "",
         "info": "",
         "row": "3",
         "order": ""
@@ -229,6 +254,7 @@
         "datatype": "youtube",
         "src": "m5dpOmklgXs",
         "title": "",
+        "link": "",
         "info": "",
         "row": "1",
         "order": ""
@@ -238,6 +264,7 @@
         "datatype": "vimeo",
         "src": "533616920",
         "title": "",
+        "link": "",
         "info": "",
         "row": "1",
         "order": ""
