@@ -1,8 +1,8 @@
 import '../styles/mains.scss';
+import Link from 'next/link';
 
 function About({anchorIsHovered, classToggle}) {
 
-   
 
     return (
         <div className="about-page">
@@ -13,12 +13,15 @@ function About({anchorIsHovered, classToggle}) {
                     </div>
                     <div className="first-container-txt-section">
                         <h2>JAVIER ROJAS<br></br>TRANSDISCIPLINARY ARTIST<br></br> AURAL ARCHITECT</h2>
-                        <p>Transdisciplinary artist and Aural architect, working with multimedia technologies and design. Crosshatching diverse software and construction technologies, using 3D sound, CG graphics, creative coding, multichannel soundsystems, industrial design, architecture metalworks, photography, graphic and experience design.</p>
+                        <p>Sound Artist & Experimental Producer with international experience boosting audio sensorial experiences through storytelling resulted from artistic co-creation and crosshatch of 3D multi-channel sound systems, spatial sound design, CG graphics, creative coding, industrial architecture, photography, graphics, and experience design. 
+Based between Berlin, Barcelona and London.</p>
                         <p>2019 - MA - Sound artist x Universitat de Barcelona (SPA)<br></br>2014 - BA - Architect x Universidad Blas Pascal (ARG) </p>
                     </div>
                 </div>
                 <div className="about-us-en-container second-container test-element">
                     <h3>Professional Experience</h3>
+
+                    <a href="https://guerrillatunes.bandcamp.com/album/en-el-reverso-de-lo-real" target="_blank">hola</a>
 
                     <p><strong className={`${anchorIsHovered ? classToggle : null} link-default`}>2019 - Today:</strong> Co-founder and collaborator of Simulacro
                     Transdisciplinary platform based between Berlin (DE) and Córdoba (ARG),blending creative disciplines for artistic projects.</p>
@@ -112,6 +115,10 @@ function About({anchorIsHovered, classToggle}) {
                     <p><strong className={`${anchorIsHovered ? classToggle : null} link-default`}>2020: </strong>Diseño web y móvil para el estreno mundial del disco: WEDDING de Fonso, Simulacro en colaboración con amateur.rocks (WEB)</p>
 
                     </div>
+
+                    <div className="mixcloud-player">
+                    <iframe width="80%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2Fjavitorojas%2Fsoundscapes-collection-bells%2F" frameborder="0" ></iframe>
+                         </div>
             </div>
         </div>
     )
