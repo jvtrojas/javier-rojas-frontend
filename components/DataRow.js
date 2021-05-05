@@ -61,7 +61,7 @@ function DataRow({data, blackSquareTrigger, rowNumber, displayFirstContainer, fi
                                         { 
                                             dataJSON.info
                                             ?
-                                            <div className="info">
+                                            <div className="row-element-info-text">
                                                 <h3>{ dataJSON.title }</h3>
                                                 <p>{ dataJSON.info }</p>
                                             </div>

@@ -10,6 +10,26 @@
   font-stretch: 50% 200%;
 }
 
+html {
+  overscroll-behavior: none;
+}
+
+/* GLOBAL */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+}
+
+// Hide scrollbar on Body
+body::-webkit-scrollbar {
+  display: none;
+}
+
 html,
 body {
   background-color: #ffffff;
@@ -29,28 +49,8 @@ body {
   cursor: crosshair;
 }
 
-// Hide scrollbar on Body
-body::-webkit-scrollbar {
-  display: none;
-}
-
 .container-fluid {
   padding: 0px;
-}
-
-html {
-  overscroll-behavior: none;
-}
-
-/* GLOBAL */
-/* Hide scrollbar for Chrome, Safari and Opera */
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE and Edge */
-.hide-scrollbar {
-  -ms-overflow-style: none;
 }
 
 .row {
@@ -222,6 +222,8 @@ html {
     padding-bottom: 1.7rem;
   }
 
+  //-------FIRST ROW --------//
+
   .first-row {
     padding-top: 1rem;
   }
@@ -244,6 +246,8 @@ html {
     font-weight: 500;
     margin-top: 4vh;
   }
+
+  //------------------------//
 
   .second-container {
     width: 66vw;
@@ -276,6 +280,12 @@ html {
     }
   }
 
+  p {
+    font-family: "Barlow", sans-serif;
+    font-size: 2vh;
+    line-height: 1.1;
+  }
+
   h2 {
     font-family: "BPdotsCondensedSquare", monospace;
     font-size: calc(0.3rem + 5vh);
@@ -293,12 +303,6 @@ html {
 
   .h3-col-span-2 {
     break-before: column;
-  }
-
-  p {
-    font-family: "Barlow", sans-serif;
-    font-size: 2vh;
-    line-height: 1.1;
   }
 
   .language-black-block {
@@ -389,7 +393,7 @@ html {
   width: auto;
 }
 
-.info {
+.row-element-info-text {
   display: flex;
   flex-direction: column;
   font-family: Barlow;
@@ -418,11 +422,18 @@ html {
   background: white;
 }
 
+.default-row {
+  height: 36vh;
+}
+
+.padding-default-row {
+}
+
 .big-row {
   height: 100vh !important;
   width: auto !important;
 
-  .info {
+  .row-element-info-text {
     min-width: 70vh;
     h3 {
       font-size: 3vh;
@@ -434,10 +445,13 @@ html {
   }
 }
 
+.padding-big-row {
+}
+
 .small-row {
   height: 13vh !important;
 
-  .info {
+  .row-element-info-text {
     min-width: 5rem;
     h3 {
       font-size: 0.6vh;
@@ -449,21 +463,11 @@ html {
   }
 }
 
-.default-row {
-  height: 36vh;
+.padding-small-row {
 }
 
 .display-none-after-big-row {
   display: none;
-}
-
-.padding-default-row {
-}
-
-.padding-big-row {
-}
-
-.padding-small-row {
 }
 
 @import "./responsive.scss";
