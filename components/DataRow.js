@@ -64,7 +64,7 @@ function DataRow({data, blackSquareTrigger, rowNumber, anchorIsHovered, classTog
                                             <div className="row-element-info-text">
                                                 <h3>{ dataJSON.title }</h3>
                                                 <p>{ dataJSON.info }</p>
-                                                <a className={`${anchorIsHovered ? classToggle : null}`} href={ dataJSON.link }> {dataJSON.link} </a>
+                                                <a className={`link-default ${anchorIsHovered ? classToggle : null}`} href={ dataJSON.link }> {dataJSON.link} </a>
                                             </div>
                                             :
                                             ""
