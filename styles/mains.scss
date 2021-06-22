@@ -218,7 +218,8 @@ body {
   }
 
   .row {
-    padding-bottom: 1.7rem;
+    //padding-bottom: 1.7rem;
+    height: auto;
     a {
       background-color: transparent !important;
       box-shadow: none !important;
@@ -265,7 +266,7 @@ body {
   .big-row-fc-txt {
     h2 {
       font-size: 10vh;
-
+      
       margin-top: 3vh;
     }
     p {
@@ -275,8 +276,8 @@ body {
 
   .small-row-fc-txt {
     h2 {
-      font-size: 0.5vh;
-      line-height: 0;
+      font-size: 8vh;
+      line-height: 1;
     }
     p {
       font-size: 0.5vh;
@@ -292,7 +293,7 @@ body {
 
   h2 {
     font-family: "BPdotsCondensedSquare", monospace;
-    font-size: calc(0.3rem + 5vh);
+    font-size: calc(0.5rem + 5vh);
     line-height: 5.5vh;
     letter-spacing: 0em;
     padding-top: 0.2rem;
@@ -360,8 +361,8 @@ body {
 // Global rows classes
 
 .row-test {
-  border: 1px dotted black;
-  min-height: 36vh;
+  //border: 1px dotted black;
+  //min-height: 36vh;
 }
 
 .test-element {

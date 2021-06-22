@@ -8,9 +8,9 @@
   .default-row {
     height: 31vh;
   }
-  .row-pics-container {
-    height: 31vh;
-  }
+  // .row-pics-container {
+  //   height: 31vh;
+  // }
 }
 @media (max-width: 480px) {
   .header-container {
@@ -37,5 +37,36 @@
   }
   .row-pics-container {
     height: 36vh;
+  }
+  .big-row-fc-txt {
+    h2 {
+      font-size: inherit;
+    }
+    p {
+      font-size: inherit;
+    }
+  }
+  .row-element-info-text {
+    p {
+      font-size: 1.5vh !important;
+    }
+    h3 {
+      font-size: 1.5vh !important;
+    }
+    .link-default {
+      font-size: 1.5vh !important;
+    }
+  }
+  .big-row .row-element-info-text {
+    min-width: 27vh !important;
+  }
+  .small-row .row-element-info-text {
+    min-width: 27vh !important;
+  }
+  .big-row .row-element-info-text h3 {
+    margin-bottom: 0.5rem;
+  }
+  .row-element-info-text {
+    min-width: 27vh !important;
   }
 }
