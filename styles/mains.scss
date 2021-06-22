@@ -233,9 +233,9 @@ body {
   }
 
   .first-container {
-    width: 33vw;
+    // width: 33vw;
     min-width: 20rem;
-    height: auto;
+    // height: auto;
     margin-right: 2rem;
   }
 
@@ -264,13 +264,14 @@ body {
   }
 
   .big-row-fc-txt {
+    // width: 66vw;
     h2 {
-      font-size: 10vh;
+      font-size: 6rem;
       
       margin-top: 3vh;
     }
     p {
-      font-size: 2.5vh;
+      font-size: 2rem;
     }
   }
 
@@ -432,6 +433,11 @@ body {
   height: 36vh;
 }
 
+.default-row-text {
+  min-width: 17vw;
+  max-width: 33vw;
+}
+
 .padding-default-row {
 }
 
@@ -454,7 +460,15 @@ body {
   }
 }
 
+.big-row-text {
+  p {
+    font-size: 4rem;
+    width: 66vw;
+  }
+}
+
 .padding-big-row {
+
 }
 
 .small-row {
@@ -472,6 +486,13 @@ body {
     .link-default {
       font-size: 0.6vh;
     }
+  }
+}
+
+.small-row-text {
+  p {
+    font-size: 0.3rem;
+    width: 11vw;
   }
 }
 
@@ -500,5 +521,14 @@ body {
     font-weight: 500;
   }
 }
+
+.default-row-fc-txt {
+
+}
+
+.small-row-fc-txt {
+  
+}
+
 
 @import "./responsive.scss";

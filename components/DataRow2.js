@@ -36,7 +36,7 @@ function DataRow({ data, blackSquareTrigger, rowNumber, anchorIsHovered, classTo
     }
     blackSquareTrigger !== 0 ? shuffleRow(rowArray) : null;
     const pictures = apiData.pictures;
-    console.log('-->', apiData.pictures);
+    console.log('--> APIDATA', apiData.group);
     return (
         <>
             <div onClick={isSafari ? null : handleClickRow} className={` ${rowArray.length === 0 ? 'row-test' : ''} wrap row row-no_top_padding row-slide-wrapper hide-scrollbar`}>
@@ -46,24 +46,28 @@ function DataRow({ data, blackSquareTrigger, rowNumber, anchorIsHovered, classTo
                         <div className='about-us-en-container first-container test-element'>
                             <div className='first-container-txt-section'>
                                 {<div className={`${isSelected == 1 ? 'big-row-fc-txt' : isSelected == 2 ? 'small-row-fc-txt' : isSelected == 0 ? 'default-fc-row-txt' : null}`} dangerouslySetInnerHTML={{ __html: apiData.content }} />}
-                                <p>
-                                    {apiData.location}, {apiData.date}
-                                </p>
                             </div>
                         </div>
                     </div>
                 ) : (
                     ''
                 )}{' '}
-                <div className={`row-pics-container ${isSelected == 1 ? 'big-row padding-big-row' : isSelected == 2 ? 'small-row padding-small-row' : isSelected == 0 ? 'default-row padding-default-row' : null}`}>
-                    {apiData.pictures.map((picture) => {
-                        console.log('picture', picture);
+                {apiData.group.map((g) => {
+                    return (
+<div className={`row-pics-container ${isSelected == 1 ? 'big-row padding-big-row' : isSelected == 2 ? 'small-row padding-small-row' : isSelected == 0 ? 'default-row padding-default-row' : null}`}>
+                    {g.pictures.map((picture) => {
                         return <img className='row-pics' src={picture.url} />;
                     })}
-                    {apiData.video.map((video) => {
+                    <div className={`row-pics-container ${isSelected == 1 ? 'big-row big-row-text padding-big-row' : isSelected == 2 ? 'small-row small-row-text padding-small-row' : isSelected == 0 ? 'default-row default-row-text padding-default-row' : null}`}  dangerouslySetInnerHTML={{ __html: g.description }} >
+
+                    </div>
+                    {g.videos.map((video) => {
                         return <video key={video.id} height='100%' src={video.url} frameBorder='0' autoPlay muted loop allowFullScreen={false} playsInline></video>;
                     })}
                 </div>
+                    )
+                })}
+               { }
                 {/* Row of images and media*/}
                 {/* {rowArray.map(function (dataJSON) {
                     if (dataJSON.datatype == '' || dataJSON.datatype == 'img') {
