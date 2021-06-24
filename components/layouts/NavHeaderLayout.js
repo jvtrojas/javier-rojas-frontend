@@ -68,7 +68,7 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger, handleMouseOverAnchor
                         </Link>                   
                     </div>
                 </div>
-                <div>
+                {/* <div>
                     <div className="header-anchor">
                         <Link href="/aural-architecture">
                             <a 
@@ -82,10 +82,10 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger, handleMouseOverAnchor
                             </a>          
                         </Link>
                     </div>
-                </div>
+                </div> */}
                 <div>
                     <div className="header-anchor">
-                        <Link href="/photography">
+                        <Link href="/img">
                             <a 
                             href="#"
                             className={`${isHovered=='photography' ? classToggle : ''} ${isSelected=='photography' || router.pathname=='/photography' ? selectedClass : ''}`}
@@ -94,7 +94,7 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger, handleMouseOverAnchor
                             onMouseEnter={() => handleMouseOverAnchor('photography')} 
                             onMouseLeave={handleMouseOut}
                             >
-                                PHOTOGRAPHY!!
+                                .IMG!!
                             </a>       
                         </Link>                
                     </div>
