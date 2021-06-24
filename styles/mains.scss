@@ -59,11 +59,12 @@ body {
   padding-right: 0;
   margin-left: 0;
   margin-right: 0;
-  text-align: justify;
+  text-align: left;
 }
 
 .imgrow {
   height: fit-content;
+  padding-left: 3vh;
 }
 
 .wrap {
@@ -144,7 +145,7 @@ body {
   position: static;
   padding: 0;
   //fix for a hidden overflow of inner anchor box shadow
-  margin-bottom: -1.5rem;
+  margin-bottom: 1.5rem;
 
   .header-anchor a {
     font-family: "BPdotsCondensedSquare", ui-monospace, monospace;
@@ -162,11 +163,12 @@ body {
     margin-bottom: 1.8rem;
     overflow: hidden;
     user-select: none;
+    
   }
 
   .row-no_top_padding {
     margin-top: 0 !important;
-    height: 39.62vh;
+    //height: 39.62vh;
     margin: 0;
   }
 
@@ -215,6 +217,10 @@ body {
 .data-row-txt {
   .row-slide-wrapper {
     justify-content: inherit;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+   
   }
 
   .row {
@@ -229,26 +235,32 @@ body {
   //-------FIRST CONTAINER --------//
 
   .first-row {
-    padding-top: 1rem;
+    padding-top: 0rem;
   }
 
   .first-container {
-    // width: 33vw;
-    min-width: 20rem;
-    // height: auto;
+   
+    
+    
     margin-right: 2rem;
   }
 
+  
+
   .first-container-txt-section {
-    height: 100%;
-    display: flex;
+    height: auto;
     flex-direction: column;
+    min-width: 33vw;
+
+    
   }
 
   .first-container p {
     text-align: right;
-    font-weight: 500;
+    
     margin-top: 4vh;
+    font-size: 1.3rem;
+    font-weight: 500;
   }
 
   //------------------------//
@@ -260,36 +272,52 @@ body {
     column-count: 2;
     column-gap: 2rem;
     column-fill: auto;
-    padding-right: 1.2rem;
+    
   }
 
   .big-row-fc-txt {
     // width: 66vw;
     h2 {
       font-size: 6rem;
+      line-height: 6rem;
       
       margin-top: 3vh;
     }
     p {
-      font-size: 2rem;
+      font-size: 1rem;
     }
+    min-width: 33vw;
+    
   }
 
   .small-row-fc-txt {
     h2 {
-      font-size: 8vh;
-      line-height: 1;
+      font-size: 6vh;
+      background-color: black;
+      color: white;
+      
+      padding-top: 1.2vh;
+      padding-right: 1vh;
+    
+      
     }
     p {
-      font-size: 0.5vh;
-      line-height: 0;
+      font-size: 0;
+      line-height: 1rem;
+      
     }
+    min-width: 33vw;
+    
   }
 
   p {
     font-family: "Barlow", sans-serif;
-    font-size: 2vh;
+    font-size: 1rem;
     line-height: 1.1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 500;
+    
   }
 
   h2 {
@@ -305,6 +333,7 @@ body {
   h3 {
     font-size: 2.5vh;
     font-weight: bold;
+    
   }
 
   .h3-col-span-2 {
@@ -361,24 +390,24 @@ body {
 
 // Global rows classes
 
-.row-test {
+//.row-test {
   //border: 1px dotted black;
-  //min-height: 36vh;
-}
+  //min-height: 36vh;}
 
-.test-element {
-  height: 36vh;
-}
+//.test-element {
+  //height: 36vh;
+//}
 
 .row-slide-wrapper {
-  margin-top: 1rem;
+  margin-top: 0.1rem;
 }
 
 .row-pics-container {
   height: 36vh;
   transition: 0.1s;
-  margin-right: 0.3vw;
+  
   display: inline-flex;
+  margin-bottom: 2vh;
 }
 
 .row-txt {
@@ -399,6 +428,8 @@ body {
   cursor: pointer;
   height: 100%;
   width: auto;
+  padding-left: 0.5vh;
+  
 }
 
 .link-default {
@@ -439,6 +470,7 @@ body {
 }
 
 .padding-default-row {
+  //padding-left: 1vh;
 }
 
 .big-row {
@@ -446,6 +478,7 @@ body {
   width: auto !important;
 
   .row-element-info-text {
+    width: fit-content;
     min-width: 70vh;
     h3 {
       font-size: 3vh;
@@ -464,15 +497,19 @@ body {
   p {
     font-size: 4rem;
     width: 66vw;
+    line-height: 1.1;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
   }
 }
 
 .padding-big-row {
-
+  //padding-left: 2vh;
 }
 
 .small-row {
-  height: 13vh !important;
+  height: 11vh !important;
 
   .row-element-info-text {
     min-width: 5rem;
@@ -492,11 +529,15 @@ body {
 .small-row-text {
   p {
     font-size: 0.3rem;
-    width: 11vw;
+    width: 11vh;
+    line-height: 1.1;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 
 .padding-small-row {
+  //padding-left: 1vh;
 }
 
 .display-none-after-big-row {
@@ -524,10 +565,8 @@ body {
 
 .default-row-fc-txt {
 
-}
+  min-width: 66vw
 
-.small-row-fc-txt {
-  
 }
 
 
