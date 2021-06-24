@@ -49,11 +49,13 @@ function Index({blackSquareTrigger, anchorIsHovered, classToggle, homepageData})
                 {homepageData.map((cat)=>{
         const pictures = cat.pictures;
         const totalPics = cat.pictures.length;
-        const numberOfRows = Math.ceil(totalPics/10);
-        let content = []
+        const numberOfRows = Math.ceil(totalPics/30);
+        let content = [];
         for(var i = 1; i <= numberOfRows; i++) {
                 let tempArray = [];
-                tempArray = pictures.slice((i - 1 ) * 10, ((i - 1 ) * 10) + 9)
+                let start = (i -1) * 30;
+                let end = start + 29;
+                tempArray = pictures.slice(start, end)
                 tempArray = tempArray.map((elem)=> {
                     return {
                         ...elem,
