@@ -19,6 +19,13 @@
       height: 16vh !important;
     }
   }
+
+  .first-container-txt-section {
+    height: auto;
+    flex-direction: column;
+    min-width: 88vw;
+  }
+
   .black-square {
     height: 11vh;
     width: 11vh;
