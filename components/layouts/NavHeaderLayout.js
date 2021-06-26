@@ -34,7 +34,7 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger, handleMouseOverAnchor
                             onMouseEnter={() => handleMouseOverAnchor('home')} 
                             onMouseLeave={handleMouseOut}
                             >
-                                HOME!!
+                                HOME
                             </a>    
                         </Link>                   
                     </div>
@@ -48,7 +48,7 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger, handleMouseOverAnchor
                             onMouseEnter={() => handleMouseOverAnchor('about')} 
                             onMouseLeave={handleMouseOut}
                             >
-                                ABOUT!!
+                                ABOUT
                             </a>    
                         </Link>    
                     </div>
@@ -63,7 +63,7 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger, handleMouseOverAnchor
                             onMouseEnter={() => handleMouseOverAnchor('projects')} 
                             onMouseLeave={handleMouseOut}
                             >
-                                PROJECTS!!
+                                PROJECTS
                             </a>    
                         </Link>                   
                     </div>
@@ -94,7 +94,7 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger, handleMouseOverAnchor
                             onMouseEnter={() => handleMouseOverAnchor('photography')} 
                             onMouseLeave={handleMouseOut}
                             >
-                                .IMG!!
+                                IMG
                             </a>       
                         </Link>                
                     </div>
@@ -109,7 +109,7 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger, handleMouseOverAnchor
                             onMouseEnter={() => handleMouseOverAnchor('visuals')} 
                             onMouseLeave={handleMouseOut}
                             >
-                                VISUALS!!
+                                VISUALS
                             </a>       
                         </Link>   
                     </div>
@@ -124,7 +124,7 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger, handleMouseOverAnchor
                             onMouseEnter={() => handleMouseOverAnchor('music')} 
                             onMouseLeave={handleMouseOut}
                             >
-                                MUSIC!!
+                                SOUND
                             </a>       
                         </Link>   
                     </div>
@@ -139,7 +139,7 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger, handleMouseOverAnchor
                             onMouseEnter={() => handleMouseOverAnchor('miscellaneous')} 
                             onMouseLeave={handleMouseOut}
                             >
-                                MISCELLANEOUS!!
+                                MISCELLANEOUS
                             </a>       
                         </Link>   
                     </div>
