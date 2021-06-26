@@ -39,6 +39,7 @@ function Music() {
                                 <div className="extra-info">
                                     <p>
                                         Artwork by: Javier Rojas
+                                        <br></br>
                                         Label: Guerrila Tunes
                                     </p>
                                 </div>
@@ -78,6 +79,7 @@ function Music() {
                                 <div className="extra-info">
                                     <p>
                                         Artwork by: Javier Rojas
+                                        <br></br>
                                         Label: Guerrila Tunes
                                     </p>
                                 </div>
@@ -99,32 +101,27 @@ function Music() {
                                 </div>
                                 <div className="playlist">
                                     <p>
-                                    1. | ____________ /////////////////////// 
+                                    1. Entrar Afuera 
                                     <br></br>
-                                    2. El tiempo ya no es un problema 
+                                    2. Reflujo Gàstrico  
                                     <br></br>
-                                    3. Sehr geehrte Damen und Herren 
+                                    3. Secreto de Estado  
                                     <br></br>
-                                    4. Verdad sin Luz
+                                    4. Sinvergüenza 
                                     <br></br>
-                                    5. Annie B (mit Pable Diez)
+                                    5. La Desespera 
                                     <br></br>
-                                    6. Tiempo Nuevo
+                                    6. Criptorizoma 
                                     <br></br>
-                                    7. Leyes que prohiben otras leyes que prohiben otras leyes que 
+                                    7. Más allá de Todas las Cosas
                                     <br></br>
-                                    8. Común y corriente 
-                                    <br></br>
-                                    9. Paradigma visual 
-                                    <br></br>
-                                    10. !_$·_%·$&£•‰£•$$%$·˝ ‰$$&%£⁄˝ı˝•‰ ‰£⁄£‰£•‰
-                                    <br></br>
-                                    11. ///////////////////////____________ | 
+                                    8. Bienvenidos a Desvariana
                                     </p>
                                 </div>
                                 <div className="extra-info">
                                     <p>
                                         Artwork by: Javier Rojas
+                                        <br></br>
                                         Label: Guerrilla Tunes
                                     </p>
                                 </div>
@@ -170,6 +167,7 @@ function Music() {
                                 <div className="extra-info">
                                     <p>
                                         Artwork by: Javier Rojas
+                                        <br></br>
                                         Label: Guerrilla Tunes
                                     </p>
                                 </div>
@@ -186,31 +184,34 @@ function Music() {
                         <div className="bandcamp-container">
                             <div className="album-info">
                                 <div className="album-title">
-                                    <h3>Desaprender todo de nuevo (2018)</h3>
+                                    <h3>Desaprender todo de nuevo - NESXX21 - (2018)</h3>
                                 </div>
                                 <div className="playlist">
                                     <p>
-                                    1. Eigenwelt
+                                    1. 5 rainy minutes to fontana
                                     <br></br>
-                                    2. Concreción desplazada
+                                    2. 	08024  
                                     <br></br>
-                                    3. Interludio arcaico
+                                    3. La racionalización del espacio
                                     <br></br>
-                                    4. Alchemical Lexicon
+                                    4. La introspección o el amor 
                                     <br></br>
-                                    5. Eschoyez y el tiempo
+                                    5. Diaporama
                                     <br></br>
-                                    6. Fijado magnético
+                                    6. Ansiedad del atrapar
                                     <br></br>
-                                    7. Decime quién sos, que querés
+                                    7. Saint-Exupéry
                                     <br></br>
-                                    8. Sharp Concrete (Long Version)
+                                    8. Niandra
+                                    <br></br>
+                                    9. Revelación 21-4 (con Ixam Deirf) 02:19
                                     </p>
                                 </div>
                                 <div className="extra-info">
                                     <p>
-                                        Artwork by:
-                                        Credits
+                                        Artwork by: Freshcore
+                                        <br></br>
+                                        Label: Guerrilla Tunes
                                     </p>
                                 </div>
                             </div>
@@ -223,207 +224,6 @@ function Music() {
                 </div>
                 
 
-                <div className="container-fluid">
-                    <div className="wrap row row-no_top_padding row-slide-wrapper hide-scrollbar">
-
-                        <a href="https://deliablanco.bandcamp.com/album/6-2-12" target="_blank">
-                            <img className="row-pics bandcamp-pic" src="https://f4.bcbits.com/img/a1548609672_10.jpg" alt="" />
-                        </a>
-                        <div className="bandcamp-container">
-                            <div className="album-info">
-                                <div className="album-title">
-                                    <h3>Delia Blanco 6_2_12 (2020)</h3>
-                                </div>
-                                <div className="playlist">
-                                    <p>
-                                        1. 111111111111111111111111111
-                                        <br></br>
-                                        2. 22222222222222222
-                                        <br></br>
-                                        3. 333333333333333333
-                                        <br></br>
-                                        4. 4444444444444444
-                                        <br></br>
-                                        5. 55555555555555555
-                                        <br></br>
-                                        6. 66666666666666666
-                                        <br></br>
-                                        7. 7777777777777777777
-                                    </p>
-                                </div>
-                                <div className="extra-info">
-                                    <p>
-                                        Artwork by:
-                                        Credits
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="player">
-                                 <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
-                            </div>  
-                        </div>
-
-                        <a href="https://guerrillatunes.bandcamp.com/album/en-el-reverso-de-lo-real" target="_blank">
-                            <img className="row-pics bandcamp-pic" src="https://f4.bcbits.com/img/a1946067698_16.jpg" alt="" />
-                        </a>
-                        <div className="bandcamp-container">
-                            <div className="album-info">
-                                <div className="album-title">
-                                    <h3>En el reverso de lo real (2019)</h3>
-                                </div>
-                                <div className="playlist">
-                                    <p>
-                                    1. Eigenwelt
-                                    <br></br>
-                                    2. Concreción desplazada
-                                    <br></br>
-                                    3. Interludio arcaico
-                                    <br></br>
-                                    4. Alchemical Lexicon
-                                    <br></br>
-                                    5. Eschoyez y el tiempo
-                                    <br></br>
-                                    6. Fijado magnético
-                                    <br></br>
-                                    7. Decime quién sos, que querés
-                                    <br></br>
-                                    8. Sharp Concrete (Long Version)
-                                    </p>
-                                </div>
-                                <div className="extra-info">
-                                    <p>
-                                        Artwork by:
-                                        Credits
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="player">
-                                <BandcampPlayer tracklist="true" size="small" album="1175541768" />
-                            </div>  
-
-                            
-                                </div>
-
-                        <a href="https://guerrillatunes.bandcamp.com/album/el-futuro-transhumano" target="_blank">
-                            <img className="row-pics bandcamp-pic" src="https://f4.bcbits.com/img/a1946067698_16.jpg" alt="" />
-                        </a>
-                        <div className="bandcamp-container">
-                            <div className="album-info">
-                                <div className="album-title">
-                                    <h3>El Futuro Transhumano (2018)</h3>
-                                </div>
-                                <div className="playlist">
-                                    <p>
-                                    1. Eigenwelt
-                                    <br></br>
-                                    2. Concreción desplazada
-                                    <br></br>
-                                    3. Interludio arcaico
-                                    <br></br>
-                                    4. Alchemical Lexicon
-                                    <br></br>
-                                    5. Eschoyez y el tiempo
-                                    <br></br>
-                                    6. Fijado magnético
-                                    <br></br>
-                                    7. Decime quién sos, que querés
-                                    <br></br>
-                                    8. Sharp Concrete (Long Version)
-                                    </p>
-                                </div>
-                                <div className="extra-info">
-                                    <p>
-                                        Artwork by:
-                                        Credits
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="player">
-                                <BandcampPlayer tracklist="true" size="small" album="2503406152" />
-                            </div>  
-                                </div>
-
-                        <a href="https://guerrillatunes.bandcamp.com/album/el-futuro-transhumano" target="_blank">
-                            <img className="row-pics bandcamp-pic" src="https://f4.bcbits.com/img/a1946067698_16.jpg" alt="" />
-                        </a>
-                        <div className="bandcamp-container">
-                            <div className="album-info">
-                                <div className="album-title">
-                                    <h3>Dentro de lo posible (2020)</h3>
-                                </div>
-                                <div className="playlist">
-                                    <p>
-                                    1. Eigenwelt
-                                    <br></br>
-                                    2. Concreción desplazada
-                                    <br></br>
-                                    3. Interludio arcaico
-                                    <br></br>
-                                    4. Alchemical Lexicon
-                                    <br></br>
-                                    5. Eschoyez y el tiempo
-                                    <br></br>
-                                    6. Fijado magnético
-                                    <br></br>
-                                    7. Decime quién sos, que querés
-                                    <br></br>
-                                    8. Sharp Concrete (Long Version)
-                                    </p>
-                                </div>
-                                <div className="extra-info">
-                                    <p>
-                                        Artwork by:
-                                        Credits
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="player">
-                                <BandcampPlayer tracklist="true" size="small" album="3586595993" />
-                            </div>  
-
-                                </div>
-
-                        <a href="https://guerrillatunes.bandcamp.com/album/el-futuro-transhumano" target="_blank">
-                            <img className="row-pics bandcamp-pic" src="https://f4.bcbits.com/img/a1946067698_16.jpg" alt="" />
-                        </a>
-                        <div className="bandcamp-container">
-                            <div className="album-info">
-                                <div className="album-title">
-                                    <h3>El Futuro Transhumano (2018)</h3>
-                                </div>
-                                <div className="playlist">
-                                    <p>
-                                    1. Eigenwelt
-                                    <br></br>
-                                    2. Concreción desplazada
-                                    <br></br>
-                                    3. Interludio arcaico
-                                    <br></br>
-                                    4. Alchemical Lexicon
-                                    <br></br>
-                                    5. Eschoyez y el tiempo
-                                    <br></br>
-                                    6. Fijado magnético
-                                    <br></br>
-                                    7. Decime quién sos, que querés
-                                    <br></br>
-                                    8. Sharp Concrete (Long Version)
-                                    </p>
-                                </div>
-                                <div className="extra-info">
-                                    <p>
-                                        Artwork by:
-                                        Credits
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="player">
-                                <BandcampPlayer tracklist="true" size="small" album="2738948799" />
-                            </div>  
-                            
-                        </div>
-                    </div>
-                </div>
 
             </BaseLayout>
         </div>
