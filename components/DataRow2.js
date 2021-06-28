@@ -62,7 +62,7 @@ function DataRow({ data, blackSquareTrigger, rowNumber, anchorIsHovered, classTo
 
                     </div>
                     {g.videos.map((video) => {
-                        return <video key={video.id} height='100%' src={video.url} frameBorder='0' autoPlay muted loop allowFullScreen={false} playsInline></video>;
+                        return <video className='row-pics' key={video.id} height='100%' src={video.url} frameBorder='0' autoPlay muted loop allowFullScreen={false} playsInline></video>;
                     })}
                 </div>
                     )

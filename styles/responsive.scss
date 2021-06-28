@@ -20,11 +20,7 @@
     }
   }
 
-  .first-container-txt-section {
-    height: auto;
-    flex-direction: column;
-    min-width: 88vw;
-  }
+ 
 
   .black-square {
     height: 11vh;
@@ -41,18 +37,32 @@
   }
   .default-row {
     height: 36vh;
+   
   }
   .row-pics-container {
     height: 36vh;
   }
   .big-row-fc-txt {
+
+    //width: 100vw;
+   
     h2 {
       font-size: inherit;
     }
     p {
       font-size: inherit;
+    
+    
+    }
+
+    .first-container-txt-section {
+      height: auto;
+      flex-direction: column;
+      min-width: 100vw;
     }
   }
+
+  
   .row-element-info-text {
     p {
       font-size: 1.5vh !important;

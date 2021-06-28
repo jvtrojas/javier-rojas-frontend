@@ -38,9 +38,9 @@ function Music() {
                                 </div>
                                 <div className="extra-info">
                                     <p>
-                                        Artwork by: Javier Rojas
+                                        Cover: Javier Rojas
                                         <br></br>
-                                        Label: Guerrila Tunes
+                                        Label: Discos Doncella
                                     </p>
                                 </div>
                             </div>
@@ -78,7 +78,7 @@ function Music() {
                                 </div>
                                 <div className="extra-info">
                                     <p>
-                                        Artwork by: Javier Rojas
+                                        Cover: Javier Rojas
                                         <br></br>
                                         Label: Guerrila Tunes
                                     </p>
@@ -120,7 +120,7 @@ function Music() {
                                 </div>
                                 <div className="extra-info">
                                     <p>
-                                        Artwork by: Javier Rojas
+                                        Cover: Javier Rojas
                                         <br></br>
                                         Label: Guerrilla Tunes
                                     </p>
@@ -166,7 +166,7 @@ function Music() {
                                 </div>
                                 <div className="extra-info">
                                     <p>
-                                        Artwork by: Javier Rojas
+                                        Cover: Javier Rojas
                                         <br></br>
                                         Label: Guerrilla Tunes
                                     </p>
@@ -209,7 +209,7 @@ function Music() {
                                 </div>
                                 <div className="extra-info">
                                     <p>
-                                        Artwork by: Freshcore
+                                        Cover: Freshcore
                                         <br></br>
                                         Label: Guerrilla Tunes
                                     </p>
