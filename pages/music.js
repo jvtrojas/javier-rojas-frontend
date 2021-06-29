@@ -7,7 +7,7 @@ function Music() {
     return(
         <div className={"bandcamp-container"} >
             <BaseLayout className="global" >
-                 <div className="wrap row row-no_top_padding row-slide-wrapper hide-scrollbar bandcamp-pic">
+                 <div className="wrap row row-no_top_padding row-slide-wrapper hide-scrollbar ">
 
                         <a className href="https://deliablanco.bandcamp.com/album/6-2-12" target="_blank">
                             <img className="row-pics bandcamp-pic" src="https://f4.bcbits.com/img/a3239859545_2.jpg" alt="" />
@@ -239,19 +239,21 @@ function Music() {
 
                         </div>
 
-                         <div className="youtube-link"><iframe src="https://www.youtube.com/embed/_3mWp46FuGM"
+                         <div className="row-pics-container youtube-link"> <iframe src="https://www.youtube.com/embed/_3mWp46FuGM"
                                   frameborder="0" allowfullscreen ></iframe>
                                                    
                           </div>
                              
-                            <div className="album-title">
+                                <div className="album-title">
                                     <h3>MICROTRAVESIA - DRJ x NESXX21 - (2020)</h3>
-                            </div>
-                                 <div className="album-info">
-                        
+                                <div className="playlist">
                                     <p>
                                     Sesion A/V analogica para el ciclo Videonix 
                                     </p>
+                                </div>
+                                 
+                        
+                                   
                                     
                             </div>
                                 

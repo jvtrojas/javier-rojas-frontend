@@ -15,8 +15,8 @@
 @media (max-width: 480px) {
   .header-container {
     .header-anchor a {
-      font-size: 16vh !important;
-      height: 16vh !important;
+      font-size: 18vh !important;
+      height: 18vh !important;
     }
   }
 
@@ -69,12 +69,14 @@
       padding-left: 1rem;
       font-size: 1.3rem;
       font-weight: 500;
+      height: fit-content;
+      
      
     }
   
     .row {
       //padding-bottom: 1.7rem;
-      height: auto;
+      height: fit-content;
       a {
         background-color: transparent !important;
         box-shadow: none !important;
@@ -234,6 +236,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 95vw !important;
   
   div {
     
@@ -241,8 +244,10 @@
    
   }
   .bandcamp-pic {
-    height: 90vw;
+    height: 95vw;
     padding-left: 2.3vh;
+    width: auto;
+    
   }
   .album-title h3 {
     font-size: 1.8vh;
@@ -261,11 +266,19 @@
   .player {
     height: 2.63rem;
     padding-left: 1.3vh;
+    
   }
   .player iframe {
     height: 2.6rem !important;
+    
+   
 
     padding-right: 6vh;
+  }
+  .youtube-link {
+    //margin: 0.3rem;
+    height:  fit-content!important;
+    width: fit-content !important;
   }
 }
 }
