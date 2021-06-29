@@ -41,6 +41,7 @@
   }
   .row-pics-container {
     height: 36vh;
+    overflow-y: hidden;
   }
   .big-row-fc-txt {
 
@@ -226,5 +227,10 @@
   }
   .row-element-info-text {
     min-width: 27vh !important;
+  }
+
+  .bandcamp-pic {
+    height: 90vw;
+    padding-left: 2.3vh;
   }
 }
