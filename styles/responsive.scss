@@ -227,10 +227,44 @@
   }
   .row-element-info-text {
     min-width: 27vh !important;
-  }
 
+  }
+  // Music section styles
+.bandcamp-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  div {
+    
+    padding-right: 0;
+   
+  }
   .bandcamp-pic {
-    height: 90vw;
+    height: 55vh;
     padding-left: 2.3vh;
   }
+  .album-title h3 {
+    font-size: 1.8vh;
+    font-family: Barlow;
+    font-weight: 700;
+    padding-left: 1.3vh;
+    min-width: 60vw;
+  }
+  .playlist p,
+  .extra-info p {
+    font-size: 1.8vh;
+    font-family: Barlow;
+    padding-left: 1.3vh;
+    min-width: 60vw;
+  }
+  .player {
+    height: 2.63rem;
+    padding-left: 1.3vh;
+  }
+  .player iframe {
+    height: 2.6rem !important;
+
+    padding-right: 6vh;
+  }
+}
 }

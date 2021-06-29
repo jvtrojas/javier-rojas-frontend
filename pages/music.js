@@ -202,7 +202,7 @@ function Music() {
                                     <br></br>
                                     8. Niandra
                                     <br></br>
-                                    9. Revelación 21-4 (con Ixam Deirf) 02:19
+                                    9. Revelación 21-4 (con Ixam Deirf) 
                                     </p>
                                 </div>
                                 <div className="extra-info">
@@ -217,36 +217,50 @@ function Music() {
                                 <BandcampPlayer tracklist="true" size="small" album="2738948799" />
                             </div>  
 
-                            </div>
+                        </div>
+        
+                           
 
-                        
-                            <div  className="youtube-link" src="3mWp46FuGM" alt="" />
-                            
-                        <div className="youtube-link">
-                            <div className="album-info">
+                            <a href="https://www.mixcloud.com/BRICK_GOTIC/" target="_blank">
+                            <img className="row-pics bandcamp-pic" src="https://thumbnailer.mixcloud.com/unsafe/320x320/profile/5/7/7/9/fca4-696c-475d-963b-e9eed10ee1a4" alt="" />
+                              </a>
+                             <div className="bandcamp-container">
+                             <div className="album-info">
                                 <div className="album-title">
-                                    <h3>MICROTRAVESIA - DRJ x NESXX21 - (2020)</h3>
+                                    <h3>Brick Gotic by Simulacro (since 2018)</h3>
                                 </div>
                                 <div className="playlist">
+                                    <p>
+                                    Podcast sessions
+
+                                    </p>
+                                </div>
+                                
+                            </div>
+                             
+
+                        </div>
+
+                         <div className="youtube-link"><iframe src="https://www.youtube.com/embed/_3mWp46FuGM"
+                                  frameborder="0" allowfullscreen ></iframe>
+                                                   
+                          </div>
+                             
+                            <div className="album-title">
+                                    <h3>MICROTRAVESIA - DRJ x NESXX21 - (2020)</h3>
+                            </div>
+                                 <div className="album-info">
+                        
                                     <p>
                                     Sesion A/V analogica para el ciclo Videonix 
                                     </p>
                                     
-                                </div>
-                                <div className="extra-info">
-                                    <p>
-                                        Visuals: DRJ
-                                        <br></br>
-                                        Sound: NESXX21
-                                    </p>
-                                </div>
                             </div>
-                            
-                        </div>
-                    </div>
-               
-                
+                                
 
+                    
+                    </div>
+          
 
             </BaseLayout>
         </div>
