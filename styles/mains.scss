@@ -47,7 +47,7 @@ body {
   position: static;
   padding: 0;
   cursor: crosshair;
-  padding-bottom: 10vh;
+  //padding-bottom: 0.1rem;
 }
 
 .container-fluid {
@@ -161,7 +161,7 @@ body {
     display: flex;
     text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
     //fix for a hidden overflow of inner anchor box shadow
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.6rem;
     overflow: hidden;
     user-select: none;
     
