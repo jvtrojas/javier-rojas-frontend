@@ -62,10 +62,151 @@
     }
   }
 
+  .data-row-txt {
+    .row-slide-wrapper {
+      justify-content: inherit;
+      padding-left: 1rem;
+      font-size: 1.3rem;
+      font-weight: 500;
+     
+    }
   
+    .row {
+      //padding-bottom: 1.7rem;
+      height: auto;
+      a {
+        background-color: transparent !important;
+        box-shadow: none !important;
+      }
+    }
+  
+    //-------FIRST CONTAINER --------//
+  
+    .first-row {
+      padding-top: 0rem;
+    }
+  
+    .first-container {
+     
+      
+      
+      margin-right: 2rem;
+    }
+  
+    
+  
+    .first-container-txt-section {
+      height: auto;
+      flex-direction: column;
+      min-width: 90vw;
+  
+      
+    }
+  
+    .first-container p {
+      text-align: right;
+      
+      margin-top: 4vh;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  
+    //------------------------//
+  
+    .second-container {
+      width: 66vw;
+      min-width: 50rem;
+      height: auto;
+      column-count: 2;
+      column-gap: 2rem;
+      column-fill: auto;
+      
+    }
+  
+    .big-row-fc-txt {
+      // width: 66vw;
+      h2 {
+        padding-left: 1rem;
+      font-size: 1.3rem;
+      font-weight: 500;
+        line-height: rem;
+        
+        margin-top: 3vh;
+      }
+      p {
+        font-size: 1rem;
+      }
+      min-width: 100vw;
+      
+    }
+  
+    .small-row-fc-txt {
+      h2 {
+        font-size: 0vh;
+        background-color: black;
+        color: white;
+        //line-height: 11vh;
+        padding-top: 1.2vh;
+        padding-right: 1vh;
+      }
+      p {
+        //font-size: 0;
+       // line-height: 0rem;
+        display: none;
+        
+      }
+      min-width: 100vw;
+      
+    }
+  
+    p {
+      font-family: "Barlow", sans-serif;
+      font-size: 1rem;
+      line-height: 1.1;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-weight: 500;
+      
+    }
+  
+    h2 {
+      font-family: "BPdotsCondensedSquare", monospace;
+      font-size: calc(0.5rem + 5vh);
+      line-height: 5.5vh;
+      letter-spacing: 0em;
+      padding-top: 0.2rem;
+      text-align: right;
+      overflow-wrap: break-word;
+    }
+  
+    h3 {
+      font-size: 2.5vh;
+      font-weight: bold;
+      
+    }
+  
+    .h3-col-span-2 {
+      break-before: column;
+    }
+  
+    .language-black-block {
+      font-family: "BPdotsCondensedSquare", monospace;
+      font-size: 13vh;
+      margin-right: 1rem;
+      margin-bottom: 0;
+      cursor: pointer;
+      float: left;
+      color: white;
+      background-color: black;
+      line-height: 17vh;
+      height: 14vh;
+      padding: 0 1vh !important;
+      box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
   .row-element-info-text {
     p {
-      font-size: 1.5vh !important;
+      font-size: 0.8vh !important;
     }
     h3 {
       font-size: 1.5vh !important;
