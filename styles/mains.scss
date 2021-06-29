@@ -361,7 +361,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow-y: inherit;
+  
   div {
     
     padding-right: 0;
@@ -370,6 +370,7 @@ body {
   .bandcamp-pic {
     height: 55vh;
     padding-left: 2.3vh;
+    overflow-y: hidden;
   }
   .album-title h3 {
     font-size: 1.8vh;
