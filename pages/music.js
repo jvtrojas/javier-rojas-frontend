@@ -7,9 +7,7 @@ function Music() {
     return(
         <div className={"bandcamp-container"} >
             <BaseLayout className="global" >
-
-                <div className="container-fluid">
-                    <div className="wrap row row-no_top_padding row-slide-wrapper hide-scrollbar">
+                 <div className="wrap row row-no_top_padding row-slide-wrapper hide-scrollbar">
 
                         <a href="https://deliablanco.bandcamp.com/album/6-2-12" target="_blank">
                             <img className="row-pics bandcamp-pic" src="https://f4.bcbits.com/img/a3239859545_2.jpg" alt="" />
@@ -218,10 +216,35 @@ function Music() {
                             <div className="player">
                                 <BandcampPlayer tracklist="true" size="small" album="2738948799" />
                             </div>  
+
+                            </div>
+
+                        
+                            <div  className="youtube-link" src="3mWp46FuGM" alt="" />
+                            
+                        <div className="youtube-link">
+                            <div className="album-info">
+                                <div className="album-title">
+                                    <h3>MICROTRAVESIA - DRJ x NESXX21 - (2020)</h3>
+                                </div>
+                                <div className="playlist">
+                                    <p>
+                                    Sesion A/V analogica para el ciclo Videonix 
+                                    </p>
+                                    
+                                </div>
+                                <div className="extra-info">
+                                    <p>
+                                        Visuals: DRJ
+                                        <br></br>
+                                        Sound: NESXX21
+                                    </p>
+                                </div>
+                            </div>
                             
                         </div>
                     </div>
-                </div>
+               
                 
 
 
