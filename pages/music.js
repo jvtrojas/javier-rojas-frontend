@@ -218,8 +218,6 @@ function Music() {
                             </div>  
 
                         </div>
-        
-                           
 
                             <a href="https://www.mixcloud.com/BRICK_GOTIC/" target="_blank">
                             <img className="row-pics bandcamp-pic" src="https://thumbnailer.mixcloud.com/unsafe/320x320/profile/5/7/7/9/fca4-696c-475d-963b-e9eed10ee1a4" alt="" />
