@@ -365,13 +365,14 @@ body {
   flex-direction: column;
   justify-content: space-between;
   
+  
   div {
     
     padding-right: 0;
    
   }
   .bandcamp-pic {
-    height: 55vh;
+    height: 56vh;
     padding-left: 2.3vh;
     overflow-y: auto;
   }
@@ -434,6 +435,7 @@ body {
 }
 .row-pics-container.row-txt.big-row p {
   min-width: 20rem;
+  
 }
 
 .row-pics {
@@ -460,8 +462,8 @@ body {
 
 .youtube-link {
   //margin: 0.3rem;
-  min-height: 100%;
-  width: 100%;
+  height:  36rem!important;
+  width: 100%!important;
 }
 
 //------ ROWS --------//
