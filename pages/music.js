@@ -7,9 +7,9 @@ function Music() {
     return(
         <div className={"bandcamp-container"} >
             <BaseLayout className="global" >
-                 <div className="wrap row row-no_top_padding row-slide-wrapper hide-scrollbar">
+                 <div className="wrap row row-no_top_padding row-slide-wrapper hide-scrollbar bandcamp-pic">
 
-                        <a href="https://deliablanco.bandcamp.com/album/6-2-12" target="_blank">
+                        <a className href="https://deliablanco.bandcamp.com/album/6-2-12" target="_blank">
                             <img className="row-pics bandcamp-pic" src="https://f4.bcbits.com/img/a3239859545_2.jpg" alt="" />
                         </a>
                         <div className="bandcamp-container">
