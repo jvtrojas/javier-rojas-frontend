@@ -18,6 +18,7 @@ html {
 /* Hide scrollbar for Chrome, Safari and Opera  */
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
+ 
 }
 
 /* Hide scrollbar for IE and Edge */
@@ -365,6 +366,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
   
+  .row-music{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  }
   
   div {
     
@@ -467,8 +472,8 @@ body {
 
 .youtube-link {
   //margin: 0.3rem;
-  height:  36rem!important;
-  width: 100%!important;
+  min-height: 100%!important;
+  min-width: 100%!important;
 }
 
 //------ ROWS --------//
