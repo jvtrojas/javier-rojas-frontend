@@ -377,22 +377,24 @@ body {
     overflow-y: auto;
   }
   .album-title h3 {
-    font-size: 1.8vh;
+    font-size: 1.4rem;
     font-family: Barlow;
     font-weight: 700;
-    padding-left: 1.3vh;
-    min-width: 20vw;
+    padding-left: 1.5vh;
+    min-width: 25vw;
   }
   .playlist p,
   .extra-info p {
-    font-size: 1.8vh;
+
     font-family: Barlow;
-    padding-left: 1.3vh;
+    padding-left: 1.5vh;
     min-width: 18vw;
+    font-size: 1.3rem;
+    font-weight: 500;
   }
   .player {
     height: 2.63rem;
-    padding-left: 1.3vh;
+    padding-left: 1.5vh;
   }
   .player iframe {
     height: 2.6rem !important;

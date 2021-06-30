@@ -46,7 +46,52 @@ function Music() {
                                 <BandcampPlayer tracklist="true" size="small" album="2105021443" />
                             </div>  
                         </div>
+                        <a href="https://guerrillatunes.bandcamp.com/album/dentro-de-lo-posible" target="_blank">
+                            <img className="row-pics bandcamp-pic" src="https://f4.bcbits.com/img/a2574746160_10.jpg" alt="" />
+                        </a>
+                        <div className="bandcamp-container">
+                            <div className="album-info">
+                                <div className="album-title">
+                                    <h3>Dentro de lo posible - Delia Blanco - (2020)</h3>
+                                </div>
+                                <div className="playlist">
+                                <p>
+                                    1. | ____________ /////////////////////// 
+                                    <br></br>
+                                    2. El tiempo ya no es un problema 
+                                    <br></br>
+                                    3. Sehr geehrte Damen und Herren 
+                                    <br></br>
+                                    4. Verdad sin Luz
+                                    <br></br>
+                                    5. Annie B (mit Pable Diez)
+                                    <br></br>
+                                    6. Tiempo Nuevo
+                                    <br></br>
+                                    7. Leyes que prohiben otras leyes que prohiben otras leyes que 
+                                    <br></br>
+                                    8. Común y corriente 
+                                    <br></br>
+                                    9. Paradigma visual 
+                                    <br></br>
+                                    10. !_$·_%·$&£•‰£•$$%$·˝ ‰$$&%£⁄˝ı˝•‰ ‰£⁄£‰£•‰
+                                    <br></br>
+                                    11. ///////////////////////____________ | 
+                                    </p>
+                                </div>
+                                <div className="extra-info">
+                                    <p>
+                                        Cover: Javier Rojas
+                                        <br></br>
+                                        Label: Guerrilla Tunes
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="player">
+                                <BandcampPlayer tracklist="true" size="small" album="3586595993" />
+                            </div>  
 
+                                </div>
                         <a href="https://guerrillatunes.bandcamp.com/album/en-el-reverso-de-lo-real" target="_blank">
                             <img className="row-pics bandcamp-pic" src="https://f4.bcbits.com/img/a1946067698_16.jpg" alt="" />
                         </a>
@@ -95,7 +140,7 @@ function Music() {
                         <div className="bandcamp-container">
                             <div className="album-info">
                                 <div className="album-title">
-                                    <h3>El Futuro Transhumano - NN -(2018)</h3>
+                                    <h3>El Futuro Transhumano - NN - (2018)</h3>
                                 </div>
                                 <div className="playlist">
                                     <p>
@@ -129,52 +174,7 @@ function Music() {
                             </div>  
                                 </div>
 
-                        <a href="https://guerrillatunes.bandcamp.com/album/dentro-de-lo-posible" target="_blank">
-                            <img className="row-pics bandcamp-pic" src="https://f4.bcbits.com/img/a2574746160_10.jpg" alt="" />
-                        </a>
-                        <div className="bandcamp-container">
-                            <div className="album-info">
-                                <div className="album-title">
-                                    <h3>Dentro de lo posible - Delia Blanco - (2020)</h3>
-                                </div>
-                                <div className="playlist">
-                                <p>
-                                    1. | ____________ /////////////////////// 
-                                    <br></br>
-                                    2. El tiempo ya no es un problema 
-                                    <br></br>
-                                    3. Sehr geehrte Damen und Herren 
-                                    <br></br>
-                                    4. Verdad sin Luz
-                                    <br></br>
-                                    5. Annie B (mit Pable Diez)
-                                    <br></br>
-                                    6. Tiempo Nuevo
-                                    <br></br>
-                                    7. Leyes que prohiben otras leyes que prohiben otras leyes que 
-                                    <br></br>
-                                    8. Común y corriente 
-                                    <br></br>
-                                    9. Paradigma visual 
-                                    <br></br>
-                                    10. !_$·_%·$&£•‰£•$$%$·˝ ‰$$&%£⁄˝ı˝•‰ ‰£⁄£‰£•‰
-                                    <br></br>
-                                    11. ///////////////////////____________ | 
-                                    </p>
-                                </div>
-                                <div className="extra-info">
-                                    <p>
-                                        Cover: Javier Rojas
-                                        <br></br>
-                                        Label: Guerrilla Tunes
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="player">
-                                <BandcampPlayer tracklist="true" size="small" album="3586595993" />
-                            </div>  
-
-                                </div>
+                       
 
                         <a href="https://guerrillatunes.bandcamp.com/album/desaprender-todo-de-nuevo" target="_blank">
                             <img className="row-pics bandcamp-pic" src="https://f4.bcbits.com/img/a1548609672_10.jpg" alt="" />
