@@ -19,11 +19,11 @@ function Music() {
                                 </div>
                                 <div className="playlist">
                                     <p>
-                                        1. 111111111111111111111111111
+                                        1. 1111111111111111111111111
                                         <br></br>
-                                        2. 22222222222222222
+                                        2. 2222222222222222
                                         <br></br>
-                                        3. 333333333333333333
+                                        3. 33333333333333333
                                         <br></br>
                                         4. 4444444444444444
                                         <br></br>
@@ -32,6 +32,10 @@ function Music() {
                                         6. 66666666666666666
                                         <br></br>
                                         7. 7777777777777777777
+                                        <br></br>
+                                        8. 88888888888888888
+                                        <br></br>
+                                        9. 99999999999999999
                                     </p>
                                 </div>
                                 <div className="extra-info">
@@ -83,7 +87,7 @@ function Music() {
                                     <p>
                                         Cover: Javier Rojas
                                         <br></br>
-                                        Label: Guerrilla Tunes
+                                        Label: <a href="https://guerrillatunes.bandcamp.com/" target="_blank">Guerrilla Tunes</a> 
                                     </p>
                                 </div>
                             </div>
@@ -123,7 +127,7 @@ function Music() {
                                     <p>
                                         Cover: Javier Rojas
                                         <br></br>
-                                        Label: Guerrila Tunes
+                                        Label: <a href="https://guerrillatunes.bandcamp.com/" target="_blank">Guerrilla Tunes</a> 
                                     </p>
                                 </div>
                             </div>
@@ -165,7 +169,7 @@ function Music() {
                                     <p>
                                         Cover: Javier Rojas
                                         <br></br>
-                                        Label: Guerrilla Tunes
+                                        Label: <a href="https://guerrillatunes.bandcamp.com/" target="_blank">Guerrilla Tunes</a> 
                                     </p>
                                 </div>
                             </div>
@@ -207,9 +211,9 @@ function Music() {
                                 </div>
                                 <div className="extra-info">
                                     <p>
-                                        Cover: Freshcore
+                                        Cover: <a href="https://www.behance.net/freshcoredefirpo" target="_blank">Freshcore</a>
                                         <br></br>
-                                        Label: Guerrilla Tunes
+                                        Label:<a href="https://guerrillatunes.bandcamp.com/" target="_blank">Guerrilla Tunes</a> 
                                     </p>
                                 </div>
                             </div>

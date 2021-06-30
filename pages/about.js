@@ -8,17 +8,14 @@ function About({anchorIsHovered, classToggle}) {
         <div className="about-page">
             <div className="wrap row first-row row-no_top_padding row-slide-wrapper hide-scrollbar">
                 <div className="about-us-en-container first-container test-element">
-                    <div className="language-black-block">
-                        EN
-                    </div>
-                    <div className="first-container-txt-section">
+                    
+                    <div className="data-row-txt first-container-txt-section first-container ">
                         <h2>JAVIER ROJAS<br></br>TRANSDISCIPLINARY ARTIST<br></br> AURAL ARCHITECT</h2>
                         <p>Sound Artist & Experimental Producer with international experience boosting audio sensorial experiences through storytelling resulted from artistic co-creation and crosshatch of 3D multi-channel sound systems, spatial sound design, CG graphics, creative coding, industrial architecture, photography, graphics, and experience design. 
 Based between Berlin, Barcelona and London.</p>
-                        <p>2019 - MA - Sound artist x Universitat de Barcelona (SPA)<br></br>2014 - BA - Architect x Universidad Blas Pascal (ARG) </p>
                     </div>
                 </div>
-                <div className="about-us-en-container second-container test-element">
+                <div className="second-container test-element">
                     <h3>Professional Experience</h3>
 
                     <a href="https://guerrillatunes.bandcamp.com/album/en-el-reverso-de-lo-real" target="_blank">hola</a>
@@ -65,9 +62,7 @@ Based between Berlin, Barcelona and London.</p>
             </div>
             <div className="wrap row row-no_top_padding row-slide-wrapper hide-scrollbar">
                 <div className="about-us-es-container first-container test-element">
-                    <div className="language-black-block">
-                        ES
-                    </div>
+                    
                     <div className="first-container-txt-section">
                         <h2>JAVIER ROJAS<br></br> ARTISTA TRANSDISCIPLINAR<br></br> ARQUITECTO AUDITIVO</h2>
                         <p>Artista transdisciplinar y arquitecto auditivo, trabajando con tecnologías, multimedia y diseño. Fusionando diversas tecnologías de software y construcción, utilizando sonido tridimensional, gráficos CG, programación creativa, sistemas de sonido multicanal, diseño industrial, arquitectura metálica, fotografía y diseño gráfico.</p>

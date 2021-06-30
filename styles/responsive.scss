@@ -91,7 +91,7 @@
   
     .first-container {
      
-      
+      min-width: 90vw;
       
       margin-right: 2rem;
     }
@@ -102,7 +102,7 @@
       height: auto;
       flex-direction: column;
       min-width: 90vw;
-  
+     
       
     }
   
@@ -110,8 +110,10 @@
       text-align: right;
       
       margin-top: 4vh;
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       font-weight: 500;
+      width: 90vw;
+
       
     }
   
@@ -124,6 +126,7 @@
       column-count: 2;
       column-gap: 2rem;
       column-fill: auto;
+      width: 90vw;
       
     }
   
@@ -239,6 +242,7 @@
   justify-content: space-between;
   height: 95vw !important;
   
+  
   div {
     
     padding-right: 0;
@@ -256,6 +260,8 @@
     font-weight: 700;
     padding-left: 1.3vh;
     min-width: 60vw;
+    padding-left: 3vh;
+    
   }
   .playlist p,
   .extra-info p {
@@ -263,6 +269,9 @@
     font-family: Barlow;
     padding-left: 1.3vh;
     min-width: 60vw;
+    padding-top: 2vw;
+    padding-left: 3vh;
+
   }
   .player {
     height: 2.63rem;
@@ -271,6 +280,7 @@
   }
   .player iframe {
     height: 2.6rem !important;
+    padding-left: 3vh;
     
    
 

@@ -6,7 +6,7 @@ const BaseLayout = (props) => {
     return (
         <React.Fragment>
             <Head>
-                <title>AuralArk</title>
+                <title>Javier-Rojas.xyz</title>
                 <link rel="icon" type="image/ico" href="/static/favicon.ico"/>
             </Head>
             <div>
