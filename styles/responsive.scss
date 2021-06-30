@@ -91,7 +91,7 @@
   
     .first-container {
      
-      
+      min-width: 90vw;
       
       margin-right: 2rem;
     }
@@ -102,7 +102,7 @@
       height: auto;
       flex-direction: column;
       min-width: 90vw;
-  
+     
       
     }
   
@@ -110,8 +110,10 @@
       text-align: right;
       
       margin-top: 4vh;
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       font-weight: 500;
+      width: 90vw;
+
       
     }
   
@@ -124,6 +126,7 @@
       column-count: 2;
       column-gap: 2rem;
       column-fill: auto;
+      width: 90vw;
       
     }
   

@@ -241,7 +241,7 @@ body {
 
   .first-container {
    
-    
+    width: 36vw;
     
     //margin-right: 2rem;
   }
@@ -381,25 +381,27 @@ body {
     font-family: Barlow;
     font-weight: 700;
     padding-left: 1.5vh;
-    min-width: 25vw;
+    min-width: 33vw;
+    padding-left: 3vh;
   }
   .playlist p,
   .extra-info p {
 
     font-family: Barlow;
-    padding-left: 1.5vh;
+    padding-left: 3vh;
     min-width: 18vw;
     font-size: 1.3rem;
     font-weight: 500;
+    padding-top: 2vw;
   }
   .player {
     height: 2.63rem;
-    padding-left: 1.5vh;
+    padding-left: 3vh;
   }
   .player iframe {
     height: 2.6rem !important;
 
-    padding-right: 6vh;
+    //padding-right: 6vh;
   }
 }
 
@@ -444,7 +446,8 @@ body {
   cursor: pointer;
   height: 100%;
   width: auto;
-  padding-left: 0.5vh;
+  padding-left: 0.5vh
+  ;
   
 }
 
