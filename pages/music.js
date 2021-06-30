@@ -220,30 +220,10 @@ function Music() {
                             <div className="player">
                                 <BandcampPlayer tracklist="true" size="small" album="2738948799" />
                             </div>  
-
                         </div>
+                       
 
-                            <a href="https://www.mixcloud.com/BRICK_GOTIC/" target="_blank">
-                            <img className="row-pics bandcamp-pic" src="https://thumbnailer.mixcloud.com/unsafe/320x320/profile/5/7/7/9/fca4-696c-475d-963b-e9eed10ee1a4" alt="" />
-                              </a>
-                             <div className="bandcamp-container">
-                             <div className="album-info">
-                                <div className="album-title">
-                                    <h3>Brick Gotic by Simulacro (since 2018)</h3>
-                                </div>
-                                <div className="playlist">
-                                    <p>
-                                    Podcast sessions
-
-                                    </p>
-                                </div>
-                                
-                            </div>
-                             
-
-                        </div>
-
-                         <div className="row-pics-container youtube-link"> <iframe src="https://www.youtube.com/embed/_3mWp46FuGM"
+                         <div className=" youtube-link"> <iframe className=" youtube-link" src="https://www.youtube.com/embed/_3mWp46FuGM"
                                   frameborder="0" allowfullscreen ></iframe>
                                                    
                           </div>
@@ -264,7 +244,76 @@ function Music() {
 
                     
                     </div>
+
+                    <div className="wrap row row-no_top_padding row-music row-slide-wrapper hide-scrollbar ">
+
+                    <a href="https://www.mixcloud.com/RadioRea/guerrilla-tunes-takeover-w-nesxx21/" target="_blank">
+                    <img className="row-pics bandcamp-pic" src="https://thumbnailer.mixcloud.com/unsafe/600x600/extaudio/0/f/2/5/de3a-cf5f-4268-9d5f-ca53f3279851" alt="" />
+                        </a>
+                        <div className="bandcamp-container">
+                            <div className="album-info">
+                                <div className="album-title">
+                                    <h3>Guerrilla Tunes Takeover w/ NESXX21</h3>
+                                </div>
+                                <div className="playlist">
+                                    <p>
+                                    <a href="https://www.mixcloud.com/RadioRea/" target="_blank">Radio REA</a>
+                                    <br></br>
+                                    <a href="https://guerrillatunes.bandcamp.com/" target="_blank">Guerrilla Tunes</a> 
+                                    </p>
+
+                                </div>
+                                
+                            </div>
+                             
+                        </div>
+                        <a href="https://www.mixcloud.com/RadioRea/tercer-puesto-x-pedro-d-alessandro-ep5-w-javier-rojas/" target="_blank">
+                            <img className="row-pics bandcamp-pic" src="https://thumbnailer.mixcloud.com/unsafe/600x600/extaudio/5/b/3/6/035d-3b29-40cf-82fb-91683696d4c8" alt="" />
+                        </a>
+                        <div className="bandcamp-container">
+                            <div className="album-info">
+                            <div className="album-title">
+                                    <h3>"Tercer Puesto" x Pedro D´Alessandro EP5 w/ Javier Rojas</h3>
+                                </div>
+                                <div className="playlist">
+                                    <p>
+                                    <a href="https://www.mixcloud.com/RadioRea/" target="_blank">Radio REA</a>
+                                    <br></br>
+                                    <a href="https://guerrillatunes.bandcamp.com/" target="_blank">Guerrilla Tunes</a> 
+                                    </p>
+
+                                </div>
+                            </div>
+                            
+
+                                </div>
+                                <a href="https://www.mixcloud.com/BRICK_GOTIC/" target="_blank">
+                            <img className="row-pics bandcamp-pic" src="https://64.media.tumblr.com/5e97894d6ced4904a46e88660ac99c98/caea9b6be97ea26b-68/s1280x1920/cf1ac1ebfe87dea75b5c5bb1dceea49f2bb30854.jpg" alt="" />
+                        </a>
+                        <div className="bandcamp-container">
+                            <div className="album-info">
+                                <div className="album-title">
+                                <h3>Brick Gotic by Simulacro (since 2018)</h3>
+                                </div>
+                                <div className="playlist">
+                                    <p>
+                                    Podcast sessions
+                                    <br></br>
+                                    Cover: <a href="https://igbruno.tumblr.com" target="_blank">Ignacio Bruno</a>
+                                    </p>
+                                </div>
+                            </div>
+                        
+                                </div>
+
+                        
+                                
+
+                    
+                    </div>
           
+
+                                
 
             </BaseLayout>
         </div>
