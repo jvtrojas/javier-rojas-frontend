@@ -224,7 +224,7 @@ function Music() {
                         </div>
 
                             <a href="https://www.mixcloud.com/BRICK_GOTIC/" target="_blank">
-                            <img className="row-pics bandcamp-pic" src="https://thumbnailer.mixcloud.com/unsafe/320x320/profile/5/7/7/9/fca4-696c-475d-963b-e9eed10ee1a4" alt="" />
+                            <img className="row-pics bandcamp-pic" src="https://64.media.tumblr.com/5e97894d6ced4904a46e88660ac99c98/caea9b6be97ea26b-68/s1280x1920/cf1ac1ebfe87dea75b5c5bb1dceea49f2bb30854.jpg" alt="" />
                               </a>
                              <div className="bandcamp-container">
                              <div className="album-info">
@@ -234,7 +234,8 @@ function Music() {
                                 <div className="playlist">
                                     <p>
                                     Podcast sessions
-
+                                    <br></br>
+                                    Cover: <a href="https://igbruno.tumblr.com" target="_blank">Ignacio Bruno</a>
                                     </p>
                                 </div>
                                 
