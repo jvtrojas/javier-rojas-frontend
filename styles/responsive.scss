@@ -242,6 +242,7 @@
   justify-content: space-between;
   height: 95vw !important;
   
+  
   div {
     
     padding-right: 0;
@@ -259,6 +260,8 @@
     font-weight: 700;
     padding-left: 1.3vh;
     min-width: 60vw;
+    padding-left: 3vh;
+    
   }
   .playlist p,
   .extra-info p {
@@ -266,6 +269,9 @@
     font-family: Barlow;
     padding-left: 1.3vh;
     min-width: 60vw;
+    padding-top: 2vw;
+    padding-left: 3vh;
+
   }
   .player {
     height: 2.63rem;
@@ -274,6 +280,7 @@
   }
   .player iframe {
     height: 2.6rem !important;
+    padding-left: 3vh;
     
    
 
