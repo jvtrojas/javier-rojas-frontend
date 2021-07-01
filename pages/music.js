@@ -15,7 +15,7 @@ function Music() {
                         <div className="bandcamp-container">
                             <div className="album-info">
                                 <div className="album-title">
-                                    <h3>Delia Blanco 6_2_12 - Delia Blanco - (2020)</h3>
+                                    <h3>6_2_12 - Delia Blanco - (2020)</h3>
                                 </div>
                                 <div className="playlist">
                                     <p>
@@ -232,7 +232,7 @@ function Music() {
                                 </div>
                                 <div className="playlist">
                                     <p>
-                                    Carne
+                                    10. Carne
                                     </p>
                                 </div>
                                 <div className="extra-info">
