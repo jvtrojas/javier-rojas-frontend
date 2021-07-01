@@ -222,6 +222,31 @@ function Music() {
                             </div>  
                         </div>
                        
+                        <a href="https://guerrillatunes.bandcamp.com/track/carne" target="_blank">
+                            <img className="row-pics bandcamp-pic" src="https://f4.bcbits.com/img/a1865909136_10.jpg" alt="" />
+                        </a>
+                        <div className="bandcamp-container">
+                            <div className="album-info">
+                                <div className="album-title">
+                                    <h3>GTX2YVA Part. 1 - NESXX21 - (2019)</h3>
+                                </div>
+                                <div className="playlist">
+                                    <p>
+                                    Carne
+                                    </p>
+                                </div>
+                                <div className="extra-info">
+                                    <p>
+                                        Cover: <a href="https://www.behance.net/freshcoredefirpo" target="_blank">Freshcore</a>
+                                        <br></br>
+                                        Label:<a href="https://guerrillatunes.bandcamp.com/" target="_blank">Guerrilla Tunes</a> 
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="player">
+                                <BandcampPlayer tracklist="true" size="small" album="3413507223" />
+                            </div>  
+                        </div>
 
                          <div className=" youtube-link"> <iframe className=" youtube-link" src="https://www.youtube.com/embed/_3mWp46FuGM"
                                   frameborder="0" allowfullscreen ></iframe>
