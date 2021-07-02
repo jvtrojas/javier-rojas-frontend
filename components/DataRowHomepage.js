@@ -4,11 +4,8 @@ import { isSafari } from 'react-device-detect';
 
 function DataRowHomepage({ data, blackSquareTrigger, rowNumber, anchorIsHovered, classToggle, displayFirstContainer, firstContainerContent }) {
     const rowArray = [];
-    console.log("data",data)
     data.forEach((object) => (object.row == rowNumber ? rowArray.push(object) : ''));
-    console.log("rowAarray",rowArray)
     let [isSelected, setIsSelected] = useState(0);
-
     const handleClickRow = () => {
         isSelected++;
         isSelected == 3 ? (isSelected = 0) : '';
@@ -52,7 +49,7 @@ function DataRowHomepage({ data, blackSquareTrigger, rowNumber, anchorIsHovered,
                 )}
                 {/* Row of images and media*/}
                 {rowArray.map(function (dataJSON) {
-                    if (dataJSON.datatype == '' || dataJSON.datatype == 'img') {
+                    if (dataJSON.provider_metadata.resource_type  == '' || dataJSON.provider_metadata.resource_type == 'image') {
                         return (
                             <div className={`row-pics-container ${isSelected == 1 ? 'big-row padding-big-row' : isSelected == 2 ? 'small-row padding-small-row' : isSelected == 0 ? 'default-row padding-default-row' : null}`} key={dataJSON.id}>
                                 {dataJSON.info ? (
@@ -68,6 +65,12 @@ function DataRowHomepage({ data, blackSquareTrigger, rowNumber, anchorIsHovered,
                                     ''
                                 )}
                                 <img className='row-pics' src={dataJSON.url} alt={dataJSON.title} />
+                            </div>
+                        );
+                    } else if (dataJSON.provider_metadata.resource_type  == 'video' ) {
+                        return (
+                            <div className={`row-pics-container ${isSelected == 1 ? 'big-row padding-big-row' : isSelected == 2 ? 'small-row padding-small-row' : isSelected == 0 ? 'default-row padding-default-row' : null}`} key={dataJSON.id}>
+                                <video autoPlay muted  src={dataJSON.url} ></video>
                             </div>
                         );
                     } else if (dataJSON.datatype == 'youtube') {

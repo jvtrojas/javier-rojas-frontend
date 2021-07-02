@@ -28,8 +28,7 @@ function Visuals({blackSquareTrigger, anchorIsHovered, classToggle, visualsData}
                             tempArray = tempArray.map((elem)=> {
                                 return {
                                     ...elem,
-                                    row: i,
-                                    datatype: 'img'}
+                                    row: i }
                             })
                         content.push(<DataRowHomepage data={tempArray} blackSquareTrigger={blackSquareTrigger} classToggle={classToggle} anchorIsHovered={anchorIsHovered} rowNumber={i} key={i}/>);
                         }

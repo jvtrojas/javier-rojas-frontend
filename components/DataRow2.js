@@ -36,7 +36,6 @@ function DataRow({ data, blackSquareTrigger, rowNumber, anchorIsHovered, classTo
     }
     blackSquareTrigger !== 0 ? shuffleRow(rowArray) : null;
     const pictures = apiData.pictures;
-    console.log('--> APIDATA', apiData.group);
     return (
         <>
             <div onClick={isSafari ? null : handleClickRow} className={` ${rowArray.length === 0 ? 'row-test' : ''} wrap row row-no_top_padding row-slide-wrapper hide-scrollbar`}>
@@ -54,11 +53,11 @@ function DataRow({ data, blackSquareTrigger, rowNumber, anchorIsHovered, classTo
                 )}{' '}
                 {apiData.group.map((g) => {
                     return (
-<div className={`row-pics-container ${isSelected == 1 ? 'big-row padding-big-row' : isSelected == 2 ? 'small-row padding-small-row' : isSelected == 0 ? 'default-row padding-default-row' : null}`}>
+                    <div className={`row-pics-container ${isSelected == 1 ? 'big-row padding-big-row' : isSelected == 2 ? 'small-row padding-small-row' : isSelected == 0 ? 'default-row padding-default-row' : null}`}>
                     {g.pictures.map((picture) => {
                         return <img className='row-pics' src={picture.url} />;
                     })}
-                    
+
                     {g.videos.map((video) => {
                         return <video className='row-pics' key={video.id} height='100%' src={video.url} frameBorder='0' autoPlay muted loop allowFullScreen={false} playsInline></video>;
                     })}
