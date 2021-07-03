@@ -1,19 +1,43 @@
 import BaseLayout from '../components/layouts/BaseLayout';
-import DataRow from '../components/DataRow';
-import Data from '../public/js/data-visuals.json';
+import DataRowHomepage from '../components/DataRowHomepage';
+import { getVisuals } from '../lib/api';
 
-const data = Data.map(each => {return each})
+export async function getStaticProps() {
+    const visualsData = await getVisuals();
 
-function Visuals({shuffleOrder}) {
-    return(
-        <BaseLayout className="global" >
-            <div className="container-fluid">
-                <DataRow data={data} shuffleOrder={shuffleOrder} rowNumber="1" />
-                <DataRow data={data} shuffleOrder={shuffleOrder} rowNumber="2" />
-                <DataRow data={data} shuffleOrder={shuffleOrder} rowNumber="3" />
-            </div>
-        </BaseLayout>
-    )    
+    return {
+        props: { visualsData },
+        revalidate: 1,
+    };
 }
 
-export default Visuals
+function Visuals({blackSquareTrigger, anchorIsHovered, classToggle, visualsData}) {
+        return (
+            <BaseLayout className="global" >
+                <div className="container-fluid">
+                    {visualsData.map((cat)=>{
+                        const pictures = cat.pictures;
+                        const totalPics = cat.pictures.length;
+                        const numberOfRows = Math.ceil(totalPics/30);
+                        let content = [];
+                        for(var i = 1; i <= numberOfRows; i++) {
+                            let tempArray = [];
+                            let start = (i -1) * 30;
+                            let end = start + 29;
+                            tempArray = pictures.slice(start, end)
+                            tempArray = tempArray.map((elem)=> {
+                                return {
+                                    ...elem,
+                                    row: i,
+                                    datatype: 'img'}
+                            })
+                        content.push(<DataRowHomepage data={tempArray} blackSquareTrigger={blackSquareTrigger} classToggle={classToggle} anchorIsHovered={anchorIsHovered} rowNumber={i} key={i}/>);
+                        }
+                        return content;
+                    })}
+                </div>
+            </BaseLayout>
+        )
+    }
+
+export default Visuals;

@@ -228,11 +228,12 @@ function Music() {
                         <div className="bandcamp-container">
                             <div className="album-info">
                                 <div className="album-title">
-                                    <h3>GTX2YVA Part. 1 - NESXX21 - (2019)</h3>
+                                    <h3>GTX2YVA Part. 1 - (2019)</h3>
                                 </div>
                                 <div className="playlist">
                                     <p>
-                                    10. Carne
+                                    8. Sueños Inciertos - NN
+                                    10. Carne - NESXX21
                                     </p>
                                 </div>
                                 <div className="extra-info">
