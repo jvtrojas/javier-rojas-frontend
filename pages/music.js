@@ -259,7 +259,7 @@ function Music() {
                                     <h3>MICROTRAVESIA - DRJ x NESXX21 - (2020)</h3>
                                 <div className="playlist">
                                     <p>
-                                    Sesion A/V analogica para el ciclo <a href="https://www.facebook.com/plano.videonix/" target="_blank">Videonix</a>  de <a href="https://jjplano.com.ar" target="_blank">Javier Plano</a> 
+                                    Sesion A/V analogica para el ciclo <a href="https://www.facebook.com/plano.videonix/" target="_blank">Videonica</a>  de <a href="https://jjplano.com.ar" target="_blank">Javier Plano</a> 
                                     </p>
                                 </div>
                                  
