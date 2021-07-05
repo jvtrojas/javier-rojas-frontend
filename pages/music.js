@@ -15,7 +15,7 @@ function Music() {
                         <div className="bandcamp-container">
                             <div className="album-info">
                                 <div className="album-title">
-                                    <h3>Delia Blanco 6_2_12 - Delia Blanco - (2020)</h3>
+                                    <h3>6_2_12 - Delia Blanco - (2020)</h3>
                                 </div>
                                 <div className="playlist">
                                     <p>
@@ -222,17 +222,19 @@ function Music() {
                             </div>  
                         </div>
                        
-                        <a href="https://guerrillatunes.bandcamp.com/track/carne" target="_blank">
+                        <a href="https://guerrillatunes.bandcamp.com/album/gtx2yva-part-1" target="_blank">
                             <img className="row-pics bandcamp-pic" src="https://f4.bcbits.com/img/a1865909136_10.jpg" alt="" />
                         </a>
                         <div className="bandcamp-container">
                             <div className="album-info">
                                 <div className="album-title">
-                                    <h3>GTX2YVA Part. 1 - NESXX21 - (2019)</h3>
+                                    <h3>GTX2YVA Part. 1 - (2019)</h3>
                                 </div>
                                 <div className="playlist">
                                     <p>
-                                    Carne
+                                    8. <a href="https://guerrillatunes.bandcamp.com/track/sue-os-inciertos" target="_blank">Sueños Inciertos - NN</a>  
+                                    <br></br>
+                                    10. <a href="https://guerrillatunes.bandcamp.com/track/carne" target="_blank">Carne - NESXX21</a> 
                                     </p>
                                 </div>
                                 <div className="extra-info">
@@ -257,7 +259,7 @@ function Music() {
                                     <h3>MICROTRAVESIA - DRJ x NESXX21 - (2020)</h3>
                                 <div className="playlist">
                                     <p>
-                                    Sesion A/V analogica para el ciclo Videonix 
+                                    Sesion A/V analogica para el ciclo <a href="https://www.facebook.com/plano.videonix/" target="_blank">Videonix</a>  de <a href="https://jjplano.com.ar" target="_blank">Javier Plano</a> 
                                     </p>
                                 </div>
                                  
@@ -279,6 +281,11 @@ function Music() {
                             <div className="album-info">
                                 <div className="album-title">
                                     <h3>Guerrilla Tunes Takeover w/ NESXX21</h3>
+                                    <div className="playlist">
+                                    <p>
+                                    
+                                    </p>
+                                </div>
                                 </div>
                                 <div className="playlist">
                                     <p>

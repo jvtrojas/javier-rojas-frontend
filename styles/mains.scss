@@ -86,6 +86,18 @@ body {
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
+.black-square :active{
+  cursor: pointer;
+  background-color: white;
+  height: 10vh;
+  width: 10vh;
+  right: 5.33vw;
+  bottom: 9.33vh;
+  position: fixed;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+
 /* HEADER BACKGROUND COLORS HOVER CLASSES*/
 
 .color-0 {
@@ -188,7 +200,10 @@ body {
   right: 5.5rem;
   bottom: 5.5;
   position: unset;
+
 }
+
+
 
 .shuffled-children {
   display: flexbox;
