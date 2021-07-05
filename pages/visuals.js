@@ -18,12 +18,12 @@ function Visuals({blackSquareTrigger, anchorIsHovered, classToggle, visualsData}
                     {visualsData.map((cat)=>{
                         const pictures = cat.pictures;
                         const totalPics = cat.pictures.length;
-                        const numberOfRows = Math.ceil(totalPics/30);
+                        const numberOfRows = Math.ceil(totalPics/15);
                         let content = [];
                         for(var i = 1; i <= numberOfRows; i++) {
                             let tempArray = [];
-                            let start = (i -1) * 30;
-                            let end = start + 29;
+                            let start = (i -1) * 15;
+                            let end = start + 14;
                             tempArray = pictures.slice(start, end)
                             tempArray = tempArray.map((elem)=> {
                                 return {
