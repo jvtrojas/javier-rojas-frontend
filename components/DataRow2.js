@@ -40,7 +40,7 @@ function DataRow({ data, blackSquareTrigger, rowNumber, anchorIsHovered, classTo
         <>
             <div onClick={isSafari ? null : handleClickRow} className={` ${rowArray.length === 0 ? 'row-test' : ''} wrap row row-no_top_padding row-slide-wrapper hide-scrollbar`}>
                 {/* Optional first row of text */}
-                {displayFirstContainer == true ? (
+                {apiData.content && displayFirstContainer == true ? (
                     <div className='data-row-txt'>
                         <div className='about-us-en-container first-container test-element'>
                             <div className='first-container-txt-section'>
