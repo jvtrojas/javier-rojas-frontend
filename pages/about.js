@@ -18,7 +18,7 @@ Based between Berlin, Barcelona and London.</p>
                 <div className="second-container test-element">
                     <h3>Professional Experience</h3>
 
-                    <a href="https://guerrillatunes.bandcamp.com/album/en-el-reverso-de-lo-real" target="_blank">hola</a>
+                
 
                     <p><strong className={`${anchorIsHovered ? classToggle : null} link-default`}>2019 - Today:</strong> Co-founder and collaborator of Simulacro
                     Transdisciplinary platform based between Berlin (DE) and Córdoba (ARG),blending creative disciplines for artistic projects.</p>
@@ -111,9 +111,7 @@ Based between Berlin, Barcelona and London.</p>
 
                     </div>
 
-                    <div className="mixcloud-player">
-                    <iframe width="80%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2Fjavitorojas%2Fsoundscapes-collection-bells%2F" frameborder="0" ></iframe>
-                         </div>
+                    
             </div>
         </div>
     )
