@@ -1,19 +1,28 @@
-import BaseLayout from '../components/layouts/BaseLayout';
-import DataRow from '../components/DataRow';
-import Data from '../public/js/data-miscellaneous.json';
+import React from 'react';
+import DataRow2 from '../components/DataRow2';
+import Data from '../public/js/data-projects.json';
+import { getMiscs } from '../lib/api';
 
-const data = Data.map(each => {return each})
-
-function Miscellaneous() {
-    return(
-        <BaseLayout className="global" >
-            <div className="container-fluid">
-                <DataRow data={data} rowNumber="1" />
-                <DataRow data={data} rowNumber="2" />
-                <DataRow data={data} rowNumber="3" />
-            </div>
-        </BaseLayout>
-    )    
+export async function getStaticProps() {
+    const miscs = await getMiscs();
+    return {
+        props: { miscs },
+        revalidate: 1,
+    };
 }
 
-export default Miscellaneous
+const data = Data.map((each) => {
+    return each;
+});
+
+function Miscellaneous({ blackSquareTrigger, miscs }) {
+    return (
+        <div className='projects-page'>
+            {miscs && miscs.map((misc, index) => {
+                return <DataRow2 data={data} blackSquareTrigger={blackSquareTrigger} displayFirstContainer={true} firstContainerContent={misc} apiData={misc} rowNumber={index} key={index} />;
+            })}
+        </div>
+    );
+}
+
+export default Miscellaneous;

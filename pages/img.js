@@ -16,7 +16,7 @@ function Photography({blackSquareTrigger, anchorIsHovered, classToggle, photosDa
     return (
         <BaseLayout className="global" >
             <div className="container-fluid">
-                {photosData.map((cat)=>{
+                {photosData && photosData.map((cat)=>{
                     const pictures = cat.pictures;
                     const totalPics = cat.pictures.length;
                     const numberOfRows = Math.ceil(totalPics/30);

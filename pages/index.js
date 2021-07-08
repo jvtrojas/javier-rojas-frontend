@@ -16,7 +16,7 @@ function Index({blackSquareTrigger, anchorIsHovered, classToggle, homepageData})
     return (
         <BaseLayout className="global" >
             <div className="container-fluid">
-                {homepageData.map((cat)=>{
+                {homepageData && homepageData.map((cat)=>{
                     const pictures = cat.pictures;
                     const totalPics = cat.pictures.length;
                     const numberOfRows = Math.ceil(totalPics/30);
