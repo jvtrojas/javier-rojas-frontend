@@ -276,7 +276,7 @@ body {
   .first-container p {
     text-align: right;
     
-    margin-top: 4vh;
+    margin-top: 1vh;
     font-size: 1.3rem;
     font-weight: 500;
   }
@@ -331,7 +331,7 @@ body {
 
   p {
     font-family: "Barlow", sans-serif;
-    font-size: 1rem;
+    font-size: 1.4rem;
     line-height: 1.1;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -442,10 +442,17 @@ body {
 .row-pics-container {
   height: 36vh;
   transition: 0.1s;
-  
   display: inline-flex;
   margin-bottom: 0.5vh;
 }
+
+.row-pics-container-about {
+  height: 36vh;
+  transition: 0.1s;
+  display: inline-flex;
+  margin-bottom: 0.5vh;
+}
+
 
 .row-txt {
   h3 {
@@ -504,7 +511,7 @@ body {
 }
 
 .default-row-text {
-  min-width: 17vw;
+  min-width: 66vw;
   max-width: 33vw;
 }
 
