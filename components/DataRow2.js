@@ -23,7 +23,6 @@ function DataRow({ data, blackSquareTrigger, rowNumber, anchorIsHovered, classTo
         /* ROW SHUFFLE FUNCTION */
     }
     function shuffleRow(array) {
-        console.log("BLACKBOX")
     }
 
     {
@@ -46,17 +45,17 @@ function DataRow({ data, blackSquareTrigger, rowNumber, anchorIsHovered, classTo
                 ) : (
                     ''
                 )}{' '}
-                {apiData.group.map((g) => {
+                {apiData && apiData.group && apiData.group.map((g) => {
                     return (
                     <div className={`row-pics-container ${isSelected == 1 ? 'big-row padding-big-row' : isSelected == 2 ? 'small-row padding-small-row' : isSelected == 0 ? 'default-row padding-default-row' : null}`}>
-                    {g.pictures.map((picture) => {
+                    {g.pictures && g.pictures.map((picture) => {
                         return <img className='row-pics' src={picture.url} />;
                     })}
 
-                    {g.videos.map((video) => {
+                    {g.videos && g.videos.map((video) => {
                         return <video className='row-pics' key={video.id} height='100%' src={video.url} frameBorder='0' autoPlay muted loop allowFullScreen={false} playsInline></video>;
                     })}
-                    {g.description && <div className={`row-pics-container ${isSelected == 1 ? 'big-row big-row-text padding-big-row' : isSelected == 2 ? 'small-row small-row-text padding-small-row' : isSelected == 0 ? 'default-row default-row-text padding-default-row' : null}`}  dangerouslySetInnerHTML={{ __html: replaceContent(g.description) }} >
+                    {g.description && g.description && <div className={`row-pics-container ${isSelected == 1 ? 'big-row big-row-text padding-big-row' : isSelected == 2 ? 'small-row small-row-text padding-small-row' : isSelected == 0 ? 'default-row default-row-text padding-default-row' : null}`}  dangerouslySetInnerHTML={{ __html: replaceContent(g.description) }} >
 
                     </div>}
 
