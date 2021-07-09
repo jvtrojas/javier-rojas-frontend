@@ -70,10 +70,11 @@
       font-size: 1.3rem;
       font-weight: 500;
       height: fit-content;
+
       
      
     }
-  
+    
     .row {
       //padding-bottom: 1.7rem;
       height: fit-content;
@@ -129,6 +130,7 @@
       width: 90vw;
       
     }
+    
   
     .big-row-fc-txt {
       // width: 66vw;
@@ -173,6 +175,7 @@
       padding-left: 1rem;
       padding-right: 1rem;
       font-weight: 500;
+      ;
       
     }
   
@@ -232,7 +235,7 @@
     margin-bottom: 0.5rem;
   }
   .row-element-info-text {
-    min-width: 27vh !important;
+    min-width: 100vh ;
 
   }
   // Music section styles
@@ -290,6 +293,7 @@
     //margin: 0.3rem;
     height:  fit-content!important;
     width: fit-content !important;
+    
   }
 }
 }
