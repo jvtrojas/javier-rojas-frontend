@@ -2,7 +2,7 @@ import App from 'next/app';
 import auth0 from '../services/auth0';
 import NavHeaderLayout from '../components/layouts/NavHeaderLayout';
 import BlackSquareShuffler from '../components/layouts/BlackSquareShuffler';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 //Styling
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,8 +12,11 @@ import '../styles/mains.scss';
 function MyApp({ Component, pageProps, auth }) {
 
   let [ blackSquareTrigger, setBlackSquareTrigger] = useState(0);
+  let [ classCounter, setClassCounter] = useState(0);
 
   const handleBlackSquareClick= () => {
+    setClassCounter(classCounter + 1);
+    classCounter === 2 ? setClassCounter(0) : '';
     setBlackSquareTrigger(prevState => prevState + 1)
   }
 
@@ -34,12 +37,12 @@ function MyApp({ Component, pageProps, auth }) {
   }
 
     return (
-      <>
+      <div className={classCounter === 0 ? ' ' : classCounter === 1 ? 'first_class_square' : classCounter === 2 ? 'second_class_square' : ''}>
         <NavHeaderLayout handleMouseOverAnchor={handleMouseOverAnchor} isHovered={anchorIsHovered} classToggle={classToggle} setClassToggle={setClassToggle} setBlackSquareTrigger={setBlackSquareTrigger} />
         {/* { blackSquareTrigger.toString()} */}
         <BlackSquareShuffler handleBlackSquareShuffler={handleBlackSquareClick} anchorIsHovered={anchorIsHovered} classToggle={classToggle} />
         <Component {...pageProps} anchorIsHovered={anchorIsHovered} classToggle={classToggle} blackSquareTrigger={blackSquareTrigger} auth={auth} />
-      </>
+      </div>
       )
   }
 
