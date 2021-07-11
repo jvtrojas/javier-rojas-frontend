@@ -606,7 +606,7 @@ body {
 
 .first_class_square {
   background-color: black !important;
-
+  height: 100%;
 
 .row-element-info-text {
   display: flex;
@@ -625,6 +625,7 @@ body {
     font-size: 1.5vh;
     font-weight: 500;
   }
+  color: white;
 }
 
 .big-row-container {
@@ -640,6 +641,7 @@ body {
   padding-left: 1.5vh;
   min-width: 33vw;
   padding-left: 3vh;
+  color: white;
 }
 .playlist p,
 .extra-info p {
@@ -650,6 +652,7 @@ body {
   font-size: 1.3rem;
   font-weight: 500;
   padding-top: 2vw;
+  color: white;
 }
 
 .big-row-fc-txt {
@@ -663,9 +666,9 @@ body {
   p {
     font-size: 1rem;
   }
-  min-width: 33vw;
-  max-width: 33vw;
-  
+   min-width: 33vw;
+    max-width: 33vw;
+  color: white;
 }
 
 .small-row-fc-txt {
@@ -685,6 +688,7 @@ body {
   }
   min-width: 33vw;
   max-width: 33vw;
+  color: white;
   
 }
 
@@ -695,28 +699,30 @@ p {
   padding-left: 1rem;
   padding-right: 1rem;
   font-weight: 500;
-  
+  color: white;
 }
 
 h2 {
-  font-family: "BPdotsCondensedSquare", monospace;
+  font-family: "BPdotsCondensed", monospace;
   font-size: calc(0.5rem + 5vh);
   line-height: 5.5vh;
   letter-spacing: 0em;
   padding-top: 0.2rem;
   text-align: right;
   overflow-wrap: break-word;
+  color: white;
 }
 
 h3 {
   font-size: 2.5vh;
   font-weight: bold;
+  color: white;
   
 }
 
 .header-anchor a {
-  font-family: "BPdotsCondensedSquare", ui-monospace, monospace;
-  color: black;
+  font-family: "BPdotsCondensed", ui-monospace, monospace;
+  color: white;
   font-size: 36vh;
   height: 36vh;
   text-align: center;
@@ -734,8 +740,8 @@ h3 {
 }
 
 .selected-class {
-  color: white !important;
-  background-color: black;
+  color: black !important;
+  background-color: white;
   padding: 0rem;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
@@ -748,21 +754,59 @@ h3 {
   right: 5.33vw;
   bottom: 9.33vh;
   position: fixed;
-  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 10px 10px 20px 0px rgba(194, 194, 194, 0.25);
+}
+
+.small-row-text {
+  p {
+    font-size: 0.3rem;
+    width: 11vh;
+    line-height: 1.1;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
 }
 
 .black-square :active{
   cursor: pointer;
-  background-color: white;
-  height: 8vh;
-  width: 8vh;
+  background-color: black;
+  height: 6vh;
+  width: 6vh;
   right: 5.33vw;
   bottom: 9.33vh;
   position: fixed;
-  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 10px 10px 20px 0px rgba(228, 228, 228, 0.25);
+}
+.row-txt {
+  h3 {
+    font-size: 3vh;
+  }
+  p {
+    font-size: 2vh;
+    white-space: break-spaces;
+    min-width: 10rem;
+  }
+}
+.row-pics-container.row-txt.big-row p {
+  min-width: 20rem;
 }
 
-body {
+.big-row-text {
+  p {
+    font-size: 4rem;
+    width: 66vw;
+    line-height: 1.1;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
+  }
+}
+
+
+
+
+  body {
   background-color: black !important;
   width: 100vw;
   letter-spacing: 0;
@@ -781,9 +825,232 @@ body {
   //padding-bottom: 0.1rem;
 }
 
+
 }
 
 .second_class_square {
+  background-color: rgb(70, 70, 70) !important;
+  height: 100%;
+
+.row-element-info-text {
+  display: flex;
+  flex-direction: column;
+  font-family: Barlow;
+  text-align: left;
+  padding: 0 0.3rem;
+  min-width: 27vh;
+  line-height: 1.3;
+  border-color: rgba(0, 0, 0, 0.418);
+  h3 {
+    font-size: 1.5vh;
+    font-weight: 700;
+  }
+  p {
+    font-size: 1.5vh;
+    font-weight: 500;
+  }
+  color: white;
+}
+
+.big-row-container {
+  padding: 0;
+  position: absolute;
+  background: rgb(255, 238, 0);
+}
+
+.album-title h3 {
+  font-size: 1.4rem;
+  font-family: Barlow;
+  font-weight: 700;
+  padding-left: 1.5vh;
+  min-width: 33vw;
+  padding-left: 3vh;
+  color: rgb(255, 0, 0);
+}
+.playlist p,
+.extra-info p {
+
+  font-family: Barlow;
+  padding-left: 3vh;
+  min-width: 18vw;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding-top: 2vw;
+  color: rgb(255, 255, 255);
+}
+
+.big-row-fc-txt {
+  // width: 66vw;
+  h2 {
+    font-size: 6rem;
+    line-height: 6rem;
+    
+    margin-top: 3vh;
+  }
+  p {
+    font-size: 1rem;
+  }
+   min-width: 33vw;
+    max-width: 33vw;
+  color: white;
+}
+
+.small-row-fc-txt {
+  h2 {
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    line-height: 2rem;
+    padding-top: 0.4rem;
+    padding-right: 1vh;
+  }
+  p {
+    //font-size: 0;
+   // line-height: 0rem;
+    display: none;
+    
+  }
+  min-width: 33vw;
+  max-width: 33vw;
+  color: white;
+  
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.1;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+h2 {
+  font-family: "BPdotsCondensed", monospace;
+  font-size: calc(0.5rem + 5vh);
+  line-height: 5.5vh;
+  letter-spacing: 0em;
+  padding-top: 0.2rem;
+  text-align: right;
+  overflow-wrap: break-word;
+  color: white;
+}
+
+h3 {
+  font-size: 2.5vh;
+  font-weight: bold;
+  color: white;
+  
+}
+
+.header-anchor a {
+  font-family: "BPdotsCondenseddiamond", ui-monospace, monospace;
+  color: white;
+  font-size: 36vh;
+  height: 36vh;
+  text-align: center;
+  line-height: 1.2;
+  text-decoration: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
+  //fix for a hidden overflow of inner anchor box shadow
+  margin-bottom: 1.6rem;
+  overflow: hidden;
+  user-select: none;
 
 }
+
+.selected-class {
+  color: black !important;
+  background-color: rgb(255, 9, 9);
+  padding: 0rem;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.black-square {
+  cursor: pointer;
+  background-color: rgb(255, 0, 0);
+  height: 11vh;
+  width: 11vh;
+  right: 5.33vw;
+  bottom: 9.33vh;
+  position: fixed;
+  box-shadow: 10px 10px 20px 0px rgba(81, 255, 0, 0.25);
+}
+
+.small-row-text {
+  p {
+    font-size: 0.3rem;
+    width: 11vh;
+    line-height: 1.1;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+}
+
+.black-square :active{
+  cursor: pointer;
+  background-color: black;
+  height: 6vh;
+  width: 6vh;
+  right: 5.33vw;
+  bottom: 9.33vh;
+  position: fixed;
+  box-shadow: 10px 10px 20px 0px rgba(228, 228, 228, 0.25);
+}
+.row-txt {
+  h3 {
+    font-size: 3vh;
+  }
+  p {
+    font-size: 2vh;
+    white-space: break-spaces;
+    min-width: 10rem;
+  }
+}
+.row-pics-container.row-txt.big-row p {
+  min-width: 20rem;
+}
+
+.big-row-text {
+  p {
+    font-size: 4rem;
+    width: 66vw;
+    line-height: 1.1;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
+  }
+}
+
+
+
+
+  body {
+  background-color: black !important;
+  width: 100vw;
+  letter-spacing: 0;
+  line-height: 1.2;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: none;
+  overscroll-behavior-y: none;
+  overscroll-behavior-x: none;
+  //overflow: scroll;
+  position: static;
+  padding: 0;
+  cursor: crosshair;
+  //padding-bottom: 0.1rem;
+}
+
+
+}
+
+
 @import "./responsive.scss";
