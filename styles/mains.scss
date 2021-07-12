@@ -81,21 +81,12 @@ body {
   height: 11vh;
   width: 11vh;
   right: 5.33vw;
-  bottom: 9.33vh;
+  bottom: 5.33vw;
   position: fixed;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
-.black-square :hover{
-  cursor: pointer;
-  background-color: white;
-  height: 10vh;
-  width: 10vh;
-  right: 5.33vw;
-  bottom: 9.33vh;
-  position: fixed;
-  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
-}
+
 
 
 /* HEADER BACKGROUND COLORS HOVER CLASSES*/
@@ -731,7 +722,7 @@ h3 {
   padding-left: 1rem;
   padding-right: 1rem;
   display: flex;
-  text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
+  text-shadow: 7px 7px 15px rgba(255, 255, 255, 0.25);
   //fix for a hidden overflow of inner anchor box shadow
   margin-bottom: 1.6rem;
   overflow: hidden;
@@ -752,21 +743,13 @@ h3 {
   height: 11vh;
   width: 11vh;
   right: 5.33vw;
-  bottom: 9.33vh;
+  bottom: 5.33vw;
   position: fixed;
   box-shadow: 10px 10px 20px 0px rgba(194, 194, 194, 0.25);
 }
 
-.black-square :hover{
-  cursor: pointer;
-  background-color: rgb(0, 0, 0);
-  height: 10vh;
-  width: 10vh;
-  right: 5.33vw;
-  bottom: 9.33vh;
-  position: fixed;
-  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
-}
+
+
 
 .small-row-text {
   p {
@@ -779,16 +762,8 @@ h3 {
 
 }
 
-.black-square :active{
-  cursor: pointer;
-  background-color: black;
-  height: 6vh;
-  width: 6vh;
-  right: 5.33vw;
-  bottom: 9.33vh;
-  position: fixed;
-  box-shadow: 10px 10px 20px 0px rgba(228, 228, 228, 0.25);
-}
+
+
 .row-txt {
   h3 {
     font-size: 3vh;
@@ -983,13 +958,13 @@ h3 {
 
 .black-square {
   cursor: pointer;
-  background-color: rgb(54, 54, 54);
+  background-color: rgb(165, 165, 165);
   height: 11vh;
   width: 11vh;
   right: 5.33vw;
-  bottom: 9.33vh;
+  bottom: 5.33vw;
   position: fixed;
-  box-shadow: 10px 10px 20px 0px rgba(228, 228, 228, 0.25);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .black-square :hover{
@@ -998,7 +973,7 @@ h3 {
   height: 10vh;
   width: 10vh;
   right: 5.33vw;
-  bottom: 9.33vh;
+  bottom: 5.33vw;
   position: fixed;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
@@ -1014,16 +989,6 @@ h3 {
 
 }
 
-.black-square :active{
-  cursor: pointer;
-  background-color: black;
-  height: 6vh;
-  width: 6vh;
-  right: 5.33vw;
-  bottom: 9.33vh;
-  position: fixed;
-  box-shadow: 10px 10px 20px 0px rgba(228, 228, 228, 0.25);
-}
 .row-txt {
   h3 {
     font-size: 3vh;
