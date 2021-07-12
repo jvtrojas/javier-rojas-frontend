@@ -83,19 +83,10 @@ body {
   right: 5.33vw;
   bottom: 9.33vh;
   position: fixed;
-  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 10px 10px 20px 0px rgba(255, 255, 255, 0.25);
 }
 
-.black-square :hover{
-  cursor: pointer;
-  background-color: white;
-  height: 10vh;
-  width: 10vh;
-  right: 5.33vw;
-  bottom: 9.33vh;
-  position: fixed;
-  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
-}
+
 
 
 /* HEADER BACKGROUND COLORS HOVER CLASSES*/
@@ -1014,16 +1005,6 @@ h3 {
 
 }
 
-.black-square :active{
-  cursor: pointer;
-  background-color: black;
-  height: 6vh;
-  width: 6vh;
-  right: 5.33vw;
-  bottom: 9.33vh;
-  position: fixed;
-  box-shadow: 10px 10px 20px 0px rgba(228, 228, 228, 0.25);
-}
 .row-txt {
   h3 {
     font-size: 3vh;
