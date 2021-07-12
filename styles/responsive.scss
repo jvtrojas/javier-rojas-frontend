@@ -446,10 +446,12 @@
     height: 11vh;
     width: 11vh;
     right: 5.33vw;
-    bottom: 9.33vh;
+    bottom: 5.33vh;
     position: fixed;
     box-shadow: 10px 10px 20px 0px rgba(194, 194, 194, 0.25);
   }
+
+  
   
   .small-row-text {
     p {
@@ -465,8 +467,8 @@
   .black-square :active{
     cursor: pointer;
     background-color: black;
-    height: 6vh;
-    width: 6vh;
+    height: 11vh;
+    width: 11vh;
     right: 5.33vw;
     bottom: 5.33vw;
     position: fixed;
@@ -675,6 +677,7 @@
     box-shadow: 10px 10px 20px 0px rgba(228, 228, 228, 0.25);
   }
   
+  
   .small-row-text {
     p {
       font-size: 0.3rem;
@@ -689,10 +692,10 @@
   .black-square :active{
     cursor: pointer;
     background-color: black;
-    height: 6vh;
-    width: 6vh;
+    height: 11vh;
+    width: 11vh;
     right: 5.33vw;
-    bottom: 9.33vh;
+    bottom: 5.33vh;
     position: fixed;
     box-shadow: 10px 10px 20px 0px rgba(228, 228, 228, 0.25);
   }
