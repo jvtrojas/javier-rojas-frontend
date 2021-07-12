@@ -1,3 +1,4 @@
+
 @media (max-width: 1280px) {
   .header-container {
     .header-anchor a {
@@ -12,6 +13,9 @@
   //   height: 31vh;
   // }
 }
+
+
+
 @media (max-width: 480px) {
   .header-container {
     .header-anchor a {
@@ -25,17 +29,7 @@
   }
  
 
-  .black-square {
-
-    cursor: pointer;
-    background-color: rgb(0, 0, 0);
-    height: 11vh;
-    width: 11vh;
-    right: 5.33vw;
-    bottom: 5.33vw;
-    position: fixed;
-    box-shadow: 10px 10px 20px 0px rgba(228, 228, 228, 0.25);
-  }
+  
 
   .big-row {
     height: 36vh !important;
@@ -93,6 +87,17 @@
       }
     }
   
+    .black-square {
+
+      cursor: pointer;
+      background-color: rgb(0, 0, 0);
+      height: 11vh;
+      width: 11vh;
+      right: 5.33vw;
+      bottom: 5.33vw;
+      position: fixed;
+      box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+    }
     //-------FIRST CONTAINER --------//
   
     .first-row {
@@ -403,7 +408,7 @@
   }
   
   h2 {
-    font-family: "BPdotsCondensed", monospace;
+    font-family: "BPdotsCondensed", ui-monospace, monospace;
     font-size: calc(0.5rem + 5vh);
     line-height: 5.5vh;
     letter-spacing: 0em;
@@ -431,7 +436,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     display: flex;
-    text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
+    text-shadow: 7px 7px 15px rgba(255, 255, 255, 0.25);
     //fix for a hidden overflow of inner anchor box shadow
     margin-bottom: 1.6rem;
     overflow: hidden;
@@ -443,7 +448,7 @@
     color: black !important;
     background-color: white;
     padding: 0rem;
-    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 10px 20px 0px rgba(255, 255, 255, 0.25);
   }
   
   .black-square {
@@ -455,7 +460,7 @@
     right: 5.33vw;
     bottom: 5.33vw;
     position: fixed;
-    box-shadow: 10px 10px 20px 0px rgba(228, 228, 228, 0.25);
+    box-shadow: 10px 10px 20px 0px rgba(255, 255, 255, 0.25);
   }
 
   
@@ -621,7 +626,7 @@
   }
   
   h2 {
-    font-family: "BPdotsCondensedDiamond", monospace;
+    font-family:"BPdotsCondensedDiamond", ui-monospace, monospace;
     font-size: calc(0.5rem + 5vh);
     line-height: 5.5vh;
     letter-spacing: 0em;
@@ -649,7 +654,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     display: flex;
-    text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
+    text-shadow: 7px 7px 15px rgba(255, 255, 255, 0.25);
     //fix for a hidden overflow of inner anchor box shadow
     margin-bottom: 1.6rem;
     overflow: hidden;
@@ -667,15 +672,14 @@
   .black-square {
 
     cursor: pointer;
-    background-color: rgb(54, 54, 54);
+    background-color: rgb(104, 104, 104);
     height: 11vh;
     width: 11vh;
     right: 5.33vw;
     bottom: 5.33vw;
     position: fixed;
-    box-shadow: 10px 10px 20px 0px rgba(228, 228, 228, 0.25);
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
   }
-  
   
   .small-row-text {
     p {
