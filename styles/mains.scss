@@ -748,16 +748,8 @@ h3 {
   box-shadow: 10px 10px 20px 0px rgba(194, 194, 194, 0.25);
 }
 
-.black-square :hover{
-  cursor: pointer;
-  background-color: rgb(0, 0, 0);
-  height: 10vh;
-  width: 10vh;
-  right: 5.33vw;
-  bottom: 9.33vh;
-  position: fixed;
-  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
-}
+
+
 
 .small-row-text {
   p {
@@ -770,16 +762,8 @@ h3 {
 
 }
 
-.black-square :active{
-  cursor: pointer;
-  background-color: black;
-  height: 6vh;
-  width: 6vh;
-  right: 5.33vw;
-  bottom: 9.33vh;
-  position: fixed;
-  box-shadow: 10px 10px 20px 0px rgba(228, 228, 228, 0.25);
-}
+
+
 .row-txt {
   h3 {
     font-size: 3vh;
