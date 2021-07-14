@@ -272,12 +272,12 @@ function Music() {
                     
                     </div>
 
-                    <div className="wrap row row-no_top_padding row-music row-slide-wrapper hide-scrollbar ">
+                         <div className="wrap row row-no_top_padding row-music row-slide-wrapper hide-scrollbar ">
 
-                    <a href="https://www.mixcloud.com/RadioRea/guerrilla-tunes-takeover-w-nesxx21/" target="_blank">
-                    <img className="row-pics bandcamp-pic" src="https://thumbnailer.mixcloud.com/unsafe/600x600/extaudio/0/f/2/5/de3a-cf5f-4268-9d5f-ca53f3279851" alt="" />
-                        </a>
-                        <div className="bandcamp-container">
+                         <a href="https://www.mixcloud.com/RadioRea/guerrilla-tunes-takeover-w-nesxx21/" target="_blank">
+                         <img className="row-pics bandcamp-pic" src="https://thumbnailer.mixcloud.com/unsafe/600x600/extaudio/0/f/2/5/de3a-cf5f-4268-9d5f-ca53f3279851" alt="" />
+                             </a>
+                         <div className="bandcamp-container">
                             <div className="album-info">
                                 <div className="album-title">
                                     <h3>Guerrilla Tunes Takeover w/ NESXX21</h3>
