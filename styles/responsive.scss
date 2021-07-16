@@ -98,6 +98,7 @@
       bottom: 5.33vw;
       position: fixed;
       box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+      z-index: 99999;
     }
     //-------FIRST CONTAINER --------//
   
@@ -194,15 +195,7 @@
       
     }
   
-    h2 {
-      font-family: "BPdotsCondensedSquare", monospace;
-      font-size: calc(0.5rem + 5vh);
-      line-height: 5.5vh;
-      letter-spacing: 0em;
-      padding-top: 0.2rem;
-      text-align: right;
-      overflow-wrap: break-word;
-    }
+    
   
     h3 {
       font-size: 2.5vh;
@@ -409,7 +402,7 @@
   }
   
   h2 {
-    font-family: "bpdotsCondensed", ui-monospace, monospace;
+    font-family: "bpdotsCondensed", ui-monospace, monospace !important;
     font-size: calc(0.5rem + 5vh);
     line-height: 5.5vh;
     letter-spacing: 0em;
@@ -462,6 +455,7 @@
     bottom: 5.33vw;
     position: fixed;
     box-shadow: 10px 10px 20px 0px rgba(255, 255, 255, 0.25);
+    z-index: 99999;
   }
 
   
@@ -627,7 +621,7 @@
   }
   
   h2 {
-    font-family:"BPdotsCondensedDiamond", ui-monospace, monospace;
+    font-family:"BPdotsCondensedDiamond", ui-monospace, monospace !important;
     font-size: calc(0.5rem + 5vh);
     line-height: 5.5vh;
     letter-spacing: 0em;
@@ -680,6 +674,7 @@
     bottom: 5.33vw;
     position: fixed;
     box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+    z-index: 99999;
   }
   
   .small-row-text {
