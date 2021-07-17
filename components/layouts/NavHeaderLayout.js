@@ -129,7 +129,7 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger, handleMouseOverAnchor
                         </Link>   
                     </div>
                 </div>
-                <div>
+               {/*  <div>
                     <div className="header-anchor">
                         <Link href="/miscellaneous">
                             <a 
@@ -143,7 +143,7 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger, handleMouseOverAnchor
                             </a>       
                         </Link>   
                     </div>
-                </div>
+                </div> */}
             </div>
 
             {children}
