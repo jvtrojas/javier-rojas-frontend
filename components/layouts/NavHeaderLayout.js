@@ -25,20 +25,7 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger, handleMouseOverAnchor
         <div className="container-fluid header">
             {/* HEADER */}
             <div className="row header-container wrap hide-scrollbar">
-                <div>
-                    <div className="header-anchor">
-                        <Link href="/">
-                            <a
-                            className={`${isHovered=='home' ? classToggle : ''} ${isSelected=='home' || router.pathname=='/' ? selectedClass : ''}`}
-                            onClick={() => handleSelectedNavLink('home')}
-                            onMouseEnter={() => handleMouseOverAnchor('home')} 
-                            onMouseLeave={handleMouseOut}
-                            >
-                                HOME
-                            </a>    
-                        </Link>                   
-                    </div>
-                </div>
+                
                 <div>
                     <div className="header-anchor">
                         <Link href="/about">
@@ -83,6 +70,21 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger, handleMouseOverAnchor
                         </Link>
                     </div>
                 </div> */}
+                <div>
+                    <div className="header-anchor">
+                        <Link href="/">
+                            <a
+                            className={`${isHovered=='home' ? classToggle : ''} ${isSelected=='home' || router.pathname=='/' ? selectedClass : ''}`}
+                            onClick={() => handleSelectedNavLink('home')}
+                            onMouseEnter={() => handleMouseOverAnchor('home')} 
+                            onMouseLeave={handleMouseOut}
+                            >
+                                9:16
+                            </a>    
+                        </Link>                   
+                    </div>
+                </div>
+
                 <div>
                     <div className="header-anchor">
                         <Link href="/img">

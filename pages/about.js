@@ -21,8 +21,12 @@ function About({ blackSquareTrigger, abouts }) {
             {abouts && abouts.map((about, index) => {
                 return <DataRow2 data={data} blackSquareTrigger={blackSquareTrigger} displayFirstContainer={true} firstContainerContent={about} apiData={about} rowNumber={index} key={index} />;
             })}
+            
         </div>
+        
+        
     );
 }
+
 
 export default About;
