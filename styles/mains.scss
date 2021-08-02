@@ -597,7 +597,8 @@ body {
 
 .first_class_square {
   background-color: black !important;
-  
+  height: max-content;
+  width: max-content;
 
 .row-element-info-text {
   display: flex;
@@ -816,6 +817,8 @@ h3 {
 
 .second_class_square {
   background-color: rgb(70, 70, 70) !important;
+  height: max-content;
+  width: max-content;
   
 .row-element-info-text {
   display: flex;
