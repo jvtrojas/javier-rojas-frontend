@@ -270,7 +270,7 @@ function Music() {
                                 
 
                     
-                    </div>
+                        </div>
 
                          <div className="wrap row row-no_top_padding row-music row-slide-wrapper hide-scrollbar ">
 
