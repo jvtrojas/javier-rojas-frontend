@@ -386,11 +386,11 @@ body {
   .extra-info p {
 
     font-family: Barlow;
-    padding-left: 3vh;
-    min-width: 18vw;
-    font-size: 1.3rem;
-    font-weight: 500;
-    padding-top: 2vw;
+  padding-left: 3vh;
+  min-width: 18vw;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding-top: 2vw;
   }
   .player {
     height: 2.63rem;
@@ -722,7 +722,7 @@ h3 {
   padding-left: 1rem;
   padding-right: 1rem;
   display: flex;
-  text-shadow: 7px 7px 15px rgba(255, 255, 255, 0.25);
+  text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
   //fix for a hidden overflow of inner anchor box shadow
   margin-bottom: 1.6rem;
   overflow: hidden;
