@@ -35,6 +35,7 @@ html,
 body {
   background-color: #ffffff;
   width: 100vw;
+  height: auto;
   letter-spacing: 0;
   line-height: 1.2;
   font-style: normal;
@@ -597,8 +598,8 @@ body {
 
 .first_class_square {
   background-color: black !important;
-height: max-content;
-width: max-content;
+  height: 100%;
+  width: 100%;
 
 .row-element-info-text {
   display: flex;
@@ -817,8 +818,8 @@ h3 {
 
 .second_class_square {
   background-color: rgb(70, 70, 70) !important;
-  height: max-content;
-  width: max-content;
+  height: auto;
+  width: auto;    
   
 .row-element-info-text {
   display: flex;
@@ -1022,6 +1023,7 @@ h3 {
   body {
   background-color: black !important;
   width: 100vw;
+  height: auto;
   letter-spacing: 0;
   line-height: 1.2;
   font-style: normal;
