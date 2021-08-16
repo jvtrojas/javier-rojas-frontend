@@ -1,44 +1,32 @@
 import React from 'react';
-import BaseLayout from '../components/layouts/BaseLayout';
-import DataRowHomepage from '../components/DataRowHomepage';
-import { getHomepage } from '../lib/api';
+import DataRow2 from '../components/DataRow2';
+import Data from '../public/js/data-projects.json';
+import { getAbouts } from '../lib/api';
 
 export async function getStaticProps() {
-    const homepageData = await getHomepage();
-
+    const abouts = await getAbouts();
     return {
-        props: { homepageData },
+        props: { abouts },
         revalidate: 1,
     };
 }
 
-function Index({blackSquareTrigger, anchorIsHovered, classToggle, homepageData}) {
+const data = Data.map((each) => {
+    return each;
+});
+
+function About({ blackSquareTrigger, abouts }) {
     return (
-        <BaseLayout className="global" >
-            <div className="container-fluid">
-                {homepageData && homepageData.map((cat)=>{
-                    const pictures = cat.pictures;
-                    const totalPics = cat.pictures.length;
-                    const numberOfRows = Math.ceil(totalPics/30);
-                    let content = [];
-                    for(var i = 1; i <= numberOfRows; i++) {
-                            let tempArray = [];
-                            let start = (i -1) * 30;
-                            let end = start + 29;
-                            tempArray = pictures.slice(start, end)
-                            tempArray = tempArray.map((elem)=> {
-                                return {
-                                    ...elem,
-                                    row: i}
-                            })
-                            content.push(<DataRowHomepage data={tempArray} blackSquareTrigger={blackSquareTrigger} classToggle={classToggle} anchorIsHovered={anchorIsHovered} rowNumber={i} key={i}/>);
-                    }
-                return content;
+        <div className='projects-page'>
+            {abouts && abouts.map((about, index) => {
+                return <DataRow2 data={data} blackSquareTrigger={blackSquareTrigger} displayFirstContainer={true} firstContainerContent={about} apiData={about} rowNumber={index} key={index} />;
             })}
-            </div>
-        </BaseLayout>
-    )
+            
+        </div>
+        
+        
+    );
 }
-export default Index;
 
 
+export default About;

@@ -28,9 +28,9 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger, handleMouseOverAnchor
                 
                 <div>
                     <div className="header-anchor">
-                        <Link href="/about">
+                        <Link href="/">
                             <a
-                            className={`${isHovered=='about' ? classToggle : ''} ${isSelected=='about' || router.pathname=='/about' ? selectedClass : ''}`}
+                            className={`${isHovered=='about' ? classToggle : ''} ${isSelected=='about' || router.pathname=='/' ? selectedClass : ''}`}
                             onClick={() => handleSelectedNavLink('about')}
                             onMouseEnter={() => handleMouseOverAnchor('about')} 
                             onMouseLeave={handleMouseOut}
@@ -72,9 +72,9 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger, handleMouseOverAnchor
                 </div> */}
                 <div>
                     <div className="header-anchor">
-                        <Link href="/">
+                        <Link href="/9-16">
                             <a
-                            className={`${isHovered=='home' ? classToggle : ''} ${isSelected=='home' || router.pathname=='/' ? selectedClass : ''}`}
+                            className={`${isHovered=='home' ? classToggle : ''} ${isSelected=='home' || router.pathname=='/9-16' ? selectedClass : ''}`}
                             onClick={() => handleSelectedNavLink('home')}
                             onMouseEnter={() => handleMouseOverAnchor('home')} 
                             onMouseLeave={handleMouseOut}
