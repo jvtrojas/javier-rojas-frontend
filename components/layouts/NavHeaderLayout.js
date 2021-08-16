@@ -96,12 +96,12 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger, handleMouseOverAnchor
                             onMouseEnter={() => handleMouseOverAnchor('photography')} 
                             onMouseLeave={handleMouseOut}
                             >
-                                IMG
+                                PHOTO
                             </a>       
                         </Link>                
                     </div>
                 </div>
-                {/* <div>
+                <div>
                     <div className="header-anchor">
                         <Link href="/visuals">
                             <a 
@@ -111,11 +111,11 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger, handleMouseOverAnchor
                             onMouseEnter={() => handleMouseOverAnchor('visuals')} 
                             onMouseLeave={handleMouseOut}
                             >
-                                VISUALS
+                                GRAPHICS
                             </a>       
                         </Link>   
                     </div>
-                </div> */}
+                </div>
                 <div>
                     <div className="header-anchor">
                         <Link href="/music">
