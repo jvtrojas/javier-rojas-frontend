@@ -17,7 +17,7 @@ const data = Data.map((each) => {
 
 function About({ blackSquareTrigger, abouts }) {
     return (
-        <div className='projects-page'>
+        <div className='about-page projects-page'>
             {abouts && abouts.map((about, index) => {
                 return <DataRow2 data={data} blackSquareTrigger={blackSquareTrigger} displayFirstContainer={true} firstContainerContent={about} apiData={about} rowNumber={index} key={index} />;
             })}
