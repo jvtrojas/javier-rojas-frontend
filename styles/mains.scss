@@ -99,34 +99,34 @@ body {
 
 .color-1 {
   color: rgb(0, 255, 255) !important;
-  background-color: rgb(0, 0, 255);
+  background-color: rgb(0, 0, 255)!important;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .color-2 {
   color: rgb(208, 87, 245) !important;
-  background-color: rgb(0, 255, 255);
+  background-color: rgb(0, 255, 255)!important;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .color-3 {
   color: rgb(0, 0, 255) !important;
-  background-color: rgb(208, 87, 245);
+  background-color: rgb(208, 87, 245)!important;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 .color-4 {
   color: rgb(208, 87, 245) !important;
-  background-color: rgb(0, 255, 167);
+  background-color: rgb(0, 255, 167)!important;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 .color-5 {
   color: rgb(16, 52, 239) !important;
-  background-color: rgb(255, 245, 0);
+  background-color: rgb(255, 245, 0)!important;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 .color-6 {
   color: rgb(0, 255, 167) !important;
-  background-color: rgb(255, 245, 0);
+  background-color: rgb(255, 245, 0)!important;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -221,6 +221,9 @@ body {
 /* ABOUT PAGE */
 /* PROJECTS PAGE */
 
+.about-page .row.row-no_top_padding {
+  height: 66vh;
+}
 .about-page,
 .projects-page,
 .data-row-txt {
