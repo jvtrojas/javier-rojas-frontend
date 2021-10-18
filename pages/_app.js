@@ -3,6 +3,7 @@ import auth0 from '../services/auth0';
 import NavHeaderLayout from '../components/layouts/NavHeaderLayout';
 import BlackSquareShuffler from '../components/layouts/BlackSquareShuffler';
 import { useState, useEffect } from 'react';
+import BaseLayout from '../components/layouts/BaseLayout';
 
 //Styling
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -37,12 +38,14 @@ function MyApp({ Component, pageProps, auth }) {
   }
 
     return (
+      <BaseLayout className="global" >
       <div className={classCounter === 0 ? ' ' : classCounter === 1 ? 'first_class_square' : classCounter === 2 ? 'second_class_square' : ''}>
         <NavHeaderLayout handleMouseOverAnchor={handleMouseOverAnchor} isHovered={anchorIsHovered} classToggle={classToggle} setClassToggle={setClassToggle} setBlackSquareTrigger={setBlackSquareTrigger} />
         {/* { blackSquareTrigger.toString()} */}
         <BlackSquareShuffler handleBlackSquareShuffler={handleBlackSquareClick} anchorIsHovered={anchorIsHovered} classToggle={classToggle} />
         <Component {...pageProps} anchorIsHovered={anchorIsHovered} classToggle={classToggle} blackSquareTrigger={blackSquareTrigger} auth={auth} />
       </div>
+      </BaseLayout>
       )
   }
 
