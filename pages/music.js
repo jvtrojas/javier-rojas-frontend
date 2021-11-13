@@ -259,7 +259,7 @@ function Music() {
                                     <h3>MICROTRAVESIA - DRJ x NESXX21 - (2020)</h3>
                                 <div className="playlist">
                                     <p>
-                                    Sesion A/V analogica para el ciclo <a href="https://www.twitch.tv/videonica" target="_blank">Videonica</a>  de <a href="https://jjplano.com.ar" target="_blank">Javier Plano</a> 
+                                    Analog A/V for <a href="https://www.twitch.tv/videonica" target="_blank">Videonicx</a>  by <a href="https://jjplano.com.ar" target="_blank">Javier Plano</a> 
                                     </p>
                                 </div>
                                  
@@ -268,11 +268,36 @@ function Music() {
                                     
                             </div>
                                 
-
+                            
                     
                         </div>
 
+                        
+
                          <div className="wrap row row-no_top_padding row-music row-slide-wrapper hide-scrollbar ">
+
+                         <a href="https://www.mixcloud.com/RadioRea/tercer-puesto-ep23-x-javier-rojas/" target="_blank">
+                         <img className="row-pics bandcamp-pic" src="https://res.cloudinary.com/hzisufglx/image/upload/v1636794351/98bc946e_74a3_452e_82e8_4df336c82e67_99ada6f7af.jpg" alt="" />
+                             </a>
+                         <div className="bandcamp-container">
+                            <div className="album-info">
+                                <div className="album-title">
+                                    <h3> "Tercer Puesto" x Pedro D´Alessandro EP23 w/ Javier Rojas</h3>
+                                 
+                                </div>
+                                <div className="playlist">
+                                    <p>
+                                    <a href="https://www.mixcloud.com/RadioRea/tercer-puesto-ep23-x-javier-rojas/" target="_blank">Radio REA</a>
+                                    <br></br>
+                                    
+                                    </p>
+
+                                </div>
+                                
+                            </div>
+                             
+                        </div>
+
 
                          <a href="https://www.mixcloud.com/RadioRea/guerrilla-tunes-takeover-w-nesxx21/" target="_blank">
                          <img className="row-pics bandcamp-pic" src="https://thumbnailer.mixcloud.com/unsafe/600x600/extaudio/0/f/2/5/de3a-cf5f-4268-9d5f-ca53f3279851" alt="" />
@@ -281,15 +306,11 @@ function Music() {
                             <div className="album-info">
                                 <div className="album-title">
                                     <h3>Guerrilla Tunes Takeover w/ NESXX21</h3>
-                                    <div className="playlist">
-                                    <p>
-                                    
-                                    </p>
-                                </div>
+                                
                                 </div>
                                 <div className="playlist">
                                     <p>
-                                    <a href="https://www.mixcloud.com/RadioRea/" target="_blank">Radio REA</a>
+                                    <a href="https://www.mixcloud.com/RadioRea/guerrilla-tunes-takeover-w-nesxx21/" target="_blank">Radio REA</a>
                                     <br></br>
                                     <a href="https://guerrillatunes.bandcamp.com/" target="_blank">Guerrilla Tunes</a> 
                                     </p>
@@ -299,6 +320,8 @@ function Music() {
                             </div>
                              
                         </div>
+
+                       
                         <a href="https://www.mixcloud.com/RadioRea/tercer-puesto-x-pedro-d-alessandro-ep5-w-javier-rojas/" target="_blank">
                             <img className="row-pics bandcamp-pic" src="https://thumbnailer.mixcloud.com/unsafe/600x600/extaudio/5/b/3/6/035d-3b29-40cf-82fb-91683696d4c8" alt="" />
                         </a>
@@ -309,7 +332,7 @@ function Music() {
                                 </div>
                                 <div className="playlist">
                                     <p>
-                                    <a href="https://www.mixcloud.com/RadioRea/" target="_blank">Radio REA</a>
+                                    <a href="https://www.mixcloud.com/RadioRea/tercer-puesto-x-pedro-d-alessandro-ep5-w-javier-rojas/" target="_blank">Radio REA</a>
                                     <br></br>
                                     <a href="https://guerrillatunes.bandcamp.com/" target="_blank">Guerrilla Tunes</a> 
                                     </p>
