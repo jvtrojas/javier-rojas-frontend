@@ -45,9 +45,9 @@ function DataRow({ data, blackSquareTrigger, rowNumber, anchorIsHovered, classTo
                 ) : (
                     ''
                 )}{' '}
-                {apiData && apiData.group && apiData.group.map((g) => {
+                {apiData && apiData.group && apiData.group.map((g, index) => {
                     return (
-                    <div className={`row-pics-container ${isSelected == 1 ? 'big-row padding-big-row' : isSelected == 2 ? 'small-row padding-small-row' : isSelected == 0 ? 'default-row padding-default-row' : null}`}>
+                    <div key={index} className={`row-pics-container ${isSelected == 1 ? 'big-row padding-big-row' : isSelected == 2 ? 'small-row padding-small-row' : isSelected == 0 ? 'default-row padding-default-row' : null}`}>
                     {g.pictures && g.pictures.map((picture) => {
                         return <img className='row-pics' src={picture.url} />;
                     })}
