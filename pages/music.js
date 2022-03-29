@@ -256,7 +256,7 @@ function Music() {
                           </div>
                              
                                 <div className="album-title">
-                                    <h3>MICROTRAVESIA - DRJ x NESXX21 - (2020)</h3>
+                                    <h3>MICROTRAVESIA - DRJS x NESXX21 - (2020)</h3>
                                 <div className="playlist">
                                     <p>
                                     Analog A/V for <a href="https://www.twitch.tv/videonica" target="_blank">Videonicx</a>  by <a href="https://jjplano.com.ar" target="_blank">Javier Plano</a> 
@@ -271,10 +271,32 @@ function Music() {
                             
                     
                         </div>
+                        <div className="wrap row row-no_top_padding row-music row-slide-wrapper hide-scrollbar ">
 
+                        <a href="https://www.mixcloud.com/RadioRea/tercer-puesto-x-javier-rojas-ep24/" target="_blank">
+                        <img className="row-pics bandcamp-pic" src="https://thumbnailer.mixcloud.com/unsafe/600x600/extaudio/2/6/f/a/b72e-952c-4a51-966d-1a52829c429d" alt="" />
+                        </a>
+                        <div className="bandcamp-container">
+                        <div className="album-info">
+                        <div className="album-title">
+                        <h3> "Tercer Puesto" x Pedro D´Alessandro EP24 w/ Javier Rojas</h3>
+        
+                        </div>
+                        <div className="playlist">
+                        <p>
+                        <a href="https://www.mixcloud.com/RadioRea/tercer-puesto-x-javier-rojas-ep24" target="_blank">Radio REA</a>
+                        <br></br>
+           
+                        </p>
+
+                         </div>
+        
+                            </div>
+    
+                     </div>
                         
 
-                         <div className="wrap row row-no_top_padding row-music row-slide-wrapper hide-scrollbar ">
+                        
 
                          <a href="https://www.mixcloud.com/RadioRea/tercer-puesto-ep23-x-javier-rojas/" target="_blank">
                          <img className="row-pics bandcamp-pic" src="https://res.cloudinary.com/hzisufglx/image/upload/v1636794351/98bc946e_74a3_452e_82e8_4df336c82e67_99ada6f7af.jpg" alt="" />
