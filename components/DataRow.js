@@ -73,13 +73,13 @@ function DataRow({ data, blackSquareTrigger, rowNumber, anchorIsHovered, classTo
                     } else if (dataJSON.datatype == 'youtube') {
                         return (
                             <div className={`row-pics-container youtube-link ${isSelected == 1 ? 'big-row padding-big-row' : isSelected == 2 ? 'small-row padding-small-row' : isSelected == 0 ? 'default-row padding-default-row' : null}`} key={dataJSON.id}>
-                                <iframe width='auto' height='100%' src={`https://www.youtube.com/embed/${dataJSON.src}`} title='YouTube video player' frameBorder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowFullScreen />
+                                <iframe width='auto' height='100%' src={`https://www.youtube.com/embed/${dataJSON.src}`} title='YouTube video player' frameBorder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowFullScreen />
                             </div>
                         );
                     } else if (dataJSON.datatype == 'vimeo') {
                         return (
                             <div className={`row-pics-container youtube-link ${isSelected == 1 ? 'big-row padding-big-row' : isSelected == 2 ? 'small-row padding-small-row' : isSelected == 0 ? 'default-row padding-default-row' : null}`} key={dataJSON.id}>
-                                <iframe width='auto' height='100%' src={`https://player.vimeo.com/video/${dataJSON.src}`} title='YouTube video player' frameBorder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowFullScreen />
+                                <iframe width='auto' height='100%' src={`https://player.vimeo.com/video/${dataJSON.src}`} title='YouTube video player' frameBorder='0' allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowFullScreen />
                             </div>
                         );
                     } else if (dataJSON.datatype == 'bandcamp') {
