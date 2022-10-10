@@ -273,7 +273,30 @@ function Music() {
                         </div>
                         <div className="wrap row row-no_top_padding row-music row-slide-wrapper hide-scrollbar ">
 
-                        <a href="https://www.mixcloud.com/RadioRea/tercer-puesto-x-javier-rojas-ep24/" target="_blank">
+                        <a href="https://ofhundred.com/035" target="_blank">
+                        <img className="row-pics bandcamp-pic" src="https://res.cloudinary.com/hzisufglx/image/upload/v1665434786/ofhunderd35_a4d240281e.png" alt="" />
+                        </a>
+                        <div className="bandcamp-container">
+                        <div className="album-info">
+                        <div className="album-title">
+                        <h3> Espacio Ilusorio 1 - OFHUNDRED - 035</h3>
+        
+                        </div>
+                        <div className="playlist">
+                        <p>MONTAGE DESTROYS THE TOTALITY; NEGATES IT DETERMINEDLY. THE SPACES BETWEEN THE DIFFERENT FRAGMENTS, THE GAPS, CONTAIN WHAT IS DENIED AND, WITH IT, THE POSSIBILITY OF SOMETHING DIFFERENT. WHAT IS THEN THE VALUE OF THE FICTIONAL CONTRACT—WHEREIN THE READER, LISTENER AND VIEWER TREAT THE EVENTS DESCRIBED AS IF THEY WERE REAL—IN A REPRESENTATIVE FIELD HEMMED IN ON ALL SIDES BY RIVAL MEDIA AND GLUTTED WITH PROFESSIONAL AND AMATEUR TEXTS THAT DO NOT REQUIRE A SUSPENSION OF DISBELIEF?
+
+                        <a href="https://ofhundred.com/035" target="_blank">https://ofhundred.com/035</a>
+                        <br></br>
+           
+                        </p>
+
+                         </div>
+        
+                            </div>
+                    
+                     </div>
+                        
+                     <a href="https://www.mixcloud.com/RadioRea/tercer-puesto-x-javier-rojas-ep24/" target="_blank">
                         <img className="row-pics bandcamp-pic" src="https://thumbnailer.mixcloud.com/unsafe/600x600/extaudio/2/6/f/a/b72e-952c-4a51-966d-1a52829c429d" alt="" />
                         </a>
                         <div className="bandcamp-container">
@@ -292,9 +315,8 @@ function Music() {
                          </div>
         
                             </div>
-    
+                    
                      </div>
-                        
 
                         
 
