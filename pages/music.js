@@ -283,9 +283,12 @@ function Music() {
         
                         </div>
                         <div className="playlist">
-                        <p>MONTAGE DESTROYS THE TOTALITY; NEGATES IT DETERMINEDLY. THE SPACES BETWEEN THE DIFFERENT FRAGMENTS, THE GAPS, CONTAIN WHAT IS DENIED AND, WITH IT, THE POSSIBILITY OF SOMETHING DIFFERENT. WHAT IS THEN THE VALUE OF THE FICTIONAL CONTRACT—WHEREIN THE READER, LISTENER AND VIEWER TREAT THE EVENTS DESCRIBED AS IF THEY WERE REAL—IN A REPRESENTATIVE FIELD HEMMED IN ON ALL SIDES BY RIVAL MEDIA AND GLUTTED WITH PROFESSIONAL AND AMATEUR TEXTS THAT DO NOT REQUIRE A SUSPENSION OF DISBELIEF?
+                        <p>Live recording from the performance @ Dock11 for Humandroid Festival during Berlin Art week 2022. 
 
+                        <br></br>
                         <a href="https://ofhundred.com/035" target="_blank">https://ofhundred.com/035</a>
+                        <br></br>
+                        <a href="https://dock11-berlin.de/digital/programm/termine/espacios-ilusorios-1" target="_blank">Dock11</a>
                         <br></br>
            
                         </p>
