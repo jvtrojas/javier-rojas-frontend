@@ -283,7 +283,7 @@ function Music() {
         
                         </div>
                         <div className="playlist">
-                        <p>Live recording from the performance @ Dock11 for Humandroid Festival during Berlin Art week 2022. 
+                        <p>Binaural recording from the live spatial audio performance @ Dock11 for Humandroid Festival during Berlin Art week 2022. 
 
                         <br></br>
                         <a href="https://ofhundred.com/035" target="_blank">https://ofhundred.com/035</a>
