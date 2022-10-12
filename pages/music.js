@@ -284,7 +284,10 @@ function Music() {
                         </div>
                         <div className="playlist">
                         <p>Live recording from the performance @ Dock11 for Humandroid Festival during Berlin Art week 2022. 
+
+                        <br></br>
                         <a href="https://ofhundred.com/035" target="_blank">https://ofhundred.com/035</a>
+                        <br></br>
                         <a href="https://dock11-berlin.de/digital/programm/termine/espacios-ilusorios-1" target="_blank">Dock11</a>
                         <br></br>
            
