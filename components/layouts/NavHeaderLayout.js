@@ -55,7 +55,7 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger, handleMouseOverAnchor
                         </Link>                   
                     </div>
                 </div>
-                {/* <div>
+                { <div>
                     <div className="header-anchor">
                         <Link href="/aural-architecture">
                             <a 
@@ -65,11 +65,11 @@ const NavHeaderLayout = ({children, setBlackSquareTrigger, handleMouseOverAnchor
                             onMouseEnter={() => handleMouseOverAnchor('aural_architecture')} 
                             onMouseLeave={handleMouseOut}
                             >
-                                AURAL_ARCHITECTURE!!
+                                ACADEMIC
                             </a>          
                         </Link>
                     </div>
-                </div> */}
+                </div> }
                 <div>
                     <div className="header-anchor">
                         <Link href="/9-16">

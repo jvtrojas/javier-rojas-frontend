@@ -6,7 +6,7 @@ function DataRow({ data, blackSquareTrigger, rowNumber, anchorIsHovered, classTo
     const rowArray = [];
 
     apiData.pictures.forEach((object) => (object.row == rowNumber ? rowArray.push(object) : ''));
-    let [isSelected, setIsSelected] = useState(0);
+    let [isSelected, setIsSelected] = useState(2);
 
     const handleClickRow = () => {
         isSelected++;

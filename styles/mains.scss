@@ -12,6 +12,7 @@
 
 html {
   overscroll-behavior: none;
+  background-color: blue;
 }
 
 /* GLOBAL */
@@ -29,6 +30,7 @@ html {
 // Hide scrollbar on Body
 body::-webkit-scrollbar {
   display: none;
+ 
 }
 
 html,
@@ -49,7 +51,8 @@ body {
   position: static;
   padding: 0;
   cursor: crosshair;
-  //padding-bottom: 0.1rem;
+  //padding-bottom: 3rem;
+  //padding-top: 5rem;
 }
 
 .container-fluid {
@@ -68,6 +71,7 @@ body {
 .imgrow {
   height: fit-content;
   padding-left: 3vh;
+  
 }
 
 .wrap {
@@ -98,46 +102,46 @@ body {
 }
 
 .color-1 {
-  color: rgb(0, 255, 255) !important;
-  background-color: rgb(0, 0, 255)!important;
+  color: rgb(120, 120, 120) !important;
+  background-color: rgb(50, 50, 50)!important;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .color-2 {
-  color: rgb(208, 87, 245) !important;
-  background-color: rgb(0, 255, 255)!important;
+  color: rgb(153, 153, 153) !important;
+  background-color: rgb(38, 38, 38)!important;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .color-3 {
-  color: rgb(0, 0, 255) !important;
-  background-color: rgb(208, 87, 245)!important;
+  color: rgb(111, 111, 111) !important;
+  background-color: rgb(41, 41, 41)!important;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 .color-4 {
-  color: rgb(208, 87, 245) !important;
-  background-color: rgb(0, 255, 167)!important;
+  color: rgb(191, 191, 191) !important;
+  background-color: rgb(64, 64, 64)!important;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 .color-5 {
-  color: rgb(16, 52, 239) !important;
-  background-color: rgb(255, 245, 0)!important;
+  color: rgb(211, 211, 211) !important;
+  background-color: rgb(58, 58, 58)!important;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 .color-6 {
-  color: rgb(0, 255, 167) !important;
-  background-color: rgb(255, 245, 0)!important;
+  color: rgb(118, 118, 118) !important;
+  background-color: rgb(70, 70, 70)!important;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .color-7 {
-  color: rgb(255, 0, 0) !important;
-  background-color: rgb(16, 52, 239);
+  color: rgb(115, 115, 115) !important;
+  background-color: rgb(67, 67, 67);
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .selected-class {
-  color: white !important;
+  color: rgb(255, 255, 255) !important;
   background-color: black;
   padding: 0rem;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
@@ -148,27 +152,37 @@ body {
 .header-container {
   margin-left: 0;
   margin-right: 0;
-  position: static;
+  position: sticky;
+  bottom: 20px;
   padding: 0;
   //fix for a hidden overflow of inner anchor box shadow
-  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  left: 1vw;
+  top: 1vw;
+  
+  background-color: white;
+  
+  /* background-color: white; */
+  flex-direction: row;
+  height: fit-content;
 
   .header-anchor a {
     font-family: "BPdotsCondensedSquare", ui-monospace, monospace;
     color: black;
-    font-size: 36vh;
-    height: 36vh;
+    font-size: 5vh;
+    height: 6vh;
     text-align: center;
-    line-height: 1.2;
+    line-height: 1.4;
     text-decoration: none;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     display: flex;
     text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
     //fix for a hidden overflow of inner anchor box shadow
-    margin-bottom: 1.6rem;
+    //margin-bottom: 1.6rem;
     overflow: hidden;
     user-select: none;
+    
     
   }
 
@@ -222,26 +236,32 @@ body {
 /* PROJECTS PAGE */
 
 .about-page .row.row-no_top_padding {
-  height: 66vh;
+  height: fit-content;
+  
 }
 .about-page,
 .projects-page,
 .data-row-txt {
+  
   .row-slide-wrapper {
     justify-content: inherit;
     padding-left: 1rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
+    height: fit-content;
+    padding-top: 3rem;
+    width: 100vw;
    
   }
 
   .row {
     //padding-bottom: 1.7rem;
-    height: auto;
+    height: fit-content;
     a {
       background-color: transparent !important;
       box-shadow: none !important;
     }
+    
   }
 
   //-------FIRST CONTAINER --------//
@@ -252,7 +272,8 @@ body {
 
   .first-container {
    
-    width: 36vw;
+    width: 33vw !important;
+    height: fit-content;
     
     //margin-right: 2rem;
   }
@@ -262,8 +283,9 @@ body {
   .first-container-txt-section {
     height: auto;
     flex-direction: column;
-    min-width: 33vw ;
-    max-width: 33vw;
+    width: fit-content;
+    height:max-content;
+    
 
     
   }
@@ -272,15 +294,15 @@ body {
     text-align: right;
     
     margin-top: 1vh;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
   }
 
   //------------------------//
 
   .second-container {
-    width: 66vw;
-    min-width: 50rem;
+    width: 33vw;
+    min-width: 33rem;
     height: 36vh;
     column-count: 2;
     column-gap: 2rem;
@@ -291,10 +313,10 @@ body {
   .big-row-fc-txt {
     // width: 66vw;
     h2 {
-      font-size: 6rem;
-      line-height: 6rem;
+      font-size: 3rem;
+      line-height: 3rem;
       
-      margin-top: 3vh;
+      margin-top: 0vh;
     }
     p {
       font-size: 1rem;
@@ -304,12 +326,29 @@ body {
     
   }
 
+  .first-container-txt-section {
+    height: auto;
+    flex-direction: column;
+    width: auto;
+    height:max-content;
+    
+
+    
+  }
+
   .small-row-fc-txt {
     h2 {
-      font-size: 2rem;
-      background-color: black;
-      color: white;
-      line-height: 2rem;
+      
+      font-family: "BPdotsCondensedSquare", monospace;
+    font-size: 3rem;
+    line-height: 5.5vh;
+    letter-spacing: 0em;
+    padding-top: 0.2rem;
+    text-align: right;
+    overflow-wrap: break-word;
+      color: black;
+      font-size: 2.5rem;
+      line-height: 3rem;
       padding-top: 0.4rem;
       padding-right: 1vh;
     }
@@ -319,9 +358,17 @@ body {
       display: none;
       
     }
-    min-width: 33vw;
-    max-width: 33vw;
+    min-width: 20vw;
+    max-width: 20vw;
+    width: 20vw;
     
+  .first-container {
+   
+    
+    height: fit-content;
+    
+    //margin-right: 2rem;
+  }
   }
 
   p {
@@ -336,12 +383,13 @@ body {
 
   h2 {
     font-family: "BPdotsCondensedSquare", monospace;
-    font-size: calc(0.5rem + 5vh);
+    font-size: 3rem;
     line-height: 5.5vh;
     letter-spacing: 0em;
     padding-top: 0.2rem;
     text-align: right;
     overflow-wrap: break-word;
+    
   }
 
   h3 {
@@ -429,10 +477,11 @@ body {
 }
 
 .row-pics-container-about {
-  height: 36vh;
+  height: fit-content;
   transition: 0.1s;
   display: inline-flex;
   margin-bottom: 0.5vh;
+
 }
 
 
@@ -443,11 +492,12 @@ body {
   p {
     font-size: 2vh;
     white-space: break-spaces;
-    min-width: 10rem;
+    min-width: 33vw;
   }
 }
-.row-pics-container.row-txt.big-row p {
-  min-width: 20rem;
+.row-pics-container.row-txt.big-row p 
+{
+  min-width: 33rem;
   
 }
 
@@ -490,11 +540,14 @@ body {
 
 .default-row {
   height: 36vh;
+  width: fit-content;
 }
 
 .default-row-text {
   min-width: 33vw;
   max-width: 33vw;
+  
+
 }
 
 .padding-default-row {
@@ -511,9 +564,18 @@ body {
     h3 {
       font-size: 3vh;
       margin-bottom: 2rem;
+      font-family: "BPdotsCondensed", monospace;
+      font-size: calc(0.5rem + 5vh);
+      line-height: 5.5vh;
+      letter-spacing: 0em;
+      padding-top: 0.2rem;
+      text-align: right;
+      overflow-wrap: break-word;
+      color: #000000;
+
     }
     p {
-      font-size: 3vh;
+      font-size: 1vh;
     }
     .link-default {
       font-size: 3vh;
@@ -593,7 +655,14 @@ body {
 
 .default-row-fc-txt {
 
-  min-width: 66vw
+  width: 33vw !important;
+  font-family: "BPdotsCondensedSquare", monospace;
+    font-size: 3rem;
+    line-height: 5.5vh;
+    letter-spacing: 0em;
+    padding-top: 0.2rem;
+    text-align: right;
+    overflow-wrap: break-word;
 
 }
 
@@ -656,7 +725,7 @@ body {
   h2 {
     font-size: 6rem;
     line-height: 6rem;
-    
+    font-family: "BPdotsCondensed", ui-monospace, monospace;
     margin-top: 3vh;
   }
   p {
@@ -669,10 +738,11 @@ body {
 
 .small-row-fc-txt {
   h2 {
-    font-size: 2rem;
+  
     background-color: black;
     color: white;
-    line-height: 2rem;
+    font-size: 2.5rem;
+      line-height: 3rem;
     padding-top: 0.4rem;
     padding-right: 1vh;
   }
@@ -682,8 +752,8 @@ body {
     display: none;
     
   }
-  min-width: 33vw;
-  max-width: 33vw;
+  min-width: 20vw;
+  max-width: 20vw;
   color: white;
   
 }
@@ -719,22 +789,39 @@ h3 {
 .header-anchor a {
   font-family: "BPdotsCondensed", ui-monospace, monospace;
   color: white;
-  font-size: 36vh;
-  height: 36vh;
+  font-size: 5vh;
+  height: 6vh;
   text-align: center;
-  line-height: 1.2;
+  line-height: 1.4;
   text-decoration: none;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   display: flex;
   text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
   //fix for a hidden overflow of inner anchor box shadow
-  margin-bottom: 1.6rem;
+  //margin-bottom: 1.6rem;
   overflow: hidden;
   user-select: none;
 
 }
 
+.header-container {
+  margin-left: 0;
+  margin-right: 0;
+  position: sticky;
+  bottom: 20px;
+  padding: 0;
+  //fix for a hidden overflow of inner anchor box shadow
+  padding: 1.5rem;
+  left: 1vw;
+  top: 1vw;
+  background-color: #000000;
+  
+  /* background-color: white; */
+  flex-direction: row;
+  height: fit-content;
+
+}
 .selected-class {
   color: black !important;
   background-color: white;
@@ -785,7 +872,7 @@ h3 {
 
 .big-row-text {
   p {
-    font-size: 4rem;
+    font-size: 1rem;
     width: 66vw;
     line-height: 1.1;
     padding-left: 2rem;
@@ -813,7 +900,7 @@ h3 {
   position: static;
   padding: 0;
   cursor: crosshair;
-  //padding-bottom: 0.1rem;
+  padding-bottom: 1rem;
 }
 
 
@@ -889,10 +976,11 @@ h3 {
 
 .small-row-fc-txt {
   h2 {
-    font-size: 2rem;
-    background-color: black;
+    
+    
     color: white;
-    line-height: 2rem;
+    font-size: 2.5rem;
+      line-height: 3rem;
     padding-top: 0.4rem;
     padding-right: 1vh;
   }
@@ -902,8 +990,8 @@ h3 {
     display: none;
     
   }
-  min-width: 33vw;
-  max-width: 33vw;
+ min-width: 20vw;
+    max-width: 20vw;
   color: white;
   
 }
@@ -939,19 +1027,38 @@ h3 {
 .header-anchor a {
   font-family: "BPdotsCondensedDiamond", ui-monospace, monospace;
   color: white;
-  font-size: 36vh;
-  height: 36vh;
+  font-size: 5vh;
+  height: 6vh;
   text-align: center;
-  line-height: 1.2;
+  line-height: 1.4;
   text-decoration: none;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   display: flex;
-  text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.25);
+  text-shadow: 7px 7px 15px rgba(70, 70, 70, 1);
   //fix for a hidden overflow of inner anchor box shadow
-  margin-bottom: 1.6rem;
+  //margin-bottom: 1.6rem;
   overflow: hidden;
   user-select: none;
+  background-color: brgb(33, 37, 41)lack;
+
+}
+
+.header-container {
+  margin-left: 0;
+  margin-right: 0;
+  position: sticky;
+  bottom: 20px;
+  padding: 0;
+  //fix for a hidden overflow of inner anchor box shadow
+  padding: 1.5rem;
+  left: 1vw;
+  top: 1vw;
+  background-color: #464646;
+  
+  /* background-color: white; */
+  flex-direction: row;
+  height: fit-content;
 
 }
 

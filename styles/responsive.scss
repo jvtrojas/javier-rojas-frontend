@@ -9,6 +9,7 @@
   }
   .default-row {
     height: 31vh;
+    width: fit-content;
   }
   // .row-pics-container {
   //   height: 31vh;
@@ -27,6 +28,17 @@
   .default-row-text {
     min-width: 100vw;
     max-width: 100vw;
+
+  }
+  .default-fc-row-txt {
+    font-family: "BPdotsCondensedSquare", monospace;
+    font-size: 3rem;
+    line-height: 5.5vh;
+    letter-spacing: 0em;
+    padding-top: 0.2rem;
+    text-align: right;
+    overflow-wrap: break-word;
+    
   }
 
   .about-page .row-no_top_padding {
@@ -49,17 +61,26 @@
   }
   .row-pics-container {
     height: 36vh;
+    width: auto;
     
   }
   .big-row-fc-txt {
 
-    //width: 100vw;
+    font-size: 3rem;
+    line-height: 5.5vh;
+    letter-spacing: 0em;
+    padding-top: 0.2rem;
+    text-align: right;
+    overflow-wrap: break-word;
+
+    width: w;
    
     h2 {
-      font-size: inherit;
+      font-size: 3;
     }
     p {
       font-size: inherit;
+      
     
     
     }
@@ -78,6 +99,7 @@
       font-size: 1.3rem;
       font-weight: 500;
       height: fit-content;
+
 
       
      
@@ -156,7 +178,7 @@
       // width: 66vw;
       h2 {
         padding-left: 1rem;
-      font-size: 1.3rem;
+      font-size: 3rem;
       font-weight: 500;
         line-height: rem;
         
@@ -171,9 +193,12 @@
   
     .small-row-fc-txt {
       h2 {
-        font-size: 0vh;
-        background-color: black;
-        color: white;
+        font-family: "BPdotsCondensedSquare", monospace;
+        font-size: calc(0.5rem + 5vh);
+       line-height: 5.5vh;
+       
+        width: 100vw;
+        
         //line-height: 11vh;
         padding-top: 1.2vh;
         padding-right: 1vh;
@@ -184,7 +209,7 @@
         display: none;
         
       }
-      min-width: 100vw;
+      //min-width: 100vw;
       
     }
   
@@ -376,12 +401,15 @@
   
   .small-row-fc-txt {
     h2 {
-      font-size: 2rem;
-      background-color: black;
-      color: white;
-      line-height: 2rem;
-      padding-top: 0.4rem;
-      padding-right: 1vh;
+     
+        font-size: calc(0.5rem + 5vh);
+       line-height: 5.5vh;
+       
+        width: 100vw;
+        
+        //line-height: 11vh;
+        padding-top: 1.2vh;
+        padding-right: 1vh;
     }
     p {
       //font-size: 0;
@@ -466,11 +494,14 @@
   
   .small-row-text {
     p {
-      font-size: 0.3rem;
-      width: 11vh;
+      font-family: "Barlow", sans-serif;
+      font-size: 1.4rem;
       line-height: 1.1;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-weight: 500;
+      
+      
     }
   
   }
@@ -481,19 +512,19 @@
       font-size: 3vh;
     }
     p {
-      font-size: 2vh;
+      font-size: 1.4remvh;
       white-space: break-spaces;
       min-width: 10rem;
     }
   }
   .row-pics-container.row-txt.big-row p {
-    min-width: 20rem;
+    min-width: 100vwrem;
   }
   
   .big-row-text {
     p {
-      font-size: 4rem;
-      width: 66vw;
+      font-size: 1.3rem;
+      width: 100vw;
       line-height: 1.1;
       padding-left: 2rem;
       padding-right: 2rem;
@@ -596,7 +627,7 @@
   .small-row-fc-txt {
     h2 {
       font-size: 2rem;
-      background-color: black;
+      font-family: "BPdotsCondensedSquare", monospace;
       color: white;
       line-height: 2rem;
       padding-top: 0.4rem;
@@ -608,8 +639,8 @@
       display: none;
       
     }
-    min-width: 33vw;
-    max-width: 33vw;
+    min-width: 100vw;
+    max-width: 100vw;
     color: white;
     
   }
@@ -683,7 +714,7 @@
   
   .small-row-text {
     p {
-      font-size: 0.3rem;
+      font-size: 1.4rem;
       width: 11vh;
       line-height: 1.1;
       padding-left: 0.5rem;
@@ -725,6 +756,7 @@
     body {
     background-color: black !important;
     width: 100vw;
+    height: 100vh;
     letter-spacing: 0;
     line-height: 1.2;
     font-style: normal;
